@@ -1,7 +1,6 @@
 # 개발 용어 정리
 개발하면서 모르는용어를 정리하는 곳입니다.
 ### none category
-- **expires** : 만료
 - **Dead Lock(데드락)** : '교착 상태' 
     >한정된 자원을 여러 곳에서 사용하려고 할때 발생 [참고](https://includestdio.tistory.com/12)
 - **Learning Curves(러닝 커브)** : 학습곡선
@@ -13,6 +12,9 @@
     - 새로운 판의 더 낮은 실패율
     - 상품 생산 시작부터 완성까지 걸리는 시간
     - 복구 시 더 빠른 편균시간
+### web, network
+- **expires** : 만료
+- **Load Balancing**: 네트워크 또는 서버에 가해지는 부하(=Load) 를 분산(=Balancing) 해주는 기술
 ### Srping
 - **Persistence Context(영속성 컨텍스트)** : 엔티티를 영구히 저장하는 환경
     - **Persistence(영속성)**: 데이터를 생성한 프로그램의 실행이 종료되더라도 사라지지 않는 데이터의 특성을 의미
