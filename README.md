@@ -12,7 +12,7 @@
 ### Spring
 - [Bean](https://github.com/siwony/TIL/blob/main/Spring/Bean.md)
 - [DI(DependencyInjection)](https://github.com/siwony/TIL/blob/main/Spring/DI(Dependency%20Injection).md)
-- [IoC](ttps://github.com/siwony/TIL/blob/main/Spring/IOC(Inversion-Of-Control).md)
+- [IoC](https://github.com/siwony/TIL/blob/main/Spring/IOC(Inversion-Of-Control).md)
 ### web
 - [웹기초](https://github.com/siwony/TIL/blob/main/web/web-foundation.md)
 - [APIserver](https://github.com/siwony/TIL/blob/main/web/APIserver.md)
