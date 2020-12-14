@@ -12,3 +12,12 @@
 ### Spring
 - [Bean](https://github.com/siwony/TIL/blob/main/Spring/Bean.md)
 - [DI(DependencyInjection)](https://github.com/siwony/TIL/blob/main/Spring/DI(Dependency%20Injection).md)
+- [IoC](ttps://github.com/siwony/TIL/blob/main/Spring/IOC(Inversion-Of-Control).md)
+### web
+- [웹기초](https://github.com/siwony/TIL/blob/main/web/web-foundation.md)
+- [APIserver](https://github.com/siwony/TIL/blob/main/web/APIserver.md)
+### python
+- [python install](https://github.com/siwony/TIL/blob/main/Python/how-to-install-python.md)
+- [변수, 데이터형](https://github.com/siwony/TIL/blob/main/Python/variables%20and%20data-type.md)
+### git
+- [깃 커멘드정리](https://github.com/siwony/TIL/blob/main/git/git-command.md)

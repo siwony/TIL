@@ -23,6 +23,6 @@
 ### SSS & CSS
 - SSS(Server Side Script) : server 측 scrpit 언어 (php, jsp 등...)
 - CSS(Client Side Script) : Client 측 scrpit 언어 (JavaSciprt 등...)
-## 4. HTTP(HyperText Transfer Protocol), HTTPS(HyperText Transfer Protocol over Secure Socket Layer)
+## 4. HTTP(HyperText Transfer Protocol),  <br/>HTTPS(HyperText Transfer Protocol over Secure Socket Layer)
 - WWW에서 정보를 주고 받을 때 사용하는 프로토콜, 80번 포트사용
 - Client 와 Server 사이에 이루어지는 요청/응답(Requset/Response) 

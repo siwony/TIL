@@ -1,4 +1,4 @@
-# python 데이터형 DATA-Type, Variables
+# python DATA-Type, Variables
 ## 변수선언
 앞에 문자형을 붙이지 않고 그냥 선언한다
 ```python
