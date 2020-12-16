@@ -10,4 +10,4 @@ $ npm install -g nodemon --save
 ```
 사용법 <code>nodemon <실행파일></code>  
 Node.js 는 싱글스레드 기반이여서 에러 한번만 일어나면 서버가 다운이 되버린다.  
-그러면 계발할떄마다 다시 <code>node <실행파일></code> 를 계속 입력해줘야하지만 nodemon은 계속 실행해준다.
+그러면 개발할떄마다 다시 <code>node <실행파일></code> 를 계속 입력해줘야하지만 nodemon은 계속 실행해준다.
