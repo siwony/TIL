@@ -25,7 +25,8 @@
 - URL에서는 -(하이픈)을 권장
 - 소문자로 작성
 - 확장자 포함x
-### HTTP Method
+### HTTP Method  
+
 |HTTP method | CRUD |    의미     |
 |------------|------|------------|
 |POST        |C     |리소스 생성|
