@@ -1,5 +1,5 @@
 # Today I Learned
-오늘 새롭게 배운 혹은 삽질한 경험, 그리고 히스토리 정리 목적의 간단한 글들을 마크다운 문서로 정리 해 보자! (start - Dec 12 2020)  
+오늘 새롭게 배운 혹은 삽질한 경험, 그리고 히스토리 정리 목적의 간단한 글들을 마크다운 문서로 정리 해 보자! (start - Dec 12 2020)    
 ## 작성법  
 - 폴더와 파일명은 될 수 있으면 영문으로 작성한다.
 - Github-Flavoured Markdown으로 작성하고 파일 확장자는 md.
@@ -24,3 +24,6 @@
 ### Node.js
 - [node.js 설치 및 개발환경 세팅](./NodeJS/how-to-install-nodeJs.md)
 - [MySQL 연결](./NodeJS/Connect-MySql.md)
+### MySQL
+- [MySQL 설치](../MySQL/how-to-install-mysql.md)
+- []

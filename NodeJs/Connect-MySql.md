@@ -47,12 +47,20 @@ user랑 password가 잘못되어 있을수도 있다.
 그러면 유저랑, host가 보여질것이다.
 여기서 host는 <code>localhost</code> local내에서 접속이 가능한것이고 <code>%</code> 는 어디서나 접속할 수 있다는것을 말한다.
 이제 유저를 만들어 볼것이다. 유저를 이미 만들어져 있으면 유저 권한 설정으로 이동하면 된다.
-### 유저 생성
+### 유저 생성 및 권환주기
 ```sql
 > create user '유저이름'@'호스트(host)'identified with mysql_native_password by '비밀번호'
 ```
-host에는 대표적으로 localhost, %가 있다.
+host에는 대표적으로 localhost, %가 있다.%은 외부에서도 접속이 가능하다는것이다.   
+host는 localhost로 하는게 안전하다. 꼭 필요하지 않는이상 localhost로 하는게 좋다. 
 ```sql
 > grant all privileges on . to '(유저이름)'@'%';
 ```
-이렇게 하면 모든 데이터베이스에 접속이 가능하다.
+이렇게 하면 모든 데이터베이스에 접속이 가능하다.  
+하지만 모든 데이터베이스에 접속하는것은 위험하다. 그러므로  
+```sql
+> grant all privileges on DB명.* to 유저(user)@localhost
+--ex) grant all privileges on cat.* test@localhost
+-- cat이라는 DB접속 권환을 test유저에게 localhost에서 사용가능하게 줬다.
+```
+이런식으로 특정 DB만 접속할 수 있도록 하는게 비교적 안전해진다.
