@@ -24,6 +24,8 @@
 ### Node.js
 - [node.js 설치 및 개발환경 세팅](./NodeJS/how-to-install-nodeJs.md)
 - [MySQL 연결](./NodeJS/Connect-MySql.md)
+### DataBase
+- [RDB 란?](./DataBase/relational-database.md)
 ### MySQL
 - [MySQL 설치](./DataBase/MySQL/how-to-install-mysql.md)
 - [MySQL 실행관련 명령어](./DataBase/MySQL/mysql-run-command.md)
