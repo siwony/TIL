@@ -17,7 +17,7 @@
 ### web
 - [웹기초](./web/web-foundation.md)
 - [APIserver](./web/APIserver.md)
-### Spring
+### Spring 
 - [Bean](./Spring/Bean.md)
 - [DI(DependencyInjection)](./Spring/DI(Dependency-Injection).md)
 - [IoC](./Spring/IOC(Inversion-Of-Control).md)
@@ -25,5 +25,6 @@
 - [node.js 설치 및 개발환경 세팅](./NodeJS/how-to-install-nodeJs.md)
 - [MySQL 연결](./NodeJS/Connect-MySql.md)
 ### MySQL
-- [MySQL 설치](./MySQL/how-to-install-mysql.md)
-- []
+- [MySQL 설치](./DataBase/MySQL/how-to-install-mysql.md)
+- [MySQL 실행관련 명령어](./DataBase/MySQL/mysql-run-command.md)
+- [mysql 명령어](./DataBase/MySQL/mysql-command.md)
