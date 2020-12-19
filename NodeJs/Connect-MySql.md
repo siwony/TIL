@@ -64,3 +64,16 @@ host는 localhost로 하는게 안전하다. 꼭 필요하지 않는이상 local
 -- cat이라는 DB접속 권환을 test유저에게 localhost에서 사용가능하게 줬다.
 ```
 이런식으로 특정 DB만 접속할 수 있도록 하는게 비교적 안전해진다.
+## Sequelize
+sequelize 는 node.js 의 ORM(Object Releaition Mapping) 모듈이다.  
+관계형 DB를 사용할떄 객체를 이용해 간편하게 쿼리문을 작성하지 않고 사용할 수 있게 해준다.  
+자세한 sequelize 사용법은 [여기](./sequelize.md) 에서 확인할 수 있다.
+### how to use?
+```bash
+> npm install sequelize sequelize-cli --save
+```
+를 통해 모듈을 다운받고
+```bash
+> sequelize init
+```
+을 통해 sequelize 를 사용할 수 있게 파일구조나 필요한 설정파일들을 생성해준다.
