@@ -12,8 +12,8 @@
 ### git
 - [깃 커멘드정리](./git/git-command.md)
 ### python
-- [python install]()
-- [변수, 데이터형](./Python/variables-and-data-type.md)
+- [python install](./Python/how-to-install-python.md)
+- [변수, 데이터형](./Python/ariables-and-data-type.md)
 ### web
 - [웹기초](./web/web-foundation.md)
 - [APIserver](./web/APIserver.md)
@@ -25,5 +25,5 @@
 - [node.js 설치 및 개발환경 세팅](./NodeJS/how-to-install-nodeJs.md)
 - [MySQL 연결](./NodeJS/Connect-MySql.md)
 ### MySQL
-- [MySQL 설치](../MySQL/how-to-install-mysql.md)
+- [MySQL 설치](./MySQL/how-to-install-mysql.md)
 - []
