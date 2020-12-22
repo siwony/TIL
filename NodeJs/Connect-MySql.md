@@ -31,7 +31,7 @@ connection.end();
 query매세드에 select * from test 라는 쿼리문을 작성해서  
 test테이블에 있는 값을 꺼내 와 콘솔에 출력하는 코드를 작성해봤다.
 콘솔에 출력하면 값은 값의 타입은 배열이고 컬럼은 JSON 방식인것을 알 수 있습니다.  
-![node-mysql-query](../img/node.js-mysql-select-query.png)
+![node-mysql-query](./img/node.js-mysql-select-query.png)
 ## IF 오류가 뜬다면?
 > Error: ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client  
 만약 이런 애러가 11번째 줄에서 throw 되어서 나타났다면, 먼저 확인해야 될것은  

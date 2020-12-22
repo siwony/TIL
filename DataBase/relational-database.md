@@ -23,7 +23,7 @@
 - ### **스키마(schema)**  
     = 테이블을 디자인하기 위한 청사진
     >ex) Reservation(ID, Name, Date, RoomNum)  
-    ![diagram](../img/img_mysql_diagram.png)
+    ![diagram](./img/img_mysql_diagram.png)
 ## key
 ### **후보키(Candidate Key)**
 1. 릴레이션을 구성하는 속성들 중에 튜플을 유일하게 식별하기 위해 사용하는 속성들의 부분집합. 즉 **기본키로 사용할 수 있는 속성들을 말한다.**
