@@ -37,7 +37,7 @@ root디렉토리에는 너무 많은 디렉토리, 소스코드, 설정파일들
 const path = require('path');
 
 module.exports = {
-    'config': path.resolve('src/db/config/config.js'),
+    'config': path.resolve('src/db/config/config.json'),
     'models-path': path.resolve('src/db/models'),
     'seeders-path': path.resolve('src/db/seeders'),
     'migrations-path': path.resolve('src/db/migrations')
