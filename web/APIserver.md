@@ -3,7 +3,7 @@
 : 다른 소프트웨어를 제어하기 위해 미리 약속된 인터페이스 나 규약
 > Web과App 에서 사용되는 API는 보통 서비스에서 소스는 공개하지 않고 해당 기능을 제공하려고 할떄 이용
 ## REST(RESTful) API
-: Representational St`ate Transfer (표현 상태 전이)  
+: Representational State Transfer (표현 상태 전이)  
   HTTP 기반으로 필요한 자원에 접근하는 방식을 정해놓은 아키텍처  
  >효과: 반복되는 코드를 API로 이용함으로써 소스 코드의 재사용을 높여 개발 <code>생산성</code>을 높일수있다
 ### REST API 의 구성
@@ -17,7 +17,7 @@
     REST는 무상태성 성격을 갖는다. 즉 작업을 위한 상태정보를 따로 저장하고 관리하지 않기 떄문에  
     API서버는 들어온 요청만 단순히 처리하면 된다.  
     때문에 서비스의 자유도가 높아지고 서버에서 불필요한 정보를 관리하지 않아 구현이 단순해진다.
-- **Caheable (캐시 기능)**
+- **Caheable (캐시 기능)**  
     HTTP 프로토콜 표준에서 사용하는 Last-Modified태그나 E-Tag를 이용하면 캐싱 구현이 가능하다.
 - **Self-descriptiveness (자체 표현 구조)**  
     REST API 메시지만 보고도 이를 쉽게 이해 할 수 있는 자체 표현 구조로 되어 있다.
