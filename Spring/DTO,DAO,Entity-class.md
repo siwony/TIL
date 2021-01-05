@@ -12,9 +12,7 @@
     ```java
     public interface BoardRepository extends CrudRepository<Board, Long>{}
     ```
-## DTO(Data Transfer Object) or VO(Value Object)
-> VO는 only Reade만 가능하다.
-
+## DTO(Data Transfer Object)
 **dto package**  
 : 계층간 데이터 교환을 위한 JAVABeans를 말한다 여기서 계층이란  
 컨트롤러, 뷰, 비지니스 계층, 퍼시스턴스 계층을 말한다.
@@ -30,8 +28,6 @@
     - 또한 Controller Layer에서 Response DTO 형태로 Client에 전달
 ## Entity class
 **Domain Package**
-> Entity 클래스는 실제 DataBase의 테이블과 1 : 1로 매핑 되는 클래스로, DB의 테이블내에 존재하는 컬럼만을 속성(필드)으로 가져야 한다.  
-Entity 클래스는 상속을 받거나 구현체여서는 안되며, 테이블내에 존재하지 않는 컬럼을 가져서도 안된다.
 - 실제 DB 테이블과 매칭될 클래스
     - 가장 core한 클래스라고 불림
     - ```@Entity```, ```@Column```, ```@Id``` 등 사용
