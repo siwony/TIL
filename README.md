@@ -9,6 +9,8 @@
 - reference를 명시하고, 원작자가 참고를 허용하는 자료만 사용한다.
 - 해당 문서를 다시 봤을떄, 추가적인 검색의 비용이 들지 않도록 자세히 기록한다
 ## 분류
+### 개발용어 정리
+- [개발용저 정리](./dev-terminology/dev-terminology.md)
 ### git
 - [깃 커멘드정리](./git/git-command.md)
 ### python
@@ -17,13 +19,18 @@
 ### web
 - [웹기초](./web/web-foundation.md)
 - [APIserver](./web/APIserver.md)
+- [Domain](./web/domain.md)
+- [Cookie, Session](./web/cookie-and-session.md)
 ### Spring 
 - [Bean](./Spring/Bean.md)
 - [DI(DependencyInjection)](./Spring/DI(Dependency-Injection).md)
 - [IoC](./Spring/IOC(Inversion-Of-Control).md)
+- **JPA**
+    - [Entity,EntityManager,EntityManagerFactory](./Spring/Entity,EntityManager,EntityManagerFactory)
 ### Node.js
 - [node.js 설치 및 개발환경 세팅](./NodeJS/how-to-install-nodeJs.md)
 - [MySQL 연결](./NodeJS/Connect-MySql.md)
+- [ORM모듈 Sequelize 사용하기(모델만들기)](./NodeJS/sequelize.md)
 ### DataBase
 - [RDB 란?](./DataBase/relational-database.md)
 ### MySQL
