@@ -124,4 +124,4 @@ migrations 폴더 안에있는 <code>[타임스탬프]-create-user.js</code> 형
 >server를 실행할 파일에 <code>models/index.js</code>를 연결해주면 설계한대로 반영이 될것이다.  
 
 **참고**
-- id는 자동으로 생긴다.
+- 자동으로 생기는 attribute: id, createdAt, updatedAt

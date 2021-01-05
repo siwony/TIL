@@ -1,8 +1,8 @@
-# DAO, DTO, Entity Class 차이 및 package 구조
+# Spring 구조(DAO, DTO, Entity, Controller, Service)
 ## DAO(Data Access Object)
 **repository package**  
 : DB를사용해 데이터를 조회하거나 조작하는 기능을 전담하도록 만든 Object  
-> 사용자는 자신이 필요한 interface를 DAO에 던지고 DAO는 이 interface 를 구현한 객체를 사용자에게 편리하게 사용할 수 있도록 반환
+> 사용자는 자신이 필요한 interface를 DAO에 던지고 DAO는 이 interface를 구현한 객체를 사용자에게 편리하게 사용할 수 있도록 반환
 - 실제로 DB에 접근하는 객체
 - Service와 DB를 연결하는 고리의 역활
 - SQL를 사용(개발자가 직접 코딩)하여 DB에 접근한 후 적절한 CRUD API를 제공
