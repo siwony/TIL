@@ -13,6 +13,7 @@
     public interface BoardRepository extends CrudRepository<Board, Long>{}
     ```
 ## DTO(Data Transfer Object)
+>Entity 클래스는 실제 DataBase의 테이블과 1 : 1로 매핑 되는 클래스로, DB의 테이블내에 존재하는 컬럼을 속성(필드)으로 가져야 한다.
 **dto package**  
 : 계층간 데이터 교환을 위한 JAVABeans를 말한다 여기서 계층이란  
 컨트롤러, 뷰, 비지니스 계층, 퍼시스턴스 계층을 말한다.
