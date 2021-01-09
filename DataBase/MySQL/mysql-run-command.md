@@ -4,7 +4,7 @@
     $ mysql.server start
 - ### 접속
     ```bash
-    $ mysql -u root -p #root 계정으로 비밀번호를 물어봐서 접속
+    $ mysql -u root -p
     ```
     비밀번호가 없으면 -p는 생략이 가능하다.
 - ### 상태확인
