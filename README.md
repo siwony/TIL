@@ -3,13 +3,19 @@
 ## 분류
 ### 기타
 - [개발용어 정리](./ETC/dev-terminology.md)
-- [Object Orinted Programing](./ETC/OOP.md)
 - [Component](./ETC/component.md)
 ### git
 - [깃 커멘드정리](./git/git-command.md)
-### python
-- [python install](./Python/how-to-install-python.md)
-- [변수, 데이터형](./Python/ariables-and-data-type.md)
+### Programming
+- [Object Orinted Programing](./Programming/OOP.md)
+
+**JAVA**
+- .
+
+**python**
+- [python install](./Programming/Python/how-to-install-python.md)
+- [변수, 데이터형](./Programming/Python/ariables-and-data-type.md)
+
 ### web
 - [웹기초](./web/web-foundation.md)
 - [REST API](./web/RESTAPI.md)
