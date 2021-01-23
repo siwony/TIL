@@ -28,7 +28,8 @@
 >- [IoC](./back-end/Spring/IOC(Inversion-Of-Control).md)
 >- [Spring 구조](./back-end/Spring/DTO,DAO,Entity-class.md)  
 > ### **JPA**
->- [Entity,EntityManager,EntityManagerFactory](./back-end/Spring/Entity,EntityManager,EntityManagerFactory)
+>- [Entity,EntityManager,EntityManagerFactory](./back-end/Spring/JPA/Entity,EntityManager,EntityManagerFactory)
+>- [JPA Auditing으로 생성일/수정일 자동화](./back-end/Spring/JPA/Auditing)
 - ### **Node.js**
 >- [node.js 설치 및 개발환경 세팅](./back-end/NodeJS/how-to-install-nodeJs.md)
 >- [MySQL 연결](./back-end/NodeJS/Connect-MySql.md)
