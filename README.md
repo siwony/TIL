@@ -1,8 +1,10 @@
 # Today I Learned
 오늘 새롭게 배운 혹은 삽질한 경험을 간단한 글들을 마크다운 문서로 정리 해 보자! ``start - Dec 12 2020``  
 ## 분류
-### 개발용어 정리
+### 기타
 - [개발용어 정리](./ETC/dev-terminology.md)
+- [Object Orinted Programing](./ETC/OOP.md)
+- [Component](./ETC/component.md)
 ### git
 - [깃 커멘드정리](./git/git-command.md)
 ### python
@@ -10,7 +12,7 @@
 - [변수, 데이터형](./Python/ariables-and-data-type.md)
 ### web
 - [웹기초](./web/web-foundation.md)
-- [APIserver](./web/APIserver.md)
+- [REST API](./web/RESTAPI.md)
 - [Domain](./web/domain.md)
 - [Cookie, Session](./web/cookie-and-session.md)
 ### **Back-end**
