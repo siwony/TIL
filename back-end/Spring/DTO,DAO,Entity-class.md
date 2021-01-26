@@ -1,4 +1,7 @@
 # Spring 구조(DAO, DTO, Entity, Controller, Service)
+## 전체구조 
+<img wdith="450px" src="./img/spring-package-flow.png">
+
 ## DAO(Data Access Object)
 **repository package**  
 : DB를사용해 데이터를 조회하거나 조작하는 기능을 전담하도록 만든 Object  
@@ -7,11 +10,12 @@
 - Service와 DB를 연결하는 고리의 역활
 - SQL를 사용(개발자가 직접 코딩)하여 DB에 접근한 후 적절한 CRUD API를 제공
     - JAP 대부분의 기본적인 CRUD method를 제공하고 있다.
-    - ```extends JpaRepository<table 이름,Pkey type>```
+    - ```extends JpaRepository<Domain(Entity) type,Pkey type>```
 - ex)
     ```java
     public interface BoardRepository extends CrudRepository<Board, Long>{}
     ```
+    >Board 라는 도메인타입의 Pkey의 Type 은 Long
 ## DTO(Data Transfer Object)
 >Entity 클래스는 실제 DataBase의 테이블과 1 : 1로 매핑 되는 클래스로, DB의 테이블내에 존재하는 컬럼을 속성(필드)으로 가져야 한다.
 **dto package**  
@@ -84,9 +88,6 @@
     
     }
     ```
-## 전체구조 
-<img wdith="450px" src="./img/spring-package-flow.png">
-
 ### controller(web)
 #### 기능
 - 해당 요청 url에 따라 적절한 view 와 mapping처리
@@ -97,5 +98,3 @@
 - ```@Autowried Repository``` 를 통해 repository의 method를 이용
 - 적절한 bisiness Logic 처리 
 - DAO로 DB에 접근하고 DTO로 데이터를 전달받은 다음, 비지니스 로직을 처리해 적절한 데이터를 반환
-### dao, dto, domain(entity class)
-> 위 설명 참조
