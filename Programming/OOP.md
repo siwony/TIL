@@ -1,6 +1,6 @@
 # 객체 지향 프로그래밍(Object Oriented Programming)
 <p align="center">
-    <img align="center" width="250px" src="./img/oop.png"/>
+    <img align="center" width="350px" src="./img/oop.png"/>
 </p>
 
 ## OOP?

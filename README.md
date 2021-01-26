@@ -10,8 +10,13 @@
 - [Object Orinted Programing](./Programming/OOP.md)
 
 **JAVA**
-- .
-
+- [JAVA?](./Programming/JAVA/01-java.md)
+- [JAVA 데이터형](./Programming/JAVA/02-java-Data-type.md)
+- [JAVA 배열](./Programming/JAVA/03-array.md)
+- [JAVA Class and Object](./Programming/JAVA/04-class-and-object)
+- [JAVA scope, static](./Programming/JAVA/05-scope-static.md)
+- [JAVA enum](./Programming/JAVA/06-enum.md)
+- [JAVA package](./Programming/JAVA/07-package.md)
 **python**
 - [python install](./Programming/Python/how-to-install-python.md)
 - [변수, 데이터형](./Programming/Python/ariables-and-data-type.md)
@@ -28,7 +33,7 @@
 >- [IoC](./back-end/Spring/IOC(Inversion-Of-Control).md)
 >- [Spring 구조](./back-end/Spring/DTO,DAO,Entity-class.md)  
 > ### **JPA**
->- [Entity,EntityManager,EntityManagerFactory](./back-end/Spring/JPA/Entity,EntityManager,EntityManagerFactory)
+>- [Entity,EntityManager,EntityManagerFactory]("./back-end/Spring/JPA/Entity,EntityManager,EntityManagerFactory")
 >- [JPA Auditing으로 생성일/수정일 자동화](./back-end/Spring/JPA/Auditing)
 - ### **Node.js**
 >- [node.js 설치 및 개발환경 세팅](./back-end/NodeJS/how-to-install-nodeJs.md)
