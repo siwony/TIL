@@ -65,4 +65,4 @@ public class User extends BaseTimeEntity{
 미리 구현해놓은 singup API 를 사용하여 유저를 생성하면  
 <img width="500"  src="../img/signup-API-postman.png">  
 만들어진 시간과 수정시간이 정상적으로 데이터베이스에 입력이 되었다.  
-(singup api는 DB에 저장된 값을 리턴해준다)
+(singup api는 DB에 저장된 값을 리턴해준다.)

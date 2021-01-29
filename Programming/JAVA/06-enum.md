@@ -36,5 +36,5 @@ Gender gender2;
     
 gender2 = Gender.FEMALE;
 
-//Gender타입의 변수에는 MALE이나 FEMALE만 대입이 가능.다른 값은 저장할 수가 없다. 
+//Gender타입의 변수에는 MALE이나 FEMALE만 대입이 가능.다른 값은 대입할 수가 없다. 
 ```

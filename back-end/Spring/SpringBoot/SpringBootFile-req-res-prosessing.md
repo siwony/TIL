@@ -33,13 +33,13 @@ JubJub 프로젝트에서 기자재를 저장하는 Controller 이다.
     파일을 제외한 나머지 필드들의 타입은 무조건 text로 해야한다  
     >위에 코드에서 name, countentm count를 Dto를 이용해서 데이터를 body에서 받지 않고 RequsetParam으로 전달받은 이유도 이와 같다.(**Body 에 json요청 불가능**)
 ### 파일 Client에 보내기(Response)
-Client가 ``/equipment/img/{name}`` 으로 Get방식의 요청을 하면 서비스에서 name으로 해당 이미지를 찾아 Controller에 전달후 img를 byte배열로 응답을 한다.
+Client가 ``/equipment/img/{name}`` 으로 Get방식의 요청을 하면 서비스에서 name으로 DB에 해당 이미지를 찾아 Controller에 전달후 img를 byte배열로 응답을 한다.
 ```java
     @GetMapping(value="/equipment/img/{name}", produces=MediaType.APPLICATION_OCTET_STREAM_VALUE)
     public byte[] findByNameGetEquipment_img(@PathVariable String name) throws Exception {
         return equipmentService.findByNameGetEquipment_img(name);
     }
 ``` 
-<img width="300" src="../img/eximg.png">
+<img width="400" src="../img/eximg.png">
 
 예시로 나는 img 태그를 이용해 가져와지는지 테스트했다.
