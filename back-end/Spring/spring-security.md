@@ -7,7 +7,8 @@
 
 [용어](/ETC/dev-terminology.md#String-cecurity)
 ## spring security 의 구조
-아래 그림은 Form 기반 로그인에 대한 플로우를 보여주는 그림이다
+아래 그림은 Form 기반 로그인에 대한 플로우를 보여주는 그림이다.
+
 <img width=500 src=./img/spring-security-architecture.png>  
 1. 사용자가 Form을 통해 로그인 정보 입력 및 인증 요청
 2. AuthenticationFilter(구현체 UsernamePasswordAuthenticationFilter) 가  
