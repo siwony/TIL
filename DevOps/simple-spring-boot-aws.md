@@ -23,9 +23,9 @@
 > 필자는 openJDK 11 버전을 사용할 것이다.
 1. **git 설치**
     ```bash
-    sodo yum install git
+    sudo yum install git
     ```
-2. **JAVA 설치 밑 JAVA 11 버전 적용**  
+2. **JAVA 설치 및 JAVA 11 버전 적용**  
     **JAVA install**
     ```bash
     sudo yum install -y java-1.8.0-openjdk-devel.x86_64
@@ -35,7 +35,7 @@
     ```bash
     sudo alternatives --config java
     ```
-    위 명령어를 입력하면 다음과 같이 나온다 설치했던 java-11-amazon-corretto 버전을 선택    
+    설치했던 java-11-amazon-corretto 버전을 선택한다.  
 
     <img width=600 src="./img/java-version-switch.png">
 3. **Apache Maven설치**

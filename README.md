@@ -1,6 +1,9 @@
 # Today I Learned
 오늘 새롭게 배운 혹은 삽질한 경험을 간단한 글들을 마크다운 문서로 정리 해 보자! ``start - Dec 12 2020``  
 ## 분류
+### DevOps
+- [aws EC2](/DevOps/awsEC2.md)
+- [EC2를 이용한 간단한 Spring Boot 배포](/DevOps/simple-spring-boot-aws.md)
 ### 기타
 - [개발용어 정리](/ETC/dev-terminology.md)
 - [Component](/ETC/component.md)
