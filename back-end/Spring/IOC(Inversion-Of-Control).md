@@ -1,5 +1,5 @@
-# IOC(Inversion Of Control)
-: 제어권이 역전되었다.  
+# IoC(Inversion Of Control)
+: **제어의 역전**  
 >어떤 객체가 사용할 객체(의존관계인 객체)를 직접 선언하여 사용하는 것이 아니라,  
 >어떤 방법을 사용하여(ex.생성자 등..)사용하여 주입 받아 사용것 을 IOC의 일부라고 표현 할 수 있다.
 
@@ -12,7 +12,7 @@ public class CarService {
 ```
 
 
-**DI(Dependency Injection)를 통한 IOC**
+### DI(Dependency Injection)를 통한 IOC
 ```java
 @Service
 public class CarService {
@@ -29,11 +29,13 @@ public class CarService {
     }
 }
 ```
-### DI는 IOC의 한 종류이지 IOC와 같지 않다.
+### DI는 IoC를 구현하는 방법의 한 종류
 **게임을 예시로 들어보자**
-1. 게임컨트롤러가 게임 캐릭터를 조종한다.
-2. 게임 캐릭터가 해야 할 일을 플에이어가 직접적으로 관여해 조종한다.
-3. 게임 캐릭터의 제어권은 플레이어에게 넘어감 -> 제어권이 위임되었다 -> 제어의 역전(IOC)
+1. 플레이어가 게임 캐릭터를 조종한다.
+2. 게임 캐릭터가 해야 할 일을 플레이어가 직접적으로 관여해 조종한다.
+3. 게임 캐릭터의 제어권은 플레이어(외부)에게 넘어감 -> 제어권이 위임되었다 -> 제어의 역전(IoC)
 
 ### 결국 핵심?
-개발자가 빈을 직접 만들지 않고 메타데이터(ex. xml)를 제공하면 프로그램(Spring framework)가 제어를 한다.
+개발자가 빈을 직접 만들지 않고 메타데이터(ex. xml)를 제공하면 프로그램(Spring framework)이 해당 메타데이터를 사용해 Bean객체를 제어 한다.
+
+## IoC Container
