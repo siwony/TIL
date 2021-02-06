@@ -59,6 +59,8 @@
     ```
     Vim
     ```
+    #!/bin/bash
+    
     # maven 프로젝트 폴더로 옮기기
     cd ./SpringBoot-MembershipAPI
     
