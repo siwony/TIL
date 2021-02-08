@@ -16,6 +16,7 @@
 ### web, network
 - **expires** : 만료
 - **Load Balancing**: 네트워크 또는 서버에 가해지는 부하(=Load) 를 분산(=Balancing) 해주는 기술
+- [**payload(패이로드)**](): 전송되는 데이터를 의미
 ### Srping JPA
 - **Persistence Context(영속성 컨텍스트)** : 엔티티를 영구히 저장하는 환경
     - **Persistence(영속성)**: 데이터를 생성한 프로그램의 실행이 종료되더라도 사라지지 않는 데이터의 특성을 의미
