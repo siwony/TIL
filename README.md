@@ -32,6 +32,9 @@
 - [REST API](/web/RESTAPI.md)
 - [Domain](/web/domain.md)
 - [Cookie, Session](/web/cookie-and-session.md)
+- [URI,URL,URN](/web/URI-URL-URN.md)
+- [Web Socket](/web/web-socket.md)
+- [WAS](/web/was.md)
 ### Back-end
 >- [(SpringBoot Security) CSRF공격방법](/back-end/Spring/CSRF.md)
 - ### Spring 
@@ -48,6 +51,7 @@
 - ### **JPA**
 >- [Entity,EntityManager,EntityManagerFactory]("/back-end/Spring/JPA/Entity,EntityManager,EntityManagerFactory")
 >- [JPA Auditing으로 생성일/수정일 자동화](/back-end/Spring/JPA/Auditing)
+>- [QueryDSL?](/back-end/Spring/JPA/QueryDSL.md)
 - ### **Node.js**
 >- [node.js 설치 및 개발환경 세팅](/back-end/NodeJS/how-to-install-nodeJs.md)
 >- [MySQL 연결](/back-end/NodeJS/Connect-MySql.md)
