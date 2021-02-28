@@ -12,7 +12,7 @@
 즉 알파벳이나 숫자 등 몇몇 문자를 제외하면 문자가 깨진다.   
 > ex) 고양이 -> %EA%B3%A0%EC%96%91%EC%9D%B4  
 
-파일의 이름을 URL에서 추출하니까 한글로 된 리소스는 character set 이 다르므로 접근을 할 수가 없었다.  
+파일의 이름을 URL에서 추출하니까 한글로 된 리소스는 character set 이 다르므로 원본파일의 이름의 문자열과 URL에서 추출한 이름의 문자열은 전혀 달라 접근을 할 수가 없었다.  
 ### 문제 해결방법
 Java 에서 ``URLDecoder.decode(URL, character set)`` 을 이용하여 Create 로직에 디코딩하여 저장했다.
 ```java
