@@ -1,6 +1,9 @@
-# URL이 한국어가 깨저서 생기는 문제
+# URL의 Character Set 이 UTF-8이 아니라서 생기는 문제
 ### 배경
-AWS s3에다가 파일을 Creat, Read, Delete 기능을 구현하고 있었다.  
+>기자재 관리 시스템(Jub-Jub) server에서 AWS s3에다가 파일을 Delete 기능을 구현하고 있었다.  
+>Create, Read로직은 상현선배님이 해주셨고 나는 Delete 로직만 하면됬었다.  
+
+**전반적인 로직은 다음과 같다.**  
 **Create** 로직은 AWS S3에다가 파일을 업로드 하고, s3에 저장된 그 파일의 URL을 DB에 저장하는 로직이다.  
 **Read** 로직은 Client 에게 s3에 저장되어있는 파일의 URL를 DB에서 조회하여 반환한다.  
 **Delete** 로직은 DB에 저장되어 있는 파일의 URL에서 원래 파일을 추출하여 제거하는 방식이다.  
