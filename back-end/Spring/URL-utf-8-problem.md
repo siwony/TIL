@@ -1,6 +1,6 @@
 # URL의 Character Set 이 UTF-8이 아니라서 생기는 문제
 ### 배경
->기자재 관리 시스템(Jub-Jub) server에서 AWS s3에다가 파일을 Delete 기능을 구현하고 있었다.  
+>[기자재 관리 시스템(Jub-Jub)](https://github.com/GSM-Web-Technology/Jup-Jup-Server) server에서 AWS s3에다가 파일을 Delete 기능을 구현하고 있었다.  
 >Create, Read로직은 상현선배님이 해주셨고 나는 Delete 로직만 하면됬었다.  
 
 **전반적인 로직은 다음과 같다.**  
