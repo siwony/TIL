@@ -37,6 +37,7 @@
 - [WAS](/web/was.md)
 ### Back-end
 >- [(SpringBoot Security) CSRF공격방법](/back-end/Spring/CSRF.md)
+>- [URL의 character set이 UTF-8이 아니여서 생긴 문제](/back-end/Spring/URL-utf-8-problem.md)
 - ### Spring 
 >- [Bean](/back-end/Spring/Bean.md)
 >- [DI(DependencyInjection)](/back-end/Spring/DI(Dependency-Injection).md)
