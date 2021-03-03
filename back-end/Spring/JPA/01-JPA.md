@@ -1,8 +1,8 @@
 # JPA(Java Persistence API)
 : **데이터를 DB상에 영구적으로 저장해주는 API**
-> Persistence라는 단어는 JAVA DTO에게 '없어지지 않고 오랫동안 지속'되는 '영속성(persistence)'을 부여해준다는 의미입니다.  
+> Persistence라는 단어는 JAVA DTO에게 '없어지지 않고 오랫동안 지속' 되는 '영속성(persistence)'을 부여해준다는 의미입니다.  
 
-## **JPA사용하기 이전의 문제점** 
+## JPA사용하기 이전의 문제점  
 ### SQL를 직접 사용
 **SQL 중심적인 개발을 피하기 어렵다**
 - 기존 JDBC만 사용하면 반복적이며 비슷한 SQL문을 많이 만들어야한다.(ex. CRUD)
@@ -13,12 +13,12 @@
 
 ### 패러다임의 불일치
 > 객체지향 프로그래밍은 추상화, 캡슐화, 정보은닉, 상속, 등 시스템의 복잡성을 제어할 수 있는 다양한 장치들을 제공한다.
-> <p align=right>-어느 객체지향 개발자가</p>
+> <p align=right>- 어느 객체지향 개발자가&nbsp&nbsp</p>
 
 - 객체와 RDB는 다른 데이터구조를 가진다. 즉, 객채로 DB를 조회할 수 없다.
 - 객체지향적 설계를 하게 되면 DB table과 자바 객체간의 매핑하는 소모적인 작업을 지속해야 한다.
 
-    <img width=90% src=../img/jpa-table-object-relation.png>
+    <img width=500px src=./img/jpa-table-object-relation.png>
 
     >객체모델은 외래키가 필요없고 단지 참조만 있으면 되는 반면  
     >테이블은 참조가 필요 없고 외래 키만 있으면 된다.
@@ -27,6 +27,10 @@
 >- SQL문을 개발자가 만들지 않기 때문에 **객체 중심적인 개발**을 할 수 있다.
 >- 특정 **DBMS 문법에 종속적이지 않은 개발**이 가능하다
 >- 영속성 컨택스트는 효율적인 SQL처리에 크게 기여하여 성능상의 이점
+
+## JPA 구동 방식
+<img width=400px src=./img/jpa-work.png>
+
 
 ### 가장 중요한 2가지
 - 객체와 RDB 매핑(ORM)
