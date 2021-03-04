@@ -1,7 +1,7 @@
 # 영속성 컨텍스트 - 내부 동작
 > 영속성 컨텍스트는 JPA를 이해 하는데 가장 중요하다.
 ### Entity Manager Factory 와 EntityManager
-<img width=400px src=./img/entity-manager-factory.png>
+<img width=450px src=./img/entity-manager-factory.png>
 
 1. 고객이 요청을 할떄마다 Entity Manager Factory 를 통해 EntityManager를 생성한다.
 2. EntityManager는 내부적으로 커넥션풀을 사용해서 DB를 사용하게 된다.
@@ -25,7 +25,7 @@
 
 ```java
 //객체만 생성한 상태(비영속)
-Mamber mamber = new Mamber();
+Mamber member = new Member();
 member.setId("member1");
 member.setUsername("회원 1");
 ```
@@ -60,9 +60,89 @@ em.remove(member);
 ```
 
 ### 영속성 컨텍스트 장점
-- **1차 캐시**
-- **동일성(identity)보장**
-- **트랜잭션을 지원하는 쓰기 지연**  
-  **(transactional write-behind)**
-- **변경 감지(Dirty Checking)**
-- **지연 로딩(Lazy Loading)**
+
+### 1차 캐시
+- 한 트랜젝션 내에서 만 사용가능하다. 즉 트랜잭션이 종료되면 사라진다.
+- JPA에서는 조회를 할때 영속성 컨텍스트를 먼저 조회 한다.
+<img align=center width=450px src=./img/1st-cash.png>
+
+```java
+Mamber member = new Mamber();
+member.setId("member1");
+member.setUsername("회원 1");
+
+//1차 캐시에 저장
+em.parsist(member);
+//1차 캐시에서 조회
+Member findMember = em.find(Memeber.class, "member1")
+```
+<img align=center width=450px src=./img/1st-cash-db.png>
+
+```java
+Member findMember2 = em.find(Member.class, "member2");
+```
+
+### 동일성(identity)보장
+- 1차 캐시로 반복 가능한 읽기(REPEATABLE READ) 등급의 트랜잭션 격리 수준을 DB가 아닌 애플리케이션 차원에서 제공 한다.
+- 같은 트랜잭션 내에서만 동일성을 보장한다.
+```java
+Member a = em.find(Member.class, "member1");
+Member b = em.find(Member.class, "member1");
+
+System.out.println(a == b); //동일성 비교 true
+```
+### 트랜잭션을 지원하는 쓰기 지연 (transactional write-behind)
+- JPA는 commit을 하기 전까지 insert query를 날리지 않아 최적화 할 여지를 준다.
+- 그래서 버퍼링 같은 기능을 한다. (쿼리를 모았다가 한번에 날린다.)
+<p float=left>
+<img width=400px src=./img/persist-lazy.png>
+<img width=400px src=./img/persist-lazy-commit.png>
+</p>
+
+
+```java
+EntityManager em = emf.createEntityManager();
+EntityTransaction transaction = em.getTransaction();
+
+//엔티티 매니저는 데이터 변경시 트랜잭션을 시작해야 한다.
+transaction.begin(); // [트랜잭션] 시작
+em.persist(memberA);
+em.persist(memberB);
+
+//여기까지 INSERT SQL을 데이터베이스에 보내지 않는다.
+//커밋하는 순간 데이터베이스에 INSERT SQL을 보낸다.
+transaction.commit(); // [트랜잭션] 커밋
+```
+### 변경 감지(Dirty Checking)
+<img width=450px src=./img/dirty-checking.png>
+
+1. 커밋된 시점에서 내부적으로 flush 가 호출된다
+2. 1차캐시의 스냅샷과 entity 를 비교하여 객체가 변경된지 비교한다.
+3. 2번에서 변경사항이 나오면 쓰기 지연 SQL 저장소에 쿼리를 미리 만들어 저장한다.
+4. DB에 update 쿼리를 반영하고
+5. DB에 커밋한다.
+```java
+EntityManager em = emf.createEntityManager();
+EntityTransaction transaction = em.getTransaction();
+transaction.begin(); // [트랜잭션] 시작
+
+// 영속 엔티티 조회
+Member memberA = em.find(Member.class, "memberA");
+
+// 영속 엔티티 데이터 수정
+memberA.setUsername("hi");
+memberA.setAge(10);
+
+//em.update(member) 이런 코드가 있어야 하지 않을까? 응 아니야
+
+transaction.commit(); // [트랜잭션] 커밋
+```
+
+### Entity 삭제
+```java
+//삭제 대상 엔티티 조회
+Member memberA = em.find(Member.class, “memberA");
+em.remove(memberA); //엔티티 삭제
+```
+
+### 지연 로딩(Lazy Loading)
