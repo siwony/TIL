@@ -1,5 +1,9 @@
 # 플러시(flush)
 : **영속성 컨텍스트의 변경내용을 DB에 반영**
+- 영속성 컨텍스트를 비우지 않는다.
+- 영속성 컨텍스트의 변경내용을 DB에 동기화한다.
+- `transaction`이라는 작업 단위가 중요하다. -> 커밋 직전에만 동기화 하면됨
+
 ### 플러시 발생
 - 변경 감지(Dirty check)
 - 수정된 엔티티 쓰기 지연 SQL 저장소에 등록
@@ -20,3 +24,12 @@
     List<Member> members= query.getResultList();
     ```
     JPQL를 실행하면 DB에서 조회를 하기 떄문에 쓰기 지연 SQL 저장소에 있는 쿼리를 DB에 날리고 JPQL문을 실행한다. 
+
+### 플러시 모드 옵션
+`em.setFlushmode(FlushModeType.COMMIT)`
+- **`FlushModeType.AUTO`** (기본값)  
+  **commit 이나 query를 실행할 때 플러시**  
+- **`FlushModeType.COMMIT`**  
+  **커밋할 때만 플러시**  
+  >사용할 경우가 별로 없다. 그냥 기본값으로 써라! - 김영한
+  
