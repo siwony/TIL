@@ -5,6 +5,7 @@
 - [DevOps](/DevOps/DevOps.md)
 - [aws EC2](/DevOps/awsEC2.md)
 - [EC2를 이용한 간단한 Spring Boot server 배포](/DevOps/simple-spring-boot-aws.md)
+- [SSH](/DevOps/ssh.md)
 ### 기타
 - [개발용어 정리](/ETC/dev-terminology.md)
 - [Component](/ETC/component.md)
