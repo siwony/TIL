@@ -19,7 +19,6 @@
 - [JAVA scope, static](/Programming/JAVA/05-scope-static.md)
 - [JAVA enum](/Programming/JAVA/06-enum.md)
 - [JAVA package](/Programming/JAVA/07-package.md)  
-- 
 
 **python**
 - [python install](/Programming/Python/how-to-install-python.md)
@@ -50,6 +49,10 @@
 >- [Entity,EntityManager,EntityManagerFactory]("/back-end/Spring/JPA/Entity,EntityManager,EntityManagerFactory")
 >- [JPA Auditing으로 생성일/수정일 자동화](/back-end/Spring/JPA/Auditing)
 >- [QueryDSL?](/back-end/Spring/JPA/QueryDSL.md)
+>- [01 JPA?](back-end/Spring/JPA/01-JPA.md)
+>- [01 JPA?](back-end/Spring/JPA/02-PersistenceContext.md)
+>- [01 JPA?](back-end/Spring/JPA/03-flush.md)
+>- [01 JPA?](back-end/Spring/JPA/04-detached.md)
 - ### **Node.js**
 >- [node.js 설치 및 개발환경 세팅](/back-end/NodeJS/how-to-install-nodeJs.md)
 >- [MySQL 연결](/back-end/NodeJS/Connect-MySql.md)
