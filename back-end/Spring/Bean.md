@@ -17,7 +17,7 @@
 - 기본적으로 모든 bean은 scope이 명시적으로 지정되지 않으면 singleton이다.
 - XML 설정  
     `<bean id="..." class="..." scope="singleton"></bean>`
-- annotation 설정
+- annotation 설정  
     대상 클래스에 `@Scope("singletone")`
 <img width=650px src=./img/spring-bean-singleton.png>
 
