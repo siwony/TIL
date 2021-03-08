@@ -24,7 +24,6 @@
 ### Prototype
 - ‘prototype’ bean은 모든 요청에서 새로운 객체를 생성하는 것
 - 의존성 관계의 bean에 주입 될 때 새로운 객체가 생성되어 주입된다.
-- 의존성 관계의 bean에 주입 될 때 새로운 객체가 생성되어 주입
 - XML 설정
     `<bean id="..." class="..." scope="prototype"></bean>`
 - annotation  
