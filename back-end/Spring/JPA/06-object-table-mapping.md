@@ -21,9 +21,12 @@
 **name**
 - 매핑할 테이블 이름
 - 기본값 : Entity 이름사용 
+
 **catalog**  
 : DB catalog 매핑
+
 **schema**  
 : DB schema 매핑
+
 **uniqueConstraints(DDL)**  
 : DDL 생성시 unique 제약 조건 생성
