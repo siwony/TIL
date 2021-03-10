@@ -1,11 +1,14 @@
 # 객체 지향 프로그래밍(Object Oriented Programming)
+> 객체지향 프로그래밍은 추상화, 캡슐화, 정보은닉, 상속, 등 시스템의 복잡성을 제어할 수 있는 다양한 장치들을 제공한다.
+> <p align=right>- 어느 객체지향 개발자가&nbsp&nbsp</p>
 <p align="center">
-    <img align="center" width="350px" src="./img/oop.png"/>
+    <img width="350px" src="./img/oop.png"/>
 </p>
 
-## OOP?
 - 컴퓨터 프로그램을 **"객체(Obejct)"** 들의 모임으로 파악하고자 하는 프로그래밍의 패러다임
 - 각 객체들은 데이터를 주고받을수 있고 데이터를 처리 할 수 있다.
+- method는 Stack memory에 저장하고, 인스턴스는 heap memory에 저장된다.
+
 ### OOP의 장점
 **강한 응집력(Stoing Cohesion)과 약한 결합력(Weak Coupling)을 지향 한다**
 >OOP의 경우 클래스에 하나의 문제 해결을 위한 데이터를 모아 놓은 객체를 활용한 프로그램을 지향하므로 응집력 강화하며, 클래스 간에 독립적으로 디자인함으로써 결합력을 약하게 할 수 있다.
@@ -22,7 +25,7 @@
 **결합력(coupling)**  
 : 프로그램의 코드의 한 종류가 다른 것이 얼마나 결합되어 있는지, 얼마나 의존적인지 나타내는 정도
 
-## OOP의 기본 구성 요소
+### OOP의 기본 구성 요소
 #### 클래스(Class)
 - 같은 종류의 집단에 속하는 속성과 행위 정의한것이다.
 - 다른 클래스와 독립적으로 디자인해야 한다.
@@ -34,39 +37,50 @@
 #### 메서드(Method)
 - 클래스로부터 생성된 객체를 사용하는 방법
 - 객체의 속성을 조작하는데 사용
-## OOP의 특성
-### 캡슐화(Encapsulation)
+
+### OOP의 특성
+### &nbsp; 캡슐화(Encapsulation)
 - 변수나 메소드를 하나로 묶는것
 - 객체의 데이터를 외부에서 직접 접근x
 - 함수를 통해서만 조작 가능 (ex. getter, setter, 생성자 등...)
 - ex) public, private, protected, default
-### 추상화(Abstraction)
+### &nbsp; 추상화(Abstraction)
 - 객체들이 가진 공통의 특성들을 파학하고 불필요한 특성들을 제거하는 과정
 - 객체들이 가진 동작들을 기준으로 이용자들이 동작만 쉽게 구동할 수 있도록한다.
-### 상속(Inheritance)
+### &nbsp; 상속(Inheritance)
 - 이미 정의 되어있는 상위 클래스와 메소드를 비롯한 모든 속성을 하위 클래스가 물려받는것
     >모든 클래스는 Object클래스를 상속받고 있다.
 - 재사용, 유연성이 증가한다.
-### 다형성(Polymorphism)
+### &nbsp; 다형성(Polymorphism)
 - 한 요소에 여러 개념을 넣어 놓는 것
 - 객체 관계를 조직적으로 나타낼 수 있다.
 - ex) @Overriding, Overloading
-## SOLID
-### SRP:단일 책임 원칙(Single Responsibility Principle)
+
+### SOLID
+### &nbsp; SRP:단일 책임 원칙(Single Responsibility Principle)
 - 객체는 하나의 책임만을 맡아야 한다.
 - 변화에 대한 유연성 확보
 - 낮은 결합도, 높은 응집도 추구
-### OCP: 개발-폐쇄 원칙(Open Closed Principle)
+### &nbsp; OCP: 개발-폐쇄 원칙(Open Closed Principle)
 - 모듈은 확장에는 열려 있어야 하고 변경시에는 받혀 있어야한다.
-### LSP: 리스코프 치환 원칙(Liscov Substitution Principle)
+### &nbsp; LSP: 리스코프 치환 원칙(Liscov Substitution Principle)
 - 자식 클래스는 언제나 자신의 부모 클래스를 대체 할 수 있다는 원칙
 - 즉 인터페이스만 알면 구현체를 몰라도 사용 가능해야한다.
 - 다형성
-### ISP: 인터페이스 분리 원칙(InterFace Segregation Principle)
+### &nbsp; ISP: 인터페이스 분리 원칙(InterFace Segregation Principle)
 - 클라이언트에서 사용하지 않은 메서드는 사용해선 안된다.
 - 인터페이스를 다시 작게 나누어 만든다.
 - 두 개 이상의 인터페이스가 필요한 경우 다중 인터페이스 상속으로 구현하는 것이 좋다.
-### DIP: 의존성 역전 원칙(Dependency Inversion Principle)
+### &nbsp; DIP: 의존성 역전 원칙(Dependency Inversion Principle)
 - 상위 모듈은 하위 모듈에 의존해선 안된다.
 - 상위, 하위 모듈은 모두 추상화에 의존해야 한다.
 - 세부사항이 추상화에 의존해야한다.
+
+### 인스턴스 생성, 힙 메모리
+**인스턴스(instance)**
+- 클래스는 객체의 속성을 정리, 기능을 구현하여 만들어 놓은 상태
+- 실제 클래스 기반으로 생성된 객체(인스턴스)는 각각 다른 맴버 변수 값을 가지게됨
+- `new` 키워드를 이용해 생성
+- **생성된 인스턴스는 동적 메모리(heap memory)에 할당**
+- 하나의 클래스로 부터 여러개의 인스턴스가 생성되고 각각 다른 메모리 주소를 가진다.
+

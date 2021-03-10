@@ -14,7 +14,7 @@ public class CarService {
 
 ### IoC 분류
 **DL(Dependency Lookup)**  
-: 저장소에 저장되어 있는 Bean에 접근하기 위해 컨테이너가 제공하는 API를 이요하여 Bean을 Lookup 하는 것  
+: 저장소에 저장되어 있는 Bean에 접근하기 위해 컨테이너가 제공하는 API를 이용하여 Bean을 Lookup 하는 것  
 **DI(Dependency Injection)**  
 : 각 클래스간의 의존관계를 빈 설정(Bean Definition)정보를 바탕으로 컨테이너가 자동으로 연결해 주는것
 - Setter Injection
