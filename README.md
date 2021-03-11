@@ -6,9 +6,12 @@
 - [aws EC2](/DevOps/awsEC2.md)
 - [EC2를 이용한 간단한 Spring Boot server 배포](/DevOps/simple-spring-boot-aws.md)
 - [SSH](/DevOps/ssh.md)
+- [Docker](/DevOps/Docker.md)
+- [CI/CD](/DevOps/CI-CD.md)
 ### 기타
 - [개발용어 정리](/ETC/dev-terminology.md)
 - [Component](/ETC/component.md)
+- payload
 ### Programming
 - [Object Orinted Programing](/Programming/OOP.md)
 
@@ -28,12 +31,14 @@
 ### web
 - [웹기초](/web/web-foundation.md)
 - [REST API](/web/RESTAPI.md)
+- [서버기반 인증 & 토큰기반 인증](/web/tokenAuth-serverAuth.md)
 - [Domain](/web/domain.md)
 - [Cookie, Session](/web/cookie-and-session.md)
 - [URI,URL,URN](/web/URI-URL-URN.md)
 - [Web Socket](/web/web-socket.md)
 - [WAS](/web/was.md)
 ### Back-end
+>- [Payload](/back-end/payload.md)
 >- [URL의 character set이 UTF-8이 아니여서 생긴 문제](/back-end/Spring/URL-utf-8-problem.md)
 - ### Spring 
 >- [Bean](/back-end/Spring/Bean.md)
