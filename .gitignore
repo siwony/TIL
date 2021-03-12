@@ -1,2 +1,7 @@
-.DS_Store
 /back-end/Spring/JPA/jpa-basic-pdf
+
+### Ds_Store ignore ###
+.DS_Store
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store
