@@ -25,7 +25,7 @@ public class BookController {
 }
 ```
 - 필수적으로 사용해야 하는 레퍼런스 없이는 인스턴스를 만들지 못하도록 강제함
-- [Circular Dependency(순환 참조)](why-field-injection.md) 의존정을 알아 차릴 수 있다.
+- [Circular Dependency(순환 참조)](why-field-injection.md) 의존성을 알아 차릴 수 있다.
 - 테스트 코드 작성시 생성자를 통해 의존성 주입이 용이하다.
 
 ### 필드 주입

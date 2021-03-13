@@ -18,20 +18,22 @@
     >Board 라는 도메인타입의 Pkey의 Type 은 Long
 ## DTO(Data Transfer Object)
 >Entity 클래스는 실제 DataBase의 테이블과 1 : 1로 매핑 되는 클래스로, DB의 테이블내에 존재하는 컬럼을 속성(필드)으로 가져야 한다.
+
 **dto package**  
 : 계층간 데이터 교환을 위한 JAVABeans를 말한다 여기서 계층이란  
 컨트롤러, 뷰, 비지니스 계층, 퍼시스턴스 계층을 말한다.
-- 계층간 데이터 교환을 위한 객체(Java Beans)이다
-    - DB에서 데이터를 얻어 Service나 Controller 등으로 보네는 객체
-    - 즉, DB의 데이터가 Presentation Logic Tier로 넘어오게 될 때는 DTO의 모습으로 바껴서 오고가는 것이다.
-    - 로직을 갖고 있지 않은 순수한 Object이다 getter/setter 메서드만 가지고있다.
-    - 하지만 DB에서 꺼낸 값을 임의로 변경할 필요가 없기 때문에 DTO클래스에는 setter가 없다. (대신 생성자에서 값을 할당한다.)
+
+- **계층간 데이터 교환을 위한 객체(Java Beans)**이다
+- DB에서 데이터를 얻어 `Service`나 `Controller` 등으로 보내는 객체
+- DB의 데이터가 Presentation Logic Tier로 넘어오게 될 때는 DTO의 모습으로 바껴서 오고가는 것이다.
+- 로직을 갖고 있지 않은 순수한 Object이다 getter/setter 메서드만 가지고있다.
 - Request와 Response용 DTO는 View를 위한 클래스
     - 자주 변경이 필요한 클래스
     - Persentaion Model
-    - ```toEntity()``` 메서드를 통해서 DTO에서 필요한 부분을 이용하여 Entity로 만든다.
+    - `toEntity()` 메서드를 통해서 DTO에서 필요한 부분을 이용하여 Entity로 만든다.
     - 또한 Controller Layer에서 Response DTO 형태로 Client에 전달
-## Entity class
+
+### Entity class
 **Domain Package**
 - 실제 DB 테이블과 매칭될 클래스
     - 가장 core한 클래스라고 불림
@@ -93,8 +95,9 @@
 - 해당 요청 url에 따라 적절한 view 와 mapping처리
 - ```@Autowired Service```를 통해 service 의 method 를 이용
 - 적절한 ResponseEntity(DTO)를 body에 담아 Client에 반환
+
 ### service
 #### 기능
-- ```@Autowried Repository``` 를 통해 repository의 method를 이용
-- 적절한 bisiness Logic 처리 
+- `@Autowried Repository` 를 통해 repository의 method를 이용
+- 적절한 business Logic 처리 
 - DAO로 DB에 접근하고 DTO로 데이터를 전달받은 다음, 비지니스 로직을 처리해 적절한 데이터를 반환
