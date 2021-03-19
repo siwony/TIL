@@ -1,6 +1,7 @@
 # 간단한 Spring Boot AWS Server 배포
-> 이글은 EC2 AWS Linux instance, JAVA11, Maven, macOS 기준으로 설명할 글입니다.  
->그리고 간단한 대회, 협업 를 위한 배포입니다.
+> 이글은 EC2, AWS Linux, JAVA11, Maven, macOS 기준으로 설명할 글입니다.  
+> 그리고 간단한 협업, Test 를 위한 배포입니다.
+
 ### 자신의 MAC 에서 AWS instance연결하기
 1. **자신의 터미널에서 키페어 가 있는 디렉토리로 이동 한다.**
 2. **터미널에서 pair key의 권한을 변경**
@@ -11,7 +12,7 @@
     > 유저가 읽기만가능하다는 권환을 변경
 1. **자신의 AWS instance 를 선택후 연결하기 를 누른다.**
 1. **그후 SSH 클라이언트 텝에 있는 ``예`` 에 적어져있는 명령어를 터미널에 입력한다.**
-    >여담으로 필자의 key 이름은 ~~귀찮아서~~ asdfasef 로 했다. 
+    >필자의 key 이름은 ~~귀찮아서~~ `asdfasef` 로 했다. 
 
     <img width=500 src=./img/SSH-Connect.png>
 
@@ -25,13 +26,14 @@
     ```bash
     sudo yum install git
     ```
-2. **JAVA 설치 및 JAVA 11 버전 적용**  
-    **JAVA install**
+2. **JAVA8 설치 및 JAVA 11 버전 적용(open JDK)**  
+    > JAVA11을 적용시키기 위해 먼저 JAVA8을 설치한다.
+    **JAVA8 install**
     ```bash
     sudo yum install -y java-1.8.0-openjdk-devel.x86_64
     sudo yum install java-11-amazon-corretto-headless
     ```
-    **JAVA 버전 11로 바꾸기**
+    **JAVA11 로 바꾸기**
     ```bash
     sudo alternatives --config java
     ```
@@ -100,7 +102,7 @@
     ```bash
     cat nohub.out
     ```
-    curl 를 이용한 test
+    curl 를 이용한 서버 동작여부test
     ```bash
     curl localhost:8080
     ```

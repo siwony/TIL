@@ -1,9 +1,10 @@
 # Entity relationship Diagram
 ## ERD(Entity relationship Diagram)?
 : 개체 속성과 개체 간 관계를 도표로 표현헌것.
-## ERD 관계 표현법  
 
+## ERD 관계 표현법  
 ![](./img/ERD.png)<img width="455px" src="./img/ERD-line.png"/>
+
 1. **1 : 1 (식별관계)**  
 ![1:1 relation](./img/1:1-relation.png)  
 상세 주소 테이블은 person_id를 기본키로 사용하고 있고, person_id를 통해 person 테이블을 참조 하고 있다.  
