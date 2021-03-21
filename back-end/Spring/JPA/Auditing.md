@@ -1,7 +1,7 @@
 # JPA Auditing
-## 사용동기
+### 사용동기
 > MembershipApi를 만들면서 유저 가입일을 추가해보고싶었다.
-## JPA Auditing으로 생성시간/수정시간 자동화
+### JPA Auditing으로 생성시간/수정시간 자동화
 ```java
 @Getter
 @MappedSuperclass
@@ -14,10 +14,10 @@ public abstract class BaseTimeEntity {
     private LocalDateTime modifiedDate;
 }
 ```
-BaseTimeEntity 클래스를 만들어 모든 Entity의 상위 클래스가 되어  
+`BaseTimeEntity` 클래스를 만들어 모든 Entity의 상위 클래스가 되어  
 **Entity 들의 createDate, modifiedDate를 자동으로 관리하는 역활**
 - ``@Getter`` : lombok이 해당 필드에 대한 기본 Getter를 생성해준다.
-- ``@MappedSuperclass`` : JPA Entity 클래스들이 BaseTimeEntity를 상속할 경우  
+- ``@MappedSuperclass`` : JPA Entity 클래스들이 `BaseTimeEntity`를 상속할 경우  
 필드들(createdDate, modifiedDate)도 칼럼으로 인식하도록 한다.
 - ``@CreatedDate``: Entity가 생성되어 저장될 때 시간이 자동 저장된다.
 - ``@LastModifiedDate`` : 조회한 Entity의 값이 변경할 때 시간이 자동저장된다

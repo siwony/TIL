@@ -1,8 +1,7 @@
 # Entity relationship Diagram
-## ERD(Entity relationship Diagram)?
 : 개체 속성과 개체 간 관계를 도표로 표현헌것.
 
-## ERD 관계 표현법  
+### ERD 관계 표현법  
 ![](./img/ERD.png)<img width="455px" src="./img/ERD-line.png"/>
 
 1. **1 : 1 (식별관계)**  

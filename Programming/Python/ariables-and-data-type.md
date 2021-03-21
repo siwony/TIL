@@ -12,7 +12,7 @@ list_li = [1, 1.2, "고양이", true]
 data type과 메서드들을 정리,  
 python의 자료형은 모두다 class 이다 즉 참조형  
 하지만 파이썬은 포인터를 지원하지 않는다
-y = 100, x = 100 이 선언됬을떄 두 x, y는 가르키는 객체가 같다 <code>print(a is b) #출력:ture</code>
+y = 100, x = 100 이 선언됬을떄 두 x, y는 가르키는 객체가 같다 `print(a is b) #출력:ture`
 - ### int
     ```python
     print((int)(1.2)) #출력 1 

@@ -24,29 +24,32 @@ connection.query('SELECT * from test', (error, rows, fields) => {
 connection.end();
 ```
 - connection 변수는 연결할 때 사용 되는 정보를 저장함
-- connect(); 메소드가 mysql에 연결
+- connect(); 함수가 mysql에 연결
 - query(‘mysql query’, callback); 에서 실제 데이터 베이스의 값을 다룸  
   mysql query 에너는 mysql query문이 들어감
-- end() 매서드를 통해 mysql 을 종료합니다.  
+- `end()` 함수를 통해 mysql 을 종료합니다.  
 query매세드에 select * from test 라는 쿼리문을 작성해서  
 test테이블에 있는 값을 꺼내 와 콘솔에 출력하는 코드를 작성해봤다.
 콘솔에 출력하면 값은 값의 타입은 배열이고 컬럼은 JSON 방식인것을 알 수 있습니다.  
 ![node-mysql-query](./img/node.js-mysql-select-query.png)
-## IF 오류가 뜬다면?
+
+### IF 오류가 뜬다면?
 > Error: ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client  
 만약 이런 애러가 11번째 줄에서 throw 되어서 나타났다면, 먼저 확인해야 될것은  
 user랑 password가 잘못되어 있을수도 있다.   
 그래도 에러가 뜬다면 유저에게 권환을 주지 않았거나, 유저 자체를 만들지 않았을 것이다.  
 지금부터 오류를 고쳐보다.
+
 ### 유저 조회
-일단은 유저를 관리하는 mysql 이라는 database에 접속을해야한다. <code>use mysql</code>를 입력한다.  
+일단은 유저를 관리하는 mysql 이라는 database에 접속을해야한다. `use mysql`를 입력한다.  
 그뒤 유저를 조회해보자
 ```sql
 > select user, host from user;
 ```
 그러면 유저랑, host가 보여질것이다.
-여기서 host는 <code>localhost</code> local내에서 접속이 가능한것이고 <code>%</code> 는 어디서나 접속할 수 있다는것을 말한다.
+여기서 host는 `localhost` local내에서 접속이 가능한것이고 `%` 는 어디서나 접속할 수 있다는것을 말한다.
 이제 유저를 만들어 볼것이다. 유저를 이미 만들어져 있으면 유저 권한 설정으로 이동하면 된다.
+
 ### 유저 생성 및 권환주기
 ```sql
 > create user '유저이름'@'호스트(host)'identified with mysql_native_password by '비밀번호'
@@ -64,6 +67,7 @@ host는 localhost로 하는게 안전하다. 꼭 필요하지 않는이상 local
 -- cat이라는 DB접속 권환을 test유저에게 localhost에서 사용가능하게 줬다.
 ```
 이런식으로 특정 DB만 접속할 수 있도록 하는게 비교적 안전해진다.
+
 ## Sequelize
 sequelize 는 node.js 의 ORM(Object Releaition Mapping) 모듈이다.  
 관계형 DB를 사용할떄 객체를 이용해 간편하게 쿼리문을 작성하지 않고 사용할 수 있게 해준다.  

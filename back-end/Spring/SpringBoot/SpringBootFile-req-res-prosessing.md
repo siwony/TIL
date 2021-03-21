@@ -1,12 +1,12 @@
 # Spring Boot file Req, Res 처리
 ~~이 글은 siwony_의 엄청난 삽질을 통해 작성되었습니다.~~  
-## 동기
+### 동기
 [JubJub](https://github.com/GSM-Web-Technology/Jup-Jup-Server)프로젝트에서 기자재 정보와 기자재이미지를 DB에 저장하는 기능의 필요하다.
-## 문제점
+### 문제점
 #### 1. Back-end를 하면서 File처리를 다루어 본적이 없었다.
 #### 2. File을 Client에게서 어떻게 받고 전달하는지에 대한 지식이 없었다.
 #### 3. Spring을 이번프로젝트에서 처음 사용했다.
-~~3번 같은경우 그냥 구르면 된다 just do googling~~  
+~~다 구글링하면 해결된다. just do googling~~  
 ## MultipartFile 으로 파일 req, res
 ### 파일 받기(Request)
 JubJub 프로젝트에서 기자재를 저장하는 Controller 이다.  

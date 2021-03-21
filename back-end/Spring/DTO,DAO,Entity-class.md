@@ -1,29 +1,29 @@
 # Spring 구조(DAO, DTO, Entity, Controller, Service)
-## 전체구조 
+### 전체구조 
 <img wdith="450px" src="./img/spring-package-flow.png">
 
 ## DAO(Data Access Object)
 **repository package**  
-: DB를사용해 데이터를 조회하거나 조작하는 기능을 전담하도록 만든 Object  
+: DB를 사용해 데이터를 조회하거나 조작하는 기능을 전담하도록 만든 Object  
 > 사용자는 자신이 필요한 interface를 DAO에 던지고 DAO는 이 interface를 구현한 객체를 사용자에게 편리하게 사용할 수 있도록 반환
 - 실제로 DB에 접근하는 객체
 - Service와 DB를 연결하는 고리의 역활
 - SQL를 사용(개발자가 직접 코딩)하여 DB에 접근한 후 적절한 CRUD API를 제공
     - JAP 대부분의 기본적인 CRUD method를 제공하고 있다.
-    - ```extends JpaRepository<Domain(Entity) type,Pkey type>```
+    - `extends JpaRepository<Domain(Entity) type,Pkey type>`
 - ex)
     ```java
     public interface BoardRepository extends CrudRepository<Board, Long>{}
     ```
     >Board 라는 도메인타입의 Pkey의 Type 은 Long
 ## DTO(Data Transfer Object)
->Entity 클래스는 실제 DataBase의 테이블과 1 : 1로 매핑 되는 클래스로, DB의 테이블내에 존재하는 컬럼을 속성(필드)으로 가져야 한다.
+: Entity 클래스는 실제 DataBase의 테이블과 1 : 1로 매핑 되는 클래스로, DB의 테이블내에 존재하는 컬럼을 속성(필드)으로 가져야 한다.
 
-**dto package**  
-: 계층간 데이터 교환을 위한 JAVABeans를 말한다 여기서 계층이란  
+**DTO package**  
+: **계층간 데이터 교환을 위한 JAVABeans**를 말한다 여기서 계층이란  
 컨트롤러, 뷰, 비지니스 계층, 퍼시스턴스 계층을 말한다.
 
-- **계층간 데이터 교환을 위한 객체(Java Beans)**이다
+- **계층간 데이터 교환을 위한 객체(Java Beans)** 이다
 - DB에서 데이터를 얻어 `Service`나 `Controller` 등으로 보내는 객체
 - DB의 데이터가 Presentation Logic Tier로 넘어오게 될 때는 DTO의 모습으로 바껴서 오고가는 것이다.
 - 로직을 갖고 있지 않은 순수한 Object이다 getter/setter 메서드만 가지고있다.
@@ -91,13 +91,11 @@
     }
     ```
 ### controller(web)
-#### 기능
 - 해당 요청 url에 따라 적절한 view 와 mapping처리
 - ```@Autowired Service```를 통해 service 의 method 를 이용
 - 적절한 ResponseEntity(DTO)를 body에 담아 Client에 반환
 
 ### service
-#### 기능
 - `@Autowried Repository` 를 통해 repository의 method를 이용
 - 적절한 business Logic 처리 
 - DAO로 DB에 접근하고 DTO로 데이터를 전달받은 다음, 비지니스 로직을 처리해 적절한 데이터를 반환

@@ -1,6 +1,6 @@
 # Spring Boot 한글깨짐현상 해결방법
 ### 한글깨짐 현상이 일어나는 곳
->- Controller에서 @PathVariable로 받거나@RequestParam에서 한글을 받을때 생길수 있다.
+- Controller에서 `@PathVariable`로 받거나 `@RequestParam`에서 한글을 받을때 생길수 있다.
 ### 해결방법
 >application.properties 에 아래와 같이 추가한다.
 ```properties

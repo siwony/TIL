@@ -3,21 +3,19 @@
 > 그리고 간단한 협업, Test 를 위한 배포입니다.
 
 ### 자신의 MAC 에서 AWS instance연결하기
-1. **자신의 터미널에서 키페어 가 있는 디렉토리로 이동 한다.**
+1. **자신의 터미널에서 키페어가 있는 디렉토리로 이동 한다.**
 2. **터미널에서 pair key의 권한을 변경**
     > key 이름은 ``~.pem`` 형식으로 되어있다
     ```bash
     chmod 400 키이름.pem
     ```
-    > 유저가 읽기만가능하다는 권환을 변경
+    > 유저가 읽기만가능하다는 권환으로 변경
 1. **자신의 AWS instance 를 선택후 연결하기 를 누른다.**
 1. **그후 SSH 클라이언트 텝에 있는 ``예`` 에 적어져있는 명령어를 터미널에 입력한다.**
     >필자의 key 이름은 ~~귀찮아서~~ `asdfasef` 로 했다. 
-
     <img width=500 src=./img/SSH-Connect.png>
 
 5. **다음과 같이 뜨면 성공이다.**
-
     <img width=500 src=./img/success.png>
 
 ### AWS Linux 가상환경에서 배포 환경 구축하기
@@ -38,14 +36,15 @@
     sudo alternatives --config java
     ```
     설치했던 java-11-amazon-corretto 버전을 선택한다.  
-
     <img width=600 src="./img/java-version-switch.png">
+
 3. **Apache Maven설치**
     ```bash
     sudo wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
     sudo sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo
     sudo yum install -y apache-maven
     ```
+
 ### 배포
 1. **자신의 SpringBoot project 받아오기**  
     ex)
@@ -54,6 +53,7 @@
     cd ./app
     git clone https://github.com/siwony/SpringBoot-MembershipAPI.git
     ```
+
 2. **쉘스크립트를 이용해 배포**  
     vim 에디터로 쉘스크립트 작성
     ```bash
@@ -82,6 +82,7 @@
     echo "mvn package"
     mvn package
     ```
+
 ### 서버 시작
 1. **서버 실행**
     자신의 프로젝트 폴더의 target 으로 이동

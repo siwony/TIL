@@ -1,4 +1,5 @@
 # JAVA Data Type
+
 ## 종류
 ### 기본형 타입(primitive data type)
 - 총 8가지의 기본형 타입(Primitive data type)을 미리 정의하여 제공

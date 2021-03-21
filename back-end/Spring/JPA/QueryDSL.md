@@ -1,7 +1,7 @@
 # QueryDSL
 - ``SQL, JPQL``을 **코드로 작성할 수 있도록** 도와주는 빌더 API
 - JPA Criteria에 비해서 편리하고 실용적
-- Open 오픈소스
+- 오픈소스
 
 ### SQL, JPQL의 문제점
 - SQL, JPQL은 문자열이다 -> **Type-Check가 불가능하다**.
@@ -18,7 +18,8 @@
 
 ## 실무 경험 공유
 - **수 조 단위의 정산을 하는데, JPA로 다 처리**
-- **크리티컬한 결제 같은 시스템도 JPA로 처리**, SpringBoot + JPA + QueryDSL 기본으로 갈고간다.
+- **크리티컬한 결제 같은 시스템도 JPA로 처리**
+- **SpringBoot + JPA + QueryDSL 기본으로 깔고간다.**
 - **유연한 DB변경(ex. MySQL -> Oracle)의 장점과 테스트**
     - ``Junit`` 통합 테스트시 H2 DB 메모리 모드로 돌려서 사용
     - 로컬 PC에는 H2 DB 서버 모드로 실행

@@ -7,7 +7,7 @@
 
 - 컴퓨터 프로그램을 **"객체(Obejct)"** 들의 모임으로 파악하고자 하는 프로그래밍의 패러다임
 - 각 객체들은 데이터를 주고받을수 있고 데이터를 처리 할 수 있다.
-- method는 Stack memory에 저장하고, 인스턴스는 heap memory에 저장된다.
+- java에 method는 Stack memory에 저장하고, 인스턴스는 heap memory에 저장된다.
 
 ### OOP의 장점
 **강한 응집력(Stoing Cohesion)과 약한 결합력(Weak Coupling)을 지향 한다**
@@ -61,16 +61,20 @@
 - 객체는 하나의 책임만을 맡아야 한다.
 - 변화에 대한 유연성 확보
 - 낮은 결합도, 높은 응집도 추구
+
 ### &nbsp; OCP: 개발-폐쇄 원칙(Open Closed Principle)
 - 모듈은 확장에는 열려 있어야 하고 변경시에는 받혀 있어야한다.
+
 ### &nbsp; LSP: 리스코프 치환 원칙(Liscov Substitution Principle)
 - 자식 클래스는 언제나 자신의 부모 클래스를 대체 할 수 있다는 원칙
 - 즉 인터페이스만 알면 구현체를 몰라도 사용 가능해야한다.
 - 다형성
+
 ### &nbsp; ISP: 인터페이스 분리 원칙(InterFace Segregation Principle)
 - 클라이언트에서 사용하지 않은 메서드는 사용해선 안된다.
 - 인터페이스를 다시 작게 나누어 만든다.
 - 두 개 이상의 인터페이스가 필요한 경우 다중 인터페이스 상속으로 구현하는 것이 좋다.
+
 ### &nbsp; DIP: 의존성 역전 원칙(Dependency Inversion Principle)
 - 상위 모듈은 하위 모듈에 의존해선 안된다.
 - 상위, 하위 모듈은 모두 추상화에 의존해야 한다.

@@ -1,5 +1,5 @@
 # Swagger
-개발자가 REST API 서비스를 설계, 빌드, 문서화할 수 있도록 하는  
+: 개발자가 REST API 서비스를 설계, 빌드, 문서화할 수 있도록 하는
 프로젝트 Open Api Specification(OAS)를 위한 프레임워크   
 
 **사용이유는 다음과 같다**
@@ -84,4 +84,4 @@ public class SwaggerConfig {
     }
 }
 ```
-Spring Boot 실행후 /swagger-ui.html로 접속하여 swagger UI가 적용된 것을 확인
+Spring Boot 실행후 `/swagger-ui.html`로 접속하여 swagger UI가 적용된 것을 확인
