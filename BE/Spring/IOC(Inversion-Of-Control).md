@@ -1,6 +1,6 @@
 # IoC(Inversion Of Control) - 제어의 역전
 : 객체의 생성, 생명주기의 관리까지 모든 객체에 대한 제어권이 바뀌었다는 것을 의미한다.
-- 컴퓨넌트 의존관계 결정 (Component dependency resolution), 설정(configuration) 및 생명주기(lifecycle)를 해결하기 위한 디자인 패턴(Design Pattern)
+- 컴포넌트 의존관계 결정 (Component dependency resolution), 설정(configuration) 및 생명주기(lifecycle)를 해결하기 위한 디자인 패턴(Design Pattern)
 >어떤 객체가 사용할 객체(의존관계인 객체)를 직접 선언하여 사용하는 것이 아니라,  
 >어떤 방법을 사용하여(ex.생성자 등..)사용하여 주입 받아 사용것 을 IoC의 일부라고 표현 할 수 있다.
 
@@ -40,10 +40,10 @@ public class CarService {
     }
 }
 ```
-### DI는 IoC를 구현하는 방법의 한 종류
+### "DI는 IoC를 구현하는 방법의 한 종류"
 **게임을 예시로 들어보자**
 1. 플레이어가 게임 캐릭터를 조종한다.
-2. 게임 캐릭터가 해야 할 일을 플레이어가 직접적으로 관여해 조종한다.
+2. 게임 캐릭터가 해야 할 일(퀘스트 등..)을 플레이어가 직접적으로 관여해 조종한다.
 3. 게임 캐릭터의 제어권은 플레이어(외부)에게 넘어감 -> 제어권이 위임되었다 -> 제어의 역전(IoC)
 
 ## IoC Container
@@ -55,13 +55,13 @@ public class CarService {
 ### BeanFactory
 - Bean을 등록, 생성, 조회, 반환 관리
 - IoC Container 최상위에 있는 interface
-- 보통 BeanFactory를 바로 사용하지 않고, 이를 확장한 `ApplicationContext`를 사용함
+- **보통 BeanFactory를 바로 사용하지 않고, 이를 확장한 `ApplicationContext`를 사용함**
 - getBean() 메서드가 정의되어있다.
 ### ApplicationContext
 - `BeanFactory`와 Bean을 등록, 생성, 조회, 반환 관리하는 기능은 같다.
 - `BeanFactory`의 서브 인터페이스인 `ListableBeanFactory`, `HierachicalBeanFactory`라는 인터페이스를 상속하여 `BeanFactory`를 상속하고 있다.
-- Spring의 각종 부가 서비스를 추가로 제공한다.
-    > 리소스 로딩, 이벤트 발생, 다국어 등 추가적인 기능들을 갖고 있다.
+- Spring의 각종 부가 서비스를 추가로 제공한다.  
+    리소스 로딩, 이벤트 발생, 다국어 등 추가적인 기능들을 갖고 있다.
     >- ResourceLoaderAware's setResourceLoader
     >- ApplicationEventPublisherAware's setApllicationEventPublicher
     >- MessageSourceAware's setMessageSource
@@ -69,4 +69,5 @@ public class CarService {
 - Spring이 제공하는 `ApplicationContext` 구현 클래스가 여러 종류가 있다.
 
 ### 결국 핵심?
-개발자가 빈을 직접 만들지 않고 메타데이터(ex. xml)를 제공하면 프로그램(Spring framework)이 해당 메타데이터를 사용해 Bean객체를 제어 한다.
+개발자가 Bean을 직접 만들지 않고 메타데이터(xml, annotation 등..)를 제공하면 프로그램(Spring framework)이 해당 메타데이터를 사용해 Bean객체를 제어 한다.  
+즉 IoC Container 는 Spring Framework 라고 할 수 있다.
