@@ -68,6 +68,6 @@ public class CarService {
     >- ApllicatonContextAware's setApllicationContext
 - Spring이 제공하는 `ApplicationContext` 구현 클래스가 여러 종류가 있다.
 
-### 결국 핵심?
+## 결국 핵심?
 개발자가 Bean을 직접 만들지 않고 메타데이터(xml, annotation 등..)를 제공하면 프로그램(Spring framework)이 해당 메타데이터를 사용해 Bean객체를 제어 한다.  
 즉 IoC Container 는 Spring Framework 라고 할 수 있다.

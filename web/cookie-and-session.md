@@ -6,9 +6,9 @@
 
 **이러한 <U>HTTP Connectionless, Stateless 의 특성들을 보완한 기술이 쿠키, 세션 이다.</U>**
 ## 쿠키(cookie)
-**쿠키는 서버가 사용자의 웹 브라우저에 저장하는 데이터이다.** 
+: 쿠키는 서버가 사용자의 웹 브라우저에 저장하는 데이터이다. 
 >쿠키의 데이터 형태는 Key 와 Value로 구성되고 String으로만 이루어져 있고 4KB 이상 저장할 수는 없다.  
-- **Cookie를 이용한 Server-Client 흐름**
+- Cookie를 이용한 Server-Client 흐름
 <img width="450px" src="./img/cookie-server-client.png"/>
 
 ### 배경
@@ -35,16 +35,16 @@
 
 
 ## 세션(Session)
-**비밀번호와 같은 인증 정보를 쿠키에 저장하지 않고 대신에 사용자의 식별자인 ``JSESSIONID(session id)`` 를 저장한다.**
+: 비밀번호와 같은 인증 정보를 쿠키에 저장하지 않고 대신에 사용자의 식별자인 ``JSESSIONID(session id)`` 를 저장한다.
 >서버에는 인증 정보와 더불어 이 ID에 해당하는 로그인 상태, 마지막 로그인 시간, 닉네임, 만료기한 등의 정보를 저장한다.  
 >보안상 서버는 사용자의 개인 컴퓨터보다는 훨씬 안전하기 때문에 인증에 Session을 이용한다.
 ### 배경
 쿠키의 트래픽 문제와 쿠키를 변경하는 보안적 이슈를 해결하기 위해 등장
 ### 세션(HTTP Session)?
-- **server**:  
-    HTTP Session id를 식별자로 구별하여 데이터를 접속한 서버 DB에 정보를 저장(쿠키 형태x)
-- **client**:  
-    HTTP Session id를 쿠키로 메모리 저장된 형태로 가지고 있다.
+- **server**  
+    : HTTP Session id를 식별자로 구별하여 데이터를 접속한 서버 DB에 정보를 저장(쿠키 형태x)
+- **client**  
+    : HTTP Session id를 쿠키로 메모리 저장된 형태로 가지고 있다.
 - 메모리에 저장하기 떄문에 브라우저가 종료되면 사라짐
 ### 세션(HTTP Session) 절차
 <img width="450px" src="./img/session-stream.png"/>  

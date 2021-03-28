@@ -11,13 +11,14 @@
 - SQL를 사용(개발자가 직접 코딩)하여 DB에 접근한 후 적절한 CRUD API를 제공
     - JAP 대부분의 기본적인 CRUD method를 제공하고 있다.
     - `extends JpaRepository<Domain(Entity) type,Pkey type>`
-- ex) Spring data jpa 예시
+- ex) Spring data JPA 예시
     ```java
     public interface BoardRepository extends CrudRepository<Board, Long>{}
     ```
     >Board 라는 도메인타입의 Pkey의 Type 은 Long
 ## DTO(Data Transfer Object)
-: Entity 클래스는 실제 DataBase의 테이블과 1 : 1로 매핑 되는 클래스로, DB의 테이블내에 존재하는 컬럼을 속성(필드)으로 가져야 한다.
+: Entity 클래스는 실제 DataBase의 테이블과 매핑 되는 클래스로, DB의 테이블내에 존재하는 컬럼을 속성(필드)으로 가져야 한다.
+> 꼭 태이블 내에 있는 필드를 가져야 되는건 아니다.
 
 **DTO package**  
 : **계층간 데이터 교환을 위한 JAVABeans**를 말한다 여기서 계층이란  
@@ -36,7 +37,6 @@
 ### Entity class
 **Domain Package**
 - 실제 DB 테이블과 매칭될 클래스
-    - 가장 core한 클래스라고 불림
     - `@Entity`, `@Column`, `@Id` 등 사용
 - 최대한 외부에서 Entity 클래스의 getter method를 사용하지 않도록 해당 클래스 안에서 필요한 로직 method을 구현
 ### Entity class 와 DTO class 를 분리하는 이유
@@ -58,7 +58,7 @@
     public class Board {
         @Id
         @GeneratedValue(strategy= GenerationType.SEQUENCE)
-        private long id;
+        private Long id;
     
         @Column(nullable=false)
         private String title;
@@ -80,7 +80,7 @@
         private String editUserId;
     
         @Builder
-        private Board(long id, String title, String content, String regUserId, String editUserId) {
+        private Board(Long id, String title, String content, String regUserId, String editUserId) {
             this.id = id;
             this.title = title;
             this.content = content;

@@ -1,5 +1,4 @@
 # domain(도매인)
-## domain?
 : 각 ip에 이름을 부여할 수 있게 하는것
 ## 구성요소
 - opentutorials.org
