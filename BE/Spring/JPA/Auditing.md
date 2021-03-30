@@ -1,6 +1,19 @@
 # JPA Auditing
 ### 사용동기
 > MembershipApi를 만들면서 유저 가입일을 추가해보고싶었다.
+
+### Auditing 활성화
+```java
+@EnableJpaAuditing //추가한것
+@SpringBootApplication
+public class Aouth2Application {
+
+	public static void main(String[] args) {
+		SpringApplication.run(Aouth2Application.class, args);
+	}
+}
+```
+
 ### JPA Auditing으로 생성시간/수정시간 자동화
 ```java
 @Getter
