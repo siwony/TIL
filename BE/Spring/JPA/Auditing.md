@@ -7,7 +7,7 @@
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
 public abstract class BaseTimeEntity {
-    @CreateDate
+    @CreatedDate
     private LocalDateTime createdDate;
 
     @LastModifiedDate
