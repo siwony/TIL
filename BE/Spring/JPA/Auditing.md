@@ -3,6 +3,7 @@
 > MembershipApi를 만들면서 유저 가입일을 추가해보고싶었다.
 
 ### Auditing 활성화
+자신의 SpringBoot Application class에 `@EnableJpaAuditing`를 추가한다.
 ```java
 @EnableJpaAuditing //추가한것
 @SpringBootApplication
