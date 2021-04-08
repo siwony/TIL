@@ -37,7 +37,7 @@
 - **Then** - 시나리오를 완료했을 때 보장해야 하는 결과를 명시한다.
 
 ### BDD의 Given-When-Then 스타일
-1. 특정 값이 주어지고(Given)
+1. 특정 상황(값)이 주어지고(Given)
 2. 어떤 이벤트가 발생했을 때(When)
 3. 그에 대한 결과를 보장해야 한다(Then)
 > Given I am on the home page  
@@ -49,19 +49,21 @@
 ### SpringBoot BDD
 Spring Boot 에서는 BDDMockito를 사용하여 BDD를 할 수 있다.
 ```java
-@Test
- public void test_getName_isOk() throws Exception{
-    @Data
-    @AllArgsConstructor
-    @NoArgsConstructor
-    class Test {
-        private int id;
-        private String msg;
-    }
-    Test test = BDDMockito.mock(Test.class);
-    System.out.println(test.getId());
-    BDDMockito.when(test.getId()).thenReturn(10);              
-    System.out.println(test.getId());
+import static org.mockito.BDDMockito.*;
+
+Seller seller = mock();
+Shop shop = new Shop(seller);
+
+public void shouldBuyBread() throws Exception {
+  //given  
+  given(seller.askForBread()).willReturn(new Bread());
+
+  //when
+  Goods goods = shop.buyBread();
+
+  //then
+  assertThat(goods, containBread());
 }
+
 ```
 reference : https://dongdd.tistory.com/165
