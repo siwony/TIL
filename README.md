@@ -2,7 +2,7 @@
 오늘 새롭게 배운 혹은 삽질한 경험을 간단한 글들을 마크다운 문서로 정리 해 보자! `start - Dec 12 2020`  
 ## 분류
 ### GIT
-- [.Ds_store 모두 .gitignore](/git/ds-store-ignore.md)
+- [.Ds_store 모두 .gitignore](/Git/ds-store-ignore.md)
 
 ### DevOps
 - [DevOps](/DevOps/DevOps.md)
