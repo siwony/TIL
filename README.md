@@ -52,6 +52,9 @@
 - [개발용어 정리](/ETC/dev-terminology.md)
 - [Component](/ETC/component.md)
 ### Programming
+**XDD(X Driven Development)**
+- [DDD](/Programming/DDD.md)
+- [TDD & BDD](/Programming/TDD-BDD.md)
 
 **JAVA**
 - [JAVA?](/Programming/JAVA/01-java.md)

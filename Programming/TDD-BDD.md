@@ -54,6 +54,7 @@ import static org.mockito.BDDMockito.*;
 Seller seller = mock();
 Shop shop = new Shop(seller);
 
+@Test
 public void shouldBuyBread() throws Exception {
   //given  
   given(seller.askForBread()).willReturn(new Bread());
