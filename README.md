@@ -63,7 +63,10 @@
 - [JAVA Class and Object](/Programming/JAVA/04-class-and-object.md)
 - [JAVA scope, static](/Programming/JAVA/05-scope-static.md)
 - [JAVA enum](/Programming/JAVA/06-enum.md)
-- [JAVA package](/Programming/JAVA/07-package.md)  
+- [JAVA package](/Programming/JAVA/07-package.md)
+ 
+**JAVA Design Pattern**
+- [전략패턴(Strategy-Pattern)](/Programming/JAVA/Design-pattern/Strategy-Pattern.md)
 
 **python**
 - [python install](/Programming/Python/how-to-install-python.md)
