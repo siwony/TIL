@@ -1,9 +1,10 @@
 # URI?, URL?, URN?
 ## URI(Uniform Resource Idntifier)
-: **통합 자원 실별자(ID), 정보 리소스를 고유하게 식별하고 위치를 지정함**  
+: **통합 자원 식별자(ID), 정보 리소스를 고유하게 식별하고 위치를 지정함**  
 - URI의 두가지 형태 ``URL, URN``가 있다. **즉 URL, URN은 URI의 부분집합**  
 - URI의 존재는 인터넷에서 요구되는 기본조건으로 인터넷 프로토콜이 항상 붙어다님  
     (ex. http://www.naver.com)
+- 응답은 달라질수 있다. (.pdf, docx)
 
 ## URL(Uniform Resource Locator)
 : **특정 서버의 한 리소르에 대한 구채적인 위치 서술**  

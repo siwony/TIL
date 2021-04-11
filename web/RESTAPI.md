@@ -35,6 +35,36 @@
     : 클라이언트가 서버로 요청을 보냈을 때 서버가 응답으로 보내주는 자원의 상태를 Representation이라고 한다. 
     >REST에서 하나의 자원은 JSON, XML, TEXT, RSS등 여러형태의 Representation으로 나타낼수 있다.
 
+### 인터페이스의 일관성
+> 인터페이스의 일관성이 잘 지켜졌는지에 따라 REST를 잘 사용했는지 판단 할 수 있다.
+#### 자원의 식별
+: 웹 기반의 REST에서 리소스를 접근할 떄 URI를 사용한다.  
+
+ex)  
+https://foo.co.kr/user/100  
+- Resource : user
+- 식별자 : 100
+
+#### 메세지를 통한 리소스 조작
+: Web에서는 다양한 방식(Html, json 등..)으로 데이터를 전달 할 수 있다.
+- 어떠한 타입을 알려주기위해 HTTP Header에 content-type을 통해 타입을 지정해 줄수 있다.
+- 리소스 조작을 위해 데이터 전체를 전달하지 않고 이를 메세지로 전달한다.
+
+#### 자기서술적 메세지
+: 요청하는 데이터가 어떻게 처리 되어야 하는지 충분한 데이터를 포함 할 수 있어야한다.
+- HTTP기반의 REST에서는 HTTP Method, Header 정보, URI의 포함되는 정보로 표현 할 수 있다.
+
+GET : https://foo.co.kr/user/100, 사용자 정보 요청  
+POST : https://foo.co.kr/user, 사용자 정보 생성  
+PUT : https://foo.co.kr/user, 사용자 정보 생성 및 수정  
+DELETE : https://foo.co.kr/user/100, 사용자 정보 삭제  
+
+그외 담지 못 한 정보들을 URI의 메세지를 통하여 표현한다.
+
+#### Application 상태에 대한 엔진으로써 하이퍼미디어
+:REST API를 개발할 때 단순히 Client요청에 대한 데이터만 응답 해주는 것이 아닌 관련된 리소스에 대한 Link정보까지 같이 포함해야한다.
+
+
 ### REST 의 특징
 - **Uniform Interface(인터페이스 일관성)**  
     : URL로 지정한 리소스에 대한 조작을 통일하며 한정적인 인터페이스로 수행한다  
@@ -42,7 +72,9 @@
 - **Stateless(무상태성)**  
     : HTTP는 Stateless 프로토콜 이므로 REST 역시 무상태성을 가진다.  
     > 클라이언트의 Context 를 서버에 저장하지 않는다.
-- **Caheable(캐시 기능)**  
+- **Cacheable(캐시 기능)**  
+    : 클라이언트는 서버의 응답을 Cache(임시저장) 할 수 있어야한다.
+    - 클라이언트가 Cache를 통해 응답을 재사용할 수 있어야한다. &rarr; 이를 통해 서버의 부하를 낮춘다.
     >웹 표준 HTTP 프로토콜을 그대로 사용하므로, 웹에서 사용하는 기존의 인프라를 그대로 활용가능
 - **Self-descriptiveness (자체 표현 구조)**  
     : REST API 메시지만 보고도 이를 쉽게 이해 할 수 있는 자체 표현 구조로 되어 있다.
