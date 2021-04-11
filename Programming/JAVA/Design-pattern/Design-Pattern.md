@@ -20,7 +20,7 @@
 - 코드의 유연성을 높여준다.
 
 #### 생성패턴의 종류
-- Singleton
+- [Singleton](./Singleton-Pattern.md)
 - Prototype
 - Builder
 - Abstract Factory

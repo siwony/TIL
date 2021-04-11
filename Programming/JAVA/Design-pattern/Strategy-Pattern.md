@@ -1,6 +1,6 @@
 # Strategy Pattern(전략 패턴)
 : 여러 알고리즘을 하나의 추상적인 접근점을 만들어 접근 점에서 서로 교환 가능하도록 하는 패턴
-- 위임(Delegate)을 통해 의존성을 역전시킬 수 있고, 인터페이스를 통해 다형성의 특성으로 변경에 대해 유연한 대처가 가능하다.
+- 위임(Delegate)을 통해 의존성을 역전(DI)시킬 수 있고, 인터페이스를 통해 다형성의 특성으로 변경에 대해 유연한 대처가 가능하다.
 - 인터페이스를 상속받는 구상 클래스가 너무 많아질 수도 있다.
 
 ### Delegate(위임)
@@ -61,7 +61,7 @@ public class Client {
 &rarr; 그러면 Bus의 `move()`를 다음과 같이 변경하면 끝난다.
 ```java
 public void move(){
-    System.out.println("선로를 따라 이동");
+    System.out.println("선로를 통해 이동");
 }
 ```
 하지만 이렇게 수정하는 방식은 **SOLID의 OCP(Open-Closed Principle)에 위배된다.**  
@@ -116,7 +116,7 @@ public class Client {
         Moving bus = new Bus();
 
         train.setMovableStrategy(new RailLoadStrategy());
-        bus.setMovableStrategy(new LoadStrategy());
+        bus.setMovableStrategy(new RailLoadStrategy());
 
         train.move();
         bus.move();
