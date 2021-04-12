@@ -35,10 +35,10 @@
 - [Adapter](./Adepter-Pattern.md)
 - Composite
 - Bridge
-- Decorator
+- [Decorator](./Decorator-Pattern.md)
 - Facade
 - FlyWeight
-- Proxy
+- [Proxy](./Proxy-Pattern.md)
 
 ### 행위 패턴
 : 반복적으로 사용되는 객체들의 상호작용을 패턴화한 패턴

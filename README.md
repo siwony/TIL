@@ -66,10 +66,12 @@
 - [JAVA package](/Programming/JAVA/07-package.md)
  
 **JAVA Design Pattern**
-- [디자인패턴](/Programming/JAVA/Design-pattern/Design-Pattern.md)
+- [디자인패턴?](/Programming/JAVA/Design-pattern/Design-Pattern.md)
 - [전략패턴(Strategy Pattern)](/Programming/JAVA/Design-pattern/Strategy-Pattern.md)
 - [어뎁터패턴(Adepter Pattern)](Programming/JAVA/Design-pattern/Adepter-Pattern.md)
 - [싱글톤패턴(Singleton Pattern)](Programming/JAVA/Design-pattern/Singleton-Pattern.md)
+- [프록시패턴(Proxy Pattern)](Programming/JAVA/Design-pattern/Proxy-Pattern.md)
+- [데코레이터 패턴(Decorator Pattern)](Programming/JAVA/Design-pattern/Decorator-Pattern.md)
 
 
 **python**
