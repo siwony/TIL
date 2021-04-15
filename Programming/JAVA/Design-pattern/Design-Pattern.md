@@ -49,7 +49,7 @@
 - Template Method
 - Interpreter
 - Iterator
-- Observer
+- [Observer](./Observer-Pattern.md)
 - [Strategy](./Strategy-Pattern.md)
 - Visitor
 - Chain of Responsibility

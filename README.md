@@ -12,7 +12,7 @@
 - [Docker](/DevOps/Docker.md)
 - [CI/CD](/DevOps/CI-CD.md)
 
-### Back-end
+### BackEnd
 - [Payload](/BE/payload.md)
 - [URL의 character set이 UTF-8이 아니여서 생긴 문제](/BE/Spring/URL-utf-8-problem.md)
 ### &nbsp; Spring 
@@ -29,13 +29,21 @@
 ### &nbsp; JPA
 - [Entity](/BE/Spring/JPA/Entity.md)
 - [JPA Auditing으로 생성일/수정일 자동화](/BE/Spring/JPA/Auditing.md)
-- [01 JPA?](BE/Spring/JPA/01-JPA.md)
+- [01 JPA?](/BE/Spring/JPA/01-JPA.md)
 - [QueryDSL?](/BE/Spring/JPA/QueryDSL.md)
-- [02 영속성 컨텍스트?](BE/Spring/JPA/02-PersistenceContext.md)
-- [03 플러시(flush)](BE/Spring/JPA/03-flush.md)
-- [04 준영속 상태](BE/Spring/JPA/04-detached.md)
-- [05 DB schema 자동 생성](BE/Spring/JPA/05-DB-schema-auto-create.md)
-- [06 객체와 테이블 매핑](BE/Spring/JPA/06-object-table-mapping.md)
+- [02 영속성 컨텍스트?](/BE/Spring/JPA/02-PersistenceContext.md)
+- [03 플러시(flush)](/BE/Spring/JPA/03-flush.md)
+- [04 준영속 상태](/BE/Spring/JPA/04-detached.md)
+- [05 DB schema 자동 생성](/BE/Spring/JPA/05-DB-schema-auto-create.md)
+- [06 DDL](/BE/Spring/JPA/06-DDL.md)
+- [07 객체와 테이블 매핑](/BE/Spring/JPA/06-object-table-mapping.md)
+- [08 기본키 매핑](/BE/Spring/JPA/07-pk-mapping.md)
+- [09 연관관계 맵핑(기초)](/BE/Spring/JPA/09-relationship-mapping-foundation.md)
+- [10 다양한 연관관계](BE/Spring/JPA/10-various-relationship.md)
+- [11 연관관계 맵핑(고급) - 상속관계 매핑](BE/Spring/JPA/11-relationship-mapping-advanced.md)
+- [12 @MappedSuperclass](BE/Spring/JPA/12-mapped-superclass.md)
+- [13 Proxy](BE/Spring/JPA/13-proxy.md)
+
 ### &nbsp; Node.js
 - [node.js 설치 및 개발환경 세팅](/BE/NodeJS/how-to-install-nodeJs.md)
 - [MySQL 연결](/BE/NodeJS/Connect-MySql.md)
@@ -72,7 +80,7 @@
 - [싱글톤패턴(Singleton Pattern)](Programming/JAVA/Design-pattern/Singleton-Pattern.md)
 - [프록시패턴(Proxy Pattern)](Programming/JAVA/Design-pattern/Proxy-Pattern.md)
 - [데코레이터 패턴(Decorator Pattern)](Programming/JAVA/Design-pattern/Decorator-Pattern.md)
-
+- [옵저버 패턴(Observer Pattern)](programming/java/../../Programming/Java/Design-pattern/Observer-Pattern.md)
 
 **python**
 - [python install](/Programming/Python/how-to-install-python.md)
