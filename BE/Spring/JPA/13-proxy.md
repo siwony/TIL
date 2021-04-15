@@ -2,7 +2,7 @@
 
 ### em.find() vs em.getReference()
 - `em.find()` : DB를 통해서 실제 엔티티 객체 조회
-- `em.getReference()` : DB 조회를 미루는 가짜(Proxy)엔티티 객체 조회 
+- `em.getReference()` : DB 조회를 미루는 가짜(Proxy)엔티티 객체 조회  
   <img width=500px src=./img/em-get-reference.png>
 
 ### Proxy 객체의 초기화
@@ -43,4 +43,4 @@ member.getName();
   강제 호출: `member.getName()`
 
 ## 결론
-em.getReference()는 안쓰지만 JPA의 내부 동장방식에 대해 알아야 된다.
+`em.getReference()`는 안쓰지만 JPA의 내부 동작방식에 대해 알아야 된다.

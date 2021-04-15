@@ -38,7 +38,7 @@
 ```java
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED) 
-@DiscriminatorColumn // 무슨타입인지 컬럼추가
+@DiscriminatorColumn // 무슨타입인지 알려주는 DTYPE 컬럼추가
 public abstract class Item{
 
     @Id @GeneratedValue
