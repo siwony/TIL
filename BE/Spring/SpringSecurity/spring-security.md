@@ -3,7 +3,7 @@
 - [Spring Security](#spring-security) &larr;
 - [Spring Security Start!](spring-security-start.md)
 - [Spring Security Filter](spring-security-filters.md)
-- [다양한 Spring Security Filters](spring-security-variety-filters.md)
+- [다양한 Spring Security Filter](spring-security-variety-filters.md)
 
 # Spring Security
 : **스프링 기반의 어플리케이션의 보안(인증, 권한)을 담당하는 프레임워크**
