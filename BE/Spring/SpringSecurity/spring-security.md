@@ -1,9 +1,9 @@
 > 이 글은 Spring Boot + Spring Security 기준으로 쓰여진 글입니다.
 #### 목차
+- [Spring Security Start!](spring-security-start.md)
 - [Spring Security](#spring-security) &larr;
 - [Spring Security Filter](spring-security-filters.md)
 - [다양한 Spring Security Filter](spring-security-variety-filters.md)
-- [Spring Security Start!](spring-security-start.md)
 
 # Spring Security
 : **스프링 기반의 어플리케이션의 보안(인증, 권한)을 담당하는 프레임워크**
