@@ -25,3 +25,7 @@
 <img width=450px src=./img/security-filters.png>
 
 각각의 필터는 각각의 서로 다른 관심사를 해결한다.  
+
+#### 스프링 Security가 무슨 필터가 동작하는지 확인하는 방법
+Spring Security의 설정Class @EnableWebSecurity 에 debug 속성을 ture로 준다.  
+`@EnableWebSecurity(debug = "true")`
