@@ -1,5 +1,7 @@
 # Strategy Pattern(전략 패턴)
 : 여러 알고리즘을 하나의 추상적인 접근점을 만들어 접근 점에서 서로 교환 가능하도록 하는 패턴
+- 객체지향의 꽃이다.
+- SOLID 에 OCP, DIP를 따른다.
 - 위임(Delegate)을 통해 의존성을 역전(DI)시킬 수 있고, 인터페이스를 통해 다형성의 특성으로 변경에 대해 유연한 대처가 가능하다.
 - 인터페이스를 상속받는 구상 클래스가 너무 많아질 수도 있다.
 
@@ -26,7 +28,7 @@ public class GameCharacter{
 공격(attack)이라는 기능을 내가 어떤 weapon을 가지고 있느냐에 따라서 달라진다.  
 나(GameCharacter.attack)는 어떻게 공격하는지 모른다. weapon이 알아서 할것이다.
 
-### 전략 패턴을 적용하지 않은예
+### 전략 패턴을 적용하지 않은 예
 Reference : https://dongdd.tistory.com/165  
 <img width=450px src=./img/ex-strategy-not-use.png>
 

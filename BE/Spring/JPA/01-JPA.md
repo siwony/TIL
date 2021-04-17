@@ -1,6 +1,7 @@
 # JPA(Java Persistence API)
 : **데이터를 DB상에 영구적으로 저장해주는 API**
 > Persistence라는 단어는 JAVA DTO에게 '없어지지 않고 오랫동안 지속' 되는 '영속성(persistence)'을 부여해준다는 의미입니다.  
+
 ## JPA사용하기 이전의 문제점  
 ### SQL를 직접 사용
 **SQL 중심적인 개발을 피하기 어렵다**
@@ -28,6 +29,14 @@
 - 영속성 컨택스트는 효율적인 SQL처리에 크게 기여하여 성능상의 이점
 - 객체답게 모델링 할수록 SQL과 매핑하는 작업만 늘어나게 되어 SQL에 의존적으로 설계하게 되는 문제를 JPA는 객체를 마치 List와 같은 자바 컬렉션에 저장하듯이 DB에 저장하여 문제를 해결한다.
 
+### JPA는 특정 DB에 종속적이지 않다.
+- 각각의 데이터베이스가 제공하는 SQL 문법과 함수는 조금씩 다르다
+- 가변 문자: MySQL은 VARCHAR, Oracle은 VARCHAR2
+- 문자열을 자르는 함수: SQL 표준은 SUBSTRING(), Oracle은
+SUBSTR()
+- 페이징: MySQL은 LIMIT , Oracle은 ROWNUM
+
+**JPA는 DB가 달라도 설정만 해주면 알아서 쿼리가 나간다!**
 ## JPA 구동 방식
 <img width=400px src=./img/jpa-work.png>
 
