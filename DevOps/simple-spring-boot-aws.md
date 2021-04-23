@@ -62,7 +62,6 @@
     Vim
     ```
     #!/bin/bash
-    
     # maven 프로젝트 폴더로 옮기기
     cd ./SpringBoot-MembershipAPI
     
@@ -72,7 +71,7 @@
     
     # 프로젝트 컴파일
     echo "프로젝트 컴파일"
-    mvn complie
+    mvn compile
 
     # 프로젝트 test
     echo "프로젝트 테스트"
