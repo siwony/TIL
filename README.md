@@ -38,11 +38,20 @@
 - [06 DDL](/BE/Spring/JPA/06-DDL.md)
 - [07 객체와 테이블 매핑](/BE/Spring/JPA/06-object-table-mapping.md)
 - [08 기본키 매핑](/BE/Spring/JPA/07-pk-mapping.md)
+- [08.5 데이터 중심 설계(실습)](/BE/Spring/JPA/08.5-db-driven-design.md)
 - [09 연관관계 맵핑(기초)](/BE/Spring/JPA/09-relationship-mapping-foundation.md)
-- [10 다양한 연관관계](BE/Spring/JPA/10-various-relationship.md)
+- [10 다양한 연관관계](/BE/Spring/JPA/10-various-relationship.md)
+- [10.5 다양한 연관관계 매핑(실전)](BE/Spring/JPA/10.5-various-relationship-mapping.md)
 - [11 연관관계 맵핑(고급) - 상속관계 매핑](BE/Spring/JPA/11-relationship-mapping-advanced.md)
 - [12 @MappedSuperclass](BE/Spring/JPA/12-mapped-superclass.md)
+- [12.5 상속관계 매핑(실전)](BE/Spring/JPA/12.5-inherit-relationship-mapping.md)
 - [13 Proxy](BE/Spring/JPA/13-proxy.md)
+- [14 Eager/LAZY loading](BE/Spring/JPA/14-eager-loading-and-lazy-loading.md)
+- [15 영속성 전이(cascade)](BE/SPring/JPA/../../Spring/JPA/15-cascade.md)
+- [16 고아 객체(ORPAN)](BE/Spring/JPA/16-orpan.md)
+- [17 값 타입](BE/Spring/JPA/17-value-type.md)
+- [17.1 기본값 타입](BE/Spring/JPA/17.1-default-type.md)
+- [17.2 임베디드 타입(embedded-type)](BE/Spring/JPA/17.2-embedded-type.md)
 
 ### &nbsp; Node.js
 - [node.js 설치 및 개발환경 세팅](/BE/NodeJS/how-to-install-nodeJs.md)
@@ -86,7 +95,7 @@
 - [python install](/Programming/Python/how-to-install-python.md)
 - [변수, 데이터형](/Programming/Python/ariables-and-data-type.md)
 
-### web
+### Web
 - [웹기초](/web/web-foundation.md)
 - [REST API](/web/RESTAPI.md)
 - [서버기반 인증 & 토큰기반 인증](/web/tokenAuth-serverAuth.md)
@@ -95,3 +104,7 @@
 - [URI,URL,URN](/web/URI-URL-URN.md)
 - [Web Socket](/web/web-socket.md)
 - [WAS](/web/was.md)
+
+### Book
+- [README](/Book/README.md)
+- [객체지향 사실과 오해](/Book/object-orientation-facts-and-misconceptions/README.md)
