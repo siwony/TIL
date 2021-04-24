@@ -49,9 +49,13 @@
 - [14 Eager/LAZY loading](BE/Spring/JPA/14-eager-loading-and-lazy-loading.md)
 - [15 영속성 전이(cascade)](BE/SPring/JPA/../../Spring/JPA/15-cascade.md)
 - [16 고아 객체(ORPAN)](BE/Spring/JPA/16-orpan.md)
-- [17 값 타입](BE/Spring/JPA/17-value-type.md)
-- [17.1 기본값 타입](BE/Spring/JPA/17.1-default-type.md)
-- [17.2 임베디드 타입(embedded-type)](BE/Spring/JPA/17.2-embedded-type.md)
+- [17 JPA 데이터 타입](BE/Spring/JPA/17-value-type.md)
+  1. [기본값 타입](BE/Spring/JPA/17.1-default-type.md)
+  2. [임베디드 타입(embedded-type)](BE/Spring/JPA/17.2-embedded-type.md)
+  3. [값 타입과 불변 타입](BE/Spring/JPA/17.3-value-and-immutable.md)
+  4. [값 타입 비교](BE/Spring/JPA/17.4-value-type-compare.md)
+  5. [값 타입 컬렉션](BE/Spring/JPA/17.5-value-type-collection.md)
+  6. [JPA 데이터 타입 정리](BE/Spring/JPA/17.6-organize.md)
 
 ### &nbsp; Node.js
 - [node.js 설치 및 개발환경 세팅](/BE/NodeJS/how-to-install-nodeJs.md)
