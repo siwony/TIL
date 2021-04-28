@@ -23,6 +23,7 @@
 ### &nbsp; SpringBoot  
 - [File Req, Res처리](/BE/Spring/SpringBoot/SpringBootFile-req-res-prosessing.md)
 - [URL 한글요청할때 깨지는 현상](/BE/Spring/SpringBoot/KoreanGarbled.md)
+- [CORS 이슈 해결](BE/Spring/SpringBoot/cors.md)
 ### &nbsp; SpringSecurity
 - [SpringSecurity](/BE/Spring/SpringSecurity/spring-security.md)
 - [CSRF(사이트간 요청위조)](/BE/Spring/SpringSecurity/CSRF.md)
