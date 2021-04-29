@@ -57,6 +57,13 @@
   4. [값 타입 비교](BE/Spring/JPA/17.4-value-type-compare.md)
   5. [값 타입 컬렉션](BE/Spring/JPA/17.5-value-type-collection.md)
   6. [JPA 데이터 타입 정리](BE/Spring/JPA/17.6-organize.md)
+  7. [JPA 값 타입(실습)](BE/Spring/JPA/17.7-value-type-mapping.md)
+  
+#### JPQL 객체지향 쿼리 언어
+- [00 JPQL intro](BE/Spring/JPA/JPQL/00-intro.md)
+- [01 JPQL](BE/Spring/JPA/JPQL/01-JPQL.md)
+- [02 프로젝션](BE/Spring/JPA/JPQL/02-projection.md)
+- [03 페이징](BE/Spring/JPA/JPQL/03-paging.md)
 
 ### &nbsp; Node.js
 - [node.js 설치 및 개발환경 세팅](/BE/NodeJS/how-to-install-nodeJs.md)
