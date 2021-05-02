@@ -55,7 +55,7 @@ em.detach(member);
 - ### 삭제(removed)  
 : **삭제**된 상태  
 ```java
-//객체를 삭제한 상태(삭제)
+//객체를 삭제한 상태(삭제) 이는 DB에서도 삭제가 된다.
 em.remove(member);
 ```
 
