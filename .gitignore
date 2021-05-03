@@ -1,7 +1,9 @@
+### 강의자료 ignore ###
 /BE/Spring/JPA/jpa-basic-pdf
-
+/BE/Spring/DataJPA/spring-data-jpa-class-docs.pdf
 ### Ds_Store ignore ###
 .DS_Store
 ._.DS_Store
 **/.DS_Store
 **/._.DS_Store
+
