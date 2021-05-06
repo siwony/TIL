@@ -15,7 +15,7 @@
 
 ## 실습환경
 Spring initializer를 통해 실습 환경을 생성한다.  
-[실습 환경 공유](https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.4.5.RELEASE&packaging=jar&jvmVersion=11&groupId=com.study&artifactId=data-jpa&name=data-jpa&description=Demo%20project%20for%20Spring%20Boot&packageName=com.study.data-jpa&dependencies=web,data-jpa,h2,lombok) &larr; 링클를 타고들어가면 똑같은 필자와 똑같은 환경제공
+[실습 환경 공유](https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.4.5.RELEASE&packaging=jar&jvmVersion=11&groupId=com.study&artifactId=data-jpa&name=data-jpa&description=Demo%20project%20for%20Spring%20Boot&packageName=com.study.data-jpa&dependencies=web,data-jpa,h2,lombok) &larr; 링크를 타고들어가면 똑같은 필자와 똑같은 환경제공
 
 #### Java11
 
@@ -56,14 +56,14 @@ Spring initializer를 통해 실습 환경을 생성한다.
 ```yml
 spring:
   datasource:
-    url: jdbc:h2:tcp://localhost/~/data-jpa
+    url: jdbc:h2:tcp://localhost/~/DBname # 위에서 생성한 접속 URL
     username: sa
     password:
     driver-class-name: org.h2.Driver
 
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: create # 애플리케이션 실행 시점에 테이블을 drop 하고, 다시 생성한다.
     properties:
       hibernate:
         #show_sql: true
