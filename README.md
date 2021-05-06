@@ -58,7 +58,9 @@
   5. [값 타입 컬렉션](BE/Spring/JPA/17.5-value-type-collection.md)
   6. [JPA 데이터 타입 정리](BE/Spring/JPA/17.6-organize.md)
   7. [JPA 값 타입(실습)](BE/Spring/JPA/17.7-value-type-mapping.md)
-  
+### &nbsp; Spring DATA JPA
+- [00 Intro](BE/Spring/JPA/DataJPA/00-intro.md)
+- [01 공통인터페이스](BE/Spring/JPA/DataJPA/01-comman-repository.md)
 #### JPQL 객체지향 쿼리 언어
 - [00 JPQL intro](BE/Spring/JPA/JPQL/00-intro.md)
 - [01 JPQL](BE/Spring/JPA/JPQL/01-JPQL.md)
