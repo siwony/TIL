@@ -1,5 +1,5 @@
 # Bean
-: `Spring IOC(Invertion Of Control)`컨테이너가 관리하는 JAVA객체  
+: `Spring IOC(Inversion Of Control)`컨테이너가 관리하는 JAVA객체  
 - Spring에서 POJO(plain, old java object)를 ‘Beans’라고 부른다.
 - Beans는 애플리케이션의 핵심을 이루는 객체
 - Spring IoC(Inversion of Control) 컨테이너에 의해 **인스턴스화**, **관리**, **생성**된다.
