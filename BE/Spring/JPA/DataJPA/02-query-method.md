@@ -76,7 +76,7 @@ public interface MemberRepository extends JpaRepository<Member, Long> {
     List<Member> findByUsername(@Param("username") String username);
 }
 ```
-- Spring Data JPA는 선언한 "도메인 클래스 + . _ 메서드 이름' 으로 Named 쿼리를 찾아서 실행한다.
+- Spring Data JPA는 선언한 "도메인 클래스 + . + 메서드 이름' 으로 Named 쿼리를 찾아서 실행한다.
 - 실행할 Named 쿼리가 없으면 메서드 이름으로 쿼리 생성 전략을 사용한다.
 - 필요하면 전략을 변경 가능하지만 권장x
   > [참고](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#repositories.query-methods.query-lookup-strategies) 
@@ -94,6 +94,79 @@ public interface MemberRepository extends JpaRepository<Member, Long> {
     age);
 }
 ```
-- @org.springframework.data.jpa.repository.Query 어노테이션을 사용한다.
+- `@org.springframework.data.jpa.repository.Query` 어노테이션을 사용한다.
 - 실행할 메서드에 정적 쿼리를 직접 작성하므로 이름 없는 Named 쿼리라 할 수 있음
 - **JPA Named 쿼리처럼 애플리케이션 실행 시점에 문법 오류를 발견할 수 있다!**
+
+### DTO 조회하기
+예제 DTO
+```java
+@Data
+  public class MemberDto {
+      private Long id;
+      private String username;
+      private String teamName;
+      public MemberDto(Long id, String username, String teamName) {
+          this.id = id;
+          this.username = username;
+          this.teamName = teamName;
+      }
+}
+```
+예제 Repository
+```java
+    @Query("select new com.study.datajpa.dto.MemberDto(m.id, m.username, t.name) from Member m join m.team t")
+    List<MemberDto> findMemberDto();
+```
+- JPA `new` 명령어를 사용하고, 생성자가 맞는 DTO가 필요하다.  
+  &rarr; JPA와 사용방식이 동일하다.
+
+### 파라미터 바인딩
+#### 위치기반
+> 실무에서 사용하지 않는다. 가독성및 유지보수성이 매우 떨어진다.
+```sql
+select m from Member m where m.username = ?0
+```
+
+#### 이름기반
+```sql
+select m from Member m where m.username = :name
+```
+
+파라미터 파인딩
+```java
+public interface MemberRepository extends JpaRepository<Member, Long>{
+
+    @Query("select m from Member m where m.username = :name")
+    Member findMembers(@Param("name") String username);
+}
+```
+
+#### 컬렉션 파라미터 바인딩
+`Collection` 타입으로 in절을 지원한다.
+```java
+    @Query("select m from Member m where m.username in :names")
+    List<Member> findByNames (@Param("names") Collection<String> names);
+```
+
+### 반환타입
+> Spring Data JPA는 여러 반환타입을 지원한다.
+```java
+List<Member> findListByUsername(String username); //컬렉션
+Member findMemberByUsername(String username) //단건
+Optional<Member> findOptionalMemberByUsername;
+```
+
+#### 컬렉션 
+> List 등...
+
+- 결과가 없을떄는 빈 빈 컬렉션을 반환한다. &rarr; null에대한 보장을 해준다.
+
+#### 단건 조회
+- 결과 없음: null 반환
+- 결과가 2건 이상 : `javax.persistence.NonUniqueResultException` 예외 발생
+
+#### 참고 단건 조회결과가 없을때 JPA와 data JPA의 차이
+>Spring Data JPA는 내부에서 JPQL의 `Query.getSingleResult()` 메서드를 호출한다.  
+>조회 결과가 없으면 `javax.persistence.NoResultException` 예외가 하지만  
+>스프링 데이터는 JPA는 예외를 무시하고 대신 null을 반환한다.
