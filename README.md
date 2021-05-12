@@ -79,12 +79,13 @@
 - [MySQL 설치](/DataBase/MySQL/how-to-install-mysql.md)
 - [MySQL 실행관련 명령어](/DataBase/MySQL/mysql-run-command.md)
 - [mysql 명령어](/DataBase/MySQL/mysql-command.md)
-- [Object Orinted Programing](/Programming/OOP.md)
 
 ### 기타
 - [개발용어 정리](/ETC/dev-terminology.md)
 - [Component](/ETC/component.md)
 ### Programming
+- [Object Orinted Programing](/Programming/OOP.md)  
+
 **XDD(X Driven Development)**
 - [DDD](/Programming/DDD.md)
 - [TDD & BDD](/Programming/TDD-BDD.md)
