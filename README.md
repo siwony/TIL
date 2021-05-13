@@ -20,6 +20,7 @@
 - [DI(DependencyInjection)](/BE/Spring/DI(Dependency-Injection).md)
 - [IoC](/BE/Spring/IOC(Inversion-Of-Control).md)
 - [Spring 구조](/BE/Spring/DTO,DAO,Entity-class.md)
+- [Logging](/BE/Spring/Logging.md)
 ### &nbsp; SpringBoot  
 - [File Req, Res처리](/BE/Spring/SpringBoot/SpringBootFile-req-res-prosessing.md)
 - [URL 한글요청할때 깨지는 현상](/BE/Spring/SpringBoot/KoreanGarbled.md)

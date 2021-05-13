@@ -6,5 +6,16 @@
 ### 자바의 주요 Logging Framework
 - native java.util.logging : 별로 사용x
 - Log4j : 몇 년 전까지 사실상 표준으로 사용
-- Logback : log4j 개발자가 만든 log4j의 후속 버전, 현재 많은 프로젝트에서 사용됨
+- [Logback](./SpringBoot/logback.md) : log4j 개발자가 만든 log4j의 후속 버전, 현재 많은 프로젝트에서 사용됨 - 현제 SpringBoot의 기본 logging으로 사용하고있다.
 - SLF4j(Simple Logging Facade for java) : Log4J 또는 Logback과 같은 백엔드 Logger Framework의 facade pattern
+
+### 스프링 부트의 로깅 원리
+스프링 부트는 기본적으로 commons logging을 사용한다. 그렇지만 보통 SLF4J를 사용한다
+
+Commons Logging과 SLF4j는 로거 퍼서드 이다. 실제로 로깅을 수행하는것이 아니라, 로거 API를 추상화 해놓은 인터페이스 이다.
+
+#### 결론
+우리는 Commons Logging 혹은 SLF4j를 사용하는데 
+1. Commons Logging을 써도 어차피 SLF4j로 바뀐다
+2. SLF4j가 Logback 로거를 선택한다
+3. 최종적으로 Logback을 쓰게 된다.
