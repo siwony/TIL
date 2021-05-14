@@ -22,6 +22,7 @@
 - [Spring 구조](/BE/Spring/DTO,DAO,Entity-class.md)
 - [Logging](/BE/Spring/Logging.md)
 ### &nbsp; SpringBoot  
+- [Logback](BE/Spring/SpringBoot/logback.md)
 - [File Req, Res처리](/BE/Spring/SpringBoot/SpringBootFile-req-res-prosessing.md)
 - [URL 한글요청할때 깨지는 현상](/BE/Spring/SpringBoot/KoreanGarbled.md)
 - [CORS 이슈 해결](BE/Spring/SpringBoot/cors.md)
