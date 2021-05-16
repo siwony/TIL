@@ -3,6 +3,7 @@
 ## 분류
 ### GIT
 - [.Ds_store 모두 .gitignore](/Git/ds-store-ignore.md)
+- [커밋되지 않거나 저장되지 않은 모든 변경 사항 취소 및 삭제](/Git/rm-unstaged.md)
 
 ### DevOps
 - [DevOps](/DevOps/DevOps.md)
