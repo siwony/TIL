@@ -5,7 +5,6 @@
 - [.Ds_store 모두 .gitignore](/Git/ds-store-ignore.md)
 - [커밋되지 않거나 저장되지 않은 모든 변경사항 취소 및 삭제](/Git/rm-unstaged.md)
 - [Cache 삭제](/Git/cache-remove.md)
-- 
 
 ### DevOps
 - [DevOps](/DevOps/DevOps.md)
@@ -19,12 +18,12 @@
 - [Payload](/BE/payload.md)
 
 ### &nbsp;Build Tool
+- [(SpringBoot Project) Maven에서 Gradle로 migration](/BE/BuildTool/gradle/maven-to-gradle-migration.md)
 #### &nbsp;&nbsp; Gradle
 - [build.gradle plugins{...}방식 에러해결](/BE/BuildTool/gradle/build-gradle-plugins-allowed%20befor-plugins-block.md)
   > only buildscript {} and other plugins {} script blocks are  
   > allowed before plugins {} blocks, no other statements are allowed   
   > 애러해결
-- [(SpringBoot Project) Maven에서 Gradle로 migration]()
 
 #### &nbsp;&nbsp; Maven
 - [plugin-not-found 에러 해결 - 버전이 명시가 되어있지 않을때](/BE/BuildTool/maven/plugin-not-found.md)
