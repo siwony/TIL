@@ -8,7 +8,7 @@
       - [2. 가장 큰 이유는 지속적 통합(CI)의 자료가 Gradle이 더 많다.](#2-가장-큰-이유는-지속적-통합ci의-자료가-gradle이-더-많다)
   - [본론](#본론)
     - [Maven Project에 Gradle Project 적용하기](#maven-project에-gradle-project-적용하기)
-    - [종속성 migration](#종속성-migration)
+    - [의존성 migration](#의존성-migration)
       - [저장소 선언](#저장소-선언)
     - [Intellij에서 Gradle Project를 불러오자](#intellij에서-gradle-project를-불러오자)
       - [만약 Intellij가 Gradle을 불러오지 못한다면](#만약-intellij가-gradle을-불러오지-못한다면)
@@ -79,16 +79,16 @@ Enter selection (default: Groovy) [1..2]
 
 그러면 Gradle이 알아서 pom.xml에 있는 depedency및 플러그인을 가져온다.
 
-### 종속성 migration
-> Gradle의 종속성 관리 시스템은 Maven보다 유연하지만 저장소, 선언 된 종속성, 범위 ( Gradle의 종속성 구성 ) 및 전이 종속성 의 동일한 개념을 계속 지원합니다.  
-> 실제로 Gradle은 Maven 호환 repository와 완벽하게 작동하므로 종속성을 쉽게 migration 할 수 있습니다.
+### 의존성 migration
+> Gradle의 의존성 관리 시스템은 Maven보다 유연하지만   
+> repository, 선언된 의존성, scope(Gradle의 의존성 구성) 및 의존성 전이의 동일한 개념을 계속 지원한다.  
 
 #### 저장소 선언
 Maven과 달리 Gradle은 기본 저장소가 없으므로 최소한 하나를 선언 해야한다.  
 > Maven Central: 자바진영에서 개발의 필요한 의존성이 저장되어있는 저장소이다.  
 > 들어가봤자 라이브러리을 나열해놔서 별 도움이 안된다. 굳이 라이브러리를 찾고싶으면 https://search.maven.org/ 여기에서 찾자
 
-**Before**
+`Before`
 ```gradle
 repositories {
     mavenLocal()
@@ -97,7 +97,7 @@ repositories {
     }
 }
 ```
-**After**
+`After`
 ```gradle
 repositories {
     mavenCentral()
