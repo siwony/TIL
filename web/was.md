@@ -1,9 +1,9 @@
 # WAS - Web Application Server
-: **DB 조회나 다양한 로직 처리를 요구하는 동적인 컨텐츠를 제공하기 위해 만들어진 Application Server**
+: DB 조회나 다양한 로직 처리를 요구하는 동적인 컨텐츠를 제공하기 위해 만들어진 Application Server
 >ex) Tomcat, JBoss, Jeus, Web Sphere 등...
-- **HTTP를 통해 컴퓨터나 장치에 애플리케이션을 수행해주는 미들웨어(소프트웨어 엔진)이다.**
-- **“웹 컨테이너(Web Container)”**, **“서블릿 컨테이너(Servlet Container)”** 라고도 불린다
-    - **Container**: JSP, Servlet을 실행시킬 수 있는 소프트웨어
+- HTTP를 통해 컴퓨터나 장치에 애플리케이션을 수행해주는 미들웨어(소프트웨어 엔진)이다.
+-  “웹 컨테이너(Web Container)”, “서블릿 컨테이너(Servlet Container)” 라고도 불린다
+    - Container: JSP, Servlet을 실행시킬 수 있는 소프트웨어
     - **즉 WAS 란 JSP, Servlet 구동 환경제공**
 ### WAS 역활
 - WAS = Web Server + Web Container

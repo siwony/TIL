@@ -128,7 +128,6 @@
 - [변수, 데이터형](/Programming/Python/ariables-and-data-type.md)
 
 ### Web
-- [웹기초](/web/web-foundation.md)
 - [REST API](/web/RESTAPI.md)
 - [서버기반 인증 & 토큰기반 인증](/web/tokenAuth-serverAuth.md)
 - [Domain](/web/domain.md)

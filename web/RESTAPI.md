@@ -135,14 +135,3 @@ DELETE : https://foo.co.kr/user/100, 사용자 정보 삭제
 ### 특징
 - 여러시스템을 분산해 확장성과 재사용성을 높여 유지보수 및 운용을 편리하게 할 수 있다. 즉 **플렛폼의 제약을 두지 않기위하여 사용한다.**
 - HTTP를 지원하는 프로그램 언어로 Client, Server를 구현할 수 있다.
-
-### REST API 디자인 가이드
-REST API설계시 가장 중요한 항목이다. 2가지를 꼭 기억하자!  
-
-**URL은 정보의 자원을 표현해야 한다.**
-- URL (Uniform Resource Locator) 만으로 내가 어떤 자원을 제어하려고 하는지 알 수 있어야 한다, (자원의위치, 종류 등..)
-- Server가 제공하는 정보는 JSON 이나 XML 형태로 HTTP body에 포함되어 전송 시킨다.  
-
-**자원에 대한 행위는 HTTP Method(GET, PUT, POST, DELETE 등)로 표현한다.**  
-: HTTP Method를 명시적으로 해야한다.
-- 기존의 웹 서비스 처럼, GET을 이용해서 UPDATE와 DELETE를 해도되지만, RESTArchitecture 에 부합하지 않다.
