@@ -113,6 +113,7 @@
 - [JAVA scope, static](/Programming/JAVA/05-scope-static.md)
 - [JAVA enum](/Programming/JAVA/06-enum.md)
 - [JAVA package](/Programming/JAVA/07-package.md)
+- [Enumeration 와 Iterator](/Programming/Java/enumeration-iterator.md)
  
 **JAVA Design Pattern**
 - [디자인패턴?](/Programming/JAVA/Design-pattern/Design-Pattern.md)
