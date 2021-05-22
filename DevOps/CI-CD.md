@@ -10,9 +10,10 @@
 - 소프트웨어가 거대 및 복잡해지고 분업과 협업의 과정에서 코드의 Merge 과정은 까다롭고, 테스트하는데 큰 자원을 소비하는 문제를 해결하기위해 도입하게되었다.
 - 개발 브랜치가 일정 기간 이상 이용되면, 통합의 어려움은, 충돌 해결에 들어가는 시간, 오류 발생 위험이 커진다. 이러한 단점을 극복하고자 변동 내용의 반영 빈도를 늘리는 자동화가 등장
 - 빌드와 기능성을 검증하는 새로운 방법을 확보하고 기능의 개발과 배치 속도를 큰 폭으로 개선하기 시작하였다.
-- 
+
 ### CI/CD 정의
-지속적 통합(Continuous Intergration)  
+지속적 통합(Continuous Intergration) /  
+
 지속적 전달(Continuous Delivery), 지속적 배포(Continuous Deployment)
 <img src="./img/CI-CD-model.png">
 
@@ -35,10 +36,10 @@
     >이 과정들이 완료되면 슬랙, 카카오톡, 메일 등을 통해 통합 결과 알림
 
 ### CD(Continuous Delivery, Continuous Deployment)
-: **개발, 통합, 배포, 릴리즈, 테스트를 자동화하여 지속적으로 배포하는 것**
+: 개발, 통합, 배포, 릴리즈, 테스트를 자동화하여 지속적으로 배포하는 것
 
-**Continuous Delivery(지속적 전달)**  
-> 프로덕션은 수동으로 배포한다.
+#### Continuous Delivery(지속적 전달)
+: 프로덕션은 수동으로 배포한다.
 
-**Continuous Deployment(지속적 배포)**
-> 프로덕션까지 자동으로 배포한다.
+#### Continuous Deployment(지속적 배포)
+: 프로덕션까지 자동으로 배포한다.

@@ -1,5 +1,5 @@
-# SpringBoot Maven에서 Gradle로 migration!
-- [SpringBoot Maven에서 Gradle로 migration!](#springboot-maven에서-gradle로-migration)
+# SpringBoot Maven to Gradle build tool migration!
+- [SpringBoot Maven to Gradle build tool migration!](#springboot-maven-to-gradle-build-tool-migration)
   - [Intro](#intro)
       - [프로젝트 환경](#프로젝트-환경)
     - [Migration 동기](#migration-동기)
@@ -11,8 +11,12 @@
       - [저장소 선언](#저장소-선언)
     - [Intellij에서 Gradle Project를 불러오자](#intellij에서-gradle-project를-불러오자)
       - [만약 Intellij가 Gradle을 불러오지 못한다면](#만약-intellij가-gradle을-불러오지-못한다면)
-    - [에러가 왜 뜨는걸까? - gradle lombok error](#에러가-왜-뜨는걸까---gradle-lombok-error)
+    - [나는 왜 에러가 뜨는걸까? - gradle lombok error](#나는-왜-에러가-뜨는걸까---gradle-lombok-error)
       - [문제해결](#문제해결)
+  - [후기](#후기)
+    - [공식문서를보자](#공식문서를보자)
+    - [에러코드를 자세히 읽어보자](#에러코드를-자세히-읽어보자)
+      - [마무리](#마무리)
 
 ## Intro
 > SpringBoot 개발초기에는 Gradle이 무서운줄 알았다. 하지만 배포를 하다 보니까 Maven이 더 무섭더라.
@@ -23,11 +27,11 @@
 #### 프로젝트 환경
 - MacOS
 - Intellij Ultimate
-- Java11/SpringBoot 
-- Maven, Gradle
+- Java11/SpringBoot + maven
+- 그후 gradle 추가 예정
 
 >**주의**  
->**자신의 프로젝트의 규모와 상황에따라 상황이 달라질 수 있습니다.**
+>자신의 프로젝트의 규모와 상황에따라 상황이 달라질 수 있습니다.
 
 ### Migration 동기
 #### TheMoment Project
@@ -72,8 +76,8 @@ Enter selection (default: Groovy) [1..2]
 
 #### 저장소 선언
 Maven과 달리 Gradle은 기본 저장소가 없으므로 최소한 하나를 선언 해야한다.  
-> Maven Central: 자바진영에서 개발의 필요한 의존성이 저장되어있는 저장소이다.  
-> 들어가봤자 라이브러리을 나열해놔서 별 도움이 안된다. 굳이 라이브러리를 찾고싶으면 https://search.maven.org/ 여기에서 찾자
+> 들어가봤자 라이브러리를 디렉토리명 및 파일을 나열해놔서 별 도움이 안된다.  
+> 굳이 라이브러리를 찾고싶으면 https://search.maven.org/ 여기에서 찾자
 
 `Before`
 ```gradle
@@ -87,12 +91,13 @@ repositories {
 `After`
 ```gradle
 repositories {
-    mavenCentral() //변경된 부분
+    mavenCentral() //변경된 부분 Maven Central로 의존성 저장소를 바꿈
     maven {
         url = uri('https://repo.maven.apache.org/maven2/')
     }
 }
 ```
+> Maven Central: 자바진영에서 개발의 필요한 의존성이 저장되어있는 저장소이다.  
 
 
 ### Intellij에서 Gradle Project를 불러오자
@@ -101,8 +106,10 @@ repositories {
 `gradle init`을 한후 gradle 프로젝트에 필요한 파일들이 프로젝트 폴더에 추가 되었으면,   
 `Gradle build scripts found` 이 하단에 나타날것이다. 
 
-그후 `gradle build` 혹은 `./gradlew build` 를 입력해서 gradle project로 현제 프로젝트가 build되는지 확인하자.  
-Build가 되면 그대로 Gradle로 migration해서 사용하면 된다.
+그후 `gradle build` 혹은 `./gradlew build` 를 입력해서 gradle project로 현제 프로젝트가 build되는지 확인하자. 
+
+**Build가 되면 바로 Gradle로 migration하면 되지만,**  
+**자신에 프로젝트에 어떤 side effect가 올지모르므로 검증후 점진적으로 적용하기 바란다.**  
 
 <img src="./img/gradle-build-scripts-found.png">
 
@@ -111,7 +118,7 @@ Build가 되면 그대로 Gradle로 migration해서 사용하면 된다.
 #### 만약 Intellij가 Gradle을 불러오지 못한다면
 자신의 프로젝트에 최상단에서 `.idea`를 제거하고 Intellij를 제실행하면 해결될것이다.
 
-### 에러가 왜 뜨는걸까? - gradle lombok error
+### 나는 왜 에러가 뜨는걸까? - gradle lombok error
 나의 경우에는 compileJava FAILED가 떴다.
 에러코드를 올려보니 
 ```sh
@@ -167,3 +174,21 @@ dependencies{
 BUILD SUCCESSFUL in 668ms
 5 actionable tasks: 5 up-to-date
 ```
+
+## 후기
+### 공식문서를보자
+SpringBoot가 그래도 한국에 자료가 많아서 너무 구글링 및 블로그에 의존했던것 같다.  
+이번기회에 공식문서의 중요성을 알게되었다.  
+
+공식문서에는 기타 정보들도 많고 직접적으로 구글링해서 찾아야 할것을 알려준다.  
+다만 한국어가 아니여서 좀많이 아쉬운것같다.. 역시 영어공부를 해야겠다.
+
+### 에러코드를 자세히 읽어보자
+여기에서는 안나왔지만 Build Error를 해결하는 도중 에러 메세지를 재대로 안봤다 ㅜ..  
+왜냐하면 intellij에 있는 Terminal를 쓰고있는데(하단에 놓고 사용해서 위에가 가려진다..)  
+계속 빌드가 실패했다는 메시지만 보였고 가려진 진짜 에러부분을 볼 생각을 못했었다.(위에 에러메세지가 있는줄 몰랐다...)  
+~~진짜 이거 에러메세지 보고 현타가 엄청왔었다..~~
+
+#### 마무리
+그래도 이번 기회에 gradle에 대한 생명주기 및 build tool에서 라이브러리를 어떻게 가져오는지에 대해 찾아볼 수 있어서 좋았다.  
+그리고 한층 성장한것같아 기분이 좋다.

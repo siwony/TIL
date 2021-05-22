@@ -1,6 +1,7 @@
 # Ds_store gitignore
-> mac을 이용하여 개발하다 보면 프로젝트 안에 .Ds_store파일이 엄청 많이 생길수 있다.(ex. jubjub)
-> 이러한 상황을 미연에 방지하기 위해 이 md를 작성한다.
+> MacOs 에서 개발을 할때 거슬리는것은 mac의 cache file인 Ds_store가 프로젝트 폴더에 생기는것이다.  
+> 실제로 본인은 협업 프로젝트에서 .Ds_store를 엄청올려버렸다.. ex([jubjub](https://github.com/GSM-Web-Technology/Jup-Jup-Server))  
+> 이러한 상황을 미연에 방지 + 앞으로 써먹기 위해 이 md를 작성한다.
 
 다음과 같이 작성하면된다.  
 `.gitignore`

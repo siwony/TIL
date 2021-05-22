@@ -17,9 +17,15 @@
 ### BackEnd
 - [Payload](/BE/payload.md)
 
+### &nbsp;Java EE
+- [JavaEE](/BE/JavaEE/javaee.md)
+- [Servlet](/BE/JavaEE/servlet.md)
+
 ### &nbsp;Build Tool
-- [(SpringBoot Project) Maven에서 Gradle로 migration](/BE/BuildTool/gradle/maven-to-gradle-migration.md)
+- [Build Tool](/BE/BuildTool/build-tool.md)
 #### &nbsp;&nbsp; Gradle
+- [Gradle](BE/BuildTool/gradle/gralde.md)
+- [(SpringBoot Project) Maven에서 Gradle로 Build Tool migration!](/BE/BuildTool/gradle/maven-to-gradle-migration.md)
 - [build.gradle plugins{...}방식 에러해결](/BE/BuildTool/gradle/build-gradle-plugins-allowed%20befor-plugins-block.md)
   > only buildscript {} and other plugins {} script blocks are  
   > allowed before plugins {} blocks, no other statements are allowed   
@@ -79,7 +85,7 @@
 - [02 프로젝션](BE/Spring/JPA/JPQL/02-projection.md)
 - [03 페이징](BE/Spring/JPA/JPQL/03-paging.md)
 
-### &nbsp; Spring DATA JPA
+#### Spring DATA JPA
 - [00 Intro](BE/Spring/JPA/DataJPA/00-intro.md)
 - [01 공통인터페이스](BE/Spring/JPA/DataJPA/01-comman-repository.md)
 - [02 쿼리 메소드 기능](BE/Spring/JPA/DataJPA/02-query-method.md)

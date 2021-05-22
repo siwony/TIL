@@ -27,7 +27,7 @@
 : 사용자가 웹서버에 요청을 전달한다.  
    &rarr; 만약 Servlet에 대한 요청인 경우 WAS에 요청을 전달한다.
 #### 2. Web Container에서 request, response객체 생성
-: Web Container는 사용자의 요청에 대한 HttpServletRequest 객체와, HttpServletResponse 객체를 생성한다.
+: Web Container는 사용자의 요청에 대한 `HttpServletRequest` 객체와, `HttpServletResponse` 객체를 생성한다.
 #### 3. 사용자 요청처리
 1. Web Container에서 배포서술자(web.xml)를 참조하여 사용자가 요청한 URL이 어떤 Servlet에 mapping되는지 찾는다.
 
