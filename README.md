@@ -24,7 +24,7 @@
 ### &nbsp;Build Tool
 - [Build Tool](/BE/BuildTool/build-tool.md)
 #### &nbsp;&nbsp; Gradle
-- [Gradle](BE/BuildTool/gradle/gralde.md)
+- [Gradle](BE/BuildTool/gradle/gradle.md)
 - [(SpringBoot Project) Maven에서 Gradle로 Build Tool migration!](/BE/BuildTool/gradle/maven-to-gradle-migration.md)
 - [build.gradle plugins{...}방식 에러해결](/BE/BuildTool/gradle/build-gradle-plugins-allowed%20befor-plugins-block.md)
   > only buildscript {} and other plugins {} script blocks are  
