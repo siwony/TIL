@@ -94,6 +94,11 @@
 - [node.js 설치 및 개발환경 세팅](/BE/NodeJS/how-to-install-nodeJs.md)
 - [MySQL 연결](/BE/NodeJS/Connect-MySql.md)
 - [ORM모듈 Sequelize 사용하기(모델만들기)](/BE/NodeJS/sequelize.md)
+
+### &nbsp;SSH
+- [REMOTE HOST IDENTIFICATION HAS CHANGED 에러 해결](/BE/SSH/remote-host-identification-has-changed-error.md)
+
+
 ### &nbsp; DataBase
 - [RDB 란?](/DataBase/relational-database.md)
 ### &nbsp; MySQL
@@ -101,17 +106,17 @@
 - [MySQL 실행관련 명령어](/DataBase/MySQL/mysql-run-command.md)
 - [mysql 명령어](/DataBase/MySQL/mysql-command.md)
 
-### 기타
-- [개발용어 정리](/ETC/dev-terminology.md)
-- [Component](/ETC/component.md)
+### Computer Science
+- [소프트웨어 테스트](/CS/sw-test.md)
+
 ### Programming
 - [Object Orinted Programing](/Programming/OOP.md)  
 
-**XDD(X Driven Development)**
+#### XDD(X Driven Development)
 - [DDD](/Programming/DDD.md)
 - [TDD & BDD](/Programming/TDD-BDD.md)
 
-**JAVA**
+#### JAVA
 - [JAVA?](/Programming/JAVA/01-java.md)
 - [JAVA 데이터형](/Programming/JAVA/02-java-Data-type.md)
 - [JAVA 배열](/Programming/JAVA/03-array.md)
@@ -121,7 +126,7 @@
 - [JAVA package](/Programming/JAVA/07-package.md)
 - [Enumeration 와 Iterator](/Programming/Java/enumeration-iterator.md)
  
-**JAVA Design Pattern**
+#### JAVA Design Pattern
 - [디자인패턴?](/Programming/JAVA/Design-pattern/Design-Pattern.md)
 - [전략패턴(Strategy Pattern)](/Programming/JAVA/Design-pattern/Strategy-Pattern.md)
 - [어뎁터패턴(Adepter Pattern)](Programming/JAVA/Design-pattern/Adepter-Pattern.md)
@@ -130,7 +135,7 @@
 - [데코레이터 패턴(Decorator Pattern)](Programming/JAVA/Design-pattern/Decorator-Pattern.md)
 - [옵저버 패턴(Observer Pattern)](programming/java/../../Programming/Java/Design-pattern/Observer-Pattern.md)
 
-**python**
+#### python
 - [python install](/Programming/Python/how-to-install-python.md)
 - [변수, 데이터형](/Programming/Python/ariables-and-data-type.md)
 
@@ -146,3 +151,7 @@
 ### Book
 - [README](/Book/README.md)
 - [객체지향 사실과 오해](/Book/object-orientation-facts-and-misconceptions/README.md)
+
+### 기타
+- [개발용어 정리](/ETC/dev-terminology.md)
+- [Component](/ETC/component.md)
