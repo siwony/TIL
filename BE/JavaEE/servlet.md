@@ -7,7 +7,7 @@
 
 Servlet을 알기전에 먼제 웹 어플리케이션의 실행 과정에 대해 알아야 한다.
 
-### 웹 어플리케이션의 실행 과정
+### 웹 어플리케이션의 실행 과정
 <img width=500px src="./img/web-application-run-process.png">
 
 1. 웹 브라우저가 웹 서버에게 요청을 전송한다.
