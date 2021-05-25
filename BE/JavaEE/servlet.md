@@ -34,7 +34,7 @@ Servlet을 알기전에 먼제 웹 어플리케이션의 실행 과정에 대해
 - 보안(Servlet Container)
 
 ### Servlet동작 과정
-<img width=650px src="./img/Servlet-process.png">
+<img width=650px src="./img/servlet-process.png">
 
 #### 1. 사용자의 요청
 : 사용자가 웹서버에 요청을 전달한다.  
