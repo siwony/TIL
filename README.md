@@ -11,8 +11,16 @@
 - [aws EC2](/DevOps/awsEC2.md)
 - [EC2를 이용한 간단한 Spring Boot server 배포](/DevOps/simple-spring-boot-aws.md)
 - [SSH](/DevOps/ssh.md)
-- [Docker](/DevOps/Docker.md)
 - [CI/CD](/DevOps/CI-CD.md)
+#### Docker
+- [Docker](/DevOps/docker/Docker.md)
+- [Docker install](DevOps/docker/docker-install.md) - ubuntu
+- [container, image 삭제](/DevOps/docker/container-rm.md)
+- [container root로 접속하기](/DevOps/docker/container-root.md)
+  > `List directory /var/lib/apt/lists/partial is missing. - Acquire (13: Permission denied)` 해결
+
+#### Jenkins
+- [Jenkins install]() - ubuntu
 
 ### BackEnd
 - [Payload](/BE/payload.md)
@@ -107,6 +115,7 @@
 - [mysql 명령어](/DataBase/MySQL/mysql-command.md)
 
 ### Computer Science
+- [소프트웨어 생명주기](CS/swlc.md)
 - [소프트웨어 테스트](/CS/sw-test.md)
 
 ### Programming
