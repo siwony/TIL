@@ -20,7 +20,7 @@
   > `List directory /var/lib/apt/lists/partial is missing. - Acquire (13: Permission denied)` 해결
 
 #### Jenkins
-- [Jenkins install]() - ubuntu
+- [Jenkins install](/DevOps/jenkins/jenkins-install.md) - ubuntu
 
 ### BackEnd
 - [Payload](/BE/payload.md)
@@ -134,6 +134,7 @@
 - [JAVA enum](/Programming/JAVA/06-enum.md)
 - [JAVA package](/Programming/JAVA/07-package.md)
 - [Enumeration 와 Iterator](/Programming/Java/enumeration-iterator.md)
+- [Exception](/Programming/Java/exception.md)
  
 #### JAVA Design Pattern
 - [디자인패턴?](/Programming/JAVA/Design-pattern/Design-Pattern.md)
@@ -149,9 +150,12 @@
 - [변수, 데이터형](/Programming/Python/ariables-and-data-type.md)
 
 ### Web
+- [API](/Web/api.md)
 - [REST API](/web/RESTAPI.md)
 - [서버기반 인증 & 토큰기반 인증](/web/tokenAuth-serverAuth.md)
 - [Domain](/web/domain.md)
+- [DNS](/web/dns.md)
+- [HTTP](/Web/http.md)
 - [Cookie, Session](/web/cookie-and-session.md)
 - [URI,URL,URN](/web/URI-URL-URN.md)
 - [Web Socket](/web/web-socket.md)
