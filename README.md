@@ -143,23 +143,23 @@
 - [싱글톤패턴(Singleton Pattern)](Programming/JAVA/Design-pattern/Singleton-Pattern.md)
 - [프록시패턴(Proxy Pattern)](Programming/JAVA/Design-pattern/Proxy-Pattern.md)
 - [데코레이터 패턴(Decorator Pattern)](Programming/JAVA/Design-pattern/Decorator-Pattern.md)
-- [옵저버 패턴(Observer Pattern)](programming/java/../../Programming/Java/Design-pattern/Observer-Pattern.md)
+- [옵저버 패턴(Observer Pattern)](Programming/java/../../Programming/Java/Design-pattern/Observer-Pattern.md)
 
 #### python
 - [python install](/Programming/Python/how-to-install-python.md)
 - [변수, 데이터형](/Programming/Python/ariables-and-data-type.md)
 
 ### Web
-- [HTTP](/web/http.md)
-- [API](/web/api.md)
-- [REST API](/web/RESTAPI.md)
-- [Domain](/web/domain.md)
-- [DNS](/web/dns.md)
-- [서버기반 인증 & 토큰기반 인증](/web/tokenAuth-serverAuth.md)
-- [Cookie, Session](/web/cookie-and-session.md)
-- [URI,URL,URN](/web/URI-URL-URN.md)
-- [Web Socket](/web/web-socket.md)
-- [WAS](/web/was.md)
+- [HTTP](/Web/http.md)
+- [API](/Web/api.md)
+- [REST API](/Web/RESTAPI.md)
+- [Domain](/Web/domain.md)
+- [DNS](/Web/dns.md)
+- [서버기반 인증 & 토큰기반 인증](/Web/tokenAuth-serverAuth.md)
+- [Cookie, Session](/Web/cookie-and-session.md)
+- [URI,URL,URN](/Web/URI-URL-URN.md)
+- [Web Socket](/Web/web-socket.md)
+- [WAS](/Web/was.md)
 
 ### Book
 - [README](/Book/README.md)
