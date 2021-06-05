@@ -7,13 +7,13 @@
 
 <img width=450px src=./img/DIway.jpg>
 
-- **일반적인 의존성**  
-    방법1 A객체가 B와 C객체를 New 생성자를 통해서 직접 생성하는 방법
-- **의존성 주입을 이용한 방법**  
-    방법2 **외부에서 생성 된 객체를 setter(), 생성자를 통해 사용하는 방법**  
+1. **일반적인 의존성**  
+    : A객체가 B와 C객체를 New 생성자를 통해서 직접 생성하는 방법
+2. **의존성 주입을 이용한 방법**  
+    : **외부에서 생성 된 객체를 setter(), 생성자를 통해 사용하는 방법**  
 
 ### DI 방법
-### &nbsp; 생성자 주입
+### &nbsp;1. 생성자 주입
 > 가장 권장하는 방식이다.
 ```java
 public class BookController {
@@ -25,10 +25,10 @@ public class BookController {
 }
 ```
 - 필수적으로 사용해야 하는 레퍼런스 없이는 인스턴스를 만들지 못하도록 강제함
-- [Circular Dependency(순환 참조)](why-field-injection) 의존성을 알아 차릴 수 있다.
+- [Circular Dependency(순환 참조)](./why-field-injection.md) 의존성을 알아 차릴 수 있다.
 - 테스트 코드 작성시 생성자를 통해 의존성 주입이 용이하다.
 
-### 필드 주입
+### &nbsp;2. 필드 주입
 : member field에 `@Autowired`을 선언하여 주입받는 방법
 > 가장 간단하다.
 ```java
@@ -43,7 +43,7 @@ public class BookController {
 - DI Container와 강한 결합을 가져 외부 사용이 용이하지 않음
 - final 선언불가
 
-### &nbsp; Setter 주입
+### &nbsp;3. Setter 주입
 : setter 메서드에 `@Autowired`을 선언하여 주입받는 방법
 ```java
 public class BookController {

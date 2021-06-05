@@ -17,5 +17,5 @@ Commons Logging과 SLF4j는 로거 퍼서드 이다. 실제로 로깅을 수행�
 #### 결론
 우리는 Commons Logging 혹은 SLF4j를 사용하는데 
 1. Commons Logging을 써도 어차피 SLF4j로 바뀐다
-2. SLF4j가 Logback 로거를 선택한다
+2. SLF4j가 Logback logger를 선택한다
 3. 최종적으로 Logback을 쓰게 된다.
