@@ -150,8 +150,8 @@
 - [변수, 데이터형](/Programming/Python/ariables-and-data-type.md)
 
 ### Web
-- [HTTP](/Web/http.md)
-- [API](/Web/api.md)
+- [HTTP](/web/http.md)
+- [API](/web/api.md)
 - [REST API](/web/RESTAPI.md)
 - [Domain](/web/domain.md)
 - [DNS](/web/dns.md)
