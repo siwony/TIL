@@ -2,7 +2,7 @@
 ### 오류(Error)와 예외(Exception)
 #### 오류(Error)
 : 시스템에 비정상적인 상황이 생겼을 때 발생한다.
-- 시스템 레벨에서 발생한다. &rarr; 심각한 수준의 오류
+- 시스템 수준에서 발생한다. &rarr; 심각한 수준의 오류
 - 개발자가 미리 예측하여 처리할 수 없다. &rarr; 오류에 대한 처리를 신경 쓰지 않아도 된다.
 
 #### 예외(Exception)
@@ -13,14 +13,14 @@
 ### JAVA의 예외 클래스
 <img width=550px src="./img/exception-class-structure.png">
 
-- 모든 예외 class는 Throwable class를 상속받고 있다.
+- 모든 예외 class는 `Throwable class`를 상속받고 있다.
 - Error는 시스템 레벨에 심각한 수준의 에러이기 때문에 시스템에 변화를 주어 문제를 처리하는게 일반적이다.
-- Exception은 개발자가 로직을 추가하여 처리할 수 있다.
+- `Exception`은 개발자가 로직을 추가하여 처리할 수 있다.
 
 ### 예외 클래스의 종류
 <img width=550px src="./img/checked-unchecked-exception.png">
 
-**Checked Exception과 Unchecked Exception의 명확한 구분기준은 꼭 처리를 해야되는 여부에 따라 구분된다.**
+**Checked Exception과 Unchecked Exception의 명확한 구분기준은 필수적으로 예외 처리를 해야 하는지에 따라 구분된다.**
 
 ### 일반적인 예외 처리의 방법
 > 일반적으로 예외 복구, 예외처리 회피, 예외 전환 이 있다.
@@ -65,4 +65,4 @@ catch(SQLException e) {
 ```
 **예외를 잡아서 다른 예외를 던지는 것이다.**
 - 호출한 쪽에서 예외를 받아서 처리할떄 좀더 명확하게 인지 할 수 있도록 돕기 위한 방법이다.  &rarr; 예외를 분명히 알아야지 처리하기 좋다.
-- 예를들어 Checked Exception 중 복구가 불가능한 예외가 잡혔다면 이를 Unchecked Exception으로 전환하여 다른 계층에서 일일이 예외를 선언할 필요가 없도록 할 수도 있다.
+- 예를들어 `Checked Exception` 중 복구가 불가능한 예외가 잡혔다면 이를 `Unchecked Exception`으로 전환하여 다른 계층에서 일일이 예외를 선언할 필요가 없도록 할 수도 있다.

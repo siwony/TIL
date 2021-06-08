@@ -8,9 +8,9 @@
 - 보통 도메인 이름을 거꾸로 적은 후, 그 뒤에 프로젝트 이름을 붙여서 만듬
 - 프로젝트 이름뒤에 다른 이름이 나올 수 있다.
 - 각각의 폴더명은 숫자로 시작할 수 없다.
-- 도메인 이름이 8cruz.com 이고 프로젝트 이름이 javastudy 라면 com.eightcruz.javastudy.Hello 로 패키지를 지정 할 수 있다.
+- 도메인 이름이 8cruz.com 이고 프로젝트 이름이 `javastudy` 라면 `com.eightcruz.javastudy` 로 패키지를 지정 할 수 있다.
 ### 사용방법
 - improt {도매인} 처럼 사용
 - 클래스 이름대신에 * 를 적어도 된다. ``import com.eightcruz.javastudy.*;``
-- **improt 하지 않고 사용방법**  
-    ``com.eightcruz.javastudy.Hello hello = newe com.eightcruz.javastudy.Hello(); ``
+- improt를 하지않고 다음과 같이 사용할 수 있다.  
+    ``com.eightcruz.javastudy.Hello hello = new com.eightcruz.javastudy.Hello(); ``

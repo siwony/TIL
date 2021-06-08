@@ -132,7 +132,6 @@
 - [JAVA?](/Programming/Java/01-java.md)
 - [JAVA 데이터형](/Programming/Java/02-java-Data-type.md)
 - [JAVA 배열](/Programming/Java/03-array.md)
-- [JAVA Class and Object](/Programming/Java/04-class-and-object.md)
 - [JAVA scope, static](/Programming/Java/05-scope-static.md)
 - [JAVA enum](/Programming/Java/06-enum.md)
 - [JAVA package](/Programming/Java/07-package.md)
