@@ -137,13 +137,13 @@
 - [Exception](/Programming/Java/exception.md)
  
 #### JAVA Design Pattern
-- [디자인패턴?](/Programming/JAVA/Design-pattern/Design-Pattern.md)
-- [전략패턴(Strategy Pattern)](/Programming/JAVA/Design-pattern/Strategy-Pattern.md)
-- [어뎁터패턴(Adepter Pattern)](Programming/JAVA/Design-pattern/Adepter-Pattern.md)
-- [싱글톤패턴(Singleton Pattern)](Programming/JAVA/Design-pattern/Singleton-Pattern.md)
-- [프록시패턴(Proxy Pattern)](Programming/JAVA/Design-pattern/Proxy-Pattern.md)
-- [데코레이터 패턴(Decorator Pattern)](Programming/JAVA/Design-pattern/Decorator-Pattern.md)
-- [옵저버 패턴(Observer Pattern)](Programming/java/../../Programming/Java/Design-pattern/Observer-Pattern.md)
+- [디자인패턴?](/Programming/Java/Design-pattern/Design-Pattern.md)
+- [전략패턴(Strategy Pattern)](/Programming/Java/Design-pattern/Strategy-Pattern.md)
+- [어뎁터패턴(Adepter Pattern)](Programming/Java/Design-pattern/Adepter-Pattern.md)
+- [싱글톤패턴(Singleton Pattern)](Programming/Java/Design-pattern/Singleton-Pattern.md)
+- [프록시패턴(Proxy Pattern)](Programming/Java/Design-pattern/Proxy-Pattern.md)
+- [데코레이터 패턴(Decorator Pattern)](Programming/Java/Design-pattern/Decorator-Pattern.md)
+- [옵저버 패턴(Observer Pattern)](Programming/Java/Design-pattern/Observer-Pattern.md)
 
 #### python
 - [python install](/Programming/Python/how-to-install-python.md)
