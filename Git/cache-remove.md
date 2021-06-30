@@ -5,5 +5,5 @@
 ### 코드
 ```bash
 git rm -r --cached . # 모든 캐시를 삭제한다.
-git add . // 모든 변경사항 staging
+git add . # 모든 변경사항 staging
 git commit -m "원하는 commit msg"
