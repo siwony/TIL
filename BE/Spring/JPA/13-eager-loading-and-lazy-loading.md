@@ -60,7 +60,7 @@ team.getTeam // 실제 Team을 사용하는 시점에서 초기화 -> 이때 쿼
 - 즉시로딩을 적용하면 예상치 못한 SQL이 발생한다.
   > 연관된 테이블이 10개 이상이라고 생각해보자 끔찍하다.
 - **즉시로딩은 JPQL에서 N + 1 문제를 발생한다.** &rarr; 그냥 `LAZY`로 설정하고 `FETCH JOIN`을 사용하자.
-  1. 만약 `select m from Member m` 라는 JPQL을 사용하면 &rarr; 대충 쿼리가 select * form member 이런 식으로 나간다..
+  1. 만약 `select m from Member m` 라는 JPQL을 사용하면 &rarr; 대충 쿼리가 `select * from member` 이런 식으로 나간다..
   2. Member를 조회했지만 연관된 엔티티가 EAGER로 되어있다.
   3. 그러면 다시 한번 연관된 엔티티를 조회하기 위해 query가 또나온다.
     > N + 1: (1)처음 쿼리를 날리면 (N)개의 쿼리가 따라온다.
