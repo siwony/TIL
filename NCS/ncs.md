@@ -43,7 +43,7 @@ A &rarr; B &rarr; C &rarr; D &rarr; E &rarr; F &rarr; G
 #### 3. 전위 순회
 A &rarr; B &rarr; D &rarr; F &rarr; G &rarr; E &rarr; C
 #### 4. 중위 순회
-F &rarr; G &rarr; D &rarr; B &rarr; E &rarr; A &rarr; C
+F &rarr; D &rarr; G &rarr; B &rarr; E &rarr; A &rarr; C
 #### 5. 후위 순회
 F &rarr; G &rarr; D &rarr; E &rarr; B &rarr; C &rarr; A
 
