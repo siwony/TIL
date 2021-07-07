@@ -4,7 +4,7 @@
 ### 이중 연결 리스트 삽입
 <img width=450 src="https://mblogthumb-phinf.pstatic.net/MjAxOTA3MTJfNTAg/MDAxNTYyODkwMDg2NDYw.kGsaNWHzFCArwLvK5hwmmfuQ8Ow0p3aYyntU_4e4ERQg.HA-YDYeP8cs5rshC0dSWDaDPchtSOnO7H8vcTGoQBicg.PNG.holy_joon/image.png?type=w800">
 
-```s
+```c
 newnode -> Llink = before;
 newnode -> Rlink = before -> Rlink;
 before -> Rlink -> Llink = newnode;
@@ -17,15 +17,15 @@ before -> Rlink = newnode;
 |--|--|--
 |&nbsp;|&nbsp;||
 |&nbsp;|&nbsp;||
-|이광수|||
-|유재석|이보영||
+|이광수(2)|||
+|유재석(1)|이보영(3)||
 
 #### 4 ~ 5
 |스택 A|스택 B|스택 C|
 |--|--|--
 |&nbsp;|&nbsp;||
 |&nbsp;|&nbsp;||
-||||
+|&nbsp;|||
 |유재석||이광수(C에서 이동됨)|
 1. `push(A, "유재석");`
 2. `push(A, "이광수");`
@@ -128,3 +128,23 @@ int main(void){
 
     return 0;
 }
+```
+
+### 동전 게임
+```c
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+int main(int argc, char **argv){
+    int front;
+    srand(time(NULL));
+
+    for(int i = 0; i < 100; i++) 
+        front += rand() % 2;
+        
+    printf("앞면: %d\n뒷면: %d", front , 100 - front);
+}
+```
+
+### 결합 유형
+<img width=550px src="./fault-type.png">
