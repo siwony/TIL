@@ -107,7 +107,6 @@
 ### &nbsp;SSH
 - [REMOTE HOST IDENTIFICATION HAS CHANGED 에러 해결](/BE/SSH/remote-host-identification-has-changed-error.md)
 
-
 ### &nbsp; DataBase
 - [RDB 란?](/DataBase/relational-database.md)
 ### &nbsp; MySQL
@@ -150,10 +149,6 @@
 - [프록시패턴(Proxy Pattern)](Programming/Java/Design-pattern/Proxy-Pattern.md)
 - [데코레이터 패턴(Decorator Pattern)](Programming/Java/Design-pattern/Decorator-Pattern.md)
 - [옵저버 패턴(Observer Pattern)](Programming/Java/Design-pattern/Observer-Pattern.md)
-
-#### python
-- [python install](/Programming/Python/how-to-install-python.md)
-- [변수, 데이터형](/Programming/Python/ariables-and-data-type.md)
 
 ### Web
 - [HTTP](/Web/http.md)
