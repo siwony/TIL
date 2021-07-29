@@ -6,6 +6,12 @@
 - [커밋되지 않거나 저장되지 않은 모든 변경사항 취소 및 삭제](/Git/rm-unstaged.md)
 - [Cache 삭제](/Git/cache-remove.md)
 
+### CS(Computer Science)
+- [소프트웨어 생명주기(software life cycle)](/CS/swlc.md)
+- [소프트웨어 테스트](/CS/img/kinds-of-test.jpg)
+#### &nbsp;&nbsp; Memory
+- [메모리 구조](/CS/Memory/memory-structure.md)
+
 ### DevOps
 - [DevOps](/DevOps/DevOps.md)
 - [aws EC2](/DevOps/awsEC2.md)
