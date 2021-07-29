@@ -9,6 +9,7 @@
 ### CS(Computer Science)
 - [소프트웨어 생명주기(software life cycle)](/CS/swlc.md)
 - [소프트웨어 테스트](/CS/img/kinds-of-test.jpg)
+- [직렬화(serialization)](/CS/data-serialization.md)
 #### &nbsp;&nbsp; Memory
 - [메모리 구조](/CS/Memory/memory-structure.md)
 
