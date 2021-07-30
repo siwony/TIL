@@ -4,11 +4,17 @@
 JAVA는 상속, 캡슐화(은닉성), 다형성, 추상화를 제공한다. [OOP참고](../OOP.md)
 
 #### 2. 운영체체의 독립적(플랫폼에 독립적)
+> WORA(Write Once Run Anywhere)
+
 JAVA는 자바 가상머신(Java Virtual Machine == JVM)에서 실행된다.  
 
 2 - 1. 간단한 JVM 동작원리
 1. JVM에서 별도의 Java Compiler를 통해 개발자가 작성한 코드(`.java `파일)를 **byte code**로 변환합니다.
 2. 변환한 byte code를 JVM를 통해 실행한다.
+
+> #### byte code와 binary code의 차이
+> - Byte code는 JVM같은 가상 머신이 이해할 수 있는 코드(`.class`)
+> - Binary code는 CPU가 이해할 수 있는 코드
 
 #### 3. 자동 메모리 관리(Garbage Collector)
 JAVA는 JVM이 지속적으로 메모리를 감시하여 더이상 사용되지 않는 메모리를 해제시켜 준다.
@@ -25,3 +31,19 @@ JAVA는 애플리케이션이 실행될 때 모든 객체가 생성되지 않고
 - 클래스를 일부 변경시 다시 컴파일 하지 않아도 되는 이점이 있다.
 - 비교적 적은 작업으로 처리할 수 있는 유연성을 제공한다.
 - 반면에 필요할때 메모리에서 불러오기 떄문에 실행 속도가 정적로딩에 비해 느리다.
+
+## JAVA의 기본적인 용어
+### JVM (Java Virtual Machine)
+> WORA(Write Once Run Anywhere)
+- `.class` 파일을 OS 에 맞는 machine code 로 변환 (인터프리터 & JIT 컴파일러)
+- 플렛폼(OS)에 의존적
+  > JAVA는 JVM 의존적 즉, JVM만 있으면 한번 작성하면 여러 플렛폼에서 실행이 가능하다.
+
+### JRE (Java Runtime Environment)
+- JVM + 핵심 라이브러리
+- 개발 관련 x, **실행 관련 o**
+- java 는 보통 JRE 단위로 배포된다. (.jre)
+
+### JDK (Java Development Kit)
+- JRE + 개발 툴(java c)
+- 자바 11부터는 JDK 단위로 배포된다.

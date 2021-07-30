@@ -136,6 +136,7 @@
 - [TDD & BDD](/Programming/TDD-BDD.md)
 
 #### JAVA
+- [JAVA ubuntu 설치](/Programming/Java/java-install-ubuntu.md)
 - [JAVA?](/Programming/Java/01-java.md)
 - [JAVA 데이터형](/Programming/Java/02-java-Data-type.md)
 - [JAVA 배열](/Programming/Java/03-array.md)
