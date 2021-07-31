@@ -138,6 +138,7 @@
 #### JAVA
 - [JAVA ubuntu 설치](/Programming/Java/java-install-ubuntu.md)
 - [JAVA?](/Programming/Java/01-java.md)
+- [JVM(Java Virtual Machine)](/Programming/Java/JVM/jvm.md)
 - [JAVA 데이터형](/Programming/Java/02-java-Data-type.md)
 - [JAVA 배열](/Programming/Java/03-array.md)
 - [JAVA scope, static](/Programming/Java/05-scope-static.md)
@@ -148,7 +149,8 @@
   - [람다 표현식](/Programming/Java/lambda-expression.md)
 - [Enumeration 와 Iterator](/Programming/Java/enumeration-iterator.md)
 - [Exception](/Programming/Java/exception.md)
- 
+
+
 #### JAVA Design Pattern
 - [디자인패턴?](/Programming/Java/Design-pattern/Design-Pattern.md)
 - [전략패턴(Strategy Pattern)](/Programming/Java/Design-pattern/Strategy-Pattern.md)

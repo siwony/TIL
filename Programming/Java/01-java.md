@@ -42,7 +42,7 @@ JAVA는 애플리케이션이 실행될 때 모든 객체가 생성되지 않고
 ### JRE (Java Runtime Environment)
 - JVM + 핵심 라이브러리
 - 개발 관련 x, **실행 관련 o**
-- java 는 보통 JRE 단위로 배포된다. (.jre)
+- java 는 보통 JRE 단위로 배포된다.
 
 ### JDK (Java Development Kit)
 - JRE + 개발 툴(java c)
