@@ -144,6 +144,8 @@ Java7 버전까지의 Heap은 크게 3가지부분으로 나눌 수 있다.
 
 : 생성된 객체들의 정보의 주소값이 저장된 공간이다.
 - Class loader에 의해 로드되는 class나 method 등에 대한 Meta 정보가 저장되며 JVM에 의해 사용된다.
+- 내부적으로 Reflection 기능을 사용하는 Spring Framework를 이용할 경우, 이 영역에 대한 고려가 필요하다.
+- Permanent Generation영역은 Java8부터 제거되고 Metaspace영역으로 전환되었다.
 
 #### New/Young Generation
 1. Eden 영역에서 minor GC가 일어날 때

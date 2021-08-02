@@ -1,19 +1,19 @@
 # Today I Learned
 오늘 새롭게 배운 혹은 삽질한 경험을 간단한 글들을 마크다운 문서로 정리 해 보자! `start - Dec 12 2020`  
 ## 분류
-### GIT
+## GIT
 - [.Ds_store 모두 .gitignore](/Git/ds-store-ignore.md)
 - [커밋되지 않거나 저장되지 않은 모든 변경사항 취소 및 삭제](/Git/rm-unstaged.md)
 - [Cache 삭제](/Git/cache-remove.md)
 
-### CS(Computer Science)
+## CS(Computer Science)
 - [소프트웨어 생명주기(software life cycle)](/CS/swlc.md)
 - [소프트웨어 테스트](/CS/img/kinds-of-test.jpg)
 - [직렬화(serialization)](/CS/data-serialization.md)
 #### &nbsp;&nbsp; Memory
 - [메모리 구조](/CS/Memory/memory-structure.md)
 
-### DevOps
+## DevOps
 - [DevOps](/DevOps/DevOps.md)
 - [aws EC2](/DevOps/awsEC2.md)
 - [EC2를 이용한 간단한 Spring Boot server 배포](/DevOps/simple-spring-boot-aws.md)
@@ -29,7 +29,7 @@
 #### Jenkins
 - [Jenkins install](/DevOps/jenkins/jenkins-install.md) - ubuntu
 
-### BackEnd
+## BackEnd
 - [Payload](/BE/payload.md)
 
 ### &nbsp;Java EE
@@ -121,15 +121,10 @@
 - [MySQL 실행관련 명령어](/DataBase/MySQL/mysql-run-command.md)
 - [mysql 명령어](/DataBase/MySQL/mysql-command.md)
 
-### Computer Science
-- [소프트웨어 생명주기](CS/swlc.md)
-- [소프트웨어 테스트](/CS/sw-test.md)
-
-### Programming
-- [Object Orinted Programing](/Programming/OOP.md)  
-
-### 알고리즘
-- [퀵정렬](Algorithm/QuickSort.md)
+## Programming
+#### OOP 객체지향 프로그래밍
+- [Object Orinted Programing 한눈에 보기](/Programming/OOP/OOP.md) 
+- [General Responsibility Assignment Software Patterns](/Programming/OOP/GRASP.md)
 
 #### XDD(X Driven Development)
 - [DDD](/Programming/DDD.md)
@@ -160,7 +155,10 @@
 - [데코레이터 패턴(Decorator Pattern)](Programming/Java/Design-pattern/Decorator-Pattern.md)
 - [옵저버 패턴(Observer Pattern)](Programming/Java/Design-pattern/Observer-Pattern.md)
 
-### Web
+## 알고리즘
+- [퀵정렬](Algorithm/QuickSort.md)
+
+## Web
 - [HTTP](/Web/http.md)
 - [API](/Web/api.md)
 - [REST API](/Web/RESTAPI.md)
@@ -172,10 +170,10 @@
 - [Web Socket](/Web/web-socket.md)
 - [WAS](/Web/was.md)
 
-### Book
+## Book
 - [README](/Book/README.md)
 - [객체지향 사실과 오해](/Book/object-orientation-facts-and-misconceptions/README.md)
 
-### 기타
+## 기타
 - [개발용어 정리](/ETC/dev-terminology.md)
 - [Component](/ETC/component.md)
