@@ -1,17 +1,24 @@
 # Today I Learned
 오늘 새롭게 배운 혹은 삽질한 경험을 간단한 글들을 마크다운 문서로 정리 해 보자! `start - Dec 12 2020`  
 ## 분류
-## GIT
+### GIT
 - [.Ds_store 모두 .gitignore](/Git/ds-store-ignore.md)
 - [커밋되지 않거나 저장되지 않은 모든 변경사항 취소 및 삭제](/Git/rm-unstaged.md)
 - [Cache 삭제](/Git/cache-remove.md)
 
-## CS(Computer Science)
+## CS(Computer Science) 
 - [소프트웨어 생명주기(software life cycle)](/CS/swlc.md)
 - [소프트웨어 테스트](/CS/img/kinds-of-test.jpg)
 - [직렬화(serialization)](/CS/data-serialization.md)
 #### &nbsp;&nbsp; Memory
 - [메모리 구조](/CS/Memory/memory-structure.md)
+
+#### 자료구조
+- [자료구조](/CS/DataStructure/data-structure.md)
+
+#### OOP 객체지향 프로그래밍
+- [Object Orinted Programing 한눈에 보기](/CS/OOP/OOP.md) 
+- [General Responsibility Assignment Software Patterns](/CS/OOP/GRASP.md)
 
 ## DevOps
 - [DevOps](/DevOps/DevOps.md)
@@ -122,11 +129,7 @@
 - [mysql 명령어](/DataBase/MySQL/mysql-command.md)
 
 ## Programming
-#### OOP 객체지향 프로그래밍
-- [Object Orinted Programing 한눈에 보기](/Programming/OOP/OOP.md) 
-- [General Responsibility Assignment Software Patterns](/Programming/OOP/GRASP.md)
-
-#### XDD(X Driven Development)
+- [소프트웨어 개발의 3개의 KEY원칙 (DRY, KISS, YAGNI)](/Programming/sw-dev-key-principle.md)
 - [DDD](/Programming/DDD.md)
 - [TDD & BDD](/Programming/TDD-BDD.md)
 
