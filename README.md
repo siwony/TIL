@@ -2,89 +2,125 @@
 오늘 새롭게 배운 혹은 삽질한 경험을 간단한 글들을 마크다운 문서로 정리 해 보자! `start - Dec 12 2020`  
 ## 분류
 ### GIT
-- [.Ds_store 모두 .gitignore](/Git/ds-store-ignore.md)
+- [.Ds_store 모두 .gitignore](Git/ds-store-ignore.md)
 - [커밋되지 않거나 저장되지 않은 모든 변경사항 취소 및 삭제](/Git/rm-unstaged.md)
-- [Cache 삭제](/Git/cache-remove.md)
+- [Cache 삭제](Git/cache-remove.md)
 
 ## CS(Computer Science) 
-- [소프트웨어 생명주기(software life cycle)](/CS/swlc.md)
-- [소프트웨어 테스트](/CS/img/kinds-of-test.jpg)
-- [직렬화(serialization)](/CS/data-serialization.md)
+- [소프트웨어 생명주기(software life cycle)](CS/swlc.md)
+- [소프트웨어 테스트](CS/img/kinds-of-test.jpg)
+- [직렬화(serialization)](CS/data-serialization.md)
 #### &nbsp;&nbsp; Memory
-- [메모리 구조](/CS/Memory/memory-structure.md)
+- [메모리 구조](CS/Memory/memory-structure.md)
 
 #### 자료구조
-- [자료구조](/CS/DataStructure/data-structure.md)
+- [자료구조](CS/DataStructure/data-structure.md)
 
 #### OOP 객체지향 프로그래밍
-- [Object Orinted Programing 한눈에 보기](/CS/OOP/OOP.md) 
-- [General Responsibility Assignment Software Patterns](/CS/OOP/GRASP.md)
+- [Object Orinted Programing 한눈에 보기](CS/OOP/OOP.md) 
+- [General Responsibility Assignment Software Patterns](CS/OOP/GRASP.md)
+
+## Programming
+- [소프트웨어 개발의 3개의 KEY원칙 (DRY, KISS, YAGNI)](Programming/sw-dev-key-principle.md)
+- [DDD](Programming/DDD.md)
+- [TDD & BDD](Programming/TDD-BDD.md)
+
+#### JAVA
+- [JAVA ubuntu 설치](Programming/Java/java-install-ubuntu.md)
+- [JAVA?](Programming/Java/01-java.md)
+- [JVM(Java Virtual Machine)](Programming/Java/JVM/jvm.md)
+- [JAVA 데이터형](Programming/Java/02-java-Data-type.md)
+- [JAVA 배열](Programming/Java/03-array.md)
+- [JAVA scope, static](Programming/Java/05-scope-static.md)
+- [JAVA enum](Programming/Java/06-enum.md)
+- [JAVA package](Programming/Java/07-package.md)
+- [JAVA interface](Programming/Java/interface.md)
+  - [함수형 인터페이스(FunctionalInterface)](Programming/Java/functional-interface.md)
+  - [람다 표현식](Programming/Java/lambda-expression.md)
+- [Enumeration 와 Iterator](Programming/Java/enumeration-iterator.md)
+- [Exception](Programming/Java/exception.md)
+
+
+#### JAVA Design Pattern
+- [디자인패턴?](Programming/Java/Design-pattern/Design-Pattern.md)
+- [전략패턴(Strategy Pattern)](Programming/Java/Design-pattern/Strategy-Pattern.md)
+- [어뎁터패턴(Adepter Pattern)](Programming/Java/Design-pattern/Adepter-Pattern.md)
+- [싱글톤패턴(Singleton Pattern)](Programming/Java/Design-pattern/Singleton-Pattern.md)
+- [프록시패턴(Proxy Pattern)](Programming/Java/Design-pattern/Proxy-Pattern.md)
+- [데코레이터 패턴(Decorator Pattern)](Programming/Java/Design-pattern/Decorator-Pattern.md)
+- [옵저버 패턴(Observer Pattern)](Programming/Java/Design-pattern/Observer-Pattern.md)
+
+## 알고리즘
+- [퀵정렬](Algorithm/QuickSort.md)
 
 ## DevOps
-- [DevOps](/DevOps/DevOps.md)
-- [aws EC2](/DevOps/awsEC2.md)
-- [EC2를 이용한 간단한 Spring Boot server 배포](/DevOps/simple-spring-boot-aws.md)
-- [SSH](/DevOps/ssh.md)
-- [CI/CD](/DevOps/CI-CD.md)
-#### Docker
-- [Docker](/DevOps/docker/Docker.md)
+- [DevOps](DevOps/DevOps.md)
+- [ELK stack](DevOps/elk-stack.md)
+  > Elasticsearch, Logstash, Kibana
+### AWS
+- [aws EC2](DevOps/aws/awsEC2.md)
+- [EC2를 이용한 간단한 Spring Boot server 배포](DevOps/aws/simple-spring-boot-aws.md)
+- [SSH](DevOps/aws/ssh.md)
+- [CI/CD](DevOps/aws/CI-CD.md)
+### Docker
+- [Docker](DevOps/docker/Docker.md)
 - [Docker install](DevOps/docker/docker-install.md) - ubuntu
-- [container, image 삭제](/DevOps/docker/container-rm.md)
-- [container root로 접속하기](/DevOps/docker/container-root.md)
+- [container, image 삭제](DevOps/docker/container-rm.md)
+- [container root로 접속하기](DevOps/docker/container-root.md)
   > `List directory /var/lib/apt/lists/partial is missing. - Acquire (13: Permission denied)` 해결
 
-#### Jenkins
-- [Jenkins install](/DevOps/jenkins/jenkins-install.md) - ubuntu
+### Jenkins
+- [Jenkins install](DevOps/jenkins/jenkins-install.md) - ubuntu
 
 ## BackEnd
-- [Payload](/BE/payload.md)
+- [Payload](BE/payload.md)
 
 ### &nbsp;Java EE
-- [JavaEE](/BE/JavaEE/javaee.md)
-- [Servlet](/BE/JavaEE/servlet.md)
+- [JavaEE](BE/JavaEE/javaee.md)
+- [Servlet](BE/JavaEE/servlet.md)
 
 ### &nbsp;Build Tool
-- [Build Tool](/BE/BuildTool/build-tool.md)
+- [Build Tool](BE/BuildTool/build-tool.md)
 #### &nbsp;&nbsp; Gradle
 - [Gradle](BE/BuildTool/gradle/gradle.md)
-- [(SpringBoot Project) Maven에서 Gradle로 Build Tool migration!](/BE/BuildTool/gradle/maven-to-gradle-migration.md)
-- [build.gradle plugins{...}방식 에러해결](/BE/BuildTool/gradle/build-gradle-plugins-allowed%20befor-plugins-block.md)
+- [(SpringBoot Project) Maven에서 Gradle로 Build Tool migration!](BE/BuildTool/gradle/maven-to-gradle-migration.md)
+- [build.gradle plugins{...}방식 에러해결](BE/BuildTool/gradle/build-gradle-plugins-allowed%20befor-plugins-block.md)
   > only buildscript {} and other plugins {} script blocks are  
   > allowed before plugins {} blocks, no other statements are allowed   
   > 애러해결
 
 #### &nbsp;&nbsp; Maven
-- [plugin-not-found 에러 해결 - 버전이 명시가 되어있지 않을때](/BE/BuildTool/maven/plugin-not-found.md)
+- [plugin-not-found 에러 해결 - 버전이 명시가 되어있지 않을때](BE/BuildTool/maven/plugin-not-found.md)
 ### &nbsp; Spring 
-- [Bean](/BE/Spring/Bean.md)
-- [DI(DependencyInjection)](/BE/Spring/DI(Dependency-Injection).md)
-- [IoC](/BE/Spring/IOC(Inversion-Of-Control).md)
-- [Spring 구조](/BE/Spring/DTO,DAO,Entity-class.md)
-- [Logging](/BE/Spring/Logging.md)
+- [Bean](BE/Spring/Bean.md)
+- [DI(DependencyInjection)](BE/Spring/DI(Dependency-Injection).md)
+- [IoC](BE/Spring/IOC(Inversion-Of-Control).md)
+- [Spring 구조](BE/Spring/DTO,DAO,Entity-class.md)
+- [Logging](BE/Spring/Logging.md)
 ### &nbsp; SpringBoot  
 - [Logback](BE/Spring/SpringBoot/logback.md)
-- [File Req, Res처리](/BE/Spring/SpringBoot/SpringBootFile-req-res-prosessing.md)
-- [URL 한글요청할때 깨지는 현상](/BE/Spring/SpringBoot/KoreanGarbled.md)
-- [URL의 character set이 UTF-8이 아니여서 생긴 문제](/BE/Spring/URL-utf-8-problem.md)
+- [File Req, Res처리](BE/Spring/SpringBoot/SpringBootFile-req-res-prosessing.md)
+- [URL 한글요청할때 깨지는 현상](BE/Spring/SpringBoot/KoreanGarbled.md)
+- [URL의 character set이 UTF-8이 아니여서 생긴 문제](BE/Spring/URL-utf-8-problem.md)
 - [CORS 이슈 해결](BE/Spring/SpringBoot/cors.md)
 ### &nbsp; SpringSecurity
-- [SpringSecurity](/BE/Spring/SpringSecurity/spring-security.md)
-- [CSRF(사이트간 요청위조)](/BE/Spring/SpringSecurity/CSRF.md)
+- [SpringSecurity](BE/Spring/SpringSecurity/spring-security.md)
+- [CSRF(사이트간 요청위조)](BE/Spring/SpringSecurity/CSRF.md)
 ### &nbsp; JPA
-- [Entity](/BE/Spring/JPA/Entity.md)
-- [JPA Auditing으로 생성일/수정일 자동화](/BE/Spring/JPA/Auditing.md)
-- [QueryDSL?](/BE/Spring/JPA/QueryDSL.md)
-- [01 JPA?](/BE/Spring/JPA/01-JPA.md)
-- [02 영속성 컨텍스트?](/BE/Spring/JPA/02-PersistenceContext.md)
-- [03 플러시(flush)](/BE/Spring/JPA/03-flush.md)
-- [04 준 영속 상태](/BE/Spring/JPA/04-detached.md)
-- [05 DB schema 자동 생성](/BE/Spring/JPA/05-DB-schema-auto-create.md)
-- [06 객체와 테이블 매핑](/BE/Spring/JPA/06-object-table-mapping.md)
-- [07 기본키 매핑](/BE/Spring/JPA/07-pk-mapping.md)
-  - [07-1 데이터 중심 설계(실습)](/BE/Spring/JPA/07.1-db-driven-design.md)
-- [08 연관관계 맵핑(기초)](/BE/Spring/JPA/08-relationship-mapping-foundation.md)
-  - [08-1 연관관계 매핑 시작(실전)](/BE/Spring/JPA/08.1-relationship-mapping-start.md)
-- [09 다양한 연관관계](/BE/Spring/JPA/09-various-relationship.md)
+- [Entity](BE/Spring/JPA/Entity.md)
+- [JPA Auditing으로 생성일/수정일 자동화](BE/Spring/JPA/Auditing.md)
+- [QueryDSL?](BE/Spring/JPA/QueryDSL.md)
+- [01 JPA?](BE/Spring/JPA/01-JPA.md)
+- [02 영속성 컨텍스트?](BE/Spring/JPA/02-PersistenceContext.md)
+- [03 플러시(flush)](BE/Spring/JPA/03-flush.md)
+- [04 준 영속 상태](BE/Spring/JPA/04-detached.md)
+- [05 DB schema 자동 생성](BE/Spring/JPA/05-DB-schema-auto-create.md)
+- [06 객체와 테이블 매핑](BE/Spring/JPA/06-object-table-mapping.md)
+- [07 기본키 매핑](BE/Spring/JPA/07-pk-mapping.md)
+  - [07-1 데이터 중심 설계(실습)](BE/Spring/JPA/07.1-db-driven-design.md)
+- [08 연관관계 맵핑(기초)](BE/Spring/JPA/08-relationship-mapping-foundation.md)
+  - [08-1 연관관계 매핑 시작(실전)](BE/Spring/JPA/08.1-relationship-mapping-start.md)
+- [09 다양한 연관관계](BE/Spring/JPA/09-various-relationship.md)
   - [09-1 다양한 연관관계 매핑(실전)](BE/Spring/JPA/09.1-various-relationship-mapping.md)
 - [10 연관관계 맵핑(고급) - 상속관계 매핑](BE/Spring/JPA/10-relationship-mapping-advanced.md)
 - [11 @MappedSuperclass](BE/Spring/JPA/11-mapped-superclass.md)
@@ -114,69 +150,36 @@
 - [02 쿼리 메소드 기능](BE/Spring/JPA/DataJPA/02-query-method.md)
 
 ### &nbsp; Node.js
-- [node.js 설치 및 개발환경 세팅](/BE/NodeJS/how-to-install-nodeJs.md)
-- [MySQL 연결](/BE/NodeJS/Connect-MySql.md)
-- [ORM모듈 Sequelize 사용하기(모델만들기)](/BE/NodeJS/sequelize.md)
+- [node.js 설치 및 개발환경 세팅](BE/NodeJS/how-to-install-nodeJs.md)
+- [MySQL 연결](BE/NodeJS/Connect-MySql.md)
+- [ORM모듈 Sequelize 사용하기(모델만들기)](BE/NodeJS/sequelize.md)
 
 ### &nbsp;SSH
-- [REMOTE HOST IDENTIFICATION HAS CHANGED 에러 해결](/BE/SSH/remote-host-identification-has-changed-error.md)
+- [REMOTE HOST IDENTIFICATION HAS CHANGED 에러 해결](BE/SSH/remote-host-identification-has-changed-error.md)
 
 ### &nbsp; DataBase
-- [RDB 란?](/DataBase/relational-database.md)
+- [RDB 란?](DataBase/relational-database.md)
 ### &nbsp; MySQL
-- [MySQL 설치](/DataBase/MySQL/how-to-install-mysql.md)
-- [MySQL 실행관련 명령어](/DataBase/MySQL/mysql-run-command.md)
-- [mysql 명령어](/DataBase/MySQL/mysql-command.md)
-
-## Programming
-- [소프트웨어 개발의 3개의 KEY원칙 (DRY, KISS, YAGNI)](/Programming/sw-dev-key-principle.md)
-- [DDD](/Programming/DDD.md)
-- [TDD & BDD](/Programming/TDD-BDD.md)
-
-#### JAVA
-- [JAVA ubuntu 설치](/Programming/Java/java-install-ubuntu.md)
-- [JAVA?](/Programming/Java/01-java.md)
-- [JVM(Java Virtual Machine)](/Programming/Java/JVM/jvm.md)
-- [JAVA 데이터형](/Programming/Java/02-java-Data-type.md)
-- [JAVA 배열](/Programming/Java/03-array.md)
-- [JAVA scope, static](/Programming/Java/05-scope-static.md)
-- [JAVA enum](/Programming/Java/06-enum.md)
-- [JAVA package](/Programming/Java/07-package.md)
-- [JAVA interface](/Programming/Java/interface.md)
-  - [함수형 인터페이스(FunctionalInterface)](/Programming/Java/functional-interface.md)
-  - [람다 표현식](/Programming/Java/lambda-expression.md)
-- [Enumeration 와 Iterator](/Programming/Java/enumeration-iterator.md)
-- [Exception](/Programming/Java/exception.md)
-
-
-#### JAVA Design Pattern
-- [디자인패턴?](/Programming/Java/Design-pattern/Design-Pattern.md)
-- [전략패턴(Strategy Pattern)](/Programming/Java/Design-pattern/Strategy-Pattern.md)
-- [어뎁터패턴(Adepter Pattern)](Programming/Java/Design-pattern/Adepter-Pattern.md)
-- [싱글톤패턴(Singleton Pattern)](Programming/Java/Design-pattern/Singleton-Pattern.md)
-- [프록시패턴(Proxy Pattern)](Programming/Java/Design-pattern/Proxy-Pattern.md)
-- [데코레이터 패턴(Decorator Pattern)](Programming/Java/Design-pattern/Decorator-Pattern.md)
-- [옵저버 패턴(Observer Pattern)](Programming/Java/Design-pattern/Observer-Pattern.md)
-
-## 알고리즘
-- [퀵정렬](Algorithm/QuickSort.md)
+- [MySQL 설치](DataBase/MySQL/how-to-install-mysql.md)
+- [MySQL 실행관련 명령어](DataBase/MySQL/mysql-run-command.md)
+- [mysql 명령어](DataBase/MySQL/mysql-command.md)
 
 ## Web
-- [HTTP](/Web/http.md)
-- [API](/Web/api.md)
-- [REST API](/Web/RESTAPI.md)
-- [Domain](/Web/domain.md)
-- [DNS](/Web/dns.md)
-- [서버기반 인증 & 토큰기반 인증](/Web/tokenAuth-serverAuth.md)
-- [Cookie, Session](/Web/cookie-and-session.md)
-- [URI,URL,URN](/Web/URI-URL-URN.md)
-- [Web Socket](/Web/web-socket.md)
-- [WAS](/Web/was.md)
+- [HTTP](Web/http.md)
+- [API](Web/api.md)
+- [REST API](Web/RESTAPI.md)
+- [Domain](Web/domain.md)
+- [DNS](Web/dns.md)
+- [서버기반 인증 & 토큰기반 인증](Web/tokenAuth-serverAuth.md)
+- [Cookie, Session](Web/cookie-and-session.md)
+- [URI,URL,URN](Web/URI-URL-URN.md)
+- [Web Socket](Web/web-socket.md)
+- [WAS](Web/was.md)
 
 ## Book
-- [README](/Book/README.md)
-- [객체지향 사실과 오해](/Book/object-orientation-facts-and-misconceptions/README.md)
+- [README](Book/README.md)
+- [객체지향 사실과 오해](Book/object-orientation-facts-and-misconceptions/README.md)
 
 ## 기타
-- [개발용어 정리](/ETC/dev-terminology.md)
-- [Component](/ETC/component.md)
+- [개발용어 정리](ETC/dev-terminology.md)
+- [Component](ETC/component.md)
