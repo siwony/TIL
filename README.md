@@ -13,8 +13,10 @@
 #### &nbsp;&nbsp; Memory
 - [메모리 구조](CS/Memory/memory-structure.md)
 
-#### 자료구조
-- [자료구조](CS/DataStructure/data-structure.md)
+### [자료구조]((CS/DataStructure/data-structure.md))
+#### 선형 구조
+- [list](/CS/DataStructure/linear/list/list.md)
+  - [순차 리스트](/CS/DataStructure/linear/list/sequential-list.md)
 
 #### OOP 객체지향 프로그래밍
 - [Object Orinted Programing 한눈에 보기](CS/OOP/OOP.md) 
@@ -81,7 +83,7 @@
 
 ### &nbsp;Build Tool
 - [Build Tool](BE/BuildTool/build-tool.md)
-#### &nbsp;&nbsp; Gradle
+#### Gradle
 - [Gradle](BE/BuildTool/gradle/gradle.md)
 - [(SpringBoot Project) Maven에서 Gradle로 Build Tool migration!](BE/BuildTool/gradle/maven-to-gradle-migration.md)
 - [build.gradle plugins{...}방식 에러해결](BE/BuildTool/gradle/build-gradle-plugins-allowed%20befor-plugins-block.md)
@@ -89,7 +91,7 @@
   > allowed before plugins {} blocks, no other statements are allowed   
   > 애러해결
 
-#### &nbsp;&nbsp; Maven
+####  Maven
 - [plugin-not-found 에러 해결 - 버전이 명시가 되어있지 않을때](BE/BuildTool/maven/plugin-not-found.md)
 ### &nbsp; Spring 
 - [Bean](BE/Spring/Bean.md)
