@@ -15,8 +15,10 @@
 
 ### [자료구조]((CS/DataStructure/data-structure.md))
 #### 선형 구조
-- [list](/CS/DataStructure/linear/list/list.md)
-  - [순차 리스트](/CS/DataStructure/linear/list/sequential-list.md)
+- [list](CS/DataStructure/linear/list/list.md)
+  - [순차 리스트](CS/DataStructure/linear/list/sequential-list.md)
+  - [연결 리스트](CS/DataStructure/linear/list/linked-list.md)
+    > Singly Linked List, Circular Linked List, Doubly Linked List
 
 #### OOP 객체지향 프로그래밍
 - [Object Orinted Programing 한눈에 보기](CS/OOP/OOP.md) 

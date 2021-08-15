@@ -6,16 +6,16 @@
 1. 자신의 터미널에서 키페어가 있는 디렉토리로 이동 한다.
 2. 터미널에서 pair key의 권한을 변경
     > key 이름은 ``~.pem`` 형식으로 되어있다
-    ```bash
+    ```sh
     chmod 400 키이름.pem
     ```
     > 유저가 읽기만가능하다는 권환으로 변경
 3. 자신의 AWS instance 를 선택후 연결하기 를 누른다.
 4. 그후 SSH 클라이언트 텝에 있는 ``예`` 에 적어져있는 명령어를 터미널에 입력한다.
-    >필자의 key 이름은 ~~귀찮아서~~ `asdfasef` 로 했다. 
+    >필자의 key 이름은 ~~귀찮아서~~ `asdfasef` 로 했다.  
     <img width=500 src=./img/SSH-Connect.png>
 
-5. 다음과 같이 뜨면 성공이다.
+5. 다음과 같이 뜨면 성공이다.  
     <img width=500 src=./img/success.png>
 
 ### AWS Linux 가상환경에서 배포 환경 구축하기
@@ -59,8 +59,8 @@
     ```bash
     vim deploy.sh
     ```
-    Vim
-    ```
+    bash shell script
+    ```bash
     #!/bin/bash
     # maven 프로젝트 폴더로 옮기기
     cd ./SpringBoot-MembershipAPI
@@ -102,7 +102,7 @@
     ```bash
     cat nohub.out
     ```
-    curl 를 이용한 서버 동작여부test
+    curl 를 이용한 서버 동작여부 test
     ```bash
     curl localhost:8080
     ```

@@ -10,4 +10,7 @@
 ### 선형 구조인 List의 종류
 - [Sequent List](sequential-list.md)
 - [Linked List](linked-list.md)
+  - Singly Linked List
+  - Circular Linked List
+  - Doubly Linked List
   
