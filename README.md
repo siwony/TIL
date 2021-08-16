@@ -12,6 +12,7 @@
 - [직렬화(serialization)](CS/data-serialization.md)
 #### &nbsp;&nbsp; Memory
 - [메모리 구조](CS/Memory/memory-structure.md)
+- [캐시 메모리](CS/Memory/cache.md)
 
 ### [자료구조]((CS/DataStructure/data-structure.md))
 #### 선형 구조
@@ -25,7 +26,7 @@
 - [General Responsibility Assignment Software Patterns](CS/OOP/GRASP.md)
 
 ## Programming
-- [소프트웨어 개발의 3개의 KEY원칙 (DRY, KISS, YAGNI)](Programming/sw-dev-key-principle.md)
+- [소프트웨어 개발 3개의 KEY원칙 (DRY, KISS, YAGNI)](Programming/sw-dev-key-principle.md)
 - [DDD](Programming/DDD.md)
 - [TDD & BDD](Programming/TDD-BDD.md)
 
@@ -43,6 +44,7 @@
   - [람다 표현식](Programming/Java/lambda-expression.md)
 - [Enumeration 와 Iterator](Programming/Java/enumeration-iterator.md)
 - [Exception](Programming/Java/exception.md)
+- [Wrapper Class](Programming/Java/wrapper-class.md)
 
 
 #### JAVA Design Pattern
