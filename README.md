@@ -10,18 +10,22 @@
 - [소프트웨어 생명주기(software life cycle)](CS/swlc.md)
 - [소프트웨어 테스트](CS/img/kinds-of-test.jpg)
 - [직렬화(serialization)](CS/data-serialization.md)
-#### &nbsp;&nbsp; Memory
+### Memory
 - [메모리 구조](CS/Memory/memory-structure.md)
 - [캐시 메모리](CS/Memory/cache.md)
 
 ### [자료구조]((CS/DataStructure/data-structure.md))
+- [추상 자료형 - Abstract Data Type](CS/DataStructure/ADT/adt.md)
 #### 선형 구조
 - [list](CS/DataStructure/linear/list/list.md)
   - [순차 리스트](CS/DataStructure/linear/list/sequential-list.md)
   - [연결 리스트](CS/DataStructure/linear/list/linked-list.md)
     > Singly Linked List, Circular Linked List, Doubly Linked List
 
-#### OOP 객체지향 프로그래밍
+### 네트워크
+- [OSI 7계층 - ~~물데네 전세표응~~](CS/Network/osi-layer-seven.md)
+
+### OOP 객체지향 프로그래밍
 - [Object Orinted Programing 한눈에 보기](CS/OOP/OOP.md) 
 - [General Responsibility Assignment Software Patterns](CS/OOP/GRASP.md)
 
