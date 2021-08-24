@@ -45,7 +45,7 @@ public void run(){
 
 #### 로컬 변수 캡처
 : `final` 혹은 `effective final(사실상 final)` 인 경우에만 참조할 수 있다.
-- 그렇지 않을 경우 concurrency(동시성) 문제가 생길 수 있어서 컴파일러가 방지한다.
+- 그렇지 않을 경우 `concurrency(동시성)` 문제가 생길 수 있어서 컴파일러가 방지한다.
 
 예시
 ```java
@@ -59,8 +59,7 @@ public void run(){
 #### 변수의 쉐도잉(Variable Shadowing)
 > **익명 클래스는 새로 scop를 만들지만, 람다는 람다를 감싸고 있는 스콥과 같다.**
 ```java
-public void run()
-{
+public void run(){
 	int num = 10; 
     num++; //num 을 증가하였으므로 effective Final이 아니다.
 	

@@ -1,33 +1,38 @@
-# HTTP
-> Hyper Text Transfer Protocol
-
+# HTTP - Hyper Text Transfer Protocol
 : 인터넷에서 데이터를 주고받을 수 있는 프로토콜
 
 ### 특징
-- 이름에는 하이퍼텍스트 전송용 프로토콜이지만 HTML, XML, JSON 등 컴퓨터에서 다룰 수 있는것은 모두 전송 가능하다.
-- TCP를 기반으로 REST의 특징을 모두 구현하고 있는 Web기반의 프로토콜
-- 주로 TCP를 사용하고 HTTP/3 부터는 UDP를 사용한다.
-- 80 포트를 사용한다.
+- `Hyper Text` 전송용 프로토콜이지만 `HTML`, `XML`, `JSON`등 컴퓨터에서 다룰 수 있는 모든 형식의 파일은 전송 가능하다.
+- 주로 TCP를 사용하고 `HTTP/3` 부터는 `UDP`를 사용한다.
 - 무상태 프로토콜이다. - Stateless
-- 텍스트 기반의 통신 규약이다.
+  > 이전 데이터 요청과 다음 데이터 요청이 서로 관련이 없다.
+- 80 PORT를 기본으로 사용한다.
+  > HTTPS: 443 PORT
+- 구성요소: Client, Web Server, Proxy
 
 ### 통신 방식
-#### 1. 요청(request) - 응답(request) 방식
+#### 1. 요청(request) - 응답(response) 방식
 <img width=450px src=./img/http-communication.png>
 
-1. Client가 Server에 요청(Request)를한다.
-2. Server는 Client에 요청(Request)에 응답후 응답(Response)한다.
+1. Client가 Server에 요청(Request)한다.
+    > client -> server
+2. Server는 Client에 요청(Request)에 응답(Response)한다.
+    > server -> client
 
 #### 2. 비상태성 (Stateless, Connectless)
 : HTTP는 요청하고 응답을 하면 요청을 끊어버린다.
 - server와 client는 독립적이다.
 - 접속유지 최소화, 연결상태 처리, 정보의 저장관리가 불필요해 서버 디자인이 간단하다.
-- 이전 통신 정보를 알 수 없다. &rarr; 쿠키, 세션등을 사용하여 해결한다.
+- 이전 통신 정보를 알 수 없다. 하지만 이를 쿠키혹은 세션등을 사용하여 해결한다.
+
+## HTTP 기반 시스템의 구성요소
 
 ### Request
-: Client가 서버에게 연락하는 것을 요청이라고 하며 요청을 보낼때는 요청에 대한 정보를 담아 서버로 보낸다.
+: clinet가 server에게 연락하는 것이다.
+- 요청을 보낼 때 요청에 대한 정보를 담아 서버의 특정 자원에 요청을 보낸다.
+  > ex. `foo.com`에 유저 정보를 조회하는 GET요청의 `/user` 자원에 요청을 보낸다. &rarr; `GET foo.com/user`
 
-### 대표적인 HTTP Method  
+#### 대표적인 HTTP Method  
 |HTTP method | CRUD |    의미     |
 |------------|------|------------|
 |POST        |C     |리소스 생성|
@@ -44,9 +49,9 @@
 - `HTTP/1.1` : HTTP 버전
 
 #### 2. Header - 두 번째 줄
-: 두번째 줄부터는 헤더이며 요청에 대한 정보를 담고 있다. User-Agent, Upgrade-Insecure-Requests 등등이 헤더에 해당되며 헤더의 종류는 매우 많다.
+: 두번째 줄부터는 헤더이며 요청에 대한 정보를 담고 있다. `User-Agent`, `Upgrade-Insecure-Requests` 등... 이 헤더에 해당되며 헤더의 종류는 매우 많다.
 
-#### 3. 본문(body) -header에서 한 줄 띈다
+#### 3. 본문(body) -header에서 한 줄 뛰어쓴다.
 : 본문은 요청을 할 때 함께 보낼 데이터를 담는 부분이다. 
 
 ### Requset headers
@@ -83,3 +88,4 @@
 - **3xx (리다이렉션 만료)**: 클라이언트는 요청을 마치기 위해 추가 동작을 취해야 한다.
 - **4xx (요청오류)**: 클라리언트에 오류가 있음을 나타낸다.
 - **5xx (서버오류)**: 서버가 유효한 요청을 명백하게 수행하지 못했음을 나타낸다.
+

@@ -44,8 +44,9 @@
 - [JAVA enum](Programming/Java/06-enum.md)
 - [JAVA package](Programming/Java/07-package.md)
 - [JAVA interface](Programming/Java/interface.md)
-  - [함수형 인터페이스(FunctionalInterface)](Programming/Java/functional-interface.md)
-  - [람다 표현식](Programming/Java/lambda-expression.md)
+  - [함수형 인터페이스 - FunctionalInterface](Programming/Java/functional-interface.md)
+  - [람다 표현식 - Lambda Expression](Programming/Java/lambda-expression.md)
+  - [메소드 레퍼런스 - Method Reference](Programming/Java/method-reference.md)
 - [Enumeration 와 Iterator](Programming/Java/enumeration-iterator.md)
 - [Exception](Programming/Java/exception.md)
 - [Wrapper Class](Programming/Java/wrapper-class.md)
@@ -189,6 +190,7 @@
 ## Book
 - [README](Book/README.md)
 - [객체지향 사실과 오해](Book/object-orientation-facts-and-misconceptions/README.md)
+- [쉽게 배우는 소프트웨어 공학 - GSM CS교재](Book/쉽게-배우는-소프트웨어-공학./README.md)
 
 ## 기타
 - [개발용어 정리](ETC/dev-terminology.md)
