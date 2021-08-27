@@ -6,6 +6,8 @@
 ### Method Reference를 만드는 유형
 <img width =500 src="img/method-reference.jpeg">
 
+> 참고자료 - 모던 자바 인 엑션 3장
+
 #### 1. 정적 메서드 참조
 : **파라미터로 전달받은 변수의 메서드를 사용하는게 아닌, 정적 메서드의 인자로 사용된다.**
 
@@ -28,7 +30,7 @@
 |`(List<T> x) -> x.stream()`                       |`Collection::stream`          |
 |`(String x, String y) -> x.compareTolgnoreCase(y)`|`String::compareToIgnoreCase` |
 > T는 제네릭 타입 즉, 아무타입이나 올 수 있다.
-- `String`의 `length`메서드를 `String::length`로 사용 가능\
+- `String`의 `length`메서드를 `String::length`로 사용 가능
 - `(Instant x) -> x.toEpochMilli()`의 경우 파라미터 `x`를 받아서 `x`자신의 메서드(`toEpochMilli()`)를 수행한다.
   
 **`(String x, String y) -> x.compareToIgnoreCase(y)`를 표현한 `String::compareToIgnoreCase`는 무엇인가.**

@@ -6,10 +6,10 @@
 ### 역할
 #### `interface`의 특징
 - 인터페이스는 객체를 어떻게 구성해야 하는지 정리한 설계도이다.
-- 객체의 교환성(또는 다형성)을 높여준다.
+- 객체의 교환성(다형성)을 높여준다.
 - `interface` 변수에 `interface`가 구현된 서로 다른 구현 객체를 할당해서 사용이 가능하다.
-- 구현 객체를 직접 몰라도 `interface`의 메서드만 알아도 객체 호출이 가능하게 한다.
-- 객체가 `interface`를 사용하면, `interface` 메서드를 반드시 구현해야 하는 제약을 한다.
+- 구현 객체를 직접 몰라도 `interface`만 알아도 객체 호출이 가능하게 한다.
+- 객체가 `interface`를 사용하면, `interface` 메서드를 반드시 구현해야 하는 제약을 건다.
 
 위 특징을 이용해서 얻고자 하는 인터페이스(`interface`) 역할은 다음과 같다.
 <img width=550px src="./img/interface-responsibility.png">
@@ -19,23 +19,25 @@
 ## interface 사용
 ### 1. interface 선언 
 ```java
-[public] interface 인터페이스명 { ... }
+public interface 인터페이스명 { ... }
 
 // ex.1
 public interface User{ ... }
 // ex.2
 interface User{ ... }
 ```
-- 인터페이스명은 Upper CamelCase로 작성되어야 한다.
+- 인터페이스명은 UpperCamelCase로 작성되어야 한다.
 - `interface`는 접근지정자 `public`만 사용할 수 있다.
+  > public을 생략가능하다.
 - `interface`는 객체로 생성할 수 없기 떄문에 생성자를 가질 수 없다.
 
-### 2. interface의 구성요소
+## 2. interface의 구성요소
 1. [상수 필드(Constant Field)](#2-1-상수-필드constant-field)
 2. [추상 메서드(Abstract Method)](#2-2-추상-메서드abstract-method)
 3. [디폴트 메서드(Default Method)](#2-3-디폴트-메서드default-method)
 4. [정적 메서드(Static Method)](#2-4-정적-메서드static-method)
-#### 2-1. 상수 필드(Constant Field)
+> 대괄호(`[]`)는 생략 가능한 것을 나타냄
+### 2-1. 상수 필드(Constant Field)
 ```java
 public interface User{
     
@@ -47,12 +49,12 @@ public interface User{
 }
 ```
 - `interface`는 객체가 될 수 없기에 런타임에 필드 데이터를 저장할 수 없다.  
-  그래서 **인스턴스 필드(`instance field `)** / **정적 필드(`static field`)**는 선언이 불가능 하다. 
+  > 그래서 **인스턴스 필드(`instance field `)** / **정적 필드(`static field`)** 는 선언이 불가능 하다. 
 - 상수 필드는 `Compile Time`에 선언되고 `Run Time`에 변경되지 않으므로 인터페이스에 선언이 가능하다.
 - [public static final]는 명시적으로 사용하지 않아도, `Compile Time`에 자동으로 선언되어 상수로 만든다.
 - 네이밍은 모두 대문자로 구성되고 구분자는 Under Bar("_") 로 표현한다.
 
-#### 2-2. 추상 메서드(Abstract Method)
+### 2-2. 추상 메서드(Abstract Method)
 ```java
 public interface User{
     [public abstract] 리턴타입 메서드이름(매개변수, ...)
@@ -66,12 +68,21 @@ public interface User{
 - 추상 메서드는 **리턴 타입** / **매서드 시그니처(Method sigature)** 가 기술되는 클래스 설계 메서드이다.
 - `public abstract`은 명시적으로 선언하지 않아도, `Compile Time`에 자동으로 선언된다.
 
-#### 2-3 디폴트 메서드(Default Method)
+### 2-3 디폴트 메서드(Default Method)
 ```java
 public interface User{
     //디폴트 메서드(Default Method)
+    /**
+    /* @implSpac
+    /* 이 구현체는 어떤 행동을 합니다.
+    */
     [ public ] default 리턴타입 메서드_이름(매개변수, ...){ ... }
+
     // 예시
+    /**
+    /* @implSpac
+    /* 이 매서드는 사용자의 상태를 변경합니다.
+    */
     public default void setStatus(Status status){
         if(statuc == Status.ACTIVE){
             System.out.println("사용자가 활성화 되었습니다.");
@@ -84,9 +95,31 @@ public interface User{
 - 선언시 `default` 가 필요하다.
 - 클래스의 인스턴스 메서드와 동일하다.  &rarr; 인스턴스 메서드 
 - 디폴트 메서드는 나중에 인터페이스를 구현한 구현 클래스에 인스턴스 메서드로 추가된다.
-- 재정의(`Override`)를 통해서 구현 클래스에서 재정의된 인스턴스 메서드로 사용할 수 있다.
+- 기본 메서드는 구현체가 모르게 추가된 기능으로 그만큼 리스크가 있다.
+  - 구현체에 따라 런타임 에러가 발생할 수 있다. ex. NPE 등...
+  - 반드시 문서화를 하는걸 권장한다. `@ImplSpec`
+- Object에서 제공하는 메서드는 사용할 수 없다.
+  > hashCode, equals
 
-#### 2-4 정적 메서드(Static Method)
+#### Default Method Override
+> 재정의(`Override`)를 통해서 구현 클래스에서 default 메서드를 재구현할 수 있다.
+```java
+// 예시코드
+public class UserImpl implements User{
+
+    @Override
+    public default void setStatus(Status status){
+        if(status == Status.ACTIVE)
+            System.out.println("사용자가 활성화 되었습니다.");
+        else if(status == Status.AFK)
+            System.out.println("사용자가 잠수상태가 되었습니다.");
+        else
+            System.out.println("사용자가 비활성화 되었습니다");
+    }
+}
+```
+
+### 2-4 정적 메서드(Static Method)
 ```java
 public interface User{
     // 정적 메서드(Static Method)
@@ -99,9 +132,9 @@ public interface User{
 ```
 - Java8 에서 추가된 `interface`의 맴버이다.
 - 키워드로 `static`을 붙이고 **메소드 시그니처 + 메서드의 Body(몸체)** 가 있어야 한다.
-- [ `public` ]은 명시적으로 사용하지 않아도, `Compile Time`에 자동으로 선언됩니다.
+- [ `public` ]은 명시적으로 사용하지 않아도, `Compile Time`에 자동으로 선언된다.
 
-### 3. interface 구현
+## 3. interface 구현
 - 객체는 interface에 있는 추상 메서드를 구현한 실체 메서드를 가지고 있어야한다.
 - interface를 구현한 객체를 구현 객체(구현체) 라고 한다.
 
@@ -205,3 +238,65 @@ User user = new User(){
 **익명 구현 객체는 일반 클래스처럼 클래스가 생성된다.**
 - 익명 구현 객체가 사용된 자바 파일을 컴파일을 하게 되면 자동으로 익명 구현 객체의 클래스 파일이 생성된다.
 - `[익명 구현 객체가 사용된 자바 파일]$[번호].class` 형식으로 생성된다.
+
+## 4. Java8 버전과 그 이전 버전의 interface차이
+### default method가 추가되어 일어난 변화
+#### 1. Java8 이전 interface의 문제점
+- 인터페이스가 함수의 구현을 강제한다.
+- 강제하지 않기 위해 `abstrict class - 추상 클래스`를 만들어 함수의 몸체를 비우는 식으로 구현할 수 있다.
+  
+예제코드
+```java
+public interface Foo{
+    void A();
+    void B();
+    void C();
+}
+
+public abstract class FooAbstrict implements Foo{
+    @Override
+    void A(){}
+    @Override
+    void B(){}
+    @Override
+    void C(){}
+}
+
+public class FooImpl extends FooAbstrict{
+
+    @Override
+    void A{
+        System.out.println("DO A");
+    }
+}
+```
+1. `Foo`라는 interface의 모든 메서드(`A`, `B`, `C`)에 대해 구현을 강제하지 않기 위해 `FooAbstrict`에서 함수의 몸체를 비워서 구현했다
+2. `Foo`를 구현할 `FooImpl`는 `FooAbstrict` 추상 클래스로 인해 `Foo` interface의 모든 메서드의 구현하지 않아도 된다.
+
+#### 2. Java8 버전의 interface
+- `default method`가 생겨 위와 같은 방식이 아닌 interface에서 구현을 강제하지 않을 수 있는 방법을 제공한다.
+
+예제코드
+```java
+public interface Foo{
+    default void A(){};
+    default void B(){};
+    default void C(){};
+}
+
+public class FooImpl extends Foo{
+
+    @Override
+    void A{
+        System.out.println("DO A");
+    }
+}
+```
+
+#### 3. 그래서 어디서 사용했었나요?
+Spring Web MVC의 설정을 제어하는 `WebMvcConfigurer`를 예로 들 수 있다.
+
+Java 8 이전에는 `WebMvcConfigurerAdapter`를 상속받아 구현했지만,  
+ `default method` 기능이 추가되며 `WebMvcConfigurer`를 구현하면 된다.
+- [`WebMvcConfigurer` 공식문서](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/servlet/config/annotation/WebMvcConfigurer.html)
+- [`WebMvcConfigurerAdapter` 공식문서](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/servlet/config/annotation/WebMvcConfigurerAdapter.html)
