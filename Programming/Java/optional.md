@@ -149,7 +149,7 @@ Optional<Member> optMember = memberRepository.findByUsername("siwony");
 Optional<Integer> member = optMember.map(meber -> member.getAge());
 ```
 
-1. `flatMap(Function)`
+2. `flatMap(Function)`
 > Optional 안에 들어있는 인스턴스가 Optional인 경우에 사용한다.
 
 예시

@@ -5,8 +5,6 @@
 - 자바를 사용하여 웹을 만들기 위해 필요한 기술이다.
 - `javax.Servlet.http.HttpServlet` 클래스를 상속받아 사용한다.
 
-Servlet을 알기전에 먼제 웹 어플리케이션의 실행 과정에 대해 알아야 한다.
-
 ### 웹 어플리케이션의 실행 과정
 <img width=500px src="./img/web-application-run-process.png">
 
@@ -21,12 +19,11 @@ Servlet을 알기전에 먼제 웹 어플리케이션의 실행 과정에 대해
 
 ### Servlet의 특징
 - 클라이언트의 요청에 대해 동적으로 작동하는 웹 어플리케이션 컴포넌트
-- html을 사용하여 요청에 응답한다.
 - Java Threed를 이용하여 동작한다.
 - MVC 패턴에서 controller로 이용한다.
 - HTTP 프로토콜 서비스를 지원하는 `javax.Servlet.http.HttpServlet` 클래스를 상속받는다.
 - UDP보다 처리 속도가 느리다.
-- HTML 변경 시 Servlet을 재컴파일해야한다.
+- HTML 변경 시 Servlet을 재 컴파일해야한다.
 
 ### Servlet의 장점
 - threed를 이용하여 요청을 처리하므로 빠르다.
@@ -146,4 +143,4 @@ Servlet과 Web서버가 쉽게 통신할 수 있게 한다.
 - 각 요청들을 "분리된 threed" 내부에서 처리한다.  
  Servlet을 사용하는것은 JVM이 각 요청을 분리된 자바 threed 내부에서 처리하도록 하는것이다.  
 - 각 서블릿은 HTTP 요청에 응답하는 특정한 요소들이 있는 자바 클래스이다.
-- 대부분의 사례에 서블릿 컨테이너는 하나의 JVM에서 동작하지만 컨테이너가 여러개의 JVM들을 필요로하는 문제들이 존재하기도 한다.
+- 서블릿 컨테이너는 하나의 JVM에서 동작하지만 컨테이너가 여러개의 JVM들을 필요로하는 문제들이 존재하기도 한다.
