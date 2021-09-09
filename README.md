@@ -10,6 +10,7 @@
 - [소프트웨어 생명주기(software life cycle)](CS/swlc.md)
 - [소프트웨어 테스트](CS/img/kinds-of-test.jpg)
 - [직렬화(serialization)](CS/data-serialization.md)
+- [동시성 & 병렬성 - Concurrency & Parallelism](CS/concurrency-parallelism.md)
 ### Memory
 - [메모리 구조](CS/Memory/memory-structure.md)
 - [캐시 메모리](CS/Memory/cache.md)
