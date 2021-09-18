@@ -98,7 +98,7 @@ before shutdown
 ```
 
 #### shutdownNow
-: 모든 활성된 task을 종료하려 시도하고 새로운 task가 할당되는 것을 막는다.
+: 모든 활성된 task을 즉시 종료하려 시도하고 새로운 task가 할당되는 것을 막는다.
 
 예시 코드
 ```java
@@ -128,4 +128,4 @@ Exception in thread "main" java.util.concurrent.RejectedExecutionException: Task
 	at TestMain.main(TestMain.java:25)
 before shutdown
 ```
-- 곧바로 task를 종료하려 시도한것을 `InterruptedException`가 발생한걸로 알 수 있다.
+- `InterruptedException`가 발생한 것을 통해 곧바로 task를 종료하려 시도한 것을 알 수 있다.

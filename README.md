@@ -35,9 +35,8 @@
 - [DDD](Programming/DDD.md)
 - [TDD & BDD](Programming/TDD-BDD.md)
 
-#### JAVA
+### [JAVA](Programming/Java/01-java.md)
 - [JAVA ubuntu 설치](Programming/Java/java-install-ubuntu.md)
-- [JAVA?](Programming/Java/01-java.md)
 - [JVM(Java Virtual Machine)](Programming/Java/JVM/jvm.md)
 - [JAVA 데이터형](Programming/Java/02-java-Data-type.md)
 - [JAVA 배열](Programming/Java/03-array.md)
@@ -54,10 +53,14 @@
 - [Stream](Programming/Java/stream.md)
 - [Optional](Programming/Java/optional.md)
 - [Java8 Date/Time API](Programming/Java/date-time.md)
-- [JAVA 동시성 프로그래밍](Programming/Java/concurrent-programming.md)
-  - [Thread Pool](Programming/Java/thread-pool.md)
-  - [Executor Framework](Programming/Java/executor-framework.md)
+#### [JAVA 동시성 프로그래밍](Programming/Java/concurrent/concurrent-programming.md)
+  - [Thread Pool](Programming/Java/concurrent/thread-pool.md)
+  - [Executor Framework](Programming/Java/concurrent/executor-framework.md)
+  - [Callable과 Future](Programming/Java/concurrent/callable-)
 
+#### &nbsp;Java EE
+- [JavaEE](BE/JavaEE/javaee.md)
+- [Servlet](BE/JavaEE/servlet.md)
 
 #### JAVA Design Pattern
 - [디자인패턴?](Programming/Java/Design-pattern/Design-Pattern.md)
@@ -92,10 +95,6 @@
 
 ## BackEnd
 - [Payload](BE/payload.md)
-
-### &nbsp;Java EE
-- [JavaEE](BE/JavaEE/javaee.md)
-- [Servlet](BE/JavaEE/servlet.md)
 
 ### &nbsp;Build Tool
 - [Build Tool](BE/BuildTool/build-tool.md)
