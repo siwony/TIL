@@ -110,11 +110,14 @@
 ####  Maven
 - [plugin-not-found 에러 해결 - 버전이 명시가 되어있지 않을때](BE/BuildTool/maven/plugin-not-found.md)
 ### &nbsp; Spring 
-- [Bean](BE/Spring/Bean.md)
 - [DI(DependencyInjection)](BE/Spring/DI(Dependency-Injection).md)
 - [IoC](BE/Spring/IOC(Inversion-Of-Control).md)
 - [Spring 구조](BE/Spring/DTO,DAO,Entity-class.md)
+- [Bean](BE/Spring/Bean.md)
+  - [Bean 라이프사이클](BE/Spring/bean-life-cycle.md)
 - [Logging](BE/Spring/Logging.md)
+
+
 ### &nbsp; SpringBoot  
 - [Logback](BE/Spring/SpringBoot/logback.md)
 - [File Req, Res처리](BE/Spring/SpringBoot/SpringBootFile-req-res-prosessing.md)
@@ -166,6 +169,7 @@
 - [00 Intro](BE/Spring/JPA/DataJPA/00-intro.md)
 - [01 공통인터페이스](BE/Spring/JPA/DataJPA/01-comman-repository.md)
 - [02 쿼리 메소드 기능](BE/Spring/JPA/DataJPA/02-query-method.md)
+- [Custom Repository](BE/Spring/JPA/DataJPA/custom-repository.md)
 
 ### &nbsp; Node.js
 - [node.js 설치 및 개발환경 세팅](BE/NodeJS/how-to-install-nodeJs.md)
