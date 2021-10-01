@@ -53,6 +53,8 @@
 - [Stream](Programming/Java/stream.md)
 - [Optional](Programming/Java/optional.md)
 - [Java8 Date/Time API](Programming/Java/date-time.md)
+- [Plan Old Java Object](Programming/Java/POJO(Plain-Old-JAVA-Object).md)
+- [JavaBeans](Programming/Java/java-beans)
 #### [JAVA 동시성 프로그래밍](Programming/Java/concurrent/concurrent-programming.md)
   - [Thread Pool](Programming/Java/concurrent/thread-pool.md)
   - [Executor Framework](Programming/Java/concurrent/executor-framework.md)
@@ -164,6 +166,8 @@
 - [01 JPQL](BE/Spring/JPA/JPQL/01-JPQL.md)
 - [02 프로젝션](BE/Spring/JPA/JPQL/02-projection.md)
 - [03 페이징](BE/Spring/JPA/JPQL/03-paging.md)
+
+#### [Querydsl](BE/Spring/Querydsl/querydsl.md)
 
 #### Spring DATA JPA
 - [00 Intro](BE/Spring/JPA/DataJPA/00-intro.md)
