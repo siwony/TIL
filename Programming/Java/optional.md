@@ -20,14 +20,14 @@ Scala나 Haskell같은 함수형 언어들은 `존재할지 안 할지 모르는
 : `"null이 될 수도 있는 객체”`을 감싸고 있는 일종의 Wrapper Class이다.
 - NPE를 유발할 수 있는 null을 직접 다루지 않아도 된다.
 - 명시적으로 해당 변수가 null일 수도 있다는 가능성을 표현할 수 있다.
-  > 빈 값인 경우에 대한 처리를 강제한다.
+  > null에 대한 처리를 강제할 수 있다.
 
-### 기본적인 사용 예시
+### 기본적인 사용 방법
 #### Optional 변수
 - 제네릭을 지원하기 때문에 선언시 명시한 타입 파라미터에 따라 감쌀 수 있다.
 ```java
 Optional<Member> optMember;  // Member타입을 감싸는 Optional
-Optional<Inteager> maybeInteager;  // Inteager 타입을 감싸는 Optional
+OptionalInt maybeInteager;  // int타입의 Optional
 ```
 
 ### 주의할 점
@@ -41,7 +41,7 @@ Optional<Inteager> maybeInteager;  // Inteager 타입을 감싸는 Optional
 - `OptionalInt`, `OptionalLong` 등...
   > 그냥 `Optional`를 사용하면 내부적으로 Auto boxing/unboxing이 일어나므로 오버해드가 발생한다.
 #### 4. `Collection`, `Map`, `Stream Array`, `Optional`은 Opiontal로 감싸지 말자.
-- 값이 비어있다는 것을 표현할 수 있는 객체들이므로 `Optional`를 사용할 필요가 없다.
+- 값이 비어있다는 것을 표현할 수 있는 객체이므로 `Optional`를 사용할 필요가 없다.
 
 ### Optional API 사용 방법
 #### Optional 만들기

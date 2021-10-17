@@ -36,8 +36,13 @@
 - [TDD & BDD](Programming/TDD-BDD.md)
 
 ### [JAVA](Programming/Java/01-java.md)
+- [Java의 기본 배경 지식 - JVM, JDK, JRE](Programming/Java/jvm-jdk-jre.md)
 - [JAVA ubuntu 설치](Programming/Java/java-install-ubuntu.md)
-- [JVM(Java Virtual Machine)](Programming/Java/JVM/jvm.md)
+
+#### [JVM(Java Virtual Machine)](Programming/Java/JVM/jvm.md)
+- [JVM 구조](Programming/java/)
+
+#### 문법 및 API
 - [JAVA 데이터형](Programming/Java/02-java-Data-type.md)
 - [JAVA 배열](Programming/Java/03-array.md)
 - [JAVA scope, static](Programming/Java/05-scope-static.md)
@@ -53,13 +58,16 @@
 - [Stream](Programming/Java/stream.md)
 - [Optional](Programming/Java/optional.md)
 - [Java8 Date/Time API](Programming/Java/date-time.md)
-- [Plan Old Java Object](Programming/Java/POJO(Plain-Old-JAVA-Object).md)
-- [JavaBeans](Programming/Java/java-beans)
+- [Guava 자바 라이브러리](Programming/Java/google-quava.md)
 #### [JAVA 동시성 프로그래밍](Programming/Java/concurrent/concurrent-programming.md)
   - [Thread Pool](Programming/Java/concurrent/thread-pool.md)
   - [Executor Framework](Programming/Java/concurrent/executor-framework.md)
   - [Callable과 Future](Programming/Java/concurrent/callable-future.md)
   - [CompletableFuture](Programming/Java/concurrent/completable-future.md)
+
+#### etc...
+- [Plan Old Java Object](Programming/Java/POJO(Plain-Old-JAVA-Object).md)
+- [JavaBeans](Programming/Java/java-beans)
 
 #### &nbsp;Java EE
 - [JavaEE](BE/JavaEE/javaee.md)

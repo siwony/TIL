@@ -15,5 +15,5 @@ CustomRepository를 생성하기 전에 `xxRepository`가 `JpaRepository`를 상
 3. **xxRepository** 에서 `DomainRepository`와 `xxCustomRepository`를 사용할 수 있다.
 
 ### CustomRepository의 규칙
-- Custom Repository Interface 형식 : `**CustomRepository`
-- Custom Repository Implements 형식 : `**CustomRepositoryImpl`
+- Custom Repository Interface 형식 : `xxCustomRepository`
+- Custom Repository Implements 형식 : `xxCustomRepositoryImpl`
