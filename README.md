@@ -40,7 +40,8 @@
 - [JAVA ubuntu 설치](Programming/Java/java-install-ubuntu.md)
 
 #### [JVM(Java Virtual Machine)](Programming/Java/JVM/jvm.md)
-- [JVM 구조](Programming/java/)
+- [JVM 구조](Programming/Java/JVM/jvm-structure.md)
+- [Class Loader](Programming/Java/JVM/class-loader.md)
 
 #### 문법 및 API
 - [JAVA 데이터형](Programming/Java/02-java-Data-type.md)
@@ -67,7 +68,7 @@
 
 #### etc...
 - [Plan Old Java Object](Programming/Java/POJO(Plain-Old-JAVA-Object).md)
-- [JavaBeans](Programming/Java/java-beans)
+- [Java Beans](Programming/Java/java-beans)
 
 #### &nbsp;Java EE
 - [JavaEE](BE/JavaEE/javaee.md)
