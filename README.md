@@ -42,6 +42,7 @@
 #### [JVM(Java Virtual Machine)](Programming/Java/JVM/jvm.md)
 - [JVM 구조](Programming/Java/JVM/jvm-structure.md)
 - [Class Loader](Programming/Java/JVM/class-loader.md)
+- [바이트 코드 조작 예시](Programming/Java/JVM/byte-code-operation.md)
 
 #### 문법 및 API
 - [JAVA 데이터형](Programming/Java/02-java-Data-type.md)
@@ -60,6 +61,8 @@
 - [Optional](Programming/Java/optional.md)
 - [Java8 Date/Time API](Programming/Java/date-time.md)
 - [Guava 자바 라이브러리](Programming/Java/google-quava.md)
+- [Reflection - 리플렉션](Programming/Java/reflection.md)
+
 #### [JAVA 동시성 프로그래밍](Programming/Java/concurrent/concurrent-programming.md)
   - [Thread Pool](Programming/Java/concurrent/thread-pool.md)
   - [Executor Framework](Programming/Java/concurrent/executor-framework.md)
@@ -67,8 +70,8 @@
   - [CompletableFuture](Programming/Java/concurrent/completable-future.md)
 
 #### etc...
-- [Plan Old Java Object](Programming/Java/POJO(Plain-Old-JAVA-Object).md)
-- [Java Beans](Programming/Java/java-beans)
+- [POJO - 오래된 방식의 간단한 자바객체](Programming/Java/POJO(Plain-Old-JAVA-Object).md)
+- [Java Beans](Programming/Java/java-beans.md)
 
 #### &nbsp;Java EE
 - [JavaEE](BE/JavaEE/javaee.md)

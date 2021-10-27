@@ -49,15 +49,17 @@ public class CarService {
 ## IoC Container
 : Spring Framework는 **객체에 대한 생성 및 생명주기를 관리** 할 수 있는 기능을 제공한다.
 - 객체의 생성을 책임지고, 의존성을 관리
-- POJO의 생성, 초기화, 서비스, 소멸에 대한 권환을 가진다
-- 개발자들이 직접 POJO를 생성할 수 있지만 컨테이너에게 맡긴다.
+- POJO의 생성, 초기화, 서비스, 소멸에 대한 권한을 가진다
+- 객체 생성에 대한 제어권을 IoC Container에 넘긴다.
 
-### BeanFactory
-- Bean을 등록, 생성, 조회, 반환 관리
-- IoC Container 최상위에 있는 interface
-- **보통 BeanFactory를 바로 사용하지 않고, 이를 확장한 `ApplicationContext`를 사용함**
-- getBean() 메서드가 정의되어있다.
-### ApplicationContext
+### 구성요소
+
+#### 1. BeanFactory
+- **Bean 등록, 생성, 조회, 반환 관리**
+- IoC Container의 최상단에 interface로 존재한다.
+- **보통 BeanFactory를 바로 사용하지 않고, 이를 확장한 `ApplicationContext`를 사용한다.**
+- `getBean()` 메서드가 정의되어있다.
+#### 2. ApplicationContext
 - `BeanFactory`와 Bean을 등록, 생성, 조회, 반환 관리하는 기능은 같다.
 - `BeanFactory`의 서브 인터페이스인 `ListableBeanFactory`, `HierachicalBeanFactory`라는 인터페이스를 상속하여 `BeanFactory`를 상속하고 있다.
 - Spring의 각종 부가 서비스를 추가로 제공한다.  
@@ -68,6 +70,6 @@ public class CarService {
     >- ApllicatonContextAware's setApllicationContext
 - Spring이 제공하는 `ApplicationContext` 구현 클래스가 여러 종류가 있다.
 
-## 결국 핵심?
+## 핵심
 개발자가 Bean을 직접 만들지 않고 메타데이터(xml, annotation 등..)를 제공하면 프로그램(Spring framework)이 해당 메타데이터를 사용해 Bean객체를 제어 한다.  
-즉 IoC Container 는 Spring Framework 라고 할 수 있다.
+**즉, `IoC Container == Spring Framework`이라고 할 수 있고, 이는 Spring Framwork를 사용하는 이유이자 핵심기능이다.**
