@@ -73,8 +73,7 @@
 - [POJO - 오래된 방식의 간단한 자바객체](Programming/Java/POJO(Plain-Old-JAVA-Object).md)
 - [Java Beans](Programming/Java/java-beans.md)
 
-#### &nbsp;Java EE
-- [JavaEE](BE/JavaEE/javaee.md)
+#### [Java EE](BE/JavaEE/javaee.md)
 - [Servlet](BE/JavaEE/servlet.md)
 
 #### JAVA Design Pattern
