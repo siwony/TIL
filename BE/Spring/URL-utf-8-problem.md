@@ -16,7 +16,7 @@
 파일의 이름을 URL에서 추출하니까 한글로 된 리소스는 character set 이 다르므로 **원본파일의 이름의 문자열과 URL에서 추출한 이름의 문자열은 전혀 달라 접근을 할 수가 없었다.**  
 
 ### 문제 해결방법
-Java 에서 `URLDecoder.decode(URL, character set)` 을 이용하여 Create 로직을 다음과 같이 UTF-8로 decode 하여 DB에 저장한다.
+Java 에서 `java.net.URLDecoder.decode(URL, character set)` 을 이용하여 Create 로직을 다음과 같이 UTF-8로 decode 하여 DB에 저장한다.
 ```java
 uploadImageUrl = URLDecoder.decode(uploadImageUrl, "UTF-8");
 ```

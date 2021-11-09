@@ -35,23 +35,12 @@
 ### Spring Boot 에 Swagger UI 적용하기
 > Swagger UI를 적용하여 Spring Boot에서 사용하고 있는 REST API를 문서화할 수 있다.
 
-**1. pom.xml에 의존성 추가**
-```xml
-<dependencies>
-    <!-- springfox-swagger2 -->
-    <dependency>
-        <groupId>io.springfox</groupId>
-        <artifactId>springfox-swagger-ui</artifactId>
-        <version>2.9.2</version>
-    </dependency>
-    <!-- springfox-swager-ui -->
-    <dependency>
-        <groupId>io.springfox</groupId>
-        <artifactId>springfox-swagger2</artifactId>
-        <version>2.9.2</version>
-    </dependency>
-</dependencies>
-```
+**1. 빌드파일에 의존성 추가**
+버전 알잘딱 해서 추가하면 된다.
+- [SpringFox Swagger2](https://mvnrepository.com/artifact/io.springfox/springfox-swagger2)
+- [SpringFox Swagger UI](https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui)
+
+
 **2. Swagger Config 클래스 작성**
 ```java
 import org.springframework.context.annotation.Bean;
