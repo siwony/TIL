@@ -3,7 +3,6 @@
 
 <img width=600px src="./img/what-is-dns.png">
 
-- DNS는 인터넷 전화번호부와 같다.
 - client는 `93.184.216.34`같은 ip로 접속하는게 아니라  
   `example.com` 이와같은 도메인으로 접속이 가능하다.
 - UDP, TCP 포트 : 53

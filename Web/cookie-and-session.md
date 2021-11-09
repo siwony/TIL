@@ -9,6 +9,7 @@
 : 쿠키는 서버가 사용자의 웹 브라우저에 저장하는 데이터이다. 
 >쿠키의 데이터 형태는 Key 와 Value로 구성되고 String으로만 이루어져 있고 4KB 이상 저장할 수는 없다.  
 - Cookie를 이용한 Server-Client 흐름
+
 <img width="450px" src="./img/cookie-server-client.png"/>
 
 ### 배경
@@ -53,14 +54,19 @@
 2. 서버에서 HTTP Request를 통해 쿠키에서 <code>Sessio-id</code>를 확인을 한 후 없으면 Set-Cookie를 통해 새로 발행할 <code>Session-id</code> 를 보냄
 3. Client는 HTTP Request Header에 Session-id를 포함하여 원하는 Resource를 요청
 4. Server는 Session-id를 통해 해당 session을 찾아 클라이언트 상태 정보를 유지하여 적절한 응답을 함
+
 ### 세션(Session의 특징)
 - Session-id는 브라우저 단위로 저장, 브라우저 종료시 소멸
 - 각 Client에게 고유 ID를 부여(ex. 로그인한 유저, 로그아웃한 유저)
-- 보안 면에서 쿠키보다 우수
 - 사용자가 많아질수록 서버 메모리를 많이 차지
+
 ### 쿠키와 세션의 차이
-- 쿠키와 세션은 비슷한 역활을 하며, 동작원리도 비슷함.(세션도 쿠키 사용)
-- 사용자의 정보가 저장되는 위치(Cookie - local, Session - server resource)
-- 세션은 쿠키 보안이 유리하다.(쿠키는 local에 저장해 비교적 보안에 취약함)
-- 쿠키는 세션보다 빠르다.(세션은 Server에서 처리를 해줘야함)
-- 라이프 사이클 (Cookie-만료되어도 남아 있을수 있음, session-만료시간에 상관없이 브라우저 종료되면 삭제)
+- 쿠키와 세션은 비슷한 역활을 하며, 동작원리가 비슷하다.
+  > 세션은 쿠키를 사용한다.
+- 사용자의 정보가 저장되는 위치
+  > 쿠키는 local, 세션은 server에 정보가 저장된다.
+- 정보가 저장되는 위치로 인해 쿠키가 보안이 비교적 좋지않다.
+- 세션은 server에서 처리를 해야 하므로 쿠키보다 느리다.
+- 라이프 사이클
+  - 쿠키: 만료되어도 local에 남을 수 있다.
+  - 세션: 만료시간 상관없이 브라우저 종료시 소멸
