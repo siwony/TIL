@@ -44,30 +44,35 @@
 - [Class Loader](Programming/Java/JVM/class-loader.md)
 - [바이트 코드 조작 예시](Programming/Java/JVM/byte-code-operation.md)
 
-#### 문법 및 API
+#### 문법 및 기능
 - [JAVA 데이터형](Programming/Java/02-java-Data-type.md)
 - [JAVA 배열](Programming/Java/03-array.md)
 - [JAVA scope, static](Programming/Java/05-scope-static.md)
 - [JAVA enum](Programming/Java/06-enum.md)
 - [JAVA package](Programming/Java/07-package.md)
+- [Enumeration 와 Iterator](Programming/Java/enumeration-iterator.md)
+- [Exception](Programming/Java/exception.md)
+- [Wrapper Class](Programming/Java/wrapper-class.md)
+- [Guava 자바 라이브러리](Programming/Java/google-quava.md)
+
+#### Java8
 - [JAVA interface](Programming/Java/interface.md)
   - [함수형 인터페이스 - FunctionalInterface](Programming/Java/functional-interface.md)
   - [람다 표현식 - Lambda Expression](Programming/Java/lambda-expression.md)
   - [메소드 레퍼런스 - Method Reference](Programming/Java/method-reference.md)
-- [Enumeration 와 Iterator](Programming/Java/enumeration-iterator.md)
-- [Exception](Programming/Java/exception.md)
-- [Wrapper Class](Programming/Java/wrapper-class.md)
 - [Stream](Programming/Java/stream.md)
 - [Optional](Programming/Java/optional.md)
 - [Java8 Date/Time API](Programming/Java/date-time.md)
-- [Guava 자바 라이브러리](Programming/Java/google-quava.md)
-- [Reflection - 리플렉션](Programming/Java/reflection.md)
 
 #### [JAVA 동시성 프로그래밍](Programming/Java/concurrent/concurrent-programming.md)
   - [Thread Pool](Programming/Java/concurrent/thread-pool.md)
   - [Executor Framework](Programming/Java/concurrent/executor-framework.md)
   - [Callable과 Future](Programming/Java/concurrent/callable-future.md)
   - [CompletableFuture](Programming/Java/concurrent/completable-future.md)
+
+#### 바이트 코드를 조작하는 다양한 방법
+- [Reflection - 리플렉션](Programming/Java/reflection.md)
+- [Dynamic Proxy - 다이나믹 프록시](Programming/Java/dynamic-proxy.md)
 
 #### etc...
 - [POJO - 오래된 방식의 간단한 자바객체](Programming/Java/POJO(Plain-Old-JAVA-Object).md)
@@ -137,9 +142,17 @@
 - [URL 한글요청할때 깨지는 현상](BE/Spring/SpringBoot/KoreanGarbled.md)
 - [URL의 character set이 UTF-8이 아니여서 생긴 문제](BE/Spring/URL-utf-8-problem.md)
 - [CORS 이슈 해결](BE/Spring/SpringBoot/cors.md)
+
+
+### Spring MVC
+- [Command Object - 커맨드 객체](BE/Spring/SpringMVC/command-object.md)
+- [HTTP POST 메서드와 Content-Type](BE/Spring/post-and-content-type.md)
+  > feat. Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported
+
 ### &nbsp; SpringSecurity
 - [SpringSecurity](BE/Spring/SpringSecurity/spring-security.md)
 - [CSRF(사이트간 요청위조)](BE/Spring/SpringSecurity/CSRF.md)
+
 ### &nbsp; JPA
 - [Entity](BE/Spring/JPA/Entity.md)
 - [JPA Auditing으로 생성일/수정일 자동화](BE/Spring/JPA/Auditing.md)
