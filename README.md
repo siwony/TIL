@@ -55,7 +55,7 @@
 - [Wrapper Class](Programming/Java/wrapper-class.md)
 - [Guava 자바 라이브러리](Programming/Java/google-quava.md)
 
-#### Java8
+#### Java 8
 - [JAVA interface](Programming/Java/interface.md)
   - [함수형 인터페이스 - FunctionalInterface](Programming/Java/functional-interface.md)
   - [람다 표현식 - Lambda Expression](Programming/Java/lambda-expression.md)
@@ -71,8 +71,9 @@
   - [CompletableFuture](Programming/Java/concurrent/completable-future.md)
 
 #### 바이트 코드를 조작하는 다양한 방법
-- [Reflection - 리플렉션](Programming/Java/reflection.md)
-- [Dynamic Proxy - 다이나믹 프록시](Programming/Java/dynamic-proxy.md)
+- [Reflection - 리플렉션](Programming/Java/byte-code-controller-way/reflection.md)
+- [Dynamic Proxy - 다이나믹 프록시](Programming/Java/byte-code-controller-way/dynamic-proxy.md)
+  - [클래스 기반의 프록시 생성방법](Programming/Java/byte-code-controller-way/dynamic-proxy.md)
 
 #### etc...
 - [POJO - 오래된 방식의 간단한 자바객체](Programming/Java/POJO(Plain-Old-JAVA-Object).md)
@@ -97,11 +98,12 @@
 - [DevOps](DevOps/DevOps.md)
 - [ELK stack](DevOps/elk-stack.md)
   > Elasticsearch, Logstash, Kibana
+
 ### AWS
 - [aws EC2](DevOps/aws/awsEC2.md)
 - [EC2를 이용한 간단한 Spring Boot server 배포](DevOps/aws/simple-spring-boot-aws.md)
-- [SSH](DevOps/aws/ssh.md)
 - [CI/CD](DevOps/aws/CI-CD.md)
+
 ### Docker
 - [Docker](DevOps/docker/Docker.md)
 - [Docker install](DevOps/docker/docker-install.md) - ubuntu
@@ -139,10 +141,11 @@
 ### &nbsp; SpringBoot  
 - [Logback](BE/Spring/SpringBoot/logback.md)
 - [File Req, Res처리](BE/Spring/SpringBoot/SpringBootFile-req-res-prosessing.md)
-- [URL 한글요청할때 깨지는 현상](BE/Spring/SpringBoot/KoreanGarbled.md)
-- [URL의 character set이 UTF-8이 아니여서 생긴 문제](BE/Spring/URL-utf-8-problem.md)
 - [CORS 이슈 해결](BE/Spring/SpringBoot/cors.md)
 
+#### charset 문제
+- [Controller에서 한국어로 요청 받아 UTF-8 적용](BE/Spring/SpringBoot/KoreanGarbled.md)
+- [S3 버킷의 자원 위치를 가리키는 URL이 character set이 UTF-8이 아니여서 생긴 문제](BE/Spring/URL-utf-8-problem.md)
 
 ### Spring MVC
 - [Command Object - 커맨드 객체](BE/Spring/SpringMVC/command-object.md)
@@ -204,11 +207,12 @@
 - [MySQL 연결](BE/NodeJS/Connect-MySql.md)
 - [ORM모듈 Sequelize 사용하기(모델만들기)](BE/NodeJS/sequelize.md)
 
-### &nbsp;SSH
+### &nbsp;[SSH](DevOps/ssh/ssh.md)
 - [REMOTE HOST IDENTIFICATION HAS CHANGED 에러 해결](BE/SSH/remote-host-identification-has-changed-error.md)
 
 ### &nbsp; DataBase
 - [RDB 란?](DataBase/relational-database.md)
+
 ### &nbsp; MySQL
 - [MySQL 설치](DataBase/MySQL/how-to-install-mysql.md)
 - [MySQL 실행관련 명령어](DataBase/MySQL/mysql-run-command.md)
