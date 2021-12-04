@@ -5,6 +5,9 @@ ByteBuddy와 CGlib로 class기반 생성을 할 수 있다.
 이 두가지 모두 상속을 이용한 Proxy객체를 만든다.  
 그러므로 **`final` 클래스 혹은 기본 생성자가 private라면 proxy를 만들 수 없다.** 
 
+인터페이스가 있다면 인터페이스 기반 프록시를 만드는 것을 권장한다.
+> 위와같은 제약사항이 없고 편하다.
+
 이전 글 예제를 기반으로 작성 [이전글](dynamic-proxy.md)
 ## CGlib
 공식 위키: https://github.com/cglib/cglib/wiki

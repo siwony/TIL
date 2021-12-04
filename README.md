@@ -45,11 +45,12 @@
 - [바이트 코드 조작 예시](Programming/Java/JVM/byte-code-operation.md)
 
 #### 문법 및 기능
-- [JAVA 데이터형](Programming/Java/02-java-Data-type.md)
-- [JAVA 배열](Programming/Java/03-array.md)
-- [JAVA scope, static](Programming/Java/05-scope-static.md)
-- [JAVA enum](Programming/Java/06-enum.md)
-- [JAVA package](Programming/Java/07-package.md)
+- [JAVA 데이터형](Programming/Java/grammar/02-java-Data-type.md)
+- [JAVA 배열](Programming/Java/grammar/03-array.md)
+- [JAVA scope, static](Programming/Java/grammar/05-scope-static.md)
+- [JAVA enum](Programming/Java/grammar/06-enum.md)
+- [JAVA package](Programming/Java/grammar/07-package.md)
+- [annotation](Programming/Java/grammar/07-package.md)
 - [Enumeration 와 Iterator](Programming/Java/enumeration-iterator.md)
 - [Exception](Programming/Java/exception.md)
 - [Wrapper Class](Programming/Java/wrapper-class.md)
@@ -57,12 +58,12 @@
 
 #### Java 8
 - [JAVA interface](Programming/Java/interface.md)
-  - [함수형 인터페이스 - FunctionalInterface](Programming/Java/functional-interface.md)
-  - [람다 표현식 - Lambda Expression](Programming/Java/lambda-expression.md)
-  - [메소드 레퍼런스 - Method Reference](Programming/Java/method-reference.md)
-- [Stream](Programming/Java/stream.md)
-- [Optional](Programming/Java/optional.md)
-- [Java8 Date/Time API](Programming/Java/date-time.md)
+  - [함수형 인터페이스 - FunctionalInterface](Programming/Java/grammar/java8/functional-interface.md)
+  - [람다 표현식 - Lambda Expression](Programming/Java/grammar/java8/lambda-expression.md)
+  - [메소드 레퍼런스 - Method Reference](Programming/Java/grammar/java8/method-reference.md)
+- [Stream](Programming/Java/api/java8/stream.md)
+- [Optional](Programming/Java/api/java8/optional.md)
+- [Java8 Date/Time API](Programming/Java/api/java8/date-time.md)
 
 #### [JAVA 동시성 프로그래밍](Programming/Java/concurrent/concurrent-programming.md)
   - [Thread Pool](Programming/Java/concurrent/thread-pool.md)
