@@ -121,7 +121,7 @@
 ## BackEnd
 - [Payload](BE/payload.md)
 
-### &nbsp;Build Tool
+### Build Tool
 - [Build Tool](BE/BuildTool/build-tool.md)
 #### Gradle
 - [Gradle](BE/BuildTool/gradle/gradle.md)
@@ -131,9 +131,9 @@
   > allowed before plugins {} blocks, no other statements are allowed   
   > 애러해결
 
-####  Maven
+#### Maven
 - [plugin-not-found 에러 해결 - 버전이 명시가 되어있지 않을때](BE/BuildTool/maven/plugin-not-found.md)
-### &nbsp; Spring 
+### Spring 
 - [DI(DependencyInjection)](BE/Spring/DI(Dependency-Injection).md)
 - [IoC](BE/Spring/IOC(Inversion-Of-Control).md)
 - [Spring 구조](BE/Spring/DTO,DAO,Entity-class.md)
@@ -142,13 +142,13 @@
 - [Logging](BE/Spring/Logging.md)
 
 
-### &nbsp; SpringBoot  
+### SpringBoot  
 - [Logback](BE/Spring/SpringBoot/logback.md)
 - [File Req, Res처리](BE/Spring/SpringBoot/SpringBootFile-req-res-prosessing.md)
 - [CORS 이슈 해결](BE/Spring/SpringBoot/cors.md)
 
 #### charset 문제
-- [Controller에서 한국어로 요청 받아 UTF-8 적용](BE/Spring/SpringBoot/KoreanGarbled.md)
+- [모든 요청에 대해 UTF-8 charset 적용](BE/Spring/SpringBoot/KoreanGarbled.md)
 - [S3 버킷의 자원 위치를 가리키는 URL이 character set이 UTF-8이 아니여서 생긴 문제](BE/Spring/URL-utf-8-problem.md)
 
 ### Spring MVC
@@ -160,7 +160,7 @@
 - [SpringSecurity](BE/Spring/SpringSecurity/spring-security.md)
 - [CSRF(사이트간 요청위조)](BE/Spring/SpringSecurity/CSRF.md)
 
-### &nbsp; JPA
+## &nbsp; JPA
 - [Entity](BE/Spring/JPA/Entity.md)
 - [JPA Auditing으로 생성일/수정일 자동화](BE/Spring/JPA/Auditing.md)
 - [QueryDSL?](BE/Spring/JPA/QueryDSL.md)

@@ -1,6 +1,8 @@
 # Git Cache 삭제
-> 실수로 파일을 push한후 ignore할때 github에서는 ignore가 안되는 경우가 있다.  
-> 이러한경우 캐시삭제를 한 후 다시 push하면 해결된다.
+실수로 ignore하지 않은 파일을 커밋한 후 ignore를 해도 계속 파일이 추적되는 경우가 있다.
+.gitignore파일에 추가하기 전에 stage에 올라간 파일들이 cache처리되어 기록에 남아버리기 떄문이다.
+이러한경우 git 캐시삭제를 한 후 다시 push하면 해결된다.
+
 
 ### 코드
 ```bash
