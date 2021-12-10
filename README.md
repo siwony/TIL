@@ -36,6 +36,7 @@
 - [TDD & BDD](Programming/TDD-BDD.md)
 
 ### [JAVA](Programming/Java/01-java.md)
+- [Java 버전 변경 - MacOS](Programming/Java/java-version-change.md)
 - [Java의 기본 배경 지식 - JVM, JDK, JRE](Programming/Java/jvm-jdk-jre.md)
 - [JAVA ubuntu 설치](Programming/Java/java-install-ubuntu.md)
 
