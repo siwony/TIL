@@ -1,4 +1,8 @@
 # 템플릿 메서드 패턴 - Template Method Pattern
+#### 참고자료
+- [김영한 인프런 핵심 원리 - 고급편](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B3%A0%EA%B8%89%ED%8E%B8)
+- [예제 코드](https://github.com/siwony/spring-core-principle-advanced/tree/main/src/test/java/com/siwony/ifl_spring_advanced/trace/template)
+
 #### 변하는 것과 변하지 않는 것을 분리
 GOF의 디자인 패턴에서는 템플릿 메서드 패턴을 다음과 같이 정의한다.
 > 작업에서 알고리즘의 골격을 정의하고 일부 단계를 하위 클래스로 연기한다.  
@@ -10,8 +14,8 @@ GOF의 디자인 패턴에서는 템플릿 메서드 패턴을 다음과 같이 
 부모 클래스에 골격인 알고리즘의 골격인 **템플릿을 정의하고**, 일부분만 자식 클래스에 정의하는 것이다. 이렇게 템플릿 메서드 패턴을 사용하면 **특정 부분만 변경**할 수 있다.
 
 ## 예제 - 비즈니스 로직의 수행 속도를 측정하여 로깅하기
+> 실습환경: SpringBoot + lombok + junit5
 다음과 같이 비즈니스 로직을 실행하는 메서드가 2개( `logic1()`, `logic2()` )가 있다.
-> 편의를 위해 junit5 환경에서 메서드를 실행 할 예정
 ```java
 @Test
 public void executeLogic(){
@@ -132,4 +136,4 @@ void executeLogic(){
   > "자식 클래스에서 부모 클래스의 기능을 사용한 것이 있나?"
 - 상속 구조를 사용하기 때문에 별도의 `클래스`/`익명 내부 클래스`를 만들어야 해서 구조가 복잡하다.
 
-템플릿 메서드 패턴과 비슷한 역할을 하면서 상속의 단점을 제거할 수 있는 디자인 패턴은 전략-패턴(Strategy Pattern)이다.
+템플릿 메서드 패턴과 비슷한 역할을 하면서 상속의 단점을 제거할 수 있는 디자인 패턴은 [전략-패턴(Strategy Pattern)](Strategy-Pattern.md)이다.

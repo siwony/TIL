@@ -1,133 +1,124 @@
 # Strategy Pattern(전략 패턴)
-: 여러 알고리즘을 하나의 추상적인 접근점을 만들어 접근 점에서 서로 교환 가능하도록 하는 패턴
-- 객체지향의 꽃이다.
-- SOLID 에 OCP, DIP를 따른다.
-- 위임(Delegate)을 통해 의존성을 역전(DI)시킬 수 있고, 인터페이스를 통해 다형성의 특성으로 변경에 대해 유연한 대처가 가능하다.
-- 인터페이스를 상속받는 구상 클래스가 너무 많아질 수도 있다.
+이전글: [템플릿 메서드 패턴](template-method-pattern.md)
 
-### Delegate(위임)
-: 위임이란 '어떤 메서드의 처리를 다른 인스턴스의 메서드에 맡긴다' 라는 의미이다.
-> 즉, 클라이언트 코드에서 구성(composite)하고 있는 참조 객체를 통해 메서드를 호출하는 것(delegation)을 말한다.
-- 다른 객체의 기능을 수행할때 Delegate라고 부른다.
+#### 참고자료
+- [김영한 인프런 핵심 원리 - 고급편](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B3%A0%EA%B8%89%ED%8E%B8)
+- [예제 코드](https://github.com/siwony/spring-core-principle-advanced/tree/main/src/test/java/com/siwony/ifl_spring_advanced/trace/strategy)
+
+<p align=center><img width=450 src="img/strategy-pattern.png"></p>
+
+전략 패턴은 **변하지 않는 부분을 `Context`** 라는 곳에 두고, **변하는 부분을 `Strategy`** 라는 인터페이스를 만들어 해당 인터페이스를 구현하도록 한다.
+
+> 템플릿 메서드 패턴은 상속을 활용해 특정 부분만 변경하도록 한다. 전략패턴은 **위임**을 통해 특정 부분만 변경할 수 있다.
+
+GOF의 디자인 패턴에서는 전략 패턴의 의도는 다음과 같다.
+> 알고리즘 제품군을 정의하고 각각을 캡슐화하여 상호 교환 가능하게 만들자.   
+> 전략을 사용하면 알고리즘을 사용하는 클라이언트와 독립적으로 알고리즘을 변경할 수 있다.
+
+## 예제 - 비즈니스 로직의 수행 속도를 측정하여 로깅하기
+> 실습환경: SpringBoot + lombok + junit5
+### V1 - 필드에 전략을 저장하는 방식
+> 객체의 생성과 동시에 Strategy 조립하기 - 선 조립, 후 실행
 ```java
-public class GameCharacter{
-    //접근점
-    private Weapon weapon;
+@Slf4j
+@AllArgsConstructor
+public class ContextV1 {
 
-    // 무기 교환 가능
-    public void setWeapon(Weapon weapon){
-        this.weapon = weapon;
+    private Strategy strategy;
+
+    public void execute(){
+        long startTime = System.currentTimeMillis();
+        // 비즈니스 로직 실행
+        strategy.call();
+        // 비즈니스 로직 종료
+        long endTime = System.currentTimeMillis();
+        long resultTime = endTime - startTime;
+        log.info("resultTime={}", resultTime);
     }
+}
 
-    public void attack(){
-        //Delegate(델리게이트)
-        weapon.attack();
+public interface Strategy {
+    void call();
+}
+```
+- `ContextV1`은 변하지 않는 로직을 가지고 있는 템플릿 역할을 하는 코드이다.
+  > 이것을 `컨텍스트 - context`라고 한다.
+- `Context`는 내부에 `Strategy strategy`필드를 가지고 있다. 이 필드에 변하는 부분인 `Strategy`의 구현체를 주입하면 된다.
+- `execute()`에서 `strategy.call();`를 통해 비즈니스 로직 실행을 `Strategy`에 위임했다.
+
+#### 전략패턴 사용
+```java
+@Test
+void strategy(){
+    ContextV1 context1 = new ContextV1(() -> log.info("비즈니스 로직1 실행"));
+    context1.execute();
+
+    ContextV1 context2 = new ContextV1(() -> log.info("비즈니스 로직2 실행"));
+    context2.execute();
+}
+```
+출력 예시
+```log
+17:20:12.049 [main] INFO com.siwony.ifl_spring_advanced.trace.strategy.ContextV1Test - 비즈니스 로직1 실행
+17:20:12.051 [main] INFO com.siwony.ifl_spring_advanced.trace.strategy.code.ContextV1 - resultTime=3
+17:20:12.052 [main] INFO com.siwony.ifl_spring_advanced.trace.strategy.ContextV1Test - 비즈니스 로직2 실행
+17:20:12.052 [main] INFO com.siwony.ifl_spring_advanced.trace.strategy.code.ContextV1 - resultTime=0
+```
+- 람다를 이용해 `ContextV1`에 `Strategy.call()`를 구현했다.
+- 상속을 사용하지 않고 `Strategy`인터페이스를 의존하므로 좀 더 유연한 구조로 변경되었다.
+
+#### 전략 패턴 실행 
+<img width=500 src="img/strategy-exec.png">
+
+#### 선 조립, 후 실행방식
+Context의 내부 필드에 Strategy 를 두고 사용하는 방식은 
+- `Context`와 `Strategy`를 한번 조립하고 나면 이후로는 `Context`를 실행하기만 하면 된다.
+- Spring에서 애플리케이션 로딩 시점에 DI를 통해 필요한 의존관계를 모두 맺어두고 난 다음에 실제 요청을 처리하는 것과 같은 원리이다.
+- 이 방식의 단점은 `Context`와 `Strategy`를 조립한 이후에는 전략을 변경하기 번거롭다.
+  > `Getter/Setter`를 사용해도 되지만 동시성 문제가 있을 수 있다.
+
+이처럼 전략을 변경하기 어려운 방식을 어떻게 해결할 수 있을까?
+
+### V2 - 전략을 실행할 때 직접 파라미터로 전달하는 방식
+위의 방식에서 `Strategy`필드를 제거하고 파라미터로 `Strategy`를 넘겨주기만 하면된다.
+```java
+@Slf4j
+public class ContextV2 {
+
+    public void execute(Strategy strategy){
+        long startTime = System.currentTimeMillis();
+        // 비즈니스 로직 실행
+        strategy.call();
+        // 비즈니스 로직 종료
+        long endTime = System.currentTimeMillis();
+        long resultTime = endTime - startTime;
+        log.info("resultTime={}", resultTime);
     }
 }
 ```
-공격(attack)이라는 기능을 내가 어떤 weapon을 가지고 있느냐에 따라서 달라진다.  
-나(GameCharacter.attack)는 어떻게 공격하는지 모른다. weapon이 알아서 할것이다.
-
-### 전략 패턴을 적용하지 않은 예
-Reference : https://dongdd.tistory.com/165  
-<img width=450px src=./img/ex-strategy-not-use.png>
-
+#### 테스트 코드
 ```java
-public interface Movable {
-    public void move();
-}
-public class Train implements Movable{
-    public void move(){
-        System.out.println("선로를 통해 이동");
-    }
-}
-public class Bus implements Movable{
-    public void move(){
-        System.out.println("도로를 통해 이동");
-    }
-}
-public class Client {
-    public static void main(String args[]){
-        Movable train = new Train();
-        Movable bus = new Bus();
+@Test
+void strategy(){
+    ContextV2 context1 = new ContextV2();
+    context1.execute(() -> log.info("비즈니스 로직1 실행"));
 
-        train.move();
-        bus.move();
-    }
+    ContextV2 context2 = new ContextV2();
+    context2.execute(() -> log.info("비즈니스 로직2 실행"));
 }
 ```
-- 기차는 선로를 따라 이동한다.
-- 버스는 도로를 따라 이동한다.  
-
-그러나 시간이 흘러 선로를 따라 움직이는 버스가 개발이 되어버렸다.  
-&rarr; 그러면 Bus의 `move()`를 다음과 같이 변경하면 끝난다.
+출력 예시
 ```java
-public void move(){
-    System.out.println("선로를 통해 이동");
-}
+17:54:42.737 [main] INFO com.siwony.ifl_spring_advanced.trace.strategy.ContextV2Test - 비즈니스 로직1 실행
+17:54:42.740 [main] INFO com.siwony.ifl_spring_advanced.trace.strategy.code.ContextV2 - resultTime=5
+17:54:42.742 [main] INFO com.siwony.ifl_spring_advanced.trace.strategy.ContextV2Test - 비즈니스 로직2 실행
+17:54:42.742 [main] INFO com.siwony.ifl_spring_advanced.trace.strategy.code.ContextV2 - resultTime=0
 ```
-하지만 이렇게 수정하는 방식은 **SOLID의 OCP(Open-Closed Principle)에 위배된다.**  
-### 위 코드의 문제점
-- **SOLID의 OCP에 위반된다.**
-- 나중에 지금과 같은방식의 변경은 시스템이 확장되었을때 유지보수를 어렵게 한다.
-- 나중에 선로를 따라 옴직이는 이동수단이 생기면 `move()`를 모두다 정의해야한다.
-- 같은 메서드를 여러 클래스에서 똑같이 정의하고 있다. &rarr; 메서드의 중복
+- Context를 실행할 때 마다 전략을 인수로 전달한다.
+  > 이는 장점이자 단점이다.
+- 클라이언트는 `Context`를 실행하는 시점에 원하는 `Strategy`를 전달할 수 있다. 따라서 이전 방식과 비교해서 원하는 전략을 더욱 유연하게 변경할 수 있다.
 
-### Strategy Pattern의 적용
-**전략 정의**
-```java
-public interface MovableStrategy {
-    public void move();
-}
-public class LoadStrategy implements MovableStrategy {
-    @Override
-    public void move() {
-        System.out.println("도로를 통해 이동");
-    }
-}
-public class RailLoadStrategy implements MovableStrategy {
-    @Override
-    public void move() {
-        System.out.println("선로를 통해 이동");
-    }
-}
-```
+#### 전략 패턴 실행 
+<img width=500 src="img/strategy-exec-param.png">
 
-**운송수단 선언**
-```java
-public class Moving {
-    private MovableStrategy movableStrategy;
-
-    public void move() {
-        movableStrategy.move();
-    }
-
-    public void setMovableStrategy(MovableStrategy movableStrategy) {
-        this.movableStrategy = movableStrategy;
-    }
-}
-public class Bus extends Moving {}
-public class Train extends Moving {}
-```
-
-**결과**
-```java
-public class Client {
-    public static void main(String[] args) {
-        Moving train = new Train();
-        Moving bus = new Bus();
-
-        train.setMovableStrategy(new RailLoadStrategy());
-        bus.setMovableStrategy(new RailLoadStrategy());
-
-        train.move();
-        bus.move();
-
-
-        /** rail load bus development*/
-        bus.setMovableStrategy(new RailLoadStrategy());
-        bus.move();
-    }
-}
-```
-위와 같이 운송수단(train, bus)을 움직일 것인지 `setMovableStrategy()`로 `LoadStrategy` 혹은 `RailLoadStrategy` 객체를 이용하여 변경한다.
+다음글: [템플릿 콜백 패턴](template-callback-pettern)
