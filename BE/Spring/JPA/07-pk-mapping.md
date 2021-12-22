@@ -7,9 +7,9 @@
 ### 2. 자동 생성
 `@Id` 와 `@GeneratedValue`를 사용한다.  
 - [`IDENTITY`](#IDENTITY-전략) : DB에 위임, MYSQL
-- [`SEQUENCE`](SEQUENCE-@SequenceGenerator) : DB 시퀀스 오브젝트 사용, ORACLE
+- [`SEQUENCE`](#SEQUENCE-@SequenceGenerator) : DB 시퀀스 오브젝트 사용, ORACLE
     - `@SequenceGenerator` 필요
-- [`TABLE`](TABLE-전략): 키 생성용 테이블 사용, 모든 DB에서 사용 가능하다
+- [`TABLE`](#TABLE-전략): 키 생성용 테이블 사용, 모든 DB에서 사용 가능하다
     - `@TableGenerator` 필요
 - `AUTO`: 방언에 따라 자동 지정, 기본값
 

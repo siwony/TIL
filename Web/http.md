@@ -1,46 +1,53 @@
 # HTTP - Hyper Text Transfer Protocol
 : 인터넷에서 데이터를 주고받을 수 있는 프로토콜
+- 구성요소: Client, Web Server, Proxy
+- 80 PORT를 기본으로 사용한다.
+  > https는 443
 
 ### 특징
-- `Hyper Text` 전송용 프로토콜이지만 `HTML`, `XML`, `JSON`등 컴퓨터에서 다룰 수 있는 모든 형식의 파일은 전송 가능하다.
-- 주로 TCP를 사용하고 `HTTP/3` 부터는 `UDP`를 사용한다.
+- `HTML`, `XML`, `JSON`등 컴퓨터에서 다룰 수 있는 모든 형식의 파일은 전송 가능하다.
 - 무상태 프로토콜이다. - Stateless
   > 이전 데이터 요청과 다음 데이터 요청이 서로 관련이 없다.
-- 80 PORT를 기본으로 사용한다.
-  > HTTPS: 443 PORT
-- 구성요소: Client, Web Server, Proxy
+- 클라이언트 서버 구조
+- 단순하며 확장 가능하다.
 
-### 통신 방식
-#### 1. 요청(request) - 응답(response) 방식
+## 통신 방식
+### 1. 요청(request) - 응답(response) 방식
 <img width=450px src=./img/http-communication.png>
 
-1. Client가 Server에 요청(Request)한다.
-    > client -> server
-2. Server는 Client에 요청(Request)에 응답(Response)한다.
-    > server -> client
+- Request Response 구조
+- 클라이언트는 서버에 요청을 보내고, 응답을 대기한다.
+- 서버가 요청에 대한 결과를 만들어 응답한다.
 
-#### 2. 비상태성 (Stateless, Connectless)
+클라이언트와 서버가 분리되었다는 것이 중요하다.  
+서버는 비즈니스 로직과 데이터에 대해 집중할 수 있고, client는 UI/UX에 집중할 수 있어 서로 독립적으로 진화할 수 있다.
+
+### 2. 비상태성 - Stateless
 : HTTP는 요청하고 응답을 하면 요청을 끊어버린다.
-- server와 client는 독립적이다.
-- 접속유지 최소화, 연결상태 처리, 정보의 저장관리가 불필요해 서버 디자인이 간단하다.
-- 이전 통신 정보를 알 수 없다. 하지만 이를 쿠키혹은 세션등을 사용하여 해결한다.
+- 확장성이 높다.
+- 응답 서버를 쉽게 바꿀 수 있다.
 
-## HTTP 기반 시스템의 구성요소
+#### 2 - 1. **한계점**  
+- 이전에 통신한 정보를 알 수 없다.
+  > 쿠키, 세션으로 해결한다.
 
-### Request
-: clinet가 server에게 연락하는 것이다.
-- 요청을 보낼 때 요청에 대한 정보를 담아 서버의 특정 자원에 요청을 보낸다.
-  > ex. `foo.com`에 유저 정보를 조회하는 GET요청의 `/user` 자원에 요청을 보낸다. &rarr; `GET foo.com/user`
+### 3. 비 연결성 - Connectless
+- HTTP는 기본적으로 연결을 유지하지 않는 모델이다.
+- 서버 자원을 매우 효율적으로 사용할 수 있다.
+  > 매우 많은 유저가 서비스를 사용해도 실제 서버에서 동시에 처리하는 요청을 수십개 이하로 매우 작다.
 
-#### 대표적인 HTTP Method  
-|HTTP method | CRUD |    의미     |
-|------------|------|------------|
-|POST        |C     |리소스 생성|
-|GET         |R     |리소스 조회|
-|PUT         |U     |리소스 수정(= 덮어씀)|
-|DELETE      |D     |리소스 삭제|
+#### 3 - 1. 한계점
+- TCP/IP 연결을 새로 맺어야 한다.
+  > 3 way handshake 시간 추가
+- HTML, JS, CSS, 추가 이미지 등 수 많은 자원이 함께 다운로드 된다.
 
-### HTTP Request - 요청
+이러한 문제를 HTTP-지속-연결(Persistent Connections)로 문제를 해결했고, HTTP/2, HTTP/3에서 더 많은 최적화가 되었다.
+
+## HTTP 메시지
+전반적인 HTTP 메시지
+
+
+### 1. 시작줄
 <img width=600px src="./img/HTTP_Request_Headers.png"> 
 
 #### 1. 시작줄

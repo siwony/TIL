@@ -1,23 +1,22 @@
 # 영속성 컨텍스트 - 내부 동작
-> 영속성 컨텍스트는 JPA를 이해 하는데 가장 중요하다.
+> 영속성 컨텍스트는 JPA를 이해하는데 가장 중요하다.
 ### Entity ManagerFactory 와 EntityManager
 <img width=500px src=./img/entity-manager-factory.png>
 
-1. 고객이 요청 할 때마다 `EntityManagerFactory` 를 통해 `EntityManager`을 생성한다.
-2. `EntityManager`은 내부적으로 커넥션풀을 사용해서 DB를 사용하게 된다.
+1. 고객이 요청할 때마다 `EntityManagerFactory`를 통해 `EntityManager`를 생성한다.
+2. `EntityManager`은 내부적으로 커넥션 풀을 사용해서 DB를 사용하게 된다.
   
 **주의**
 - `EntityManagerFactory`는 하나만 생성해서 애플리케이션 전체에서 공유해야 한다.
-
-- `Entity Manager`은 `Threed` 간 공유하면 안됀다. (사용하고 버려야 한다)
+- `Entity Manager`은 `Threed` 간 공유하면 안 된다.
+  > 사용하고 버려야 한다.
 - JPA의 모든 데이터 변경은 트랜잭션 안에서 실행한다.
 
 ### 영속성 컨텍스트
 : **`entity`를 영구히 저장하는 환경** 
 - ``ex) EntityManger.persist(entity)``  
-  
-- `Entity`를 영속성 컨텍스트 안에 집어넣는다.
-- 영속성 컨텍스트는 논리적인 개념 즉, 눈에보이지 않는다.
+- `Entity`를 영속성 컨텍스트 안에 넣는다.
+- 영속성 컨텍스트는 논리적인 개념 즉, 눈에 보이지 않는다.
 - `EntityManager`를 통해 영속성 컨텍스트에 접근한다.
 
 ## Entity의 생명주기
@@ -64,8 +63,8 @@ em.remove(member);
 ## 영속성 컨텍스트 장점
 
 ### 1차 캐시
-- 한 트랜잭션 내에서 만 사용가능하다. 즉 트랜잭션이 종료되면 사라진다.
-- JPA에서는 조회를 할때 영속성 컨텍스트를 먼저 조회 한다.
+- 한 트랜잭션 내에서만 사용 가능하다. 즉 트랜잭션이 종료되면 사라진다.
+- JPA에서는 조회시 영속성 컨텍스트를 먼저 조회한다.
 <img align=center width=450px src=./img/1st-cash.png>
 
 ```java
@@ -93,9 +92,10 @@ Member b = em.find(Member.class, "member1");
 
 System.out.println(a == b); //동일성 비교 true
 ```
-### 트랜잭션을 지원하는 쓰기 지연 (transactional write-behind)
-- JPA는 commit을 하기 전까지 insert query를 날리지 않아 최적화 할 여지를 준다.
-- 그래서 버퍼링 같은 기능을 한다. (쿼리를 모았다가 한번에 날린다.)
+
+### 트랜잭션을 지원하는 쓰기 지연 - transactional write-behind
+- JPA는 commit을 하기 전까지 insert query를 날리지 않아 최적화할 여지를 준다.
+- 그래서 버퍼링 같은 기능을 한다. (쿼리를 모았다가 한 번에 날린다.)
 <p float=left>
 <img width=400px src=./img/persist-lazy.png>
 <img width=400px src=./img/persist-lazy-commit.png>
@@ -119,7 +119,6 @@ tx.commit(); // [트랜잭션] 커밋
 <img width=450px src=./img/dirty-checking.png>
 
 1. 커밋된 시점에서 내부적으로 `flush()`가 호출된다.
-
 2. `1차 캐시`의 스냅샷과 `entity`를 비교하여 객체가 변경되었는지 비교한다.
 3. 2번에서 변경사항이 나오면 쓰기 지연 `SQL 저장소`에 쿼리를 미리 만들어 저장한다.
 4. DB에 `update query`를 반영한다.

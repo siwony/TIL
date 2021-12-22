@@ -5,8 +5,9 @@
 - `@Entity`가 붙은 클래스는 JPA가 관리한다.
 
 ### 주의
-- **기본생성자 필수**(접근지정자는 `public` or `protected`)
-- `final class`, `Enum`, `interface`, `inner class` 를 사용하면 안 된다.
+- **기본생성자 필수**
+  > 접근지정자 `public` or `protected`
+- `final class`, `enum`, `interface`, `inner class`를 사용하면 안 된다.
 - 저장할 필드에 `final` 키워드는 허용되지 않는다. &rarr; JPA가 Entity를 관리하는데 값이 변경되지 않다면 관리를 할 수 없다.
 
 ### 속성
