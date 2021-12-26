@@ -13,7 +13,6 @@
 
 ## 통신 방식
 ### 1. 요청(request) - 응답(response) 방식
-<img width=450px src=./img/http-communication.png>
 
 - Request Response 구조
 - 클라이언트는 서버에 요청을 보내고, 응답을 대기한다.
@@ -27,7 +26,7 @@
 - 확장성이 높다.
 - 응답 서버를 쉽게 바꿀 수 있다.
 
-#### 2 - 1. **한계점**  
+#### 2 - 1. 한계점  
 - 이전에 통신한 정보를 알 수 없다.
   > 쿠키, 세션으로 해결한다.
 
@@ -43,52 +42,44 @@
 
 이러한 문제를 HTTP-지속-연결(Persistent Connections)로 문제를 해결했고, HTTP/2, HTTP/3에서 더 많은 최적화가 되었다.
 
-## HTTP 메시지
-전반적인 HTTP 메시지
+# HTTP 메시지
+| **HTTP 메시지 구조** | HTTP 메시지 예제 |
+|--------------------------|---------------|
+|<img width=400 src="img/http-message-structure.png">| <img src="img/http-message-example.png">|
 
+## 1. 시작줄
 
-### 1. 시작줄
-<img width=600px src="./img/HTTP_Request_Headers.png"> 
+### 1 - 1. 요청 - Request
+구조는 다음과 같다
+```md
+method SP(공백) request-target SP HTTP-version CRLF(줄바꿈)
 
-#### 1. 시작줄
-> 첫 줄은 시작줄로 메서드 구조 버전으로 구성되었다.
-- `POST` : HTTP Method
-- `HTTP/1.1` : HTTP 버전
+#### 예시
+GET /search?q=hello&lang=ko HTTP/1.1
+```
+#### method - 메서드
+서버가 수행해야 할 동작을 지정하는 역할이다.
+- 종류: GET, POST, PUT, DELETE등...
 
-#### 2. Header - 두 번째 줄
-: 두번째 줄부터는 헤더이며 요청에 대한 정보를 담고 있다. `User-Agent`, `Upgrade-Insecure-Requests` 등... 이 헤더에 해당되며 헤더의 종류는 매우 많다.
+#### request-target - 요청 대상
+- 주로 절대경로(`/`)로 시작한다.
+- 다른 방식으로 표기할 수 있다.
 
-#### 3. 본문(body) -header에서 한 줄 뛰어쓴다.
-: 본문은 요청을 할 때 함께 보낼 데이터를 담는 부분이다. 
+#### HTTP-version
+HTTP의 버전을 나타낸다.
 
-### Requset headers
-#### 1. Request Header  
-: 페치될 리소스나 client 자체에 대한 자세한 정보를 포함하는 header.
-- HTTP 요청에서 사용되지만 메시지의 컨텐츠와는 관련이 없는 HTTP header이다.
+### 1 - 2 응답 - Response
+구조는 다음과 같다.
+```md
+HTTP-version SP status-code SP reason-phrase CRLF
 
-#### 2. General Header
-: 요청과 응답 모두에 적용되지만 바디에서 최종적으로 전송되는 데이터와는 관련이 없는 헤더.
-- Via와 같은 header는 메시지 전체에 적용된다.
-- 가장 흔한 general header: `Date`, `Cache-Control`, `Connection`
+#### 예시
+HTTP/1,1 200 OK
+```
+#### reason-phrase
+사람이 이해할 수 있는 짧은 상태 코드 설명 글
 
-#### 3. Entity Header
-: 컨텐츠 길이나 MIME 타입과 같이 entity body에 대한 자세한 정보를 포함하는 header.
-- `Content-Length`와 같이 요청 본문에 적용된다.
-- 요청 내 Body(본문)이 없을경우 전송되지 않는다.
-
-### HTTP Response - 응답
-<img width=600px src="./img/HTTP_Response_Headers.png">
-
-#### 1. 시작줄
-: 첫 줄은 버전 상태코드 상태메시지로 구성되어 있다. 200은 성공적인 요청이라는 뜻이다.
-
-#### 2. Header - 두 번째 줄
-: 두번째 줄부터는 헤더이며 요청에 대한 정보를 담고 있다.
-
-#### 3. 본문(body) -header에서 한 줄 띈다
-: 본문은 응답할 데이터를 보넨다. 
-
-### 주요 Status Code(상태코드)
+#### 주요 Status Code(상태코드)
 > 자세히는 [MDN HTTP 상태 코드](https://developer.mozilla.org/ko/docs/Web/HTTP/Status) 에 나와있다.
 - **1xx (조건부 응답)**: 요청을 받았으며 작업을 계속한다.  
 - **2xx (성공)** : 클라이언트가 요청한 동작을 이해했고 승락했으며 성공적으로 처리했음을 가르킴
@@ -96,3 +87,29 @@
 - **4xx (요청오류)**: 클라리언트에 오류가 있음을 나타낸다.
 - **5xx (서버오류)**: 서버가 유효한 요청을 명백하게 수행하지 못했음을 나타낸다.
 
+
+## 2. Header
+### 2 - 1. 구조
+```md
+field-name ":" OWS field-value
+
+#### 예시
+GET /search?q=hello&lang=ko HTTP/1.1
+Host: www.google.com
+```
+> OWS(뛰어쓰기 허용)
+- filed-name은 대소문자 구분하지 않는다.
+
+### 2 - 2. 용도
+HTTP 전송에 필요한 모든 부가정보를 담는 용도
+- 인증, 브라우저 정보, 캐시 관리 정보 등...
+- 표준 헤더가 너무 많다.
+- 임의의 헤더를 추가할 수 있다.
+  > hello: hi
+
+## 3. HTTP Message Body
+실제 전송할 데이터를 담고 있다. (playload)
+- byte로 표현 가능한 모든 데이터를 전송할 수 있다.
+  > HTML, JSON, XML, 이미지, 영상 등...
+
+다음글: [더 좋은 API를 설계하는 방법](http-api-design.md)

@@ -227,9 +227,11 @@
 ## Web
 - [TCP, UDP](Web/tcp-udp.md)
 - [HTTP](Web/http.md)
+- [웹 브라우저의 요청 흐름](Web/how-to-browser-can-request.md)
 - [API](Web/api.md)
 - [REST API](Web/RESTAPI.md)
 - [Domain](Web/domain.md)
+- [TCP/UDP](Web/tcp-udp.md)
 - [DNS](Web/dns.md)
 - [서버기반 인증 & 토큰기반 인증](Web/tokenAuth-serverAuth.md)
 - [Cookie, Session](Web/cookie-and-session.md)
