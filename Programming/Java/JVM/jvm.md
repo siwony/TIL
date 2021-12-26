@@ -55,97 +55,135 @@
 5. 해석된 byte code는 `Runtime Data Area` 에 배치되어 실질적인 수행이 이루어진다.
    > 이러한 과정속에서 JVM은 필요에 따라 GC같은 관리 작업을 수행한다.
 
-## JVM의 구성
+# JVM의 구성
 <img width=600 src="./img/jvm-component.png">
 
 > 클래스 로더(Class Loader)가 컴파일된 `Java byte code`를 런타임 데이터 영역(Runtime Data Areas)에 로드하고, 실행 엔진(Execution Engine)이 `Java byte code`를 실행한다.
 
-### 1. Class Loader(클래스 로더)
+## 1. Class Loader(클래스 로더)
 : JVM내로 클래스(`.class`)를 로드하고, 링크를 통해 배치하는 작업을 수행하는 모듈이다.
-#### 특징
+### 1 - 1. 특징
 - **동적 로드**  
   : 컴파일 타임이 아닌 런타임에 클래스를 처음으로 참조할 때 해당 클래스를 로드하고 링크한다.
-- **계층 구조**  
+- **계층 구조 - Hierarchical**  
   : 클래스 로더끼리 부모-자식 관계를 이루어 계층 구조로 생성된다.
     > 최상위 클래스 로더는 부트스트랩 클래스 로더(Bootstrap Class Loader)이다.
-- **위임 모델**  
+- **로딩 요청 위임 - Delegate Load Request**  
   : 계층 구조를 바탕으로 클래스 로더끼리 로드를 위임하는 구조로 동작한다.
     > 클래스를 로드할 때 먼저 상위 클래스 로더를 확인하여 상위 클래스 로더에 있다면 해당 클래스를 사용하고,  
     > 없다면 로드를 요청받은 클래스 로더가 클래스를 로드한다.
-- **가시성(visibility) 제한**  
+- **가시성 제약 조건 - Have Visibility Constraint**  
   : 하위 클래스 로더는 상위 클래스 로더의 클래스를 찾을 수 있지만, 상위 클래스 로더는 하위 클래스 로더의 클래스를 찾을 수 없다.
-- **언로드 불가**  
-  : 클래스 로더는 클래스를 로드할 수는 있지만 언로드할 수는 없다.
+- **언로드 불가 - Cannot unload classes**  
+  : 클래스 로더에 의해 로딩된 클래스들은 다시 JVM상에서 없앨 수 없다.
   > 언로드 대신, 현재 클래스 로더를 삭제하고 아예 새로운 클래스 로더를 생성하는 방법을 사용할 수 있다.
 
-### 2. Execution Engine(실행 엔진)
-: 클래스를 실행시킨다.
-> 클래스 로더가 JVM런타입 데이터 영역에 바이트 코드를 배치시키고 이것을 실행앤진에 의해 실행된다.
-1. `Java byte code`는 기계어보다 비교적 인간이 보기 편한 형태이다.
-2. 그래서 실행 엔진은 `byte code`를 JVM내부에서 기계가 실행할 수 있는 형태로 변경한다.
-3. 이 때 두가지 방법을 사용한다. (Interpreter, JIT)
-- 실행 엔진이 어떻게 동작하는지는 JVM 명세에 규정되지 않았다.
-  > 표준이 없어 여러 JVM 벤더들은 다양한 기법으로 실행 엔진을 향상시키고 다양한 방식의 JIT 컴파일러를 도입하고 있다.
+### 1 - 2. 클래스 로드 과정
+자바의 동적 로딩 기능은 클래스로더 서브 시스템에 의해 처리된다.
+컴파일 시점이 아닌 클래스를 처음 참조하는 런타임 시점에 Loading, Linking, Initialization 작업이 이루어진다.
 
-#### 2-1. Interpreter(인터프리터)
+#### 1) Loading - 로딩
+Bootstrap, Extension, Application 컴포넌트들에 의해 클래스들이 로드되며,  
+이 세가지 클래스 로더들은 모두 상속관계로 정의되어 있으며 delegate(위임) 방식으로 작업을 진행한다.
+
+- **Bootstrap ClassLoader**
+  - JVM을 가동할 떄 생성되며, 자바가 아닌 네이티브 코드로 구현되어 있다.
+  - jre의 lib폴더에 있는 rt.jar 파일을 찾아 자바 API들을 로드하여 이 로더가 우선 순위가 가장 높다.
+- **Extension ClassLoader**
+  - 기본 자바 API를 제외한 확장 클래스를 로드한다.
+    > 다양한 보안 확장 기능 등을 여기에서 로드하게 된다.
+  - jre의 lib폴더에 있는 모든 확장 코어 클래스 파일들을 로드한다.
+- **Application ClassLoader**
+  - Extension ClassLoader의 자식이며 시스템 `클래스로더 - System ClassLoader`라고 불린다.
+    > Application 레벨에 있는 클래스를 로드한다. 즉, 사용자가 지정한 $CLASSPATH내의 클래스를 로드한다.
+
+#### 2) Linking - 연결
+- `verify - 검증` : 바이트코드 검증기는 생성된 자바 바이트코드가 적절한지 대해 검증한다.
+  - 검증이 실패할 경우 검증오류를 발생시킨다.
+- `prepare - 준비` : 모든 정적변수의 메모리가 할당되며 기본 default 값으로 할당한다.
+- `resolve - 해석` : 모든 심볼릭한 메모리 참조를 메서드 영역에 있는 타입으로 직접 참조한다.
+
+#### 3) Initialize - 초기화
+모든 정적 변수가 자바 코드에 명시된 값으로 초기화되며 정적 블록이 실행 된다.
+
+## 2. Execution Engine(실행 엔진)
+런타임 데이터 영역에 할당된 바이트 코드는 실행엔진에 의해서 실행된다.
+- 그래서 실행 엔진은 `byte code`를 JVM내부에서 기계가 실행할 수 있는 형태로 변경한다.
+- 이 때 두가지 방법을 사용한다. (Interpreter, JIT)
+- 실행 엔진이 어떻게 동작하는지는 JVM 명세에 규정되지 않았다.
+  > 표준이 없어 여러 JVM 벤더들은 다양한 기법으로 실행 엔진을 향상시키고 다양한 방식의 JIT컴파일러를 도입하고 있다.
+
+### 2-1. Interpreter(인터프리터)
 : `Java byte code`를 명령어 단위로 읽어 실행하는 방식
 - 한줄씩 실행하기 때문에 느리다는 단점을 가지고 있다.
 
-#### 2-2. JIT(Just In TIme)
-: 인터프리터 방식으로 실행하다 적절한 시점에 `byte code`를 컴파일 하여 *native code*로 변경한 후 더는 인터프리팅하지 않고 *native code*를 직접 실행하는 방식 
-- 네이티브 코드는 케시에 저장되어, 한번 컴파일된 코드는 빠르게 실행된다.
-- 하지만, JIT컴파일러가 컴파일하는 과정은 `byte code`를 인터프리팅하는것 보다 느리다.
+### 2-2. JIT(Just In TIme)
+: 인터프리터 방식으로 실행하다 적절한 시점에 `byte code`를 컴파일하여 *native code*로 변경한 후 더는 인터프리팅하지 않고 *native code*를 직접 실행하는 방식 
+- 네이티브 코드는 캐시에 저장되어, 한번 컴파일된 코드는 빠르게 실행된다.
+- 하지만, JIT컴파일러가 컴파일하는 과정은 `byte code`를 인터프리팅 하는 것보다 느리다.
   > 한 번만 실행될 코드는 인터프리팅하는게 이득이다.
-- JIT컴파일러를 사용하는 JVM은 내부적으로 해당 메서드의 수행을 체크하고, 일정 정도를 넘을떄 컴파일을 수행한다.
+- JIT컴파일러를 사용하는 JVM은 내부적으로 해당 메서드의 수행을 체크하고, 일정 정도를 넘을 때 컴파일을 수행한다.
 
 #### 2-3 GC(Gabage collector)
-: GC를 수행하는 모듈이다.
+아무 참조가 없는 인스턴스를 모아 제거하는 역할.
 
-### 3. Runtime Data Area - Java 7기준
+## 3. Runtime Data Area - Java 7기준
 > 시간이 된다면 Java8버전 이후 JVM의 메모리 구조를 정리해야겠다.
 
-: 프로그램을 수행하기 위해 운영체제로 부터 할당받은 메모리 공간이다.  
-<img style="float: left;" width="385" src="./img/runtime-data-area1.png">
-<img width="495" src="./img/runtime-data-area2.png">
-<div style="clear: both;"></div>
+: JVM이 Java ByteCode를 실행하기 위해 사용되는 메모리 공간이다.
+- 크게 5가지 영역으로 구분할 수 있다.
+  > Method Area, Heap Area, Stack Area, PC Registers, Native Method Stacks
 
+<img width="385" src="./img/runtime-data-area1.png">
 
-#### 3-1 PC Register
-: Threed가 어떤 부분을 어떤 명령으로 실행해야할 지에 대한 부분을 기록하는 부분이다.
-- Threed가 시작될때 생성되며, Threed마다 하나씩 존재한다.
-- 현재 수행중인 JVM 명령어의 주소를 갖는다.
+### 3 - 1. Method Area - 메서드 영역
+- 모든 클래스 수준(클래스명, 부모클래스명, 메소드, 변수)의 데이터가 저장된다.
+- 공유자원 + JVM당 한개의 영역을 가지고 있다.
 
-#### 3-2 JVM stack 영역
-: 프로그램 실행과정에서 임시로 할당되었다가 메소드를 빠져나가면 바로소멸되는 특성의 데이터를 저장하기 위한 영역이다.
-- `여러형태의 변수/임시 데이터`, `threed/method 정보`, `지역변수`, `매개변수`, `리턴 값`, `연산시 일어나는 값들`을 저장한다.
-- 메서드 호출시 각각의 스텍 프레임(해당 메서드만을 위한 공간)이 생성된다.
-- 메서드 수행이 끝나면 스텍 프레임 별로 삭제한다.
-
-#### 3-3 Native Method stack
-실제 실행할 수 있는 기계어로 작성된 프로그램을 실행시키는 영역
-> Java 프로그램이 컴파일되어 생성하는 바이트코드가 아니다. 즉, Java가 아닌 다른언어로 작성된 코드를 위한 공간이다.
-- Java Native Interface를 통해 바이트 코드로 전환하여 저장한다.
-- 일반프로그램처럼 커널이 스텍을 잡아 독자적으로 프로그램을 실행시키는 영역이다.
-  > C언어의 code를 실행시켜 커널에 접근이 가능하다!
-
-
-#### 3-4 Heap(힙 영역)
-: new 연산자로 생성된 객체와 배열을 저장하는 가상 메모리 공간이다.
+### 3 - 2. Heap(힙 영역)
+- 모든 인스턴스 오브젝트(클래스, 배열 등)가 저장되는 공간이다.
 - **GC의 관리 대상이다.**
 - 물론 class 영역에 올라온 클래스들만 객체로 생성할 수 있다.
+- 당 하나의 영역밖에 존재하지 않으며 또한 공유자원이다.
 
 Java7 버전까지의 Heap은 크게 3가지부분으로 나눌 수 있다.
   > Permanent Generation(제거 됨), New/Young Generation, Tenured Generation  
 
 <img src="./img/heap-component.png">
 
-#### Permanent Generation - Java8부터 제거됨
+Java8 이후 메모리 구조  
+<img src="img/java-8-jvm-metaspace.jpg">
+
+#### 1) Permanent Generation - Java8부터 제거됨
 > Permanent Generation가 제거되고, OS 레벨에서 관리되는 Native 메모리 영역에 Metaspace 가 추가되었다.
 
 : 생성된 객체들의 정보의 주소값이 저장된 공간이다.
 - Class loader에 의해 로드되는 class나 method 등에 대한 Meta 정보가 저장되며 JVM에 의해 사용된다.
 - 내부적으로 Reflection 기능을 사용하는 Spring Framework를 이용할 경우, 이 영역에 대한 고려가 필요하다.
-- Permanent Generation영역은 Java8부터 제거되고 Metaspace영역으로 전환되었다.
+- Permanent Generation영역은 Java8부터 제거되고 native영역 중 Metaspace가 생겼다.
+
+### 3 - 3. Stack Area - 스택 영역
+- `여러형태의 변수/임시 데이터`, `threed/method 정보`, `지역변수`, `매개변수`, `리턴 값`, `연산시 일어나는 값들`을 저장한다.
+- 각각의 thread마다 개별의 스택영역이 존재한다.
+- 메서드 호출시 각각의 스텍 프레임(해당 메서드만을 위한 공간)이 생성된다.
+- 메서드 수행이 끝나면 스텍 프레임 별로 삭제한다.
+
+#### 1) 스택 프레임의 세가지 서브 엔티티
+- `지역변수 배열 - Local Variable Array`: 메서드의 지역변수의 개수와 해당하는 값에 대한 정보를 담고있다.
+- `피연산자 스택 - Operand Stack`: 중간연산이 필요로 할 때, 연산작업을 수행하기 위한 작업공간이다.
+- `프레임 데이터 - Frame Data`: 메서드에 해당하는 심볼이 저장된다.
+
+### 3 - 4. PC Register
+: Threed가 어떤 부분을 어떤 명령으로 실행해야할 지에 대한 부분을 기록하는 부분이다.
+- Threed가 시작될때 생성되며, Threed마다 하나씩 존재한다.
+- 현재 수행중인 JVM 명령어의 주소를 갖는다.
+
+### 3 - 5. Native Method stack
+실제 실행할 수 있는 기계어로 작성된 프로그램을 실행시키는 영역
+> Java 프로그램이 컴파일되어 생성하는 바이트코드가 아니다. 즉, Java가 아닌 다른언어로 작성된 코드를 위한 공간이다.
+- Java Native Interface를 통해 바이트 코드로 전환하여 저장한다.
+- 일반프로그램처럼 커널이 스텍을 잡아 독자적으로 프로그램을 실행시키는 영역이다.
+  > C언어의 code를 실행시켜 커널에 접근이 가능하다!
 
 #### New/Young Generation
 1. Eden 영역에서 minor GC가 일어날 때
@@ -159,13 +197,15 @@ Survivor 0/1 : Eden에서 참조되는 객체들이 저장되는 공간
 
 #### Tenured Generation
 : New Generation에서 일정 시간 참조되며 살아있는 객체들이 저장되는 공간이다.
+- 접근 불가능 상태로 되지 않아 Young 영역에서 살아남은 객체가 여기로 복사된다.
+- 이 영역에서 객체가 사라질 때 Major GC가 발생한다고 말한다.
 
->#### 객체의 소멸과정
-> 1. Eden영역에 객체가 가득차게 되면 첫번째 GC가 발생한다.
-> 2. Eden영역에 있는 값들을 Survivor1영역에 복사한다.
-> 3. 나머지 영역의 객체를 삭제한다.
+#### 객체의 소멸과정
+ 1. Eden영역에 객체가 가득차게 되면 첫번째 GC가 발생한다.
+ 2. Eden영역에 있는 값들을 Survivor0 혹은 1영역에 복사한다.
+ 3. 나머지 영역의 객체를 삭제한다.
 
-#### 3-5 Method Area(== Class area == Static area)
+### 3-5 Method Area(== Class area == Static area)
 : 클래스 정보를 처음 메모리공간에 올릴 때 초기화되는 대상을 저장하기 위한 메모리 공간
 - 올라가게 되는 메서드의 `byte code`는 프로그램의 흐름을 구상하는 `byte code`이다.
     > Java 프로그램은 main 메서드의 호출로 흐름을 이어가기 때문이다!

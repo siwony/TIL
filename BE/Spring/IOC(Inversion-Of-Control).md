@@ -12,18 +12,21 @@ public class CarService {
 }
 ```
 
-### IoC 분류
-**DL(Dependency Lookup)**  
-: 저장소에 저장되어 있는 Bean에 접근하기 위해 컨테이너가 제공하는 API를 이용하여 Bean을 Lookup 하는 것  
-**DI(Dependency Injection)**  
-: 각 클래스간의 의존관계를 빈 설정(Bean Definition)정보를 바탕으로 컨테이너가 자동으로 연결해 주는것
+## IoC 분류
+#### DL - Dependency Lookup
+: 저장소에 저장되어 있는 Bean에 접근하기 위해 컨테이너가 제공하는 API를 이용하여 Bean을 Lookup하는 것 이다.
+
+#### DI - Dependency Injection
+: 각 클래스간의 의존관계를 빈 설정(Bean Definition)정보를 바탕으로 컨테이너가 자동으로 연결해 주는 것 이다.
+
+DI의 분류
 - Setter Injection
 - Constructor Injection
 - Method Injection  
 
 <img width=500px src=./img/DI-DL.png>
 
-### DI(Dependency Injection)를 통한 IoC
+### Dependency Injection를 통한 IoC
 ```java
 @Service
 public class CarService {
@@ -58,18 +61,19 @@ public class CarService {
 - **Bean 등록, 생성, 조회, 반환 관리**
 - IoC Container의 최상단에 interface로 존재한다.
 - **보통 BeanFactory를 바로 사용하지 않고, 이를 확장한 `ApplicationContext`를 사용한다.**
-- `getBean()` 메서드가 정의되어있다.
+
 #### 2. ApplicationContext
-- `BeanFactory`와 Bean을 등록, 생성, 조회, 반환 관리하는 기능은 같다.
+- `BeanFactory`와 Bean을 등록, 생성, 조회, 반환 을 관리하는 기능은 같다.
 - `BeanFactory`의 서브 인터페이스인 `ListableBeanFactory`, `HierachicalBeanFactory`라는 인터페이스를 상속하여 `BeanFactory`를 상속하고 있다.
 - Spring의 각종 부가 서비스를 추가로 제공한다.  
     리소스 로딩, 이벤트 발생, 다국어 등 추가적인 기능들을 갖고 있다.
-    >- ResourceLoaderAware's setResourceLoader
-    >- ApplicationEventPublisherAware's setApllicationEventPublicher
-    >- MessageSourceAware's setMessageSource
-    >- ApllicatonContextAware's setApllicationContext
+    >- ResourceLoaderAware의 setResourceLoader
+    >- ApplicationEventPublisherAware의 setApllicationEventPublicher
+    >- MessageSourceAware의 setMessageSource
+    >- ApllicatonContextAware의 setApllicationContext
 - Spring이 제공하는 `ApplicationContext` 구현 클래스가 여러 종류가 있다.
 
-## 핵심
-개발자가 Bean을 직접 만들지 않고 메타데이터(xml, annotation 등..)를 제공하면 프로그램(Spring framework)이 해당 메타데이터를 사용해 Bean객체를 제어 한다.  
-**즉, `IoC Container == Spring Framework`이라고 할 수 있고, 이는 Spring Framwork를 사용하는 이유이자 핵심기능이다.**
+## IoC의 핵심은?
+개발자가 Bean을 직접 만들지 않고 xml, annotation과 같은 메타데이터를 제공하면 프로그램(Spring framework)이 해당 메타데이터를 사용해 Bean객체를 제어한다.  
+
+**즉, `IoC Container`는 `Spring Framework`이라고 할 수 있고, 이는 Spring Framwork를 사용하는 이유이자 핵심 \기능이다.**

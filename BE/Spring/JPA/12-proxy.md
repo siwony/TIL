@@ -12,7 +12,6 @@ member.getName();
 <img width=500px src=./img/proxy-object-reset.png>
 
 1. `getName()`을 요청을 한후 Member target의 값이 없다.
-  
 2. 그러면 `JPA 영속성 컨텍스트`에 초기화를 요청한다.
 3. `영속성 컨텍스트`는 DB를 조회후 
 4. 실제 `Entity`를 생성한다
