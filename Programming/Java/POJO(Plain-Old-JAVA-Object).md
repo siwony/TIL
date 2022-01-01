@@ -40,7 +40,7 @@ POJO는 Java 언어 규약에 의해 강제된 것 이외의 제한에 구속되
 이는 Annotation을 추가하기 전에 POJO이고 Annotation을 제거했을 때, POJO 상태로 되돌아간다면 POJO라고 할 수 있다.
 > 예시로 Hibernate의 Entity 객체를 들 수 있다.
 
-### 대표적인 POJO Framework
+## 대표적인 POJO Framework
 **Spring**, **Hibernate**  
 - 위 프레임워크는 객체지향적인 설계를 하고있다. 또한 POJO를 지향한다.
 - 개발자가 서비스 로직에 집중하고 POJO로 쉽게 개발하는것을 지원하고 있다.
