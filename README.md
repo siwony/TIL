@@ -15,7 +15,7 @@
 - [메모리 구조](CS/Memory/memory-structure.md)
 - [캐시 메모리](CS/Memory/cache.md)
 
-### [자료구조]((CS/DataStructure/data-structure.md))
+### [자료구조](CS/DataStructure/data-structure.md)
 - [추상 자료형 - Abstract Data Type](CS/DataStructure/ADT/adt.md)
 
 #### 선형 구조
@@ -70,11 +70,14 @@
 - [Java8 Date/Time API](Programming/Java/api/java8/date-time.md)
 
 #### [JAVA 동시성 프로그래밍](Programming/Java/concurrent/concurrent-programming.md)
-  - [Thread Pool](Programming/Java/concurrent/thread-pool.md)
-  - [Executor Framework](Programming/Java/concurrent/executor-framework.md)
-  - [Callable과 Future](Programming/Java/concurrent/callable-future.md)
-  - [CompletableFuture](Programming/Java/concurrent/completable-future.md)
-  - [Thread Local - 스레드 로컬](Programming/Java/concurrent/thread-local.md)
+- [Thread Pool](Programming/Java/concurrent/thread-pool.md)
+- [Executor Framework](Programming/Java/concurrent/executor-framework.md)
+- [Callable과 Future](Programming/Java/concurrent/callable-future.md)
+- [CompletableFuture](Programming/Java/concurrent/completable-future.md)
+- [Thread Local - 스레드 로컬](Programming/Java/concurrent/thread-local.md)
+
+#### JAVA 동시성 이슈를 해결하는 방법
+- [volatile - 가시성 이슈를 해결하는 키워드](Programming/Java/concurrent/volatile.md)
 
 #### 바이트 코드를 조작하는 다양한 방법
 - [Reflection - 리플렉션](Programming/Java/byte-code-controller-way/reflection.md)

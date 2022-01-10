@@ -1,27 +1,26 @@
 # Bean
-: `Spring IOC(Inversion Of Control)`컨테이너가 관리하는 JAVA객체  
-- Spring에서 POJO(plain, old java object)를 ‘Beans’라고 부른다.
-- Beans는 애플리케이션의 핵심을 이루는 객체
+: `Spring IOC(Inversion Of Control)`컨테이너가 관리하는 Java객체이며, Spring Bean Container에 존재하는 객체를 말한다. 
 - Spring IoC(Inversion of Control) 컨테이너에 의해 **인스턴스화**, **관리**, **생성**된다.
+- Bean Container는 의존성 주입을 통해 Bean 객체를 사용할 수 있도록 해준다.
 
-### Bean Scope
-- Spring은 기본적으로 모든 bean을 singleton으로 생성하여 관리한다.
-    - 애플리케이션 구동 시 JVM 안에서 스프링이 bean마다 하나의 객체를 생성하는 것을 의미
-    - Spring을 통해서 bean을 제공받으면 언제나 주입받은 bean은 동일한 객체라는 가정하에서 개발한다.
-- request, session, global session의 Scope는 일반 Spring 어플리케이션이 아닌, Spring MVC Web Application에서만 사용된다.  
-<img width=550px src=./img/spring-bean-scope-table.png>
+## Bean Scope
+  
+<img width=600px src=./img/spring-bean-scope-table.png>
 
-### &nbsp;Singleton
-- **singleton bean**은 Spring 컨테이너에서 한 번 생성되고 프로그램이 종료될때 bean이 한다.
+### 1. Singleton
+Singleton Bean은 Spring Container에서 한 번 생성되고 프로그램이 종료 될 때 Distroy된다.
+
+싱글톤은 JVM을 실행하여 클래스 로드를 할 떄 처음 객체가 생성되는 것이 아닌 Spring Container에서 싱글톤으로 관리한다. 즉, 프로그래밍적인 싱글톤이 아니다.
+
+- Spring에서 기본이 된다.
 - 생성된 하나의 인스턴스는 single beans cache에 저장되고, 해당 bean에 대한 요청과 참조가 있으면 캐시된 객체를 반환한다.
-- 기본적으로 모든 bean은 scope이 명시적으로 지정되지 않으면 singleton이다.
 - XML 설정  
     `<bean id="..." class="..." scope="singleton"></bean>`
 - annotation 설정  
     대상 클래스에 `@Scope("singletone")`
 <img width=650px src=./img/spring-bean-singleton.png>
 
-### Prototype
+### 2. Prototype
 - `prototype bean`은 모든 요청에서 새로운 객체를 생성하는 것
 - 의존성 관계의 bean에 주입 될 때 새로운 객체가 생성되어 주입된다.
 - XML 설정
@@ -32,8 +31,8 @@
     대상 클래스에 `@Scope("prototype")`
 <img width=650px src=./img/spring-bean-prototype.png>
 
-### Bean 등록 방법
-### &nbsp;XML (Spring)
+## Bean 등록 방법
+### 1. XML (Spring)
 : `applicationContext.xml`이라는 파일을 `src/main/resources` 폴더에 추가시킨 후 bean을 등록한다.
 > Java 코드를 이용한 Context 설정이 나오기 전 사용하던 방법이다.
 - class(필수): 정규화된 자바 클래스 이름
@@ -57,7 +56,7 @@
 <!-- A bean definition with initialization method -->
 <bean id="..." class="..." init-method="..."></bean>
 ```
-### &nbsp;Java Configuration 
+### 2. Java Configuration 
 : `@Configuration`이라는 Annotation을 이용하여 XML 대신 Java로 Bean을 생성할 수 있다.
 ```java
 @Configuration
@@ -90,12 +89,12 @@ public class ApplicationContextExam03 {
     }
 }
 ```
-### &nbsp;@ComponentScan
+### 3. @ComponentScan
 : Config 클래스에 `@Configuration`과 `@ComponentScan`을 같이 등록하면, 패키지 내의 `@Bean`, `@Component` , `@Controller`, `@Service`, `@Repository`로 등록된 클래스를 Classpath Scanning 타임에 Bean Container에 등록시켜 준다.
 
 **등록방법**  
 `@Configuration`을 이용하여 Bean 설정 파일(XML 파일을 대체하는)임을 알려주고, `@ComponentScan`을 이용해 빈으로 등록되기 위한 annotaction이 부여된 클래스들을 자동으로 IoC컨테이너에 등록한다.  
-&nbsp;  
+
 `ApplicationConfig`
 ```java
 @Configuration

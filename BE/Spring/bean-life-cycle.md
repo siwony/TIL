@@ -44,7 +44,7 @@ public class InvalidInitExampleBean {
 2. 설정 정보에서 초기화 메서드, 종료 메서드 지정하는 방법
 3. `@PostConstruct`, `@PreDestory` 어노테이션
 
-#### Spring에서 제공하는 인터페이스
+#### 1.  Spring에서 제공하는 인터페이스
 ```java
 @Component
 public class ExBean implements InitializingBean, DisposableBean{
@@ -67,7 +67,7 @@ public class ExBean implements InitializingBean, DisposableBean{
 - 메서드를 오버라이드하기 떄문에 메서드명을 변경할 수 없다.
 - 코드를 커스터마이징할 수 없는 외부 라이브러리에 적용할 수 없다.
 
-#### 설정 정보에서 초기화 메서드, 종료 메서드 지정하는 방법
+#### 2. 설정 정보에서 초기화 메서드, 종료 메서드 지정하는 방법
 ```java
 public class ExBean{
 
@@ -106,7 +106,7 @@ public class LifeCycleConfig{
   > 즉, 종료 메서드를 추론하고 자동으로 호출한다.
 - `inferred`기능을 사용하기 싫다면 명시적으로 `destoroyMethod=""` 와 같이 공백을 지정해줘야 한다.
 
-#### @PostConstruct, @PreDestroy 어노테이션
+#### 3. @PostConstruct, @PreDestroy 어노테이션
 ```java
 public class ExBean{
     
@@ -130,7 +130,7 @@ public class LifeCycleConfig{
     }
 }
 ```
-이 방식의 장점
+**JSR-250**에 정의되어 있어 Spring 이외에 다른 프레임워크가 지원할 수 있다.
 - **최신 스프링에서 권장하는 방법**
   > Java11에서 제거되었다고 허위사실이 많은데 그건 다른 라이브러리
 - 컨포넌트 스캔과 잘 어울린다.
