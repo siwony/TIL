@@ -1,8 +1,8 @@
 # Spring Framework
-*Spring Framework*는 자바 플렛폼을 위한 오픈소스 애플리케이션으로써, **엔터프라이즈급 애플리케이션**을 개발하기 위한 모든 기능들을 종합적으로 제공하는 **경량화**된 솔루션이다
+*Spring Framework*는 자바 플랫폼을 위한 오픈소스 애플리케이션으로써, **엔터프라이즈급 애플리케이션**을 개발하기 위한 모든 기능들을 종합적으로 제공하는 **경량화**된 솔루션이다
 
 Spring은 특정한 하나의 프레임워크가 아닌 **여러가지 기술들의 모음**이라고 할 수 있다.
-> Spring Core
+> Web BE개발에 사용되는 Spring은 Spring Framework라고 부르는게 더 정확한 표현이다.
 
 
 ### Spring Framework의 등장 배경
@@ -30,18 +30,17 @@ EJB의 스펙을 지키기 위해 사용하려는 메서드보다. 상속 및 �
 Spring은 **불필요하게 무겁지 않다**
 
 경량 컨테이너로서 자바 객체를 직접 관리, 객체 생성, 소멸 같은 **객체의 생명주기 관리**하며, 개발자는 스프링으로부터 필요한 객체 얻어올 수 있다.
-- Spring Framework는 여러개의 모듈로 구성되어 필요한 모듈만 이용할 수 있다.
-  > Spring MVC없이 Spring JDBC를 사용할 수 있다.
+- Spring Framework는 여러 모듈로 구성되어 필요한 모듈만 이용할 수 있다.
+  > Spring MVC 없이 Spring JDBC를 사용할 수 있다.
 
-> 경량 컨테이너라는 것은 기준에 따라 달라질 수 있다. JavaEE보다 경량 컨테이너이지만 Guice와 Plexus와 같은 POJO기반 컨테이너와 비교할 때 무거운 컨테이너로 취급된다.
-
-
+> 경량 컨테이너라는 것은 기준에 따라 달라질 수 있다. JavaEE보다 경량 컨테이너이지만 Guice와 Plexus와 같은 POJO 기반 컨테이너와 비교할 때 무거운 컨테이너로 취급된다.
 
 ### 2. [POJO - Plain Old Java Object](../../Programming/Java/POJO(Plain-Old-JAVA-Object).md)
 Spring 컨테이너에 저장되는 자바 객체는 특정 인터페이스를 구현하거나, 특정 클래스를 상속받지 않아도 된다.
 
 이로인해 개발자는 특정 라이브러리나 JavaEE와 같은 컨테이너의 특정 기술에 종속적이지 않게되어 다음과 같은 장점이 있다.
-- 테스트코드 작성이 쉬워진다.
+- 테스트코드 작성이 비교적 쉽다.
+- 유지보수와 확장성 및 불필요한 상속과 구현으로 인한 제약사항이 없다.
 
 ### 3. [IoC - Inversion of Control](IOC(Inversion-Of-Control).md)
 > Spring의 핵심이다.
@@ -52,7 +51,7 @@ Spring 컨테이너에 저장되는 자바 객체는 특정 인터페이스를 �
 IOC는 `DI - Dependency Injection`, `DL - Dependency Lockup`에 의해 구현된다.
 
 ### 4. [DI](DI(Dependency-Injection).md) - Dependency Injection
-설정파일을 통해 객체 간의 의존관계를 설정할 수 있다. 각각의 계층이나 서비스들 간에 의존성이 존재할 경우, 프레임워크가 서로 연결시켜준다.
+설정 파일을 통해 객체 간의 의존관계를 설정할 수 있다. 각각의 계층이나 서비스들 간에 의존성이 존재할 경우, 프레임워크가 서로 연결시켜준다.
 
 - `필드 주입`, `생성자 주입`, `Setter 주입` 방식으로 DI를 지원한다. 
   > 필드 주입은 권장하지 않는다.

@@ -1,6 +1,6 @@
 # Today I Learned
 오늘 새롭게 배운 혹은 삽질한 경험을 간단한 글들을 마크다운 문서로 정리 해 보자! `start - Dec 12 2020`  
-## 분류
+
 ### GIT
 - [.Ds_store 모두 .gitignore](Git/ds-store-ignore.md)
 - [커밋되지 않거나 저장되지 않은 모든 변경사항 취소 및 삭제](/Git/rm-unstaged.md)
@@ -17,6 +17,7 @@
 
 ### [자료구조]((CS/DataStructure/data-structure.md))
 - [추상 자료형 - Abstract Data Type](CS/DataStructure/ADT/adt.md)
+
 #### 선형 구조
 - [list](CS/DataStructure/linear/list/list.md)
   - [순차 리스트](CS/DataStructure/linear/list/sequential-list.md)
@@ -124,19 +125,7 @@
 ## BackEnd
 - [Payload](BE/payload.md)
 
-### Build Tool
-- [Build Tool](BE/BuildTool/build-tool.md)
-#### Gradle
-- [Gradle](BE/BuildTool/gradle/gradle.md)
-- [(SpringBoot Project) Maven에서 Gradle로 Build Tool migration!](BE/BuildTool/gradle/maven-to-gradle-migration.md)
-- [build.gradle plugins{...}방식 에러해결](BE/BuildTool/gradle/build-gradle-plugins-allowed%20befor-plugins-block.md)
-  > only buildscript {} and other plugins {} script blocks are  
-  > allowed before plugins {} blocks, no other statements are allowed   
-  > 애러해결
-
-#### Maven
-- [plugin-not-found 에러 해결 - 버전이 명시가 되어있지 않을때](BE/BuildTool/maven/plugin-not-found.md)
-### [Spring](BE/Spring/spring.md) 
+### [Spring Framework](BE/Spring/spring.md) 
 - [DI(DependencyInjection)](BE/Spring/DI(Dependency-Injection).md)
 - [IoC](BE/Spring/IOC(Inversion-Of-Control).md)
 - [Spring 구조](BE/Spring/DTO,DAO,Entity-class.md)
@@ -162,6 +151,19 @@
 ### &nbsp; SpringSecurity
 - [SpringSecurity](BE/Spring/SpringSecurity/spring-security.md)
 - [CSRF(사이트간 요청위조)](BE/Spring/SpringSecurity/CSRF.md)
+
+### Build Tool
+- [Build Tool](BE/BuildTool/build-tool.md)
+#### Gradle
+- [Gradle](BE/BuildTool/gradle/gradle.md)
+- [(SpringBoot Project) Maven에서 Gradle로 Build Tool migration!](BE/BuildTool/gradle/maven-to-gradle-migration.md)
+- [build.gradle plugins{...}방식 에러해결](BE/BuildTool/gradle/build-gradle-plugins-allowed%20befor-plugins-block.md)
+  > only buildscript {} and other plugins {} script blocks are  
+  > allowed before plugins {} blocks, no other statements are allowed   
+  > 애러해결
+
+#### Maven
+- [plugin-not-found 에러 해결 - 버전이 명시가 되어있지 않을때](BE/BuildTool/maven/plugin-not-found.md)
 
 ## &nbsp; JPA
 - [Entity](BE/Spring/JPA/Entity.md)
@@ -225,7 +227,7 @@
 - [MySQL 실행관련 명령어](DataBase/MySQL/mysql-run-command.md)
 - [mysql 명령어](DataBase/MySQL/mysql-command.md)
 
-## Web
+## Network + Web
 - [TCP, UDP](Web/tcp-udp.md)
 - [HTTP](Web/http.md)
 - [웹 브라우저의 요청 흐름](Web/how-to-browser-can-request.md)
@@ -239,11 +241,6 @@
 - [URI,URL,URN](Web/URI-URL-URN.md)
 - [Web Socket](Web/web-socket.md)
 - [WAS](Web/was.md)
-
-## Book
-- [README](Book/README.md)
-- [객체지향 사실과 오해](Book/object-orientation-facts-and-misconceptions/README.md)
-- [쉽게 배우는 소프트웨어 공학 - GSM CS교재](Book/쉽게-배우는-소프트웨어-공학./README.md)
 
 ## 기타
 - [개발용어 정리](ETC/dev-terminology.md)
