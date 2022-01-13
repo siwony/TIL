@@ -11,6 +11,7 @@
 - [소프트웨어 테스트](CS/img/kinds-of-test.jpg)
 - [직렬화(serialization)](CS/data-serialization.md)
 - [동시성 & 병렬성 - Concurrency & Parallelism](CS/concurrency-parallelism.md)
+
 ### Memory
 - [메모리 구조](CS/Memory/memory-structure.md)
 - [캐시 메모리](CS/Memory/cache.md)
@@ -74,10 +75,11 @@
 - [Executor Framework](Programming/Java/concurrent/executor-framework.md)
 - [Callable과 Future](Programming/Java/concurrent/callable-future.md)
 - [CompletableFuture](Programming/Java/concurrent/completable-future.md)
-- [Thread Local - 스레드 로컬](Programming/Java/concurrent/thread-local.md)
 
-#### JAVA 동시성 이슈를 해결하는 방법
+#### JAVA 동시성 프로그래밍의 이슈를 해결하는 방법
 - [volatile - 가시성 이슈를 해결하는 키워드](Programming/Java/concurrent/volatile.md)
+- [Atomic API](Programming/Java/concurrent/atomic.md)
+- [Thread Local - 스레드 로컬](Programming/Java/concurrent/thread-local.md)
 
 #### 바이트 코드를 조작하는 다양한 방법
 - [Reflection - 리플렉션](Programming/Java/byte-code-controller-way/reflection.md)
@@ -222,8 +224,9 @@
 ### &nbsp;[SSH](DevOps/ssh/ssh.md)
 - [REMOTE HOST IDENTIFICATION HAS CHANGED 에러 해결](BE/SSH/remote-host-identification-has-changed-error.md)
 
-### &nbsp; DataBase
-- [RDB 란?](DataBase/relational-database.md)
+## Database
+- [데이터 모델링이란?](DataBase/data-modeling/data-modeling.md)
+- [관계형 데이터베이스 - Relational Database?](DataBase/relational-database.md)
 
 ### &nbsp; MySQL
 - [MySQL 설치](DataBase/MySQL/how-to-install-mysql.md)
