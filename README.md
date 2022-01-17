@@ -25,6 +25,9 @@
   - [연결 리스트](CS/DataStructure/linear/list/linked-list.md)
     > Singly Linked List, Circular Linked List, Doubly Linked List
 
+#### 비 선형 구조
+- [그래프 - graph](CS/DataStructure/non-linear/graph/graph.md)
+
 ### 네트워크
 - [OSI 7계층 - ~~물데네 전세표응~~](CS/Network/osi-layer-seven.md)
 
@@ -226,6 +229,7 @@
 
 ## Database
 - [데이터 모델링이란?](DataBase/data-modeling/data-modeling.md)
+- [트랜잭션 격리수준](DataBase/db-transcation-isolation-level.md)
 - [관계형 데이터베이스 - Relational Database?](DataBase/relational-database.md)
 
 ### &nbsp; MySQL
