@@ -91,6 +91,9 @@
 ## 2진 트리의 구현
 2진 트리도 Graph의 일종이므로 `인접 행렬`, `인접 리스트`를 통해 구현할 수 있고, Link를 이용해 구현할 수 있다.
 
+## 그래프와 트리의 차이
+<img width="700" src="img/graph-vs-tree.png">
+
 ## Refrenece
 - https://gmlwjd9405.github.io/2018/08/12/data-structure-tree.html
 - https://velog.io/@adam2/TREE
