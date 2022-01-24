@@ -82,7 +82,10 @@
 
 #### JAVA 동시성 프로그래밍의 이슈를 해결하는 방법
 - [volatile - 가시성 이슈를 해결하는 키워드](Programming/Java/concurrent/volatile.md)
-- [Atomic API](Programming/Java/concurrent/atomic.md)
+- 경쟁상태를 해결하는 방법
+  - [synchronized 키워드](Programming/Java/concurrent/synchronized.md)
+  - [Atomic API](Programming/Java/concurrent/atomic.md)
+  - Mutex, Semaphore
 - [Thread Local - 스레드 로컬](Programming/Java/concurrent/thread-local.md)
 
 #### 바이트 코드를 조작하는 다양한 방법

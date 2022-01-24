@@ -92,28 +92,28 @@
 - ex) `@Overriding`을 통해 부모클래스의 method를 자식이 제지정할 수 있다.
 
 ## SOLID - 객체지향 개발 5대 원리
-### &nbsp; SRP:단일 책임 원칙(Single Responsibility Principle)
+### SRP:단일 책임 원칙(Single Responsibility Principle)
 : 객체는 하나의 책임만을 맡아야 한다.
 - 변화에 대한 유연성 확보
 - 낮은 결합도, 높은 응집도 추구
 
-### &nbsp; OCP: 개발-폐쇄 원칙(Open Closed Principle)
+### OCP: 개방-폐쇄 원칙(Open Closed Principle)
 : 모듈은 확장에는 열려 있어야 하고 변경시에는 닫혀 있어야한다.  
 - 상위 클래스 또는 인터페이스를 중간에 둠으로써, 자신의 변화에 대해서 폐쇄적이지만,  
 &nbsp; 인터페이스는 외부의 변화에 대해서 확장을 개방해 줄 수 있다.
 - 이러한 부분은 JDBC, Hibernate등 JAVA Stream(I,O) 에서 찾아볼 수 있다.
 
-### &nbsp; LSP: 리스코프 치환 원칙(Liscov Substitution Principle)
+### LSP: 리스코프 치환 원칙(Liscov Substitution Principle)
 : 자식 클래스는 언제나 자신의 부모 클래스를 대체 할 수 있다.
 - 즉 인터페이스만 알면 구현체를 몰라도 사용 가능해야한다.
 - 다형성
 
-### &nbsp; ISP: 인터페이스 분리 원칙(InterFace Segregation Principle)
-: 클라이언트에서 사용하지 않은 메서드는 사용해선 안된다.
+### ISP: 인터페이스 분리 원칙(InterFace Segregation Principle)
+: 특정 클라이언트를 위한 인터페이스 여러 개가 범용 인터페이스 하나보다 낫다.
 - 인터페이스를 다시 작게 나누어 만든다.
 - 두 개 이상의 인터페이스가 필요한 경우 다중 인터페이스 상속으로 구현하는 것이 좋다.
 
-### &nbsp; DIP: 의존성 역전 원칙(Dependency Inversion Principle)
-: 상위 모듈은 하위 모듈에 의존해선 안된다.
+### DIP: 의존성 역전 원칙(Dependency Inversion Principle)
+: 프로그래머는 “추상화에 의존해야지, 구체화에 의존하면 안된다.”
 - 상위, 하위 모듈은 모두 추상화에 의존해야 한다.
 - 세부사항이 추상화에 의존해야한다.
