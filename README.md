@@ -232,9 +232,12 @@
 - [REMOTE HOST IDENTIFICATION HAS CHANGED 에러 해결](BE/SSH/remote-host-identification-has-changed-error.md)
 
 ## Database
-- [데이터 모델링이란?](DataBase/data-modeling/data-modeling.md)
 - [트랜잭션 격리수준](DataBase/db-transcation-isolation-level.md)
 - [관계형 데이터베이스 - Relational Database?](DataBase/relational-database.md)
+
+### SQL 전문가 가이드
+1. [데이터 모델링의 이해](DataBase/data-modeling/understanding-data-modeling.md)
+2. [엔터티 - Entity](DataBase/data-modeling/entity.md)
 
 ### &nbsp; MySQL
 - [MySQL 설치](DataBase/MySQL/how-to-install-mysql.md)
