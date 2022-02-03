@@ -235,9 +235,11 @@
 - [트랜잭션 격리수준](DataBase/db-transcation-isolation-level.md)
 - [관계형 데이터베이스 - Relational Database?](DataBase/relational-database.md)
 
-### SQL 전문가 가이드
+### SQL 전문가 가이드 - SQLD 준비
 1. [데이터 모델링의 이해](DataBase/data-modeling/understanding-data-modeling.md)
 2. [엔터티 - Entity](DataBase/data-modeling/entity.md)
+3. [데이터 모델과 성능](DataBase/data-modeling/data-model-and-performance.md)
+   1. [정규화](DataBase/data-modeling/normalization-and-performance.md)
 
 ### &nbsp; MySQL
 - [MySQL 설치](DataBase/MySQL/how-to-install-mysql.md)

@@ -1,6 +1,10 @@
-# 관계형 데이터베이스(Relational database)
+# 관계형 데이터베이스 - Relational database
 : table로 이루어져 있고, 이 table은 key 와 value의 관계를 나타낸다
   이처럼 데이터의 종속성을 관계(relationship)로 표현하는것  
+- 1970년 영국의 수학자인 E. F. Codd 박사의 논문에서 제안
+  > 1980년에 상용화 되었다.
+- 기업의 핵심 데이터는 대부분 관계형 DB로 저장되어 있다.
+- 관계형 DB는 SQL문장에 의해 관리된다.
 
 ## 구성요소
 ### 열(column)
@@ -25,9 +29,6 @@
 : 데이터베이스에서 자료의 구조, 자료의 표현 방법, 자료 간의 관계를 형식 언어로 정의한 구조이다. 
 > 총 3가지가 있다. (외부 스키마, 내부 스키마, 개념 스키마)
 - 일반적으로 스키마는 **내부 스키마를 가르킨다.**
-
-<img src="img/schema.jpeg">
-
 
 #### 1. 외부 스키마
 : 개인의 입장, '서브스키마'라고도 한다, 사용자 뷰를 가리킨다. 
@@ -74,6 +75,25 @@
 > 한 릴레이션에 속한 속성 A와 참조 릴레이션의 기본키인 B가 동일한 도메인상에서 정의되었을 때의 속성 A를 외래키라고 한다.
 - 외래키로 지정되면 참조 릴레이션의 기본키에 없는 값은 입력할 수 없다.
 
+## Relational Model Constraints
+### 1. 도메인 제약 - Domain Constraints
+- 속성 값은 `원자성 - atomicity`을 가지며, 도메인에서 정의된 값이어야 한다.
+  > ex. 나이는 정수형이어야 하고, 0 ~ 150의 숫자 범위를 가진다.
+- `Composite Attribute`와 `Multivalued Attribute`는 허용되지 않는다.
+- NOT NULL이 아닌경우 NULL 값은 허용된다.
+
+### 2. 키 제약 - Key Constraints
+: 릴레이션의 모든 `튜플 - Tuples`은 유일하게 서로 **식별 가능**해야 한다.
+- cf) Super Key, Candidate Key, Primary Key
+
+### 3. 개체 무결성 제약 - Entity Integrity Constraints
+: PK는 **NOT NULL && UNIQUE**이어야 한다.
+
+### 4. 참조 무결성 제약 - Referential Integrity Constraints
+- 릴레이션 A가 릴레이션 B를 참조하는 경우, B의 기본키는 A의 외래키로 사용되는 경우
+  - 외래키는 NULL 이거나,
+  - NULL 이 아닌 경우 B에 실제로 존재하는 값으로 구성되어야 한다.
+
 ## 트랜잭션(transaction)?
 : DBMS에서 하나의 작업의 단위   
 트랜잭션의 기능을 제대로 수행하기 위해 네가지 특성을 만족해야한다(ACID 특성) 
@@ -94,3 +114,6 @@
     : 하나의 트랜잭션이 완료될 때까지 다른 트랜잭션이 간섭하지 못하도록 하여 **각각의 트랜잭션이 독립적으로 수행되여야 한다.**
 - **지속성(Durability)**
     : 트랜잭션이 성공적으로 완료된 이후 DB에 **데이터들이 영구적으로 보존되어야 한다.**
+
+#### Refrenece
+- [국민대학교 김남규 교수 - (DB실무) Part3-데이터 모델과 성능(1/6)](https://youtu.be/AAv0lT6KxyY)
