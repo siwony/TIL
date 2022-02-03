@@ -201,7 +201,7 @@
 - [14 영속성 전이(cascade)](BE/Spring/JPA/14-cascade.md)
 - [15 고아 객체(ORPAN)](BE/Spring/JPA/15-orpan.md)
   - [15-1 연관관계 관리(실전)](BE/Spring/JPA/15.1-relationship-manage.md)
-- [16 JPA 데이터 타입](BE/Spring/JPA/16-value-type.md)
+- [16 JPA 데이터 타입](BE/Spring/JPA/16-jpa-data-type.md)
   1. [기본값 타입](BE/Spring/JPA/16.1-default-type.md)
   2. [임베디드 타입(embedded-type)](BE/Spring/JPA/16.2-embedded-type.md)
   3. [값 타입과 불변 타입](BE/Spring/JPA/16.3-value-and-immutable.md)
