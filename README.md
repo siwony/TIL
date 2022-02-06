@@ -14,6 +14,7 @@
 
 ### Memory
 - [메모리 구조](CS/Memory/memory-structure.md)
+  - [스텍 프레임](CS/Memory/stack-frame.md)
 - [캐시 메모리](CS/Memory/cache.md)
 
 ### [자료구조](CS/DataStructure/data-structure.md)
