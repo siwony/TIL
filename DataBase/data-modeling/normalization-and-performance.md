@@ -53,6 +53,9 @@ Composite 혹은 Multi-valued 애트리뷰트를 제거한다.
 ### 1-3. 정규화 예시
 https://youtu.be/vnHTZT7L-KI?t=2286
 
+이전글: [데이터 모델과 성능](data-model-and-performance.md)
+다음글: [반정규화](denormalization.md)
+
 ## Reference
 - SQL 전문가 가이드 - 2절 정규화와 성능
 - [국민대학교 김남규 교수 - (DB실무) Part3-데이터 모델과 성능(2/6)](https://youtu.be/vnHTZT7L-KI)

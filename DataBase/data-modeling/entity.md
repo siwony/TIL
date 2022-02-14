@@ -80,7 +80,7 @@
         <img src="img/associative-entity-ex.png">
 
 ### 3-6. 엔터티는 최소 한 개 이상의 관계를 가져야 한다.
-이를 `고립 엔터티 - Isolated Entity`라고 하는데 고립 엔터티가 있을 경우 부적절한 엔터티 도출 및 관계 누락이 있는지 확인한다.
+관계가 없는 엔터티를 `고립 엔터티 - Isolated Entity`라고 하는데 `고립 엔터티`가 있을 경우 부적절한 엔터티 도출 및 관계 누락이 있는지 확인한다.
 
 #### 고립 엔터티를 인정하는 경우
 - 통계성 엔터티
@@ -193,7 +193,7 @@
 - 복합 속성 - Composite Attribute
 - 단순 속성 - Simple Attribute
 
-#### 속성값의 수에 따른 문류
+#### 속성값의 수에 따른 분류
 - 다중값 속성 - Multi-Valued Attribute
 - 단일값 속성 - Single-Valued Attribute
 
@@ -284,6 +284,9 @@
 <img src="img/identifier-vs-non-identifier.png">
 
 출처: https://youtu.be/GQpbyjjPkK8?t=3047
+
+이전글: [1. 데이터 모델링의 이해](understanding-data-modeling.md)
+다음글: [3. 데이터 모델과 성능](data-model-and-performance.md)
 
 ## Refrenece
 - SQL 전문가 가이드

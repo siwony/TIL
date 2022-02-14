@@ -164,7 +164,7 @@
 - [HTTP POST 메서드와 Content-Type](BE/Spring/post-and-content-type.md)
   > feat. Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported
 
-### &nbsp; SpringSecurity
+### SpringSecurity
 - [SpringSecurity](BE/Spring/SpringSecurity/spring-security.md)
 - [CSRF(사이트간 요청위조)](BE/Spring/SpringSecurity/CSRF.md)
 
@@ -213,6 +213,7 @@
   5. [값 타입 컬렉션](BE/Spring/JPA/16.5-value-type-collection.md)
   6. [JPA 데이터 타입 정리](BE/Spring/JPA/16.6-organize.md)
   7. [JPA 값 타입(실습)](BE/Spring/JPA/16.7-value-type-mapping.md)
+
 #### JPQL 객체지향 쿼리 언어
 - [00 JPQL intro](BE/Spring/JPA/JPQL/00-intro.md)
 - [01 JPQL](BE/Spring/JPA/JPQL/01-JPQL.md)
@@ -239,16 +240,20 @@
 - [트랜잭션 격리수준](DataBase/db-transcation-isolation-level.md)
 - [관계형 데이터베이스 - Relational Database?](DataBase/relational-database.md)
 
-### SQL 전문가 가이드 - SQLD 준비
+### 1. SQL 전문가 가이드 - SQLD 준비
 1. [데이터 모델링의 이해](DataBase/data-modeling/understanding-data-modeling.md)
 2. [엔터티 - Entity](DataBase/data-modeling/entity.md)
 3. [데이터 모델과 성능](DataBase/data-modeling/data-model-and-performance.md)
    1. [정규화](DataBase/data-modeling/normalization-and-performance.md)
+   2. [반정규화](DataBase/data-modeling/denormalization.md)
 
-### &nbsp; MySQL
+### 2. MySQL
 - [MySQL 설치](DataBase/MySQL/how-to-install-mysql.md)
 - [MySQL 실행관련 명령어](DataBase/MySQL/mysql-run-command.md)
 - [mysql 명령어](DataBase/MySQL/mysql-command.md)
+
+### 3. Oracle
+- [Oracle11g Quick Start with docker](DataBase/oracle/oracle11g-quick-start-with-doker.md)
 
 ## Network + Web
 - [TCP, UDP](Web/tcp-udp.md)

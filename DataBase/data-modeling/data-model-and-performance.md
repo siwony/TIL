@@ -24,6 +24,9 @@
 5. 이력모델의 조정, 인덱스를 고려한 PK/FK의 순서 조정, 슈퍼타입/서브타입 조정 등 수행
 6. 성능관점에서 데이터 모델을 검증한다.
 
+이전글: [2. 엔터티 - Entity](entity.md)
+다음글: [3-1 정규화](normalization-and-performance.md)
+
 ## Reference
 - SQL 전문가 가이드
 - [국민대학교 김남규 교수 - (DB실무) Part3-데이터 모델과 성능(1/6)](https://youtu.be/AAv0lT6KxyY)
