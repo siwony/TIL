@@ -18,7 +18,11 @@
 - `Exception`은 개발자가 로직을 추가하여 처리할 수 있다.
 
 ### 예외 클래스의 종류
-<img width=550px src="./img/checked-unchecked-exception.png">
+|      |Checked Exception |   Unchecked Exception   |
+|------|------------------|-------------------------|
+|처리여부| 예외 처리를 강제한다. | 명시적인 처리를 강제하지 않는다. |
+|확인시점| 컴파일 단계         | 실행단계                   |
+|대표 예외|`Exception`의 상속받은 하위 클래스 중 <br>`RuntimeException을` 제외한 모든 예외 <br> - IOException <br> - SQLException | `RuntimeException` 하위 예외 <br> - NullPointerException <br> - IllegalArgumentException
 
 **Checked Exception과 Unchecked Exception의 명확한 구분기준은 필수적으로 예외 처리를 해야 하는지에 따라 구분된다.**
 
