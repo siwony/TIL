@@ -202,6 +202,7 @@
 : 조인을 통해 정보 조회가 가능하지만, 조인 경로 단축을 위해 중복관계를 추가한다.
 
 이전글: [3-1. 정규화](normalization-and-performance.md)
+다음글: [3-3. Index](index.md)
 
 
 ## Reference

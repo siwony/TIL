@@ -246,6 +246,8 @@
 3. [데이터 모델과 성능](DataBase/data-modeling/data-model-and-performance.md)
    1. [정규화](DataBase/data-modeling/normalization-and-performance.md)
    2. [반정규화](DataBase/data-modeling/denormalization.md)
+   3. [인덱스](DataBase/data-modeling/index.md)
+   4. [분산 데이터베이스](database/data-modeling/distributed-database.md)
 
 ### 2. MySQL
 - [MySQL 설치](DataBase/MySQL/how-to-install-mysql.md)
