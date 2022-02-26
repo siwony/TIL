@@ -249,12 +249,17 @@
    3. [인덱스](DataBase/data-modeling/index.md)
    4. [분산 데이터베이스](database/data-modeling/distributed-database.md)
 
-### 2. MySQL
+### 2. [SQL - Structured Query Language](DataBase/sql/sql.md)
+- [서브쿼리](DataBase/sql/sub-query.md)
+- [윈도우 함수 - window funtion](DataBase/sql/window-funtion.md)
+
+
+### 3. MySQL
 - [MySQL 설치](DataBase/MySQL/how-to-install-mysql.md)
 - [MySQL 실행관련 명령어](DataBase/MySQL/mysql-run-command.md)
 - [mysql 명령어](DataBase/MySQL/mysql-command.md)
 
-### 3. Oracle
+### 4. Oracle
 - [Oracle11g Quick Start with docker](DataBase/oracle/oracle11g-quick-start-with-doker.md)
 
 ## Network + Web
