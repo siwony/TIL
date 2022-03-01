@@ -13,7 +13,7 @@ CREATE TABLE STUDENT(
     stu_name VARCHAR(10) NOT NULL
 )
 
-or....
+혹은....
 
 
 CREATE TABLE STUDENT(
@@ -26,13 +26,42 @@ CREATE TABLE STUDENT(
 - 자동으로 인덱스가 생성된다.
 
 ```sql
-
+ALTER TABLE STUDENT
+    ADD CONSTRAINT stu_uk UNIQUE (stu_num)
 ```
+> STUDENT 태이블의 stu_num속성을 UNIQUE 제약조건 생성
 
 ### 3. CHECK 조건
+: 컬럼의 값을 어떤 특정 범위로 제한할 수 있다.
+
+```sql
+ALTER TABLE STUDENT
+    ADD CONSTRAINT student_credit_ck_comm
+    CHECK (credit >= 0 AND credit <= 30);
+```
 
 ### 4. DEFAULT 지정
+```sql
+CREATE TABLE STUDENT(
+    ...
+    credit DEFAULT 0
+);
+```
 
 ### 5. PRIMARY KEY 지정
+: 기본키를 지정한다.
+- UNIQUE + NOT NULL
+- 인스턴스를 식별하는 역할이며 다른 테이블에서 외래키들이 참조할 수 있는 자격을 가지고 있다.
+
+```sql
+CREATE TABLE STUDENT(
+    student_number NUMBER CONSTRAINT student_number_pk PRIMARY KEY
+)
+```
 
 ### 6. FOREIGN KEY 지정
+: 기본키를 참조하는 컬럼 또는 컬럼들의 집합이다.
+
+```sql
+ALTER TABLE STUDENT
+```
