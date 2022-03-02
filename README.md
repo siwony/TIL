@@ -252,6 +252,7 @@
 ### 2. [SQL - Structured Query Language](DataBase/sql/sql.md)
 - [서브쿼리](DataBase/sql/sub-query.md)
 - [윈도우 함수 - window funtion](DataBase/sql/window-funtion.md)
+- [CASE 표현식](DataBase/sql/case-expression.md)
 
 
 ### 3. MySQL
