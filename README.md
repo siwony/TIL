@@ -239,6 +239,7 @@
 ## Database
 - [트랜잭션 격리수준](DataBase/db-transcation-isolation-level.md)
 - [관계형 데이터베이스 - Relational Database?](DataBase/relational-database.md)
+- [조인 알고리즘](DataBase/join-algorithm.md)
 
 ### 1. SQL 전문가 가이드 - SQLD 준비
 1. [데이터 모델링의 이해](DataBase/data-modeling/understanding-data-modeling.md)
