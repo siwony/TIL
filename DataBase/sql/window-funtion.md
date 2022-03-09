@@ -4,18 +4,46 @@
 - 순위, 합계, 평균, 행 위치 등을 조작할 수 있다.
 - GROUP BY 구문과 병행하여 사용할 수 없다.
 - SUM, MAX, MIN과 같은 집계 윈도우 함수를 사용할 떄 **윈도우 절**과 함께 사용하면 집계 대상이 되는 **레코드 범위를 지정**할 수 있다.
-  
+
+### 함수 종류
+#### 1. 순위 함수
+- RANK
+- DENSE_RANK
+- ROW_NUMBER
+
+#### 2. 윈도우 집계 함수
+- SUM, MAX, MIN, AVG, COUNT
+
+#### 3. 행 순서 함수
+- FIRST_VALUE
+- LAST_VALUE,
+- LAG
+- LEAD
+
+#### 4. 비율 함수
+- RATIO_TO_REPORT
+- PERCENT_RANK
+- CUME_DIST
+- NTILE
 
 ## 1. 구조
 
 ### 1-1. 윈도우 함수 구조
 ```sql
 SELECT WINDOW_FUNCTION(ARGUMENTS)
-    OVER ( PARTITION BY 컬럼
-        ORDER BY WINDOWING절
-    )
+    OVER ( <PARTITION BY 컬럼> <ORDER BY 절> <WINDOWING 절> )
 FROM 테이블명;
+
+-- ex
+
+SELECT JOB, SUM(SAL) OVER (PARTITION BY JOB
+                ORDER BY SAL DESC
+                ROWS UNBOUNDED PRECEDING
+                ) as SUM_SAL
+FROM EMP;
 ```
+> <>는 선택가능
+
 |    구조    |               설명                 |
 |-----------|-----------------------------------|
 |ARGUMENTS(인수)|윈도우 함수에 따라서 N개의 인수를 설정한다.|
@@ -26,8 +54,8 @@ FROM 테이블명;
 ### 1-2. WINDOWING
 |    구조    |               설명                 |
 |-----------|-----------------------------------|
-|ROWS       |부분집합인 윈도우 크기를 **물리적 단위로 행의 집합을 지정**한다.|
-|RANGE      |논리적 주소에 의해 행 집합을 지정한다.       |
+|ROWS       |부분집합인 윈도우 크기를 **물리적 단위로 행의 집합을 지정**한다. 즉 **행의 수를 선택**한다.|
+|RANGE      |논리적 주소에 의해 행 집합을 지정한다. 즉 **값의 범위**를 지정한다.|
 |BETWEEN ~ AND| 윈도우의 시작과 끝 위치를 지정한다.      |
 |UNBOUNDED PRECEDING|**윈도우 시작 위치가 첫 번째 행**임을 의미한다.|
 |UNBOUNDED FOLLOWING|**윈도우 마지막 위치가 마지막 행**임을 의미한다.|
