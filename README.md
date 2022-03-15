@@ -240,6 +240,7 @@
 - [트랜잭션 격리수준](DataBase/db-transcation-isolation-level.md)
 - [관계형 데이터베이스 - Relational Database?](DataBase/relational-database.md)
 - [조인 알고리즘](DataBase/join-algorithm.md)
+- [옵티마이저 - Optimizer](DataBase/optimizer.md)
 
 ### 1. SQL 전문가 가이드 - SQLD 준비
 1. [데이터 모델링의 이해](DataBase/data-modeling/understanding-data-modeling.md)
@@ -264,11 +265,16 @@
 
 ### 4. Oracle
 - [Oracle11g Quick Start with docker](DataBase/oracle/oracle11g-quick-start-with-doker.md)
+- [옵티마이저 - Optimaizer](DataBase/optimizer.md)
+
+### 5. MongoDB
+- [Mongodb](DataBase/mongodb/mongodb.md)
 
 ## Network + Web
 - [TCP, UDP](Web/tcp-udp.md)
 - [HTTP](Web/http.md)
 - [웹 브라우저의 요청 흐름](Web/how-to-browser-can-request.md)
+- [더 나은 URI API를 설계 하는 방법과 HTTP method](Web/http-api-design.md)
 - [API](Web/api.md)
 - [REST API](Web/RESTAPI.md)
 - [Domain](Web/domain.md)
