@@ -1,10 +1,18 @@
 # Today I Learned
 오늘 새롭게 배운 혹은 삽질한 경험을 간단한 글들을 마크다운 문서로 정리 해 보자! `start - Dec 12 2020`  
 
-### GIT
+## GIT
 - [.Ds_store 모두 .gitignore](Git/ds-store-ignore.md)
 - [커밋되지 않거나 저장되지 않은 모든 변경사항 취소 및 삭제](/Git/rm-unstaged.md)
 - [Cache 삭제](Git/cache-remove.md)
+
+## Operating System
+### Linux
+- [특정 port를 사용하고 있는 프로세스 종료하는 명령어](os/Linux/certain-port-kill.md)
+- [데몬 프로세스 - Daemon Processe](OS/Linux/daemon-process.md)
+
+### Virtualization
+- [하이퍼바이저 - Hypervisor](OS/Virtualization/hypervisor.md)
 
 ## CS(Computer Science) 
 - [소프트웨어 생명주기(software life cycle)](CS/swlc.md)
@@ -272,6 +280,7 @@
 
 ## Network + Web
 - [TCP, UDP](Web/tcp-udp.md)
+- [RPC 프로토콜]()
 - [HTTP](Web/http.md)
 - [웹 브라우저의 요청 흐름](Web/how-to-browser-can-request.md)
 - [더 나은 URI API를 설계 하는 방법과 HTTP method](Web/http-api-design.md)
