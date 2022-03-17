@@ -1,5 +1,5 @@
 # 웹 브라우저의 요청 흐름
-<img src="img/web_browser_request_way.png">
+<img src="img/web-browser-request-way.png">
 
 1. 웹 브라우저가 HTTP 메시지를 생성한다.
 2. SOCKET 라이브러리에서 OS의 TCP/IP계층에 데이터를 전달한다.

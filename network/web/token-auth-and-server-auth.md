@@ -5,7 +5,7 @@
 : 클라이언트로부터 요청을 받으면, 클라이언트의 상태를 계속해서 유지하고 이 정보를 서비스에 이용하는 **Sateful 서버**
 - 세션을 기반으로 정보저장(메모리, DB를 이용해 정보 저장)
 
-<img width=40% src=./img/serverAuth.png>
+<img width=40% src=./img/server-auth.png>
 
 ### 문제점
 **세션(session)**
@@ -24,7 +24,7 @@
 : 인증받은 사용자들에게 토큰을 발급하고, 서버에 요청을 할 때 헤더에 토큰을 함께 보내도록 하여 유효성 검사를한다.
 
 ### 동작 과정
-<img width=40% src=./img/tokenAuth.png>
+<img width=40% src=./img/token-auth.png>
 
 1. 사용자가 로그인을 한다
 2. 서버 측에서 해당 정보검증한다.
