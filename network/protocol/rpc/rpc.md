@@ -1,6 +1,6 @@
 # RPC - Remote Procedure Call
 
-## 1.  등장 배경
+## 1. 등장 배경
 https://en.wikipedia.org/wiki/Remote_procedure_call#History_and_origins
 
 ## 2. RPC의 개념
@@ -40,7 +40,21 @@ RPC란 프로세스간 통신을 위해 사용하는 [`IPC - Inter Process Commu
 6. `transport layer`는 결과 메시지를 client `transport layer`으로 다시 보내고, `client`의 `transport layer`는 메시지를 `client stub`으로 다시 전달한다.
 7. `client stub`은 반환 매개변수를 디마샬링하고, 실행 결과값은 호출자(caller)에게 반환된다.
 
-### 3-1. 용어 설명
+### 3-1. IDL를 이용한 동작방식
+<img width=650 src="img/rpc-use-idl.jpg">
+
+1. `IDL - Interface Definition Language`을 사용하여 호출 규약을 정의한다.
+    > 함수명, 인자, 반환값에 대한 데이터형이 정의된 IDL 파일을 rpcgen으로 컴파일하면 stub code가 자동으로 생성된다.
+2. Stub Code에 명시된 함수는 원시코드의 형태로, 상세 기능은 server에서 구현된다.
+    > 만들어진 stub코드는 클라이언트/서버에 함께 빌드한다.
+3. client에서 stub에 정의된 함수를 사용할 때,
+4. client stub은 RPC runtime을 통해 함수 호출하고
+5. server는 수신된 procedure 호출에 대한 처리 후 결과 값을 반환한다.
+
+최종적으로 Client는 Server의 결과 값을 반환받고, 함수를 Local에 있는 것 처럼 사용할 수 있다.
+
+
+### 3-2. 용어 설명
 #### stub
 - client stub : 마샬링(함수호출에서 사용되는 파라미터의 변환)과 함수 실행 후 서버에서 전달된 결과의 변환을 담당한다.
 - server stub : 언마샬링(클라이언트가 전달한 매개변수의 역변환) 및 함수 실행 결과의 변환을 담당한다.
@@ -85,3 +99,4 @@ RPC란 프로세스간 통신을 위해 사용하는 [`IPC - Inter Process Commu
 - https://velog.io/@xylopeofficial/gRPC1
 - https://www.techtarget.com/searchapparchitecture/definition/Remote-Procedure-Call-RPC
 - http://www.terms.co.kr/routine.htm
+- https://medium.com/naver-cloud-platform/nbp-기술-경험-시대의-흐름-grpc-깊게-파고들기-1-39e97cb3460
