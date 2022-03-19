@@ -110,8 +110,8 @@
 - [POJO - 오래된 방식의 간단한 자바객체](programming/Java/POJO(Plain-Old-JAVA-Object).md)
 - [Java Beans](programming/Java/java-beans.md)
 
-#### 1-8. [Java EE](BE/JavaEE/javaee.md)
-- [Servlet](BE/JavaEE/servlet.md)
+#### 1-8. [Java EE](back-end/java-ee/javaee.md)
+- [Servlet](back-end/java-ee/servlet.md)
 
 #### 1-9. JAVA Design Pattern
 - [디자인패턴?](programming/Java/Design-pattern/Design-Pattern.md)
@@ -149,102 +149,102 @@
 - [Jenkins install](DevOps/jenkins/jenkins-install.md) - ubuntu
 
 ## BackEnd
-- [Payload](BE/payload.md)
+- [Payload](back-end/payload.md)
 
-### 1. [Spring Framework](BE/Spring/spring.md) 
-- [DI(DependencyInjection)](BE/Spring/DI(Dependency-Injection).md)
-- [IoC](BE/Spring/IOC(Inversion-Of-Control).md)
-- [Spring 구조](BE/Spring/DTO,DAO,Entity-class.md)
-- [Bean](BE/Spring/Bean.md)
-  - [Bean 라이프사이클](BE/Spring/bean-life-cycle.md)
-- [Logging](BE/Spring/Logging.md)
+### 1. [Spring Framework](back-end/spring/spring.md) 
+- [DI(DependencyInjection)](back-end/spring/DI(Dependency-Injection).md)
+- [IoC](back-end/spring/IOC(Inversion-Of-Control).md)
+- [Spring 구조](back-end/spring/DTO,DAO,Entity-class.md)
+- [Bean](back-end/spring/Bean.md)
+  - [Bean 라이프사이클](back-end/spring/bean-life-cycle.md)
+- [Logging](back-end/spring/Logging.md)
 
 
-### 2. [SpringBoot](BE/Spring/SpringBoot/SpringBoot.md)
-- [Logback](BE/Spring/SpringBoot/logback.md)
-- [File Req, Res처리](BE/Spring/SpringBoot/SpringBootFile-req-res-prosessing.md)
-- [CORS 이슈 해결](BE/Spring/SpringBoot/cors.md)
+### 2. [SpringBoot](back-end/spring/spring-boot/SpringBoot.md)
+- [Logback](back-end/spring/spring-boot/logback.md)
+- [File Req, Res처리](back-end/spring/spring-boot/SpringBootFile-req-res-prosessing.md)
+- [CORS 이슈 해결](back-end/spring/spring-boot/cors.md)
 
 #### 2-1. charset 문제
-- [모든 요청에 대해 UTF-8 charset 적용](BE/Spring/SpringBoot/KoreanGarbled.md)
-- [S3 버킷의 자원 위치를 가리키는 URL이 character set이 UTF-8이 아니여서 생긴 문제](BE/Spring/URL-utf-8-problem.md)
+- [모든 요청에 대해 UTF-8 charset 적용](back-end/spring/spring-boot/KoreanGarbled.md)
+- [S3 버킷의 자원 위치를 가리키는 URL이 character set이 UTF-8이 아니여서 생긴 문제](back-end/spring/URL-utf-8-problem.md)
 
 ### 3. Spring MVC
-- [Command Object - 커맨드 객체](BE/Spring/SpringMVC/command-object.md)
-- [HTTP POST 메서드와 Content-Type](BE/Spring/post-and-content-type.md)
+- [Command Object - 커맨드 객체](back-end/spring/spring-mvc/command-object.md)
+- [HTTP POST 메서드와 Content-Type](back-end/spring/spring-mvc/post-and-content-type.md)
   > feat. Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported
 
 ### 4. SpringSecurity
-- [SpringSecurity](BE/Spring/SpringSecurity/spring-security.md)
-- [CSRF(사이트간 요청위조)](BE/Spring/SpringSecurity/CSRF.md)
+- [SpringSecurity](back-end/spring/spring-security/spring-security.md)
+- [CSRF(사이트간 요청위조)](back-end/spring/spring-security/CSRF.md)
 
 ### 5. Build Tool
-- [Build Tool](BE/BuildTool/build-tool.md)
+- [Build Tool](back-end/build-tool/build-tool.md)
 #### 5-1. Gradle
-- [Gradle](BE/BuildTool/gradle/gradle.md)
-- [(SpringBoot Project) Maven에서 Gradle로 Build Tool migration!](BE/BuildTool/gradle/maven-to-gradle-migration.md)
-- [build.gradle plugins{...}방식 에러해결](BE/BuildTool/gradle/build-gradle-plugins-allowed%20befor-plugins-block.md)
+- [Gradle](back-end/build-tool/gradle/gradle.md)
+- [(SpringBoot Project) Maven에서 Gradle로 Build Tool migration!](back-end/build-tool/gradle/maven-to-gradle-migration.md)
+- [build.gradle plugins{...}방식 에러해결](back-end/build-tool/gradle/build-gradle-plugins-allowed%20befor-plugins-block.md)
   > only buildscript {} and other plugins {} script blocks are  
   > allowed before plugins {} blocks, no other statements are allowed   
   > 애러해결
 
 #### 5-2. Maven
-- [plugin-not-found 에러 해결 - 버전이 명시가 되어있지 않을때](BE/BuildTool/maven/plugin-not-found.md)
+- [plugin-not-found 에러 해결 - 버전이 명시가 되어있지 않을때](back-end/build-tool/maven/plugin-not-found.md)
 
 ### 6. JPA
-- [Entity](BE/Spring/JPA/Entity.md)
-- [JPA Auditing으로 생성일/수정일 자동화](BE/Spring/JPA/Auditing.md)
-- [QueryDSL?](BE/Spring/JPA/QueryDSL.md)
-- [01 JPA?](BE/Spring/JPA/01-JPA.md)
-- [02 영속성 컨텍스트?](BE/Spring/JPA/02-PersistenceContext.md)
-- [03 플러시(flush)](BE/Spring/JPA/03-flush.md)
-- [04 준 영속 상태](BE/Spring/JPA/04-detached.md)
-- [05 DB schema 자동 생성](BE/Spring/JPA/05-DB-schema-auto-create.md)
-- [06 객체와 테이블 매핑](BE/Spring/JPA/06-object-table-mapping.md)
-- [07 기본키 매핑](BE/Spring/JPA/07-pk-mapping.md)
-  - [07-1 데이터 중심 설계(실습)](BE/Spring/JPA/07.1-db-driven-design.md)
-- [08 연관관계 맵핑(기초)](BE/Spring/JPA/08-relationship-mapping-foundation.md)
-  - [08-1 연관관계 매핑 시작(실전)](BE/Spring/JPA/08.1-relationship-mapping-start.md)
-- [09 다양한 연관관계](BE/Spring/JPA/09-various-relationship.md)
-  - [09-1 다양한 연관관계 매핑(실전)](BE/Spring/JPA/09.1-various-relationship-mapping.md)
-- [10 연관관계 맵핑(고급) - 상속관계 매핑](BE/Spring/JPA/10-relationship-mapping-advanced.md)
-- [11 @MappedSuperclass](BE/Spring/JPA/11-mapped-superclass.md)
-  - [11.1 상속관계 매핑(실전)](BE/Spring/JPA/11.1-inherit-relationship-mapping.md)
-- [12 Proxy](BE/Spring/JPA/12-proxy.md)
-- [13 Eager/LAZY loading](BE/Spring/JPA/13-eager-loading-and-lazy-loading.md)
-- [14 영속성 전이(cascade)](BE/Spring/JPA/14-cascade.md)
-- [15 고아 객체(ORPAN)](BE/Spring/JPA/15-orpan.md)
-  - [15-1 연관관계 관리(실전)](BE/Spring/JPA/15.1-relationship-manage.md)
-- [16 JPA 데이터 타입](BE/Spring/JPA/16-jpa-data-type.md)
-  1. [기본값 타입](BE/Spring/JPA/16.1-default-type.md)
-  2. [임베디드 타입(embedded-type)](BE/Spring/JPA/16.2-embedded-type.md)
-  3. [값 타입과 불변 타입](BE/Spring/JPA/16.3-value-and-immutable.md)
-  4. [값 타입 비교](BE/Spring/JPA/16.4-value-type-compare.md)
-  5. [값 타입 컬렉션](BE/Spring/JPA/16.5-value-type-collection.md)
-  6. [JPA 데이터 타입 정리](BE/Spring/JPA/16.6-organize.md)
-  7. [JPA 값 타입(실습)](BE/Spring/JPA/16.7-value-type-mapping.md)
+- [Entity](back-end/spring/jpa/Entity.md)
+- [JPA Auditing으로 생성일/수정일 자동화](back-end/spring/jpa/Auditing.md)
+- [QueryDSL?](back-end/spring/jpa/QueryDSL.md)
+- [01 JPA?](back-end/spring/jpa/01-JPA.md)
+- [02 영속성 컨텍스트?](back-end/spring/jpa/02-PersistenceContext.md)
+- [03 플러시(flush)](back-end/spring/jpa/03-flush.md)
+- [04 준 영속 상태](back-end/spring/jpa/04-detached.md)
+- [05 DB schema 자동 생성](back-end/spring/jpa/05-DB-schema-auto-create.md)
+- [06 객체와 테이블 매핑](back-end/spring/jpa/06-object-table-mapping.md)
+- [07 기본키 매핑](back-end/spring/jpa/07-pk-mapping.md)
+  - [07-1 데이터 중심 설계(실습)](back-end/spring/jpa/07.1-db-driven-design.md)
+- [08 연관관계 맵핑(기초)](back-end/spring/jpa/08-relationship-mapping-foundation.md)
+  - [08-1 연관관계 매핑 시작(실전)](back-end/spring/jpa/08.1-relationship-mapping-start.md)
+- [09 다양한 연관관계](back-end/spring/jpa/09-various-relationship.md)
+  - [09-1 다양한 연관관계 매핑(실전)](back-end/spring/jpa/09.1-various-relationship-mapping.md)
+- [10 연관관계 맵핑(고급) - 상속관계 매핑](back-end/spring/jpa/10-relationship-mapping-advanced.md)
+- [11 @MappedSuperclass](back-end/spring/jpa/11-mapped-superclass.md)
+  - [11.1 상속관계 매핑(실전)](back-end/spring/jpa/11.1-inherit-relationship-mapping.md)
+- [12 Proxy](back-end/spring/jpa/12-proxy.md)
+- [13 Eager/LAZY loading](back-end/spring/jpa/13-eager-loading-and-lazy-loading.md)
+- [14 영속성 전이(cascade)](back-end/spring/jpa/14-cascade.md)
+- [15 고아 객체(ORPAN)](back-end/spring/jpa/15-orpan.md)
+  - [15-1 연관관계 관리(실전)](back-end/spring/jpa/15.1-relationship-manage.md)
+- [16 JPA 데이터 타입](back-end/spring/jpa/16-jpa-data-type.md)
+  1. [기본값 타입](back-end/spring/jpa/16.1-default-type.md)
+  2. [임베디드 타입(embedded-type)](back-end/spring/jpa/16.2-embedded-type.md)
+  3. [값 타입과 불변 타입](back-end/spring/jpa/16.3-value-and-immutable.md)
+  4. [값 타입 비교](back-end/spring/jpa/16.4-value-type-compare.md)
+  5. [값 타입 컬렉션](back-end/spring/jpa/16.5-value-type-collection.md)
+  6. [JPA 데이터 타입 정리](back-end/spring/jpa/16.6-organize.md)
+  7. [JPA 값 타입(실습)](back-end/spring/jpa/16.7-value-type-mapping.md)
 
 #### 6-1. JPQL 객체지향 쿼리 언어
-- [00 JPQL intro](BE/Spring/JPA/JPQL/00-intro.md)
-- [01 JPQL](BE/Spring/JPA/JPQL/01-JPQL.md)
-- [02 프로젝션](BE/Spring/JPA/JPQL/02-projection.md)
-- [03 페이징](BE/Spring/JPA/JPQL/03-paging.md)
+- [00 JPQL intro](back-end/spring/jpa/JPQL/00-intro.md)
+- [01 JPQL](back-end/spring/jpa/JPQL/01-JPQL.md)
+- [02 프로젝션](back-end/spring/jpa/JPQL/02-projection.md)
+- [03 페이징](back-end/spring/jpa/JPQL/03-paging.md)
 
-#### 6-2. [Querydsl](BE/Spring/Querydsl/querydsl.md)
+#### 6-2. [Querydsl](back-end/spring/querydsl/querydsl.md)
 
 #### 6-3. Spring DATA JPA
-- [00 Intro](BE/Spring/JPA/DataJPA/00-intro.md)
-- [01 공통인터페이스](BE/Spring/JPA/DataJPA/01-comman-repository.md)
-- [02 쿼리 메소드 기능](BE/Spring/JPA/DataJPA/02-query-method.md)
-- [Custom Repository](BE/Spring/JPA/DataJPA/custom-repository.md)
+- [00 Intro](back-end/spring/jpa/Datajpa/00-intro.md)
+- [01 공통인터페이스](back-end/spring/jpa/Datajpa/01-comman-repository.md)
+- [02 쿼리 메소드 기능](back-end/spring/jpa/Datajpa/02-query-method.md)
+- [Custom Repository](back-end/spring/jpa/Datajpa/custom-repository.md)
 
 ### 7. Node.js
-- [node.js 설치 및 개발환경 세팅](BE/NodeJS/how-to-install-nodeJs.md)
-- [MySQL 연결](BE/NodeJS/Connect-MySql.md)
-- [ORM모듈 Sequelize 사용하기(모델만들기)](BE/NodeJS/sequelize.md)
+- [node.js 설치 및 개발환경 세팅](back-end/nodejs/how-to-install-nodeJs.md)
+- [MySQL 연결](back-end/nodejs/Connect-MySql.md)
+- [ORM모듈 Sequelize 사용하기(모델만들기)](back-end/nodejs/sequelize.md)
 
 ### 8. [SSH](DevOps/ssh/ssh.md)
-- [REMOTE HOST IDENTIFICATION HAS CHANGED 에러 해결](BE/SSH/remote-host-identification-has-changed-error.md)
+- [REMOTE HOST IDENTIFICATION HAS CHANGED 에러 해결](back-end/ssh/remote-host-identification-has-changed-error.md)
 
 ## Database
 - [트랜잭션 격리수준](DataBase/db-transcation-isolation-level.md)
