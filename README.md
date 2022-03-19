@@ -15,35 +15,36 @@
 - [하이퍼바이저 - Hypervisor](OS/Virtualization/hypervisor.md)
 
 ## Computer Science
-- [소프트웨어 생명주기(software life cycle)](CS/swlc.md)
-- [소프트웨어 테스트](CS/img/kinds-of-test.jpg)
-- [직렬화(serialization)](CS/data-serialization.md)
-- [동시성 & 병렬성 - Concurrency & Parallelism](CS/concurrency-parallelism.md)
+- [소프트웨어 생명주기(software life cycle)](cs/swlc.md)
+- [소프트웨어 테스트](cs/img/kinds-of-test.jpg)
+- [직렬화(serialization)](cs/data-serialization.md)
+- [동시성 & 병렬성 - Concurrency & Parallelism](cs/concurrency-parallelism.md)
+- [IPC - Inter process Comunication](cs/ipc.md)
 
 ### 1. Memory
-- [메모리 구조](CS/Memory/memory-structure.md)
-  - [스텍 프레임](CS/Memory/stack-frame.md)
-- [캐시 메모리](CS/Memory/cache.md)
+- [메모리 구조](cs/Memory/memory-structure.md)
+  - [스텍 프레임](cs/Memory/stack-frame.md)
+- [캐시 메모리](cs/Memory/cache.md)
 
-### 2. [자료구조](CS/DataStructure/data-structure.md)
-- [추상 자료형 - Abstract Data Type](CS/DataStructure/ADT/adt.md)
+### 2. [자료구조](cs/data-structure/data-structure.md)
+- [추상 자료형 - Abstract Data Type](cs/data-structure/ADT/adt.md)
 
 #### 2-1. 선형 구조
-- [list](CS/DataStructure/linear/list/list.md)
-  - [순차 리스트](CS/DataStructure/linear/list/sequential-list.md)
-  - [연결 리스트](CS/DataStructure/linear/list/linked-list.md)
+- [list](cs/data-structure/linear/list/list.md)
+  - [순차 리스트](cs/data-structure/linear/list/sequential-list.md)
+  - [연결 리스트](cs/data-structure/linear/list/linked-list.md)
     > Singly Linked List, Circular Linked List, Doubly Linked List
 
 #### 2-2. 비 선형 구조
-- [그래프 - graph](CS/DataStructure/non-linear/graph/graph.md)
-- [트리 - tree](CS/DataStructure/non-linear/tree/tree.md)
+- [그래프 - graph](cs/data-structure/non-linear/graph/graph.md)
+- [트리 - tree](cs/data-structure/non-linear/tree/tree.md)
 
 ### 3. 네트워크
-- [OSI 7계층 - ~~물데네 전세표응~~](CS/Network/osi-layer-seven.md)
+- [OSI 7계층 - ~~물데네 전세표응~~](cs/Network/osi-layer-seven.md)
 
 ### 4. 객체지향 프로그래밍
-- [Object Orinted Programing 한눈에 보기](CS/OOP/OOP.md) 
-- [General Responsibility Assignment Software Patterns](CS/OOP/GRASP.md)
+- [Object Orinted Programing 한눈에 보기](cs/OOP/OOP.md) 
+- [General Responsibility Assignment Software Patterns](cs/OOP/GRASP.md)
 
 ## Programming
 - [소프트웨어 개발 3개의 KEY원칙 (DRY, KISS, YAGNI)](programming/sw-dev-key-principle.md)
