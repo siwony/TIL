@@ -1,6 +1,6 @@
 # RPC - Remote Procedure Call
 
-## 1.  등장 배경 - MSA(Micro Service Architectrue)
+## 1.  등장 배경
 https://en.wikipedia.org/wiki/Remote_procedure_call#History_and_origins
 
 ## 2. RPC의 개념
