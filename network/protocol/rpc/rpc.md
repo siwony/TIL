@@ -57,9 +57,31 @@ RPC란 프로세스간 통신을 위해 사용하는 [`IPC - Inter Process Commu
 - Server와 Client를 바인딩하는 Layer
 - 커뮤니케이션 중 발생한 에러 처리도 함께 진행한다.
 
+## 4. RPC의 장단점
+### 4-1. 장점
+- 추상화를 제공한다.
+  > 네트워크 통신의 메시지 전달 특성은 사용자에게 숨겨져 있다.
+- 성능향상을 위해 많은 프로토콜 계층을 생략할 수 있다.
+- RCP를 사용하면 **로컬환경뿐만 아니라 분산환경에서도 응용 프로그램을 사용할 수 있다.**
+- `프로세스 지향`/`쓰레드 지향`모델을 지원한다.
+- 클라이언트가 high-level 언어로 프로시저 호출을 사용하여 서버와 통신할 수 있도록 돕는다.
+
+### 4-2. 단점
+- 통일된 표준이 없다.
+  > 그래서 여러 벤더가 존재한다.
+- 상호작용 기반이므로 하드웨터 아키텍처와 관련하여 유연성을 제공하지 않는다.
+- 항상 많은 양의 데이터를 전송하는데 적합하지 않다.
+  > 클라이언트와 서버는 다른 실행환경을 사용할 수 있기 때문이다.
+
+
+## 5. RPC의 대표적인 벤더
+- [ProtocolBuffer by Google](https://developers.google.com/protocol-buffers/)
+- [Thrift by Facebook](https://thrift.apache.org/)
+- [Finalge by Twitter](https://twitter.github.io/finagle/)
 
 ## Reference
 - https://www.geeksforgeeks.org/remote-procedure-call-rpc-in-operating-system/
 - https://velog.io/@jakeseo_me/RPC%EB%9E%80
 - https://nesoy.github.io/articles/2019-07/RPC
 - https://velog.io/@xylopeofficial/gRPC1
+- https://www.techtarget.com/searchapparchitecture/definition/Remote-Procedure-Call-RPC
