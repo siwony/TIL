@@ -1,11 +1,7 @@
 # RPC - Remote Procedure Call
 
 ## 1.  등장 배경 - MSA(Micro Service Architectrue)
-
-1. `MSA - Micro Service Architecture` 구조로 서비스를 만들게 된다면 다양한 언어와 프레임워크로 개발이 되는 경우 잦다. 
-2.  `Polyglot` 한 구조에서 프로토콜을 맞춰서 통신해야 하는 비용이 발생하게 된다.
-
-이러한 경우 언어에 구애받지 않고, 원격에 있는 프로시저를 호출하여 좀 더 비즈니스 로직에 집중하는 개발을 할 수 있다.
+https://en.wikipedia.org/wiki/Remote_procedure_call#History_and_origins
 
 ## 2. RPC의 개념
 RPC란 프로세스간 통신을 위해 사용하는 [`IPC - Inter Process Communication`](/cs/ipc.md) 방법의 한 종류이며, 
