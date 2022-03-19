@@ -57,6 +57,9 @@ RPC란 프로세스간 통신을 위해 사용하는 [`IPC - Inter Process Commu
 - Server와 Client를 바인딩하는 Layer
 - 커뮤니케이션 중 발생한 에러 처리도 함께 진행한다.
 
+#### 루틴
+루틴과 서브 루틴은 어떤 프로그램이 실행될 때 불려지거나 반복해서 사용되도록 만들어진 일련의 코드들을 지칭하는 용어이다.
+
 ## 4. RPC의 장단점
 ### 4-1. 장점
 - 추상화를 제공한다.
@@ -85,3 +88,4 @@ RPC란 프로세스간 통신을 위해 사용하는 [`IPC - Inter Process Commu
 - https://nesoy.github.io/articles/2019-07/RPC
 - https://velog.io/@xylopeofficial/gRPC1
 - https://www.techtarget.com/searchapparchitecture/definition/Remote-Procedure-Call-RPC
+- http://www.terms.co.kr/routine.htm
