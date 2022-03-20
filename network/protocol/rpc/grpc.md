@@ -10,7 +10,7 @@
 이처럼 서버와 개인 PC 간 통신이 중요해 지며, OSI 7 layer, TCP/IP 등 네트워크 계층 구조가 정의되고 발전되기 시작한다.
 
 ### 1-2. IPC - Inter Process Comunication
-프로세스는 기본적으로 상호 독립적이지만, 필요에 따라 프로세스간 정보를 교환해야 하는 경우가 생긴다. 이 떄 별도 수단을 활용하여 **프로세스 간 통신 방법론을 통칭하여 `IPC - Inter Process Comunication`** 라고 한다.
+프로세스는 기본적으로 상호 독립적이지만, 필요에 따라 프로세스간 정보를 교환해야 하는 경우가 생긴다. 이 때 별도 수단을 활용하여 **프로세스 간 통신 방법론을 통칭하여 `IPC - Inter Process Comunication`** 라고 한다.
 - `socket`, `message queue`, `pipe`, `rpc`, `rest`등이 있다.
 
 #### 1. Socket
