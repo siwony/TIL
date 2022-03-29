@@ -93,3 +93,6 @@ public class ExampleClass {
 ```
 - JVM의 클래스 로더 메커니즘과 클래스의 로드 시점을 이용하여 내부 클래스를 통해 생성 시킴으로써 쓰레드 간의 동기화 문제를 해결한다.
 
+
+## Reference
+- https://elfinlas.github.io/2019/09/23/java-singleton/

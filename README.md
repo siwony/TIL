@@ -52,63 +52,63 @@
 - [TDD & BDD](programming/TDD-BDD.md)
 - [API](programming/api.md)
 
-### 1. [JAVA](programming/Java/01-java.md)
-- [Java 버전 변경 - MacOS](programming/Java/java-version-change.md)
-- [Java의 기본 배경 지식 - JVM, JDK, JRE](programming/Java/jvm-jdk-jre.md)
-- [JAVA ubuntu 설치](programming/Java/java-install-ubuntu.md)
+### 1. [JAVA](programming/java/01-java.md)
+- [Java 버전 변경 - MacOS](programming/java/java-version-change.md)
+- [Java의 기본 배경 지식 - JVM, JDK, JRE](programming/java/jvm-jdk-jre.md)
+- [JAVA ubuntu 설치](programming/java/java-install-ubuntu.md)
 
-#### 1-1. [JVM - Java Virtual Machine](programming/Java/JVM/jvm.md)
-- [JVM 구조](programming/Java/JVM/jvm-structure.md)
-- [Class Loader](programming/Java/JVM/class-loader.md)
-- [바이트 코드 조작 예시](programming/Java/JVM/byte-code-operation.md)
+#### 1-1. [JVM - Java Virtual Machine](programming/java/JVM/jvm.md)
+- [JVM 구조](programming/java/JVM/jvm-structure.md)
+- [Class Loader](programming/java/JVM/class-loader.md)
+- [바이트 코드 조작 예시](programming/java/JVM/byte-code-operation.md)
 
 #### 1-2. 문법 및 기능
-- [JAVA 데이터형](programming/Java/grammar/02-java-Data-type.md)
-- [JAVA 배열](programming/Java/grammar/03-array.md)
-- [JAVA scope, static](programming/Java/grammar/05-scope-static.md)
-- [JAVA enum](programming/Java/grammar/06-enum.md)
-- [JAVA package](programming/Java/grammar/07-package.md)
-- [annotation](programming/Java/grammar/07-package.md)
-  - [annotation processor](programming/Java/byte-code-controller-way/annotation-processer.md)
-- [String](programming/Java/api/string.md)
-- [Enumeration 와 Iterator](programming/Java/enumeration-iterator.md)
-- [Exception](programming/Java/exception.md)
-- [Wrapper Class](programming/Java/wrapper-class.md)
-- [Guava 자바 라이브러리](programming/Java/google-quava.md)
+- [JAVA 데이터형](programming/java/grammar/02-java-Data-type.md)
+- [JAVA 배열](programming/java/grammar/03-array.md)
+- [JAVA scope, static](programming/java/grammar/05-scope-static.md)
+- [JAVA enum](programming/java/grammar/06-enum.md)
+- [JAVA package](programming/java/grammar/07-package.md)
+- [annotation](programming/java/grammar/07-package.md)
+  - [annotation processor](programming/java/byte-code-controller-way/annotation-processer.md)
+- [String](programming/java/api/string.md)
+- [Enumeration 와 Iterator](programming/java/enumeration-iterator.md)
+- [Exception](programming/java/exception.md)
+- [Wrapper Class](programming/java/wrapper-class.md)
+- [Guava 자바 라이브러리](programming/java/google-quava.md)
 
 #### 1-3. Java 8
-- [JAVA interface](programming/Java/interface.md)
-  - [함수형 인터페이스 - FunctionalInterface](programming/Java/grammar/java8/functional-interface.md)
-  - [람다 표현식 - Lambda Expression](programming/Java/grammar/java8/lambda-expression.md)
-  - [메소드 레퍼런스 - Method Reference](programming/Java/grammar/java8/method-reference.md)
-- [Stream](programming/Java/api/java8/stream.md)
-- [Optional](programming/Java/api/java8/optional.md)
-- [Java8 Date/Time API](programming/Java/api/java8/date-time.md)
+- [JAVA interface](programming/java/interface.md)
+  - [함수형 인터페이스 - FunctionalInterface](programming/java/grammar/java8/functional-interface.md)
+  - [람다 표현식 - Lambda Expression](programming/java/grammar/java8/lambda-expression.md)
+  - [메소드 레퍼런스 - Method Reference](programming/java/grammar/java8/method-reference.md)
+- [Stream](programming/java/api/java8/stream.md)
+  - [Stream.sort는 stable하지 않아요!]()
+- [Optional](programming/java/api/java8/optional.md)
+- [java8 Date/Time API](programming/java/api/java8/date-time.md)
 
-#### 1-4. [JAVA 동시성 프로그래밍](programming/Java/concurrent/concurrent-programming.md)
-- [Thread Pool](programming/Java/concurrent/thread-pool.md)
-- [Executor Framework](programming/Java/concurrent/executor-framework.md)
-- [Callable과 Future](programming/Java/concurrent/callable-future.md)
-- [CompletableFuture](programming/Java/concurrent/completable-future.md)
+#### 1-4. [JAVA 동시성 프로그래밍](programming/java/concurrent/concurrent-programming.md)
+- [Thread Pool](programming/java/concurrent/thread-pool.md)
+- [Executor Framework](programming/java/concurrent/executor-framework.md)
+- [Callable과 Future](programming/java/concurrent/callable-future.md)
+- [CompletableFuture](programming/java/concurrent/completable-future.md)
 
 #### 1-5. JAVA 동시성 프로그래밍의 이슈를 해결하는 방법
-- [volatile - 가시성 이슈를 해결하는 키워드](programming/Java/concurrent/volatile.md)
+- [volatile - 가시성 이슈를 해결하는 키워드](programming/java/concurrent/volatile.md)
 - 경쟁상태를 해결하는 방법
-  - [synchronized 키워드](programming/Java/concurrent/synchronized.md)
-  - [Atomic API](programming/Java/concurrent/atomic.md)
+  - [synchronized 키워드](programming/java/concurrent/synchronized.md)
+  - [Atomic API](programming/java/concurrent/atomic.md)
   - Mutex, Semaphore
-- [Thread Local - 스레드 로컬](programming/Java/concurrent/thread-local.md)
+- [Thread Local - 스레드 로컬](programming/java/concurrent/thread-local.md)
 
 #### 1-6. 바이트 코드를 조작하는 다양한 방법
-- [Reflection - 리플렉션](programming/Java/byte-code-controller-way/reflection.md)
-- [Dynamic Proxy - 다이나믹 프록시](programming/Java/byte-code-controller-way/dynamic-proxy.md)
-  - [클래스 기반의 프록시 생성방법](programming/Java/byte-code-controller-way/dynamic-proxy.md)
-- [Annotation - 어노테이션](programming/Java/byte-code-controller-way/annotation.md)
-  - [Annotation Processor](programming/Java/byte-code-controller-way/annotation-processer.md)
+- [Reflection - 리플렉션](programming/java/byte-code-controller-way/reflection.md)
+- [Dynamic Proxy - 다이나믹 프록시](programming/java/byte-code-controller-way/dynamic-proxy.md)
+  - [클래스 기반의 프록시 생성방법](programming/java/byte-code-controller-way/dynamic-proxy.md)
+- [Annotation - 어노테이션](programming/java/byte-code-controller-way/annotation.md)
+  - [Annotation Processor](programming/java/byte-code-controller-way/annotation-processer.md)
 
-#### 1-7. etc...
-- [POJO - 오래된 방식의 간단한 자바객체](programming/Java/POJO(Plain-Old-JAVA-Object).md)
-- [Java Beans](programming/Java/java-beans.md)
+#### 1-7 [JCF - Java Collection Framework]()
+- 
 
 #### 1-8. [Java EE](back-end/java-ee/javaee.md)
 - [Servlet](back-end/java-ee/servlet.md)
@@ -122,6 +122,9 @@
 - [데코레이터 패턴(Decorator Pattern)](programming/Java/Design-pattern/Decorator-Pattern.md)
 - [옵저버 패턴(Observer Pattern)](programming/Java/Design-pattern/Observer-Pattern.md)
 
+#### etc...
+- [POJO - 오래된 방식의 간단한 자바객체](programming/Java/POJO(Plain-Old-JAVA-Object).md)
+- [Java Beans](programming/Java/java-beans.md)
 ## 알고리즘
 - [퀵정렬](Algorithm/QuickSort.md)
 
@@ -233,10 +236,10 @@
 #### 6-2. [Querydsl](back-end/spring/querydsl/querydsl.md)
 
 #### 6-3. Spring DATA JPA
-- [00 Intro](back-end/spring/jpa/Datajpa/00-intro.md)
-- [01 공통인터페이스](back-end/spring/jpa/Datajpa/01-comman-repository.md)
-- [02 쿼리 메소드 기능](back-end/spring/jpa/Datajpa/02-query-method.md)
-- [Custom Repository](back-end/spring/jpa/Datajpa/custom-repository.md)
+- [00 Intro](back-end/spring/jpa/data-jpa/00-intro.md)
+- [01 공통인터페이스](back-end/spring/jpa/data-jpa/01-comman-repository.md)
+- [02 쿼리 메소드 기능](back-end/spring/jpa/data-jpa/02-query-method.md)
+- [Custom Repository](back-end/spring/jpa/data-jpa/custom-repository.md)
 
 ### 7. Node.js
 - [node.js 설치 및 개발환경 세팅](back-end/nodejs/how-to-install-nodeJs.md)
