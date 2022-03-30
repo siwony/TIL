@@ -297,6 +297,7 @@
 ### 2. [HTTP](network/http/http.md)
 - [더 나은 URI API를 설계 하는 방법과 HTTP method](network/http/http-api-design.md)
 - [REST API](network/http/rest-api.md)
+- [HTTP 버전별 차이](network/http/http-version-difference.md)
 
 ### 3. WEB
 - [서버기반 인증 & 토큰기반 인증](network/web/token-auth-and-server-auth.md)
