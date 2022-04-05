@@ -38,6 +38,8 @@
 #### 2-2. 비 선형 구조
 - [그래프 - graph](cs/data-structure/non-linear/graph/graph.md)
 - [트리 - tree](cs/data-structure/non-linear/tree/tree.md)
+  - [B+트리](cs/data-structure/non-linear/tree/b-plus-tree.md)
+  - [B트리](cs/data-structure/non-linear/tree/b-tree.md)
 
 ### 3. 네트워크
 - [OSI 7계층 - ~~물데네 전세표응~~](cs/Network/osi-layer-seven.md)
