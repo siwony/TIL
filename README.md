@@ -63,18 +63,13 @@
 - [바이트 코드 조작 예시](programming/java/JVM/byte-code-operation.md)
 
 #### 1-2. 문법 및 기능
-- [JAVA 데이터형](programming/java/grammar/02-java-Data-type.md)
-- [JAVA 배열](programming/java/grammar/03-array.md)
-- [JAVA scope, static](programming/java/grammar/05-scope-static.md)
-- [JAVA enum](programming/java/grammar/06-enum.md)
-- [JAVA package](programming/java/grammar/07-package.md)
 - [annotation](programming/java/grammar/07-package.md)
   - [annotation processor](programming/java/byte-code-controller-way/annotation-processer.md)
 - [String](programming/java/api/string.md)
 - [Enumeration 와 Iterator](programming/java/enumeration-iterator.md)
 - [Exception](programming/java/exception.md)
 - [Wrapper Class](programming/java/wrapper-class.md)
-- [Guava 자바 라이브러리](programming/java/google-quava.md)
+- [try-with-resources](programming/java/grammar/try-with-resources.md)
 
 #### 1-3. Java 8
 - [JAVA interface](programming/java/interface.md)
@@ -125,6 +120,8 @@
 #### etc...
 - [POJO - 오래된 방식의 간단한 자바객체](programming/Java/POJO(Plain-Old-JAVA-Object).md)
 - [Java Beans](programming/Java/java-beans.md)
+- [Guava 자바 라이브러리](programming/java/google-quava.md)
+
 ## 알고리즘
 - [퀵정렬](Algorithm/QuickSort.md)
 

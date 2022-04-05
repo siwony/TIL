@@ -132,14 +132,12 @@ HTTP 2.0은 HTTP 1.1에 대한 높은 호환성을 보여주며, 성능향상을
   - 이 프라임 헤더는 최소한으로 프레임이 속하는 스트림을 식별한다.
   - `Headers Type Frame`, `Data Type Frame`이 존재한다.
 
-
-
 ### 4-1. Multiplexed Streams
 - 한 Connection으로 동시에 여러 개 메시지를 주고 받을 수 있으며, 
 - Response는 순서에 상관없이 stream으로 주고받는다.
 
-### 4-2. Stream Prioritization
-- 리소스간 우선순위를 설정해 클라이언트가 먼저 필요한 리소스부터 보내준다.
+### 4-2. Prioritization
+- 리소스간 우선순위를 설정한다.
 
 ### 4-3. Server Push
 - 서버는 클라이언트의 요청에 대해 요청하지 않은 리소스를 마음대로 보내줄 수 있다.

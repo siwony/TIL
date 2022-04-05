@@ -16,7 +16,7 @@
 - 회원 조회: `/read-member-by-id`
 - 회원 수정: `/update-member`
 - 회원 삭제: `/delete-member`
-
+w
 리소스만 표현하도록 작성해야 한다.
 - **회원** 전체 조회: `/members`
 - **회원** 등록: `/members/{id}`
