@@ -196,6 +196,7 @@
 ### 6. JPA
 - [Entity](back-end/spring/jpa/Entity.md)
 - [JPA Auditing으로 생성일/수정일 자동화](back-end/spring/jpa/Auditing.md)
+- [비관적/낙관적 락](back-end/spring/jpa/optimistic-lock-pessimistic-lock.md)
 - [QueryDSL?](back-end/spring/jpa/QueryDSL.md)
 - [01 JPA?](back-end/spring/jpa/01-JPA.md)
 - [02 영속성 컨텍스트?](back-end/spring/jpa/02-PersistenceContext.md)
