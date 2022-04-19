@@ -231,6 +231,7 @@
   7. [JPA 값 타입(실습)](back-end/spring/jpa/16.7-value-type-mapping.md)
 
 #### 6-1. JPQL 객체지향 쿼리 언어
+- [Fetch Join](back-end/spring/jpa/JPQL/fetch-join.md)
 - [00 JPQL intro](back-end/spring/jpa/JPQL/00-intro.md)
 - [01 JPQL](back-end/spring/jpa/JPQL/01-JPQL.md)
 - [02 프로젝션](back-end/spring/jpa/JPQL/02-projection.md)
