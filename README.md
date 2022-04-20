@@ -72,6 +72,7 @@
 - [Exception](programming/java/exception.md)
 - [Wrapper Class](programming/java/wrapper-class.md)
 - [try-with-resources](programming/java/grammar/try-with-resources.md)
+- [향상된 for 루프 - enhanced for loop](programming/java/grammar/enhanced-for-loop.md)
 
 #### 1-3. Java 8
 - [JAVA interface](programming/java/interface.md)
@@ -105,7 +106,7 @@
   - [Annotation Processor](programming/java/byte-code-controller-way/annotation-processer.md)
 
 #### 1-7 [JCF - Java Collection Framework]()
-- 
+- [List 순회중 만난 `ConcurrentModificationException`](programming/java/java-collection-framework/ConcurrentModificationException.md) - 미완성
 
 #### 1-8. [Java EE](back-end/java-ee/javaee.md)
 - [Servlet](back-end/java-ee/servlet.md)
@@ -229,6 +230,7 @@
   5. [값 타입 컬렉션](back-end/spring/jpa/16.5-value-type-collection.md)
   6. [JPA 데이터 타입 정리](back-end/spring/jpa/16.6-organize.md)
   7. [JPA 값 타입(실습)](back-end/spring/jpa/16.7-value-type-mapping.md)
+- [벌크 연산](back-end/spring/jpa/bulk-operation.md)
 
 #### 6-1. JPQL 객체지향 쿼리 언어
 - [Fetch Join](back-end/spring/jpa/JPQL/fetch-join.md)
