@@ -179,6 +179,8 @@
 - [Command Object - 커맨드 객체](back-end/spring/spring-mvc/command-object.md)
 - [HTTP POST 메서드와 Content-Type](back-end/spring/spring-mvc/post-and-content-type.md)
   > feat. Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported
+- SpringMVC는 데이터를 어떻게 반환할까? (작성중)
+  > 부제: ViewResolver와 MessageConverter
 
 ### 4. SpringSecurity
 - [SpringSecurity](back-end/spring/spring-security/spring-security.md)
