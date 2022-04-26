@@ -73,6 +73,7 @@
 - [Wrapper Class](programming/java/wrapper-class.md)
 - [try-with-resources](programming/java/grammar/try-with-resources.md)
 - [향상된 for 루프 - enhanced for loop](programming/java/grammar/enhanced-for-loop.md)
+- [직렬화 - Serialization](programming/java/serialization.md)
 
 #### 1-3. Java 8
 - [JAVA interface](programming/java/interface.md)
