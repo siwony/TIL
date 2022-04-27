@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.web.servlet.DispatcherServlet</OriginalElement>
+  <nodes>
+    <node x="-1124.764346374176" y="307.8936635105609">org.springframework.http.converter.HttpMessageConverter</node>
+    <node x="-610.1851383714804" y="93.0">org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter</node>
+    <node x="-1195.9483492004892" y="-15.0">org.springframework.web.servlet.DispatcherServlet</node>
+    <node x="-1139.764346374176" y="93.0">org.springframework.http.converter.StringHttpMessageConverter</node>
+    <node x="-610.1851383714804" y="-15.0">org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter</node>
+    <node x="-198.914459161148" y="307.8936635105609">org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver</node>
+    <node x="-862.0" y="-15.0">org.springframework.web.servlet.HandlerAdapter</node>
+    <node x="-139.914459161148" y="93.0">org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor</node>
+    <node x="-684.0" y="212.91624180626354">org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite</node>
+    <node x="-164.414459161148" y="212.91624180626354">org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter" target="org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor" relationship="CREATE">
+      <point x="165.34522942461763" y="-4.592862345229378" />
+      <point x="-282.8399089468628" y="107.5" />
+      <point x="51.58554083885201" y="107.5" />
+      <point x="0.0" y="-14.5" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter" target="org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite" relationship="CREATE">
+      <point x="103.39038601602329" y="8.683175528040806" />
+      <point x="-344.79475235545715" y="213.540786598689" />
+      <point x="105.60305899490174" y="-13.875455207574532" />
+    </edge>
+    <edge source="org.springframework.web.servlet.DispatcherServlet" target="org.springframework.web.servlet.HandlerAdapter" relationship="TO_MANY">
+      <point x="108.5" y="0.0" />
+      <point x="-93.5" y="0.0" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor" target="org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver" relationship="GENERALIZATION">
+      <point x="0.3620192485479947" y="16.84850691915517" />
+      <point x="0.3620192485479947" y="-13.707938820101958" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver" target="org.springframework.http.converter.HttpMessageConverter" relationship="TO_MANY">
+      <point x="4.591611479867197E-4" y="-14.5" />
+      <point x="-11.751764020393274" y="307.8936635105609" />
+      <point x="-11.751764020393274" y="322.3936635105609" />
+      <point x="-829.059505098325" y="322.3936635105609" />
+      <point x="-829.059505098325" y="321.9617625637291" />
+      <point x="137.5476675686407" y="-0.4319009468317745" />
+    </edge>
+    <edge source="org.springframework.http.converter.StringHttpMessageConverter" target="org.springframework.http.converter.HttpMessageConverter" relationship="REALIZATION">
+      <point x="0.0" y="14.5" />
+      <point x="0.0" y="-14.5" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter" target="org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter" relationship="GENERALIZATION">
+      <point x="0.06860523236900917" y="-12.337217771303699" />
+      <point x="-448.1165331391114" y="73.25" />
+      <point x="-448.18513837148043" y="73.25" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter" target="org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite" relationship="TO_ONE">
+      <point x="-10.56227239621262" y="16.427530954115127" />
+      <point x="-458.74741076769305" y="213.540786598689" />
+      <point x="3.820101966496736" y="-13.875455207574532" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter" target="org.springframework.http.converter.HttpMessageConverter" relationship="TO_MANY">
+      <point x="-137.79096868171882" y="14.214857975236725" />
+      <point x="-585.9761070531993" y="179.79752367079385" />
+      <point x="-921.6285506190823" y="179.79752367079385" />
+      <point x="65.6357957550938" y="-14.814275309541188" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter" target="org.springframework.web.servlet.HandlerAdapter" relationship="REALIZATION">
+      <point x="-161.45652222575188" y="0.5178441369264704" />
+      <point x="-642.5925691857402" y="0.017844136926470355" />
+      <point x="-642.5925691857402" y="-0.5" />
+      <point x="93.5" y="0.0" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor" target="org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor" relationship="GENERALIZATION">
+      <point x="0.0" y="14.5" />
+      <point x="0.0" y="-14.5" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter" target="org.springframework.http.converter.StringHttpMessageConverter" relationship="CREATE">
+      <point x="-162.0" y="0.0" />
+      <point x="152.5" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.9038841342988808" showDependencies="true" x="-436.5" y="181.6227239621267" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
