@@ -74,6 +74,7 @@
 - [try-with-resources](programming/java/grammar/try-with-resources.md)
 - [향상된 for 루프 - enhanced for loop](programming/java/grammar/enhanced-for-loop.md)
 - [직렬화 - Serialization](programming/java/serialization.md)
+- [가변인수 - varargs](programming/java/varargs.md)
 
 #### 1-3. Java 8
 - [JAVA interface](programming/java/interface.md)
@@ -125,6 +126,7 @@
 - [POJO - 오래된 방식의 간단한 자바객체](programming/Java/POJO(Plain-Old-JAVA-Object).md)
 - [Java Beans](programming/Java/java-beans.md)
 - [Guava 자바 라이브러리](programming/java/google-quava.md)
+- [인스턴스화를 막는 방법](programming/java/defence-of-instantiate.md)
 
 #### 1-10. junit
 - [Junit5](programming/java/junit/junit5.md)
