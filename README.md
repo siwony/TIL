@@ -189,6 +189,7 @@
   > feat. Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported
 - [SpringMVC는 XML, JSON과 같은 데이터를 어떻게 반환할까? (작성중)](back-end/spring/spring-mvc/view-resolver-message-converter.md)
   > 부제: ViewResolver와 MessageConverter
+- [Bean Validator에서 검증에 실패한 필드를 @RestControllerAdvice를 통해 알려주자!](back-end/spring/spring-mvc/bean-validator-with-rest-controller-advice.md)
 
 ### 4. SpringSecurity
 - [SpringSecurity](back-end/spring/spring-security/spring-security.md)
