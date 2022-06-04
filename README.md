@@ -203,6 +203,7 @@
   > only buildscript {} and other plugins {} script blocks are  
   > allowed before plugins {} blocks, no other statements are allowed   
   > 애러해결
+- [(SpringBoot Project) 빌드후 생기는 Jar파일의 이름을 변경하는 방법](back-end/build-tool/gradle//jarfile-rename.md)
 
 #### 5-2. Maven
 - [plugin-not-found 에러 해결 - 버전이 명시가 되어있지 않을때](back-end/build-tool/maven/plugin-not-found.md)
