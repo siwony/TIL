@@ -167,11 +167,15 @@
 
 ### 1. [Spring Framework](back-end/spring/spring.md) 
 - [DI(DependencyInjection)](back-end/spring/DI(Dependency-Injection).md)
-- [IoC](back-end/spring/IOC(Inversion-Of-Control).md)
 - [Spring 구조](back-end/spring/DTO,DAO,Entity-class.md)
 - [Bean](back-end/spring/Bean.md)
   - [Bean 라이프사이클](back-end/spring/bean-life-cycle.md)
 - [Logging](back-end/spring/Logging.md)
+
+#### 1-1. Spring Triangle(IoC, AOP, PSA) - 스프링 3대 요소
+- [IoC - Invertion of Controll](back-end/spring/spring-triangle/ioc.md)
+- [AOP - Aspect Oriented Programming](back-end/spring/spring-triangle/aop.md)
+- [PAS - Portable Service Abstraction](back-end/spring/spring-triangle/psa.md)
 
 
 ### 2. [SpringBoot](back-end/spring/spring-boot/SpringBoot.md)
