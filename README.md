@@ -123,7 +123,7 @@
 - [옵저버 패턴(Observer Pattern)](programming/Java/Design-pattern/Observer-Pattern.md)
 
 #### etc...
-- [POJO - 오래된 방식의 간단한 자바객체](programming/Java/POJO(Plain-Old-JAVA-Object).md)
+- [POJO - 오래된 방식의 간단한 자바객체](programming/Java/pojo)
 - [Java Beans](programming/Java/java-beans.md)
 - [Guava 자바 라이브러리](programming/java/google-quava.md)
 - [인스턴스화를 막는 방법](programming/java/defence-of-instantiate.md)
