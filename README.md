@@ -305,6 +305,9 @@
 ### 5. MongoDB
 - [Mongodb](DataBase/mongodb/mongodb.md)
 
+### 6. Redis
+- [ECS에 배포한 단일 노드 Redis의 Read only replica 에러 해결기](DataBase/redis/read-only-replica.md)
+
 ## Network
 - [DNS](network/dns.md)
 - [Domain](network/domain.md)
