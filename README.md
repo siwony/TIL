@@ -63,7 +63,6 @@
 - [JVM 구조](programming/java/JVM/jvm-structure.md)
 - [Class Loader](programming/java/JVM/class-loader.md)
 - [바이트 코드 조작 예시](programming/java/JVM/byte-code-operation.md)
-- [Java reference와 GC](programming/java/memory/referenece.md)
 
 #### 1-2. 문법 및 기능
 - [annotation](programming/java/grammar/07-package.md)
@@ -122,6 +121,10 @@
 - [프록시패턴(Proxy Pattern)](programming/Java/Design-pattern/Proxy-Pattern.md)
 - [데코레이터 패턴(Decorator Pattern)](programming/Java/Design-pattern/Decorator-Pattern.md)
 - [옵저버 패턴(Observer Pattern)](programming/Java/Design-pattern/Observer-Pattern.md)
+
+#### 1-10. Reference
+- [Java reference와 GC](programming/java/memory/referenece.md)
+- [WeakHashMap](programming/java/memory/weak-hash-map.md)
 
 #### etc...
 - [POJO - 오래된 방식의 간단한 자바객체](programming/Java/pojo)
