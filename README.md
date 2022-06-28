@@ -63,6 +63,7 @@
 - [JVM 구조](programming/java/JVM/jvm-structure.md)
 - [Class Loader](programming/java/JVM/class-loader.md)
 - [바이트 코드 조작 예시](programming/java/JVM/byte-code-operation.md)
+- [Java reference와 GC](programming/java/memory/referenece.md)
 
 #### 1-2. 문법 및 기능
 - [annotation](programming/java/grammar/07-package.md)
