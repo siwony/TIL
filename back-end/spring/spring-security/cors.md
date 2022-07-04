@@ -85,15 +85,14 @@ class SecurityConfig: WebSecurityConfigurerAdapter(){
 }
 ```
 
-하지만 여기서 끝난 것이 아니다. security에 cors설정을 적용시키려면 cors설정은 enable 해줘야한다.
+하지만 여기서 끝난 것이 아니다. security에 cors설정을 적용시키려면 configure매서드에서 `HttpSecurity.cors()`를 통해 cors설정을 적용시킨다는 것을 spring security에 알려줘야 한다.
 ```kotlin
 @Configuration
 class SecurityConfig: WebSecurityConfigurerAdapter(){
     ...
     override fun configure(http: HttpSecurity) {
-
-        http.cors() // 여기
         ...
+        http.cors() // 여기
         http.authorizeRequests{
                 it.antMatchers(HttpMethod.OPTIONS, "/**").permitAll() // CORS를 위해 OPTION method는 모든 요청에 대해 권한없이 접근할 수 있다.
                 it.antMatchers(
@@ -104,4 +103,4 @@ class SecurityConfig: WebSecurityConfigurerAdapter(){
     }
 }
 ```
-`http.cors()`를 통해 `WebMvcConfigurer`를 통해 설정한 cors설정을 적용하였다.
+`http.cors()`를 통해 `WebMvcConfigurer`를 통해 설정한 cors설정을 적용하였다. Security에서 `cors`설정을 하는 방법이 있지만 귀찮으므로 여기에 적진 않겠다.
