@@ -202,6 +202,7 @@
 ### 4. SpringSecurity
 - [SpringSecurity](back-end/spring/spring-security/spring-security.md)
 - [CSRF(사이트간 요청위조)](back-end/spring/spring-security/CSRF.md)
+- [CORS해결기 근데 Spring Security를 곁들인](back-end/spring/spring-security/cors.md)
 
 ### 5. Build Tool
 - [Build Tool](back-end/build-tool/build-tool.md)
