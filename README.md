@@ -82,7 +82,7 @@
   - [람다 표현식 - Lambda Expression](programming/java/grammar/java8/lambda-expression.md)
   - [메소드 레퍼런스 - Method Reference](programming/java/grammar/java8/method-reference.md)
 - [Stream](programming/java/api/java8/stream.md)
-  - [Stream.sort는 stable하지 않아요!]()
+  - [Stream.sort는 stable하지 않아요!](programming/java/api/java8/stream.md)
 - [Optional](programming/java/api/java8/optional.md)
 - [java8 Date/Time API](programming/java/api/java8/date-time.md)
 
