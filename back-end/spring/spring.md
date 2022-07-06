@@ -74,7 +74,7 @@ Model View Controller 구조로 사용자 인터페이스와 비지니스 로직
 MVC1은 view와 데이터 처리를 Controller가 담당하고, MVC2는 view와 데이터처리를 각각 분리하는 구조이다.
 
 ## 여담
-*Spring6*, *SpringBoot3* 부터 java17이상부터 지원한다고 한다.
+*Spring6*, *SpringBoot3*부터 java17이상만 지원한다고 한다.
 - https://spring.io/blog/2021/09/02/a-java-17-and-jakarta-ee-9-baseline-for-spring-framework-6
 
 ## Reference
