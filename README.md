@@ -206,6 +206,9 @@
 
 ### 5. Build Tool
 - [Build Tool](back-end/build-tool/build-tool.md)
+
+### 6. Transaction
+- [스프링 트랜잭션 전파옵션](back-end/spring/transaction/propagation.md)
 #### 5-1. Gradle
 - [Gradle](back-end/build-tool/gradle/gradle.md)
 - [(SpringBoot Project) Maven에서 Gradle로 Build Tool migration!](back-end/build-tool/gradle/maven-to-gradle-migration.md)
