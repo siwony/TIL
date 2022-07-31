@@ -314,6 +314,7 @@
 - [Mongodb](DataBase/mongodb/mongodb.md)
 
 ### 6. Redis
+- [AWS ec2 + Amazon Linux2환경에 redis 설치하기]()
 - [ECS에 배포한 단일 노드 Redis의 Read only replica 에러 해결기](DataBase/redis/read-only-replica.md)
 
 ## Network
