@@ -37,7 +37,7 @@ use함수는 `kotlin.io`패키지에서 확인할 수 있다.
 ```kotlin
 inline fun <T : Closeable?, R> T.use(block: (T) -> R): R
 ```
-use함수의 body를 보면  `Closeable`를 상속한 클레스에서만 사용할 수 있고, block은 Closeable를 상속받은 객체의 함수를 의미한다.
+use함수의 body를 보면  `Closeable`를 상속한 클레스에서만 사용할 수 있고, 함수 시그니처의 block은 24 ~ 30줄에 작성한 람다를 의미한다.
 
 > 코드: https://github.com/JetBrains/kotlin/blob/6a670dc5f38fc73eb01d754d8f7c158ae0176ceb/libraries/stdlib/jvm/src/kotlin/io/Closeable.kt#L22
 
