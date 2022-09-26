@@ -66,11 +66,13 @@ public class CarService {
 - `BeanFactory`와 Bean을 등록, 생성, 조회, 반환 을 관리하는 기능은 같다.
 - `BeanFactory`의 서브 인터페이스인 `ListableBeanFactory`, `HierachicalBeanFactory`라는 인터페이스를 상속하여 `BeanFactory`를 상속하고 있다.
 - Spring의 각종 부가 서비스를 추가로 제공한다.  
-    리소스 로딩, 이벤트 발생, 다국어 등 추가적인 기능들을 갖고 있다.
-    >- ResourceLoaderAware의 setResourceLoader
-    >- ApplicationEventPublisherAware의 setApllicationEventPublicher
-    >- MessageSourceAware의 setMessageSource
-    >- ApllicatonContextAware의 setApllicationContext
+    - `ResourceLoaderAware`의 `ResourceLoader` (편리한 리소스 조회)
+        > 로컬, 개발, 운영등을 구분해서 
+    - `ApplicationEventPublisherAware`의 `ApllicationEventPublicher` (이벤트발행/구독 모델 지원)
+    - `MessageSourceAware`의 `MessageSource` (메시지소스를 활용한 국제화(i18n) 기능)
+    - `ApllicatonContextAware`의 `ApllicationContext`
+    - `EnviornmentCapable` (환경변수)
+        > 로컬 개발, 운영등을 구분해서 처리 `Profile`
 - Spring이 제공하는 `ApplicationContext` 구현 클래스가 여러 종류가 있다.
 
 ## IoC의 핵심은?
