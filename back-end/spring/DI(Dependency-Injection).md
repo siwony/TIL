@@ -12,11 +12,11 @@
 2. **의존성 주입을 이용한 방법**  
     : **외부에서 생성 된 객체를 setter(), 생성자를 통해 사용하는 방법**  
 
-### DI 방법
-### &nbsp;1. 생성자 주입
+## 의존관계 주입 방법
+### 1. 생성자 주입
 > 가장 권장하는 방식이다.
 ```java
-public class BookController {
+public class BookService {
     private final BookRepository bookRepository;
 
     public BookController(BookRepository bookRepository) {
@@ -28,11 +28,11 @@ public class BookController {
 - [Circular Dependency(순환 참조)](./why-field-injection.md) 의존성을 알아 차릴 수 있다.
 - 테스트 코드 작성시 생성자를 통해 의존성 주입이 용이하다.
 
-### &nbsp;2. 필드 주입
+### 2. 필드 주입
 : member field에 `@Autowired`을 선언하여 주입받는 방법
 > 가장 간단하다.
 ```java
-public class BookController {
+public class BookService {
 
     @Autowired
     private BookRepository bookRepository;
@@ -43,10 +43,10 @@ public class BookController {
 - DI Container와 강한 결합을 가져 외부 사용이 용이하지 않음
 - final 선언불가
 
-### &nbsp;3. Setter 주입
+### 3. Setter 주입
 : setter 메서드에 `@Autowired`을 선언하여 주입받는 방법
 ```java
-public class BookController {
+public class BookService {
     private BookRepository bookRepository;
 
     @Autowired
@@ -60,7 +60,21 @@ public class BookController {
 - 생성자 주입 방법과 Setter 주입 방법을 적절하게 상황에 맞게 분배하여 사용
 - final 선언 불가
 
-### Spring 에서의 DI
+### 4. 일반 메서드 주입
+일반 메서드에 `@Autowired`를 통해서 주입 받을 수 있다.
+```java
+public class BookService{
+    private BookRepository bookRepository;
+
+    @Autowired
+    public void init(BookRepositoy bookRepository){
+        this.bookRepository = bookRepository
+    }
+
+}
+```
+
+## Spring 에서의 DI
 <img width=450px src=./img/SpringDI.jpg>
 
 ### IoC 컨테이너에서 Di를 자동으로 해준다
