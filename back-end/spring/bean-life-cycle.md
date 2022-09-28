@@ -132,7 +132,7 @@ public class LifeCycleConfig{
 ```
 **JSR-250**에 정의되어 있어 Spring 이외에 다른 프레임워크가 지원할 수 있다.
 - **최신 스프링에서 권장하는 방법**
-  > Java11에서 제거되었다고 허위사실이 많은데 그건 다른 라이브러리
+  > Java11에서 제거 되어서 사용할 수 없다는 말이 있는데 `javax`가 아닌 `java.xml.ws.annotation`가 Deprecated가 된것이므로 상관 없다.
 - 컨포넌트 스캔과 잘 어울린다.
 
 이 방식의 단점

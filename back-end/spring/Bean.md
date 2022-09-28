@@ -4,11 +4,12 @@
 - Bean Container는 의존성 주입을 통해 Bean 객체를 사용할 수 있도록 해준다.
 
 ## Bean Scope
-  
+빈이 존재할 수 있는 범위를 의미한다.
+
 <img width=600px src=./img/spring-bean-scope-table.png>
 
 ### 1. Singleton
-Singleton Bean은 Spring Container에서 한 번 생성되고 프로그램이 종료 될 때 Distroy된다.
+Singleton Bean은 Spring Container에서 한 번 생성되고 스프링 컨텍스트가 종료될 때 Distroy된다.
 
 싱글톤은 JVM을 실행하여 클래스 로드를 할 떄 처음 객체가 생성되는 것이 아닌 Spring Container에서 싱글톤으로 관리한다. 즉, 프로그래밍적인 싱글톤이 아니다.
 
@@ -22,7 +23,8 @@ Singleton Bean은 Spring Container에서 한 번 생성되고 프로그램이 �
 
 ### 2. Prototype
 - `prototype bean`은 모든 요청에서 새로운 객체를 생성하는 것
-- 의존성 관계의 bean에 주입 될 때 새로운 객체가 생성되어 주입된다.
+- **스프링 컨테이너는 프로토타입 빈을 생성하고, 의존관계주입, 초기화 까지만 처리한다.**
+    > `@PreDestory`와 같은 종료 메서드를 호출하지 않는다. 자원 회수와 같은 처리는 프로토타입Bean을 요청한 클라이언트가 처리해야 한다.
 - XML 설정
     ```XML
     <bean id="..." class="..." scope="prototype"></bean>
