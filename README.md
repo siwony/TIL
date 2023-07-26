@@ -261,7 +261,8 @@
   > only buildscript {} and other plugins {} script blocks are  
   > allowed before plugins {} blocks, no other statements are allowed   
   > 애러해결
-- [(SpringBoot Project) 빌드후 생기는 Jar파일의 이름을 변경하는 방법](back-end/build-tool/gradle//jarfile-rename.md)
+- [(SpringBoot Project) 빌드후 생기는 Jar파일의 이름을 변경하는 방법](back-end/build-tool/gradle/jarfile-rename.md)
+- [(SpringBoot Project) plan jar 파일](back-end/build-tool/gradle/plan-jar-ignore.md)
 
 #### 5-2. Maven
 
