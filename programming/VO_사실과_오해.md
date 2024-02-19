@@ -121,3 +121,7 @@ VO 정확히 말하면 VO Pattern에서의 VO객체는 TO(Transfer Object)로 �
 데이터 전달을 위한 객체는 VO보다 DTO로 부르는게 더 적절하므로 DTO를 사용하자
 
 ## References
+- https://github.com/benelog/blog/issues/27
+- https://groups.google.com/g/ksug/c/M3l6ZqKpaQ4/m/4rcCbgS_CXUJ
+- https://martinfowler.com/bliki/ValueObject.html
+- https://d2.naver.com/news/3435170
