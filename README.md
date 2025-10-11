@@ -8,11 +8,23 @@
 - [커밋되지 않거나 저장되지 않은 모든 변경사항 취소 및 삭제](/Git/2021-05-16-rm-unstaged.md)
 - [Cache 삭제](Git/2021-05-22-cache-remove.md)
 
+## Algorithm
+
+- [버블 정렬 - Bubble Sort](Algorithm/2022-01-30-bubbl-sort.md)
+- [선택 정렬 - Selection Sort](Algorithm/2022-01-30-selection-sort.md)
+- [퀵 정렬 - Quick Sort](Algorithm/2021-06-23-QuickSort.md)
+- [동적 계획법 - Dynamic Programming](Algorithm/2022-03-17-dynamic-programming.md)
+- [정렬 알고리즘 정리](Algorithm/2022-03-17-sort-algorithm-summary.md)
+
+### 1. 그래프 탐색
+
+- [너비 우선 탐색 - BFS](Algorithm/graph-search/2022-03-17-bfs.md)
+
 ## Operating System
 
 ### 1. Linux
 
-- [특정 port를 사용하고 있는 프로세스 종료하는 명령어](os/Linux/certain-port-kill.md)
+- [특정 port를 사용하고 있는 프로세스 종료하는 명령어](OS/Linux/2021-05-18-certain-port-kill.md)
 - [데몬 프로세스 - Daemon Processe](OS/Linux/2021-08-10-daemon-process.md)
 
 ### 2. Virtualization
@@ -66,6 +78,7 @@
 - [DDD](programming/2022-03-17-DDD.md)
 - [TDD & BDD](programming/2022-03-17-TDD-BDD.md)
 - [API](programming/2022-03-17-api.md)
+- [VO 사실과 오해](programming/2024-02-18-VO_사실과_오해.md)
 
 ### 1. [JAVA](programming/java/01-java.md)
 
@@ -137,13 +150,16 @@
 
 #### 1-9. JAVA Design Pattern
 
-- [디자인패턴?](programming/Java/Design-pattern/Design-Pattern.md)
-- [전략패턴(Strategy Pattern)](programming/Java/Design-pattern/Strategy-Pattern.md)
-- [어뎁터패턴(Adepter Pattern)](programming/Java/Design-pattern/Adepter-Pattern.md)
-- [싱글톤패턴(Singleton Pattern)](programming/Java/Design-pattern/Singleton-Pattern.md)
-- [프록시패턴(Proxy Pattern)](programming/Java/Design-pattern/Proxy-Pattern.md)
-- [데코레이터 패턴(Decorator Pattern)](programming/Java/Design-pattern/Decorator-Pattern.md)
-- [옵저버 패턴(Observer Pattern)](programming/Java/Design-pattern/Observer-Pattern.md)
+- [디자인패턴?](programming/java/Design-pattern/2022-03-29-Design-Pattern.md)
+- [전략패턴(Strategy Pattern)](programming/java/Design-pattern/2022-03-29-Strategy-Pattern.md)
+- [어뎁터패턴(Adepter Pattern)](programming/java/Design-pattern/2022-03-29-Adepter-Pattern.md)
+- [싱글톤패턴(Singleton Pattern)](programming/java/Design-pattern/2022-03-29-Singleton-Pattern.md)
+- [프록시패턴(Proxy Pattern)](programming/java/Design-pattern/2022-03-29-Proxy-Pattern.md)
+- [데코레이터 패턴(Decorator Pattern)](programming/java/Design-pattern/2022-03-29-Decorator-Pattern.md)
+- [옵저버 패턴(Observer Pattern)](programming/java/Design-pattern/2022-03-29-Observer-Pattern.md)
+- [퍼사드 패턴(Facade Pattern)](programming/java/Design-pattern/2022-03-29-facade-pattern.md)
+- [템플릿 메서드 패턴(Template Method Pattern)](programming/java/Design-pattern/2022-03-29-template-method-pattern.md)
+- [템플릿 콜백 패턴(Template Callback Pattern)](programming/java/Design-pattern/2022-03-29-template-callback-pettern.md)
 
 #### 1-10. Reference
 
@@ -152,8 +168,8 @@
 
 #### etc...
 
-- [POJO - 오래된 방식의 간단한 자바객체](programming/Java/pojo)
-- [Java Beans](programming/Java/java-beans.md)
+- [POJO - 오래된 방식의 간단한 자바객체](programming/java/2022-06-26-pojo.md)
+- [Java Beans](programming/java/2022-03-29-java-beans.md)
 - [Guava 자바 라이브러리](programming/java/2022-03-29-google-quava.md)
 - [인스턴스화를 막는 방법](programming/java/2022-05-02-defence-of-instantiate.md)
 
@@ -167,10 +183,6 @@
 - [엘비스 연산자 - Elvis Operation](programming/kotlin/2022-05-13-elvis-operation.md)
 - [Java의 try-with-resource와 Kotlin의 use function](programming/kotlin/2022-05-16-try-with-resource-use-fun.md)
 - [식(expression)과 문(statement)](programming/kotlin/2022-09-24-expression-statement.md)
-
-## 알고리즘
-
-- [퀵정렬](Algorithm/2021-06-23-QuickSort.md)
 
 ## DevOps
 
@@ -346,7 +358,7 @@
    1. [정규화](DataBase/data-modeling/2022-02-03-normalization-and-performance.md)
    2. [반정규화](DataBase/data-modeling/2022-02-14-denormalization.md)
    3. [인덱스](DataBase/data-modeling/2022-02-22-index.md)
-   4. [분산 데이터베이스](database/data-modeling/distributed-database.md)
+   4. [분산 데이터베이스](DataBase/data-modeling/2022-02-22-distributed-database.md)
 
 ### 2. [SQL - Structured Query Language](DataBase/sql/2022-02-24-sql.md)
 
@@ -372,7 +384,7 @@
 
 ### 6. Redis
 
-- [AWS ec2 + Amazon Linux2환경에 redis 설치하기]()
+- [AWS ec2 + Amazon Linux2환경에 redis 설치하기](DataBase/redis/2022-08-01-ec2-redis-install.md)
 - [ECS에 배포한 단일 노드 Redis의 Read only replica 에러 해결기](DataBase/redis/2022-06-26-read-only-replica.md)
 
 ## Network
@@ -380,6 +392,7 @@
 - [DNS](network/2022-03-17-dns.md)
 - [Domain](network/2022-03-17-domain.md)
 - [URI,URL,URN](network/2022-03-17-URI-URL-URN.md)
+- [Socket](network/2022-03-17-socket.md)
 
 ### 1. 프로토콜
 
@@ -406,3 +419,26 @@
 
 - [개발용어 정리](ETC/2020-12-23-dev-terminology.md)
 - [Component](ETC/2020-12-25-component.md)
+- [애자일 방법론](ETC/2021-04-03-agile.md)
+
+## 독서
+
+### 1. 유닛테스트
+
+- [1. 단위테스트의 목표](Book/유닛테스트/2023-02-19-1_단위테스트의_목표.md)
+- [3. 단위테스트 구조](Book/유닛테스트/2023-03-02-3_단위테스트_구조.md)
+- [4. 좋은 단위테스트의 4대 요소](Book/유닛테스트/2023-03-05-4_좋은_단위테스트의_4대_요소.md)
+- [6. 단위 테스트 스타일](Book/유닛테스트/2023-03-11-6_단위_테스트_스타일.md)
+- [8. 통합 테스트를 하는 이유](Book/유닛테스트/2023-03-19-8_통합_테스트를_하는_이유.md)
+
+### 2. 클린아키텍처
+
+- [4. 컴포넌트 원칙](Book/클린아키텍처/2023-04-30-4_컴포넌트_원칙.md)
+
+### 3. 쉽게 배우는 소프트웨어 공학
+
+- [01. 소프트웨어 공학 소개](Book/쉽게-배우는-소프트웨어-공학./2021-08-24-01-소프트웨어-공학-소개.md)
+
+### 4. 객체지향의 사실과 오해
+
+- [01. 협력하는 객체들의 공동체](Book/object-orientation-facts-and-misconceptions/2021-04-24-01-community-of-objects-in-partnership.md)
