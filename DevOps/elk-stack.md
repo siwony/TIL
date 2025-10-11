@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Elastic Stack - Elasticsearch, Logstash, Kibana + Beats"
+categories: DevOps
+date: 2021-08-12
+tags: []
+---
+
 # Elastic Stack - Elasticsearch, Logstash, Kibana + Beats
 
 > ELK &rarr; Elastic Stack(ELK Stack)

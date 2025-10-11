@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "DB 스키마 자동생성"
+categories: back-end
+date: 2022-03-19
+tags: [spring, jpa]
+---
+
 # DB 스키마 자동생성
 - 애플리케이션 실행 시점에 `DDL`을 자동 생성한다.
 - 테이블 중심의 개발에서 객체 중심으로 개발하게 된다.

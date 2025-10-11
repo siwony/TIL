@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "REMOTE HOST IDENTIFICATION HAS CHANGED Error"
+categories: back-end
+date: 2022-03-19
+tags: [ssh]
+---
+
 # REMOTE HOST IDENTIFICATION HAS CHANGED Error
 어느날 AWS ec2에 SSH접속시 다음과 같은 에러가 나왔다.
 ```sh

@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Exception (예외)"
+categories: programming
+date: 2022-03-29
+tags: [java]
+---
+
 # Exception (예외)
 ### 오류(Error)와 예외(Exception)
 #### 오류(Error)

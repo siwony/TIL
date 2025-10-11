@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Node.js 에 MySQL 연결하기"
+categories: back-end
+date: 2022-03-19
+tags: [nodejs]
+---
+
 # Node.js 에 MySQL 연결하기
 ## MySQL 모듈을 설치합니다.
 ```bash

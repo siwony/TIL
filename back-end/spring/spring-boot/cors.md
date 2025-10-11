@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "CORS 문제 해결"
+categories: back-end
+date: 2022-03-19
+tags: [spring, spring-boot]
+---
+
 # CORS 문제 해결
 > the moment(학교가 불편한 순간) 프로젝트에서 협업 도중생긴 CORS이슈  
 > 여기는 CORS에 대해 다룹니다.

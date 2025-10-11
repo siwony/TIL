@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Logging"
+categories: back-end
+date: 2022-03-19
+tags: [spring]
+---
+
 # Logging
 : 프로그램 개발 중이나 완료 후 발생할 수 있는 오류에 대해 디버깅하거나 운영중인 프로그램 상태를 모니터링 하기 위해 필요한 정보(log)를 기록하는것
 > 로그를 잘 남기는 것은 훌룡한 개발자의 덕목중 하나라고 할 수 있다!

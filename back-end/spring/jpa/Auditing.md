@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "JPA Auditing"
+categories: back-end
+date: 2022-03-19
+tags: [spring, jpa]
+---
+
 # JPA Auditing
 ### 사용동기
 > MembershipApi를 만들면서 유저 가입일을 추가해보고싶었다.

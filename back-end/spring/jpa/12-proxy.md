@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Proxy"
+categories: back-end
+date: 2022-03-19
+tags: [spring, jpa]
+---
+
 # Proxy
 ### `em.find() vs em.getReference()`
 - `em.find()` : DB를 통해서 실제 엔티티 객체 조회

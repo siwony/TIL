@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Plugin-not-found 해결방법"
+categories: back-end
+date: 2022-03-19
+tags: [build-tool, maven]
+---
+
 # Plugin-not-found 해결방법
 어느날 intellij에서 maven 기반 SpringBoot 프로젝트를 하고있었는데 다음과 같은 에러가 났다.
 

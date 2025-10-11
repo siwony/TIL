@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "어노테이션 프로세서 - Annotation Processor"
+categories: programming
+date: 2022-03-29
+tags: [java, byte-code-controller-way]
+---
+
 # 어노테이션 프로세서 - Annotation Processor
 [Oracle 공식문서](https://docs.oracle.com/javase/8/docs/api/javax/annotation/processing/Processor.html)
 

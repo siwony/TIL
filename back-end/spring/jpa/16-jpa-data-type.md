@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "값 타입"
+categories: back-end
+date: 2022-03-19
+tags: [spring, jpa]
+---
+
 #### 목차
 - [JPA 데이터 타입](./) &larr;
 - [기본값 타입](./17.1-default-type.md)

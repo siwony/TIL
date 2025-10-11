@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "캐시 메모리 - Cache Memory"
+categories: cs
+date: 2022-03-19
+tags: [Memory]
+---
+
 # 캐시 메모리 - Cache Memory
 : 속도가 빠른 장치(CPU)와 느린 장치(메모리) 사이에서 병목현상을 줄이기 위한 고속 `Buffer Memory`이다.
 > **병목현상**  

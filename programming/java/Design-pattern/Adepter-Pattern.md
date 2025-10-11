@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Adepter Pattern"
+categories: programming
+date: 2022-03-29
+tags: [java, Design-pattern]
+---
+
 # Adepter Pattern
 : 서로 다른 인터페이스를 가진 두 클래스를 어댑터 클래스로 인터페이스를 통일 시켜 사용하는 방법이다.
 - 관계가 없는 인터페이스를 같이 사용이 가능하다.  

@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Node,Js 설치(mac)"
+categories: back-end
+date: 2022-03-19
+tags: [nodejs]
+---
+
 # Node,Js 설치(mac)
 ## 설치 
 터미널에 `brew install node` 를 입력하면 Node.js 가 설치됩니다.

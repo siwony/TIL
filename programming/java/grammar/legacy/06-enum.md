@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "enum(열거형)"
+categories: programming
+date: 2022-04-05
+tags: [java, grammar, legacy]
+---
+
 # enum(열거형)
 - **열거타입을 이용하면 변수를 선언할 때 변수타입으로 사용가능**
 - **특정 값만 가져야 한다면 열거형 사용**

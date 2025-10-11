@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "버블 정렬 - Bubble Sort"
+categories: Algorithm
+date: 2022-01-30
+tags: []
+---
+
 # 버블 정렬 - Bubble Sort
 - 서로 인접한 두 원소를 검사하여 정렬하는 알고리즘이다.
 - 시간 복잡도 : O(N^2)

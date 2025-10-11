@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "MySQL 명령어"
+categories: DataBase
+date: 2020-12-20
+tags: [MySQL]
+---
+
 # MySQL 명령어
 ## 기본적인 명령어
 ### DB사용

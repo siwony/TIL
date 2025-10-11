@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "바이트 코드 조작"
+categories: programming
+date: 2022-03-29
+tags: [java, JVM]
+---
+
 # 바이트 코드 조작
 
 ### 바이트코드 조작 활용 예시

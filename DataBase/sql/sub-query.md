@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "서브쿼리"
+categories: DataBase
+date: 2022-02-24
+tags: [sql]
+---
+
 # 서브쿼리
 하나의 쿼리 문장 내에 포함된 또 하나의 쿼리 문장
 - 비교연산자의 오른쪽에 기술해야 하고 반드시 괄호 안에 넣어야 함

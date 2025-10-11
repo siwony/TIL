@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "SQL"
+categories: DataBase
+date: 2022-02-24
+tags: [sql]
+---
+
 # SQL
 
 ## 1. SQL 유형

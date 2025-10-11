@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Git Cache 삭제"
+categories: Git
+date: 2021-05-22
+tags: []
+---
+
 # Git Cache 삭제
 실수로 ignore하지 않은 파일을 커밋한 후 ignore를 해도 계속 파일이 추적되는 경우가 있다.
 .gitignore파일에 추가하기 전에 stage에 올라간 파일들이 cache처리되어 기록에 남아버리기 떄문이다.

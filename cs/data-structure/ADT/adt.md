@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "ADT - Abstract Data Type"
+categories: cs
+date: 2022-03-19
+tags: [data-structure, ADT]
+---
+
 # ADT - Abstract Data Type
 : 추상자료형(ADT)이란 **구체적인 기능의 완성을 언급하지 않고, 순수하게 기능이 무엇인지를 나열한 것**을 말한다.
 > ex.  

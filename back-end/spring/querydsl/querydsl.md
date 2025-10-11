@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Querydsl"
+categories: back-end
+date: 2022-03-19
+tags: [spring, querydsl]
+---
+
 # Querydsl
 : Querydsl 정적 타입을 이용해서 SQL과 같은 쿼리를 생성할 수 있도록 해 주는 프레임워크이다
 - Querydsl은 타입에 안전한 방식으로 HQL 쿼리를 실행하기 위한 목적으로 만들어졌다.

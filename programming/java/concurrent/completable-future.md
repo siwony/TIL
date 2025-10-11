@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "CompletableFuture"
+categories: programming
+date: 2022-03-29
+tags: [java, concurrent]
+---
+
 # CompletableFuture
 `비동기 - Asynchronous` 프로그래밍에 대한 여러 기능을 제공하는 인터페이스.
 > [공식 문서](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletionStage.html)

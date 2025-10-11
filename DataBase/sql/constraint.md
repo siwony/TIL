@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "제약조건"
+categories: DataBase
+date: 2022-02-26
+tags: [sql]
+---
+
 # 제약조건
 - `데이터 무결성 유지`를 위해 사용자가 지정할 수 있는 성질
 - 모든 제약조건은 데이터 사전에 저장된다.

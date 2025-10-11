@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "CORS해결기 근데 이제 Spring Security를 곁들인"
+categories: back-end
+date: 2022-07-04
+tags: [spring, spring-security]
+---
+
 # CORS해결기 근데 이제 Spring Security를 곁들인
 Web Application 처음 프론트엔드 백앤드로 나눠서 협업을 진행하다보면 한번쯤 CORS에러를 겪는다. 
 

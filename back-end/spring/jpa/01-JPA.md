@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "JPA(Java Persistence API)"
+categories: back-end
+date: 2022-03-19
+tags: [spring, jpa]
+---
+
 # JPA(Java Persistence API)
 : **데이터를 영속화 하는 API**
 

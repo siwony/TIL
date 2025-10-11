@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "SpringMVC는 어떻게 데이터를 반환할까?"
+categories: back-end
+date: 2022-04-20
+tags: [spring, spring-mvc]
+---
+
 # SpringMVC는 어떻게 데이터를 반환할까? 
 > 부제: `ViewResolver`와 `MessageConverter`
 

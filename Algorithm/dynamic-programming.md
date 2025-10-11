@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "동적 계획법과 분할 정복 - Dynamic Programming & Divide"
+categories: Algorithm
+date: 2022-03-17
+tags: []
+---
+
 # 동적 계획법과 분할 정복 - Dynamic Programming & Divide
 
 ## 동적 게획법

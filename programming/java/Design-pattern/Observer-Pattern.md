@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Observer Pattern"
+categories: programming
+date: 2022-03-29
+tags: [java, Design-pattern]
+---
+
 # Observer Pattern
 : 변화가 일어 났을때, 미리 등록된 다른 클래스에 통보해주는 패턴
 > 객체 사이에 일 대 다의 의존 관계를 정의해 두어, 어떤 객체의 상태가 변할 때 그 객체에 의존성을 가진 다른 객체들이 그 변화를 통지받고 자동으로 갱신될 수 있게 만듭니다.

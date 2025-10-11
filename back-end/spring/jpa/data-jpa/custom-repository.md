@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Custom Repository"
+categories: back-end
+date: 2022-03-29
+tags: [spring, jpa, data-jpa]
+---
+
 # Custom Repository
 #### 왜 필요할까?  
 개발을 하다 보면 Spring Data Jpa제공하는 Query Method만으로 부족한 경우가 있다.  

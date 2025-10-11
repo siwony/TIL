@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "리스트 순회중 만난 ConcurrentModificationException"
+categories: programming
+date: 2022-04-20
+tags: [java, java-collection-framework]
+---
+
 # 리스트 순회중 만난 ConcurrentModificationException
 ### 1. 문제의 발생과 배경
 알고리즘을 풀다가 리스트를 `enhanced for loop(for each)`를 통해 순회하며  `List.remove()`연산을 해야 하는 상황이 있었다. 필자는 아무렇지 않게 순회중 `List.remove()` 연산을 하게 되었는데 `ConcurrentModificationException`가 발생하였다.

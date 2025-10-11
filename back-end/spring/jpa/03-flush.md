@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "플러시(flush)"
+categories: back-end
+date: 2022-03-19
+tags: [spring, jpa]
+---
+
 # 플러시(flush)
 : **영속성 컨텍스트의 변경내용을 DB에 반영하는 것**
 - 영속성 컨텍스트를 비우지 않는다.

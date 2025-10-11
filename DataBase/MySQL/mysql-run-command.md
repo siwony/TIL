@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "MySQL 기본 명령어(실행, 접속, 상태확인, 제시작, 종료)"
+categories: DataBase
+date: 2020-12-20
+tags: [MySQL]
+---
+
 # MySQL 기본 명령어(실행, 접속, 상태확인, 제시작, 종료)
 - ### 실행
     ```bash

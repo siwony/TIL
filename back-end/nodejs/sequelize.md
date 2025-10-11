@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "sequelize"
+categories: back-end
+date: 2022-03-19
+tags: [nodejs]
+---
+
 # sequelize
 : node.js 의 ORM(Object Releaition Mapping) 모듈이다.  
 

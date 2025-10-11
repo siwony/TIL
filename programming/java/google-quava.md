@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Google Guava"
+categories: programming
+date: 2022-03-29
+tags: [java]
+---
+
 # Google Guava
 ### 배경
 FCM를 통해 push 알람로직을 작성하는 중 관련 API의 코드를 뜯어보는 중 Guava에 대한 언급이 있어 찾아보게 되었다.

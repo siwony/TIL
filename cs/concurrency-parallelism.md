@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "동시성 & 병렬성 - Concurrency & Parallelism"
+categories: cs
+date: 2022-03-19
+tags: []
+---
+
 # 동시성 & 병렬성 - Concurrency & Parallelism
 ### 동시성 & 병렬성 요약
 <img src="img/concurrency-and-parallelism.png">

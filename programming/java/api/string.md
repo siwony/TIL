@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "String class"
+categories: programming
+date: 2022-03-29
+tags: [java, api]
+---
+
 # String class
 Java를 만든 사람들은 객체지향 언어를 설계할 때 모든 것을 객체로 만들지 않고 `원시형 - Primitive Type`를 보유하여 성능을 개선했다.  
 > 원시형은 스택 영역에 저장되고, 객체는 힙 영역에 저장되므로 힙 영역은 메모리 관리가 복잡하고 공간을 스택 영역 보다 더 차지한다.

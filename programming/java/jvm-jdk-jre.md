@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "JVM, JDK, JRE"
+categories: programming
+date: 2022-03-29
+tags: [java]
+---
+
 # JVM, JDK, JRE
 ### JVM - Java Virtual Machine
 > WORA - Write Once Run Anywhere

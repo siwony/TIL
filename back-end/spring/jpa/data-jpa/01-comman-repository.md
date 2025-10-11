@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Repository"
+categories: back-end
+date: 2022-03-29
+tags: [spring, jpa, data-jpa]
+---
+
 # Repository
 ## Spring Data JPA 사용전
 ### 예제 코드

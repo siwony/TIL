@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "객체와 테이블 매핑(annotation)"
+categories: back-end
+date: 2022-03-19
+tags: [spring, jpa]
+---
+
 # 객체와 테이블 매핑(annotation)
 ## @Entity
 : 컬럼 매핑

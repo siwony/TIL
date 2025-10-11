@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "향상된 for 루프 - Enhanced for loop"
+categories: programming
+date: 2022-04-20
+tags: [java, grammar]
+---
+
 # 향상된 for 루프 - Enhanced for loop
 - 주로 for each한다.
 - JDK5부터 추가되었다.

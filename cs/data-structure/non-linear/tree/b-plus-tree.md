@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "B+Tree - B+트리"
+categories: cs
+date: 2022-03-19
+tags: [data-structure, non-linear, tree]
+---
+
 # B+Tree - B+트리
 동작 방식은 B트리와 유사하나, **리프노드는 연결리스트의 형태**를 띄어 선형 검색이 가능하다.
 

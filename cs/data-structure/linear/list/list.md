@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "List"
+categories: cs
+date: 2022-03-19
+tags: [data-structure, linear, list]
+---
+
 # List
 : 리스트는 다른  `Stack`, `Queue`, `Tree`, `Graph` 등과 같은 다른 자료구조 구현에 활용될 기초 자료구조이다.
 

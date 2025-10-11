@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "POJO(Plain Old JAVA Object)"
+categories: programming
+date: 2022-06-26
+tags: [java]
+---
+
 # POJO(Plain Old JAVA Object)
 : 오래된 방식의 간단한 자바 오브젝트  
 **"특정 <U>'기술'</U>에 종속되어 동작하는 것이 아닌 순수한 자바 객체를 말한다."**

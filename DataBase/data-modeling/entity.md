@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "엔터티 - Entity"
+categories: DataBase
+date: 2022-01-30
+tags: [data-modeling]
+---
+
 # 엔터티 - Entity
 ## 1. 엔터티의 정의
 데이터 모델과 데이터 베이스에 관위자가 정의한 사항은 다음과 같다.

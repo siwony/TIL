@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "RPC - Remote Procedure Call"
+categories: network
+date: 2022-03-17
+tags: [protocol, rpc]
+---
+
 # RPC - Remote Procedure Call
 
 ## 1. 등장 배경

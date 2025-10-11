@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "준 영속 상태"
+categories: back-end
+date: 2022-03-19
+tags: [spring, jpa]
+---
+
 # 준 영속 상태 
 : **영속 상태의 Entity가 영속성 컨텍스트에서 분리되는 것**
 - 영속에서 준 영속으로 바뀌는 상태

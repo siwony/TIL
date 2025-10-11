@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "객체 지향 프로그래밍(Object Oriented Programming) 한눈에 보기"
+categories: cs
+date: 2022-03-19
+tags: [OOP]
+---
+
 # 객체 지향 프로그래밍(Object Oriented Programming) 한눈에 보기
 > 객체지향 프로그래밍은 추상화, 캡슐화, 정보은닉, 상속, 등 시스템의 복잡성을 제어할 수 있는 다양한 장치들을 제공한다.
 > <p align=right>- 어느 객체지향 개발자가&nbsp&nbsp</p>

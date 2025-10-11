@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "정규화와 성능"
+categories: DataBase
+date: 2022-02-03
+tags: [data-modeling]
+---
+
 # 정규화와 성능
 ## 1. 정규화 - Normalization
 - 목적: 삽입/삭제/갱신 이상현상 방지

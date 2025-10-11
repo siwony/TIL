@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "domain(도매인)"
+categories: network
+date: 2022-03-17
+tags: []
+---
+
 # domain(도매인)
 : 각 ip에 이름을 부여할 수 있게 하는것
 ## 구성요소

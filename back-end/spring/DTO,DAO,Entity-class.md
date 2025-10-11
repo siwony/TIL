@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Spring 구조(DAO, DTO, Entity, Controller, Service)"
+categories: back-end
+date: 2022-03-19
+tags: [spring]
+---
+
 # Spring 구조(DAO, DTO, Entity, Controller, Service)
 ### 전체구조 
 <img wdith="450px" src="./img/spring-package-flow.png">

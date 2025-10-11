@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Software Development Life Cycle"
+categories: cs
+date: 2022-03-19
+tags: []
+---
+
 # Software Development Life Cycle
 : 소프트웨어를 체계적으로 개발하고 관리하기 위해서 개발 과정을 단계별로 나누어 구분한것이다.
 > 모든 일에는 단계적인 계획이 필요하다. 배우거나 기획하거나 만들 때 차근차근 쌓아가야 안정적이다.

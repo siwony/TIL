@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "WeakHashMap"
+categories: programming
+date: 2022-06-28
+tags: [java, memory]
+---
+
 # WeakHashMap
 > 더 이상 사용하지 않는 객체를 GC할 때 자동으로 삭제해주는 Map
 - Key가 더 이상 강하게 레퍼런스(strong reference)되는 곳이 없다면 해당 엔트리를 제거한다.

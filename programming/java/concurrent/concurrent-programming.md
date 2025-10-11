@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Concurrent 프로그래밍"
+categories: programming
+date: 2022-03-29
+tags: [java, concurrent]
+---
+
 # Concurrent 프로그래밍
 - 동시에 여러 작업을 진행할 수 있는 프로그래밍
 - ex. 유튜브 보면서 코딩

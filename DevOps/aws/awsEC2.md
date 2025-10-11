@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "AWS EC2"
+categories: DevOps
+date: 2021-08-12
+tags: [aws]
+---
+
 # AWS EC2
 ## Amazon EC2
 : **Amazon Elastic Compute CLoud의 줄임말로써 AWS에서 제공하는 클라우드 컴퓨팅**

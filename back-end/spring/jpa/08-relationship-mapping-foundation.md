@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "연관관계가 필요한이유"
+categories: back-end
+date: 2022-03-19
+tags: [spring, jpa]
+---
+
 # 연관관계가 필요한이유
 ### 객체를 테이블에 맞추어 모델링
 **연관관계가 없는 객체**

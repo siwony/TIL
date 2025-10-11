@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "OSI 7계층"
+categories: cs
+date: 2022-03-19
+tags: [Network]
+---
+
 # OSI 7계층
 > ~~물데네 전세표응~~
 #### OSI - Open System Interconnection

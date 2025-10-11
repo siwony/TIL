@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "협력하는 객체들의 공동체"
+categories: Book
+date: 2021-04-24
+tags: [object-orientation-facts-and-misconceptions]
+---
+
 # 협력하는 객체들의 공동체
 >시너지를 생각하라. 전체는 부분의 합보다 크다. - 스티븐 코비(Stephen R. Covey)
 

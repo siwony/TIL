@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Spring Boot file Req, Res 처리"
+categories: back-end
+date: 2022-03-19
+tags: [spring, spring-boot]
+---
+
 # Spring Boot file Req, Res 처리
 ~~이 글은 siwony_의 엄청난 삽질을 통해 작성되었습니다.~~  
 ### 동기

@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "직렬화 - Serializable"
+categories: programming
+date: 2022-04-26
+tags: [java]
+---
+
 # 직렬화 - Serializable
 > [Java Object Serialization Spec](https://docs.oracle.com/javase/8/docs/platform/serialization/spec/serialTOC.html)
 

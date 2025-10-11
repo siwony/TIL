@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "웹 브라우저의 요청 흐름"
+categories: network
+date: 2022-03-17
+tags: [web]
+---
+
 # 웹 브라우저의 요청 흐름
 <img src="img/web-browser-request-way.png">
 

@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "가변인수 - varages"
+categories: programming
+date: 2022-05-02
+tags: [java]
+---
+
 # 가변인수 - varages
 // todo heap pollution
 

@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "쿠키(cookie) 와 세션(session)"
+categories: network
+date: 2022-03-17
+tags: [web]
+---
+
 # 쿠키(cookie) 와 세션(session)
 ### 쿠키(Cookie)와 세션(Session)을 사용하는 이유
 - HTTP 프로토콜은 **Connectionless(비연결성)** 과 **Stateless(비상태성)** 라는 특징을 가지고 있다.  

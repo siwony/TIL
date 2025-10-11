@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "JPQL"
+categories: back-end
+date: 2022-03-19
+tags: [spring, jpa, JPQL]
+---
+
 # JPQL
 : Java Persistence Query Language
 - JPQL은 객체지향 쿼리 언어다. &rarr; **엔티티 객체를 대상으로 쿼리한다.**

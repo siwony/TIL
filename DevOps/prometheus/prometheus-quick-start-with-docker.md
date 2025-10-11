@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Prometheus quick start with docker"
+categories: DevOps
+date: 2022-02-06
+tags: [prometheus]
+---
+
 # Prometheus quick start with docker
 > 이 글은 빠른 실습을 위해 Spring Boot + Spring Actuator를 기반으로 작성된 글입니다.
 

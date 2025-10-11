@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "비관적 락, 낙관적 락"
+categories: back-end
+date: 2022-04-13
+tags: [spring, jpa]
+---
+
 # 비관적 락, 낙관적 락
 
 ## 1. 낙관적 락 - Optimistic Lock

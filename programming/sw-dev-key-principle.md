@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "소프트웨어 개발의 3개의 KEY원칙"
+categories: programming
+date: 2022-03-17
+tags: []
+---
+
 # 소프트웨어 개발의 3개의 KEY원칙
 ### DRY- Don't Repeat Yourself
 > 같은 코드를 반복하지마라.

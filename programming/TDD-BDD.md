@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "TDD, BDD"
+categories: programming
+date: 2022-03-17
+tags: []
+---
+
 # TDD, BDD
 ## TDD - Test Driven Development
 : 테스트 코드를 작성하고 테스트로 검증된 코드를 가지고 실제 코드를 작성하는 애자일의 대표적인 개발 방법론

@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Thread Pool"
+categories: programming
+date: 2022-03-29
+tags: [java, concurrent]
+---
+
 # Thread Pool
 : 작업 처리에 사용되는 스레드를 제한된 개수만큼 정해 놓고 작업 큐(Queue)에 들어오는 작업들을 하나씩 스레드가 맡아 처리하는 것
 

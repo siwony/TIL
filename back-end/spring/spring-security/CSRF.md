@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Cross Site Request Forgery, 사이트간 요청 위조)"
+categories: back-end
+date: 2022-03-19
+tags: [spring, spring-security]
+---
+
 # Cross Site Request Forgery, 사이트간 요청 위조)
 : **웹사이트의 취약점을 이용하여 사용자가 의도하지 않은 요청을 송신하도록 하는 공격을 의미힌다**
 > HTTP의 Stateless 특성에 기인한 특정 웹 애플리케이션에 대해 일련의 요청 들의 상관관계를 특정할 수 없으므로 세션 유지 등에 일반적으로 쿠키 정보 등이 조건만 만족하면 자동으로 송신되기 떄문에 가능하다.

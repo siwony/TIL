@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "SpringBoot Maven to Gradle build tool migration!"
+categories: back-end
+date: 2022-03-19
+tags: [build-tool, gradle]
+---
+
 # SpringBoot Maven to Gradle build tool migration!
 - [SpringBoot Maven to Gradle build tool migration!](#springboot-maven-to-gradle-build-tool-migration)
   - [Intro](#intro)

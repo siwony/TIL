@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Strategy Pattern(전략 패턴)"
+categories: programming
+date: 2022-03-29
+tags: [java, Design-pattern]
+---
+
 # Strategy Pattern(전략 패턴)
 이전글: [템플릿 메서드 패턴](template-method-pattern.md)
 

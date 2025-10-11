@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Bean"
+categories: back-end
+date: 2022-03-19
+tags: [spring]
+---
+
 # Bean
 : `Spring IOC(Inversion Of Control)`컨테이너가 관리하는 Java객체이며, Spring Bean Container에 존재하는 객체를 말한다. 
 - Spring IoC(Inversion of Control) 컨테이너에 의해 **인스턴스화**, **관리**, **생성**된다.

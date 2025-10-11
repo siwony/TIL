@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "영속성 컨텍스트 - 내부 동작"
+categories: back-end
+date: 2022-03-19
+tags: [spring, jpa]
+---
+
 # 영속성 컨텍스트 - 내부 동작
 > 영속성 컨텍스트는 JPA를 이해하는데 가장 중요하다.
 ### Entity ManagerFactory 와 EntityManager

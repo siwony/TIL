@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Java version 변경"
+categories: programming
+date: 2022-03-29
+tags: [java]
+---
+
 # Java version 변경
 
 #### 1. 현재 동작하는 java의 버전을 확인한다.

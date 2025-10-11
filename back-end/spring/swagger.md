@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Swagger"
+categories: back-end
+date: 2022-03-19
+tags: [spring]
+---
+
 # Swagger
 : 개발자가 REST API 서비스를 설계, 빌드, 문서화할 수 있도록 하는
 프로젝트 Open Api Specification(OAS)를 위한 프레임워크   

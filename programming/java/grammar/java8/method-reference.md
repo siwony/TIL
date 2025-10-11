@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "메소드 레퍼런스 - Method Reference"
+categories: programming
+date: 2022-03-29
+tags: [java, grammar, java8]
+---
+
 # 메소드 레퍼런스 - Method Reference
 : Lambda 표현식을 더 간단하게 표현하는 방법입니다.
 - 메소드 레퍼런스를 이해 하려면 Lambda를 먼저 이해해야 한다.

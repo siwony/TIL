@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Component"
+categories: ETC
+date: 2020-12-25
+tags: []
+---
+
 # Component
 ### Component 개념 유래
 소프트웨어는 독집적으로 개발하지 않고, 독립적으로 개발하여도 다른 모듈과의 호환을 생각하지 않고 개발하여  

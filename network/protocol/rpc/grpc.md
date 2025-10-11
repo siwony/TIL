@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "gRPC - google Remote Procedure Call"
+categories: network
+date: 2022-03-19
+tags: [protocol, rpc]
+---
+
 # gRPC - google Remote Procedure Call
 
 ## 1. gRPC의 등장배경

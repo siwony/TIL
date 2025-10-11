@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "MySQL설치(mac)"
+categories: DataBase
+date: 2020-12-20
+tags: [MySQL]
+---
+
 # MySQL설치(mac)
 ```bash
 $ brew install mysql

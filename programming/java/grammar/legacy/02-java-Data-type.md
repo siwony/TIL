@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "JAVA Data Type"
+categories: programming
+date: 2022-04-05
+tags: [java, grammar, legacy]
+---
+
 # JAVA Data Type
 
 ## 종류

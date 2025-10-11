@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "분산 데이터베이스 - distributed database"
+categories: DataBase
+date: 2022-02-22
+tags: [data-modeling]
+---
+
 # 분산 데이터베이스 - distributed database
 : 물리적으로 분산된 데이터베이스를 하나의 논리적 시스템으로 사용
 

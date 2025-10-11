@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "쿼리 메소드 기능"
+categories: back-end
+date: 2022-03-29
+tags: [spring, jpa, data-jpa]
+---
+
 # 쿼리 메소드 기능
 > 만약 findByUsername같이 Entity 종속적인 기능을 사용하려면 어떻게 해야 할까? Spring JPA는 쿼리 메소드라는것을 제공한다.
 #### 쿼리 메소드 기능 3가지

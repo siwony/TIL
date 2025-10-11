@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "ECS에 배포한 단일 노드 Redis의 Read only replica 에러 해결기"
+categories: DataBase
+date: 2022-06-26
+tags: [redis]
+---
+
 # ECS에 배포한 단일 노드 Redis의 Read only replica 에러 해결기
 HiRecruit서비스에서는 Redis를 Session storage로 사용한다.  
 

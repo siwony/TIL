@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "DDD(Domain Driven Design)"
+categories: programming
+date: 2022-03-17
+tags: []
+---
+
 # DDD(Domain Driven Design)
 : 도메인을 중심으로 하는 개발 방식이다.  
 &rarr; 도메인에 관련된 문제를 해결하는것.

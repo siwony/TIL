@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "트리 - Tree"
+categories: cs
+date: 2022-03-19
+tags: [data-structure, non-linear, tree]
+---
+
 # 트리 - Tree
 `노드 - node`로 이루어진 자료구조이다.
 - `사이클 - cycle`이 없는 하나의 `연결 그래프 - Connected Graph`

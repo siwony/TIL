@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "컨테이너, 이미지 삭제"
+categories: DevOps
+date: 2021-05-29
+tags: [docker]
+---
+
 # 컨테이너, 이미지 삭제
 ### 컨테이너 삭제
 ```sh

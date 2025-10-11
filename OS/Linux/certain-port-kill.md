@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "특정 port를 사용하고 있는 프로세스 종료"
+categories: OS
+date: 2021-05-18
+tags: [Linux]
+---
+
 # 특정 port를 사용하고 있는 프로세스 종료
 > 한번씩 서버를 열어놓고 나중에 실수로 IDE를 닫아버려서 종료를 안했을때가 있다.  
 

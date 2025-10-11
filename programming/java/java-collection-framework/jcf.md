@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "JCF - Java Collection Framework"
+categories: programming
+date: 2022-03-29
+tags: [java, java-collection-framework]
+---
+
 # JCF - Java Collection Framework
 Java Collection Framework는 공통적으로 재사용 가능한 수집 데이터 구조를 구현하는 클래스 및 인터페이스의 집합이다.
 

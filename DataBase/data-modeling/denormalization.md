@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "반정규화 - Denormalization"
+categories: DataBase
+date: 2022-02-14
+tags: [data-modeling]
+---
+
 # 반정규화 - Denormalization
 : 정규화된 엔터티, 속성, 관계에 대해 성능 향상을 목적으로 중복, 통합, 분리 등을 수행하는 데이터 모델링 기법이다.
 

@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "순차 리스트 - Sequential List"
+categories: cs
+date: 2022-03-19
+tags: [data-structure, linear, list]
+---
+
 # 순차 리스트 - Sequential List
 : 구현할 자료들을 **논리적인** 순서대로 메모리에 연속하여 저장하는 자료구조이다.
 - 데이터가 컴퓨터 메모리에 저장될 때 저장 시작 위치부터 빈자리 없이 순서대로 저장된다.  

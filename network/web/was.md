@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "WAS - Web Application Server"
+categories: network
+date: 2022-03-17
+tags: [web]
+---
+
 # WAS - Web Application Server
 : DB 조회나 다양한 로직 처리를 요구하는 동적인 컨텐츠를 제공하기 위해 만들어진 Application Server
 >ex) Tomcat, JBoss, Jeus, Web Sphere 등...

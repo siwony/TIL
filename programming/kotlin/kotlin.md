@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Kotlin"
+categories: programming
+date: 2022-04-29
+tags: [kotlin]
+---
+
 # Kotlin
 - JetBrains에서 2011년에 공개한 오픈 소스 프로그래밍 언어
 - Java에 비해 상당히 간결한 문법을 가지고 있다.

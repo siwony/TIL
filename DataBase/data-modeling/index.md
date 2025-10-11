@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "인덱스 - Index"
+categories: DataBase
+date: 2022-02-22
+tags: [data-modeling]
+---
+
 # 인덱스 - Index
 > 핵심을 full scan을 하지 않고 인덱스 테이블을 통해 효율적으로 검색하는 것
 

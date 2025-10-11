@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Spring Transaction Propagation - 스프링 트랜잭션 전파속성"
+categories: back-end
+date: 2022-07-12
+tags: [spring, transaction]
+---
+
 # Spring Transaction Propagation - 스프링 트랜잭션 전파속성
 트랜잭션을 시작하거나 기존 트랜잭션에 참여하는 방법을 결정하는 속성이다.
 

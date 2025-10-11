@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Plan Archive"
+categories: back-end
+date: 2023-07-26
+tags: [build-tool, gradle]
+---
+
 # Plan Archive
 
 - `-plan` 이 붙은 jar 파일이며

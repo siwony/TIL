@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "클래스 기반의 프록시 생성 방법"
+categories: programming
+date: 2022-03-29
+tags: [java, byte-code-controller-way]
+---
+
 # 클래스 기반의 프록시 생성 방법
 ByteBuddy와 CGlib로 class기반 생성을 할 수 있다.
 

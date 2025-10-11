@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "서버기반 인증, 토큰기반 인증"
+categories: network
+date: 2022-03-17
+tags: [web]
+---
+
 # 서버기반 인증, 토큰기반 인증
 > 이글은 토큰기반의 인증을 왜 사용하느냐에 중점을 두어서 작성했습니다.
 

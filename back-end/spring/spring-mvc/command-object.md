@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "커맨드 객체 - Command Object"
+categories: back-end
+date: 2022-03-19
+tags: [spring, spring-mvc]
+---
+
 # 커맨드 객체 - Command Object
 : `HttpServletRequest`를 통해 들어온 `RequestParameter`들을 `setter`를 이용하여 객체에 정의되어있는 속성에 Binding 되는 Object를 의미한다.
 

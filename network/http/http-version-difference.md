@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "HTTP 버전별 차이"
+categories: network
+date: 2022-03-30
+tags: [http]
+---
+
 # HTTP 버전별 차이
 ## 1. HTTP 0.9
 - HTTP의 초기 버전은 버전 정보가 없었다.

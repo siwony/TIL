@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "변수의 scope, static"
+categories: programming
+date: 2022-04-05
+tags: [java, grammar, legacy]
+---
+
 # 변수의 scope, static
 ## scope
 **프로그램상에서 사용되는 변수의 사용가능한 범위**

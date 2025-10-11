@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "container에서 root 권한 명령어 실행"
+categories: DevOps
+date: 2021-05-29
+tags: [docker]
+---
+
 # container에서 root 권한 명령어 실행
 docker container에서 curl를 통해 docker을 실행하려고 했지만 예상치 못한 에러가 나왔다.  
 ```sh

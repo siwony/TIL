@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "다양한 연관관계"
+categories: back-end
+date: 2022-03-19
+tags: [spring, jpa]
+---
+
 # 다양한 연관관계
 ### 연관관계 매핑시 고려사항
 - 다중성

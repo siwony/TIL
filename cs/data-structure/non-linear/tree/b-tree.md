@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "B-Tree"
+categories: cs
+date: 2022-03-19
+tags: [data-structure, non-linear, tree]
+---
+
 # B-Tree
 이진트리에서 발전되어 **모든 리프노드들이 같은 레벨을 가질 수 있도록 자동으로 벨런스를 맞추는 트리**이다.
 - 정렬된 순서를 보장한다.

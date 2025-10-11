@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Bean Life Cycle"
+categories: back-end
+date: 2022-03-19
+tags: [spring]
+---
+
 # Bean Life Cycle
 ### Bean Life Cycle에 대해 왜 알아야 할까?
 **IoC의 이점을 얻으려면 컨테이너로 가는 애플리케이션의 흐름에 대한 부분적인 제어를 포기해야 한다.** == 인스턴스화

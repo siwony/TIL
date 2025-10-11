@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Executor Framework"
+categories: programming
+date: 2022-03-29
+tags: [java, concurrent]
+---
+
 # Executor Framework
 : 고수준 (High-Level) Concurrency 프로그래밍를 지원하는 Framework
 

@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "이진 탐색 트리 - Binary Search Tree"
+categories: cs
+date: 2022-03-19
+tags: [data-structure, non-linear, tree]
+---
+
 # 이진 탐색 트리 - Binary Search Tree
 `이진 탐색 - binary search`와 `연결리스트 - linked list`를 결합한 자료구조이다.
 

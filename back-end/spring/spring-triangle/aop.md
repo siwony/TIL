@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Aspect Oriented Programming(관점 지향 프로그래밍)"
+categories: back-end
+date: 2022-06-05
+tags: [spring, spring-triangle]
+---
+
 # Aspect Oriented Programming(관점 지향 프로그래밍)
 ## 1. 관점 지향 프로그래밍?
 : 애플리케이션에서의 **관심사의 분리(기능의 분리), 핵심적인 기능에서 부가적인 기능을 분리한다.**  

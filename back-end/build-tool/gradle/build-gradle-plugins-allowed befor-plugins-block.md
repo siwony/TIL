@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "build.gradle plugins{} error"
+categories: back-end
+date: 2022-03-19
+tags: [build-tool, gradle]
+---
+
 # build.gradle plugins{} error
 > only buildscript {} and other plugins {} script blocks are  
 > allowed before plugins {} blocks, no other statements are allowed 에러 해결

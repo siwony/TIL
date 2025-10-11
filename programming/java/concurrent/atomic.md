@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Atomic"
+categories: programming
+date: 2022-03-29
+tags: [java, concurrent]
+---
+
 # Atomic
 `java.util.concurrent.atomic`에 정의 되어 있고 멀티 쓰레드 환경에서 동기화에 의존하지 않고, 원자성을 보장하게 해주는 Atomic API에 대해 소개하려고 한다.
 

@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Stream"
+categories: programming
+date: 2022-03-29
+tags: [java, api, java8]
+---
+
 #### 먼저 숙지해야 하는 것
 > 숙지하지 않아도 사용할 수 있지만, Stream은 여러 메서드에서 함수형 인터페이스를 사용하므로 숙지하는게 좋다.
 - 람다 표현식

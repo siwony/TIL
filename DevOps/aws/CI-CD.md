@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "CI/CD"
+categories: DevOps
+date: 2021-08-12
+tags: [aws]
+---
+
 # CI/CD
 ### 배경
 전통적인 배포 파이프라인 단계는 다음과 같다

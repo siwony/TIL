@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Paging"
+categories: back-end
+date: 2022-03-19
+tags: [spring, jpa, JPQL]
+---
+
 # Paging 
 
 ### JPA는 페이징을 두개의 API로 추상화 되어있다.

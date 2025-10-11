@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Servlet"
+categories: back-end
+date: 2022-03-19
+tags: [java-ee]
+---
+
 # Servlet
 : Java를 이용하여 웹페이지를 동적으로 생성하는 server side 프로그램이다.
 > 웹 프로그래밍에서 클라이언트의 요청을 처리하고 그 결과를 다시 클라이언트에게 전송하는 Servlet 클래스의 규현 규칙을 지킨 자바 프로그래밍 기술

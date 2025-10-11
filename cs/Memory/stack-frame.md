@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Stack Frame"
+categories: cs
+date: 2022-03-19
+tags: [Memory]
+---
+
 # Stack Frame
 ### 메모리에서 Stack이란?
 함수의 호출과 관계되는 지역 변수와 매개변수가 저장되는 영역이다.

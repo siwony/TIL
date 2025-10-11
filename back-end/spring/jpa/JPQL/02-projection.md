@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "프로젝션"
+categories: back-end
+date: 2022-03-19
+tags: [spring, jpa, JPQL]
+---
+
 # 프로젝션
 : SELECT 절에 조회할 대상을 지정하는것
 - 프로잭션으로 관리되는 Entity는 모두다 영속성 컨텍스트에 관리된다.

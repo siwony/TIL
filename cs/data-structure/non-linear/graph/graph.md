@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "그래프 - Graph"
+categories: cs
+date: 2022-03-19
+tags: [data-structure, non-linear, graph]
+---
+
 # 그래프 - Graph
 `그래프 - Graph`란 요소들이 서로 복잡하게 연결되어 있는 관계를 표현하는 자료구조이다.
 

@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "LogBack"
+categories: back-end
+date: 2022-03-19
+tags: [spring, spring-boot]
+---
+
 # LogBack
 LogBack은 SpringBoot에서 기본적으로 제공하는 logging(로깅)라이브러리다.  
 - log4j를 토대로 새롭게 만들었다 여러 단점 및 성능이 log4j보다 향상됐다.

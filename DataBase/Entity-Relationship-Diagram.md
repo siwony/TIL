@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Entity relationship Diagram"
+categories: DataBase
+date: 2020-12-22
+tags: []
+---
+
 # Entity relationship Diagram
 : 개체 속성과 개체 간 관계를 도표로 표현헌것.
 

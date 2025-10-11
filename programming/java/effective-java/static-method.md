@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "생성자 대신 정적 매소드 사용을 고려해라"
+categories: programming
+date: 2022-04-19
+tags: [java, effective-java]
+---
+
 # 생성자 대신 정적 매소드 사용을 고려해라
 
 ## 장점

@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "JAVA EE (Java Enterprise Edition)"
+categories: back-end
+date: 2022-03-19
+tags: [java-ee]
+---
+
 # JAVA EE (Java Enterprise Edition)
 : 엔터프라이즈급 환경에서 사용하는 프로그램을 만드는데 적합한 자바 개발 버전이다.
 > J2EE라고도 불렸다. (Java 2 Enterprise Edition) 지금은 JAVA EE라고 불린다.

@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "개발 용어 정리"
+categories: ETC
+date: 2020-12-23
+tags: []
+---
+
 # 개발 용어 정리
 개발하면서 모르는용어를 정리하는 곳입니다.
 

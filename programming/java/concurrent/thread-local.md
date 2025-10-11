@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "스레드 로컬 - Thread Local"
+categories: programming
+date: 2022-03-29
+tags: [java, concurrent]
+---
+
 # 스레드 로컬 - Thread Local
 ### Reference
 - [김영한 인프런 핵심 원리 - 고급편](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B3%A0%EA%B8%89%ED%8E%B8)

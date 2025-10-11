@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Socket"
+categories: network
+date: 2022-03-17
+tags: []
+---
+
 # Socket
 소켓은 네트워크 상에서 돌아가는 두 개의 프로그램 간 양방향 통신의 하나의 `엔드 포인트` 이다.  
 > 소프트웨어로 작성된 추상적인 개념의 통신 접속점이라고 할 수 있다.

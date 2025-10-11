@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "객체지향 쿼리 언어"
+categories: back-end
+date: 2022-03-19
+tags: [spring, jpa, JPQL]
+---
+
 # 객체지향 쿼리 언어
 ### JPA는 다양한 쿼리 방법을 지원한다.
 - **JPQL**

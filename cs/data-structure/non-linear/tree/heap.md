@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "힙 - Heap"
+categories: cs
+date: 2022-03-19
+tags: [data-structure, non-linear, tree]
+---
+
 # 힙 - Heap
 > `힙 - heap` = `이진 힙 - binary heap` 
 

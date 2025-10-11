@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "HTTP - Hyper Text Transfer Protocol"
+categories: network
+date: 2022-03-17
+tags: [http]
+---
+
 # HTTP - Hyper Text Transfer Protocol
 : 인터넷에서 데이터를 주고받을 수 있는 프로토콜
 - 구성요소: Client, Web Server, Proxy

@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "알고리즘 요약"
+categories: Algorithm
+date: 2022-03-17
+tags: []
+---
+
 # 알고리즘 요약
 
 ## 알고리즘

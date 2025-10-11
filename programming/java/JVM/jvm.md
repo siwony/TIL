@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "JVM"
+categories: programming
+date: 2022-03-29
+tags: [java, JVM]
+---
+
 # JVM
 > 이 md는 Java7버전 기준으로 작성되었어요... Permanent Generation이 삭제가 되어버리네...?? 그와중에 블로그들 왜 다 java7버전 기준으로 정리함 어이없음 ㅋㅋㅋㅋㅋ 역시 전자정부표준프레임워크의 나라...?
 

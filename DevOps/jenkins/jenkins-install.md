@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "jenkins install"
+categories: DevOps
+date: 2021-05-29
+tags: [jenkins]
+---
+
 # jenkins install
 ## ubuntu
 ### apt update

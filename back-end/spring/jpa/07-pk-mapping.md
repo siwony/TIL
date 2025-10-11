@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "기본키 매핑"
+categories: back-end
+date: 2022-03-19
+tags: [spring, jpa]
+---
+
 # 기본키 매핑
 
 ## 기본키 매핑 방법

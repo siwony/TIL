@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Hypervisor(하이퍼 바이저)"
+categories: OS
+date: 2021-07-29
+tags: [Virtualization]
+---
+
 # Hypervisor(하이퍼 바이저)
 : 호스트 컴퓨터 1대에서 다수의 운영 체제(OS)를 동시해 실행하기 위한 논리적 플랫폼이다.
 - 하나 이상의 가상머신(VM)을 실행하는 컴퓨터가 **호스트(HOST)** 가 되고, 각 가상 머신들은 **게스트(Guest)** 가 된다.

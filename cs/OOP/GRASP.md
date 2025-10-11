@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "GRASP"
+categories: cs
+date: 2022-03-19
+tags: [OOP]
+---
+
 # GRASP
 : General Responsibility Assignment Software Patterns의 약자로 "일반적인 책임 할당 소프트웨어 패턴" 이다.
 > GRASP는 상호작용하는 Object에 어떻게 Responsibilities를 할당하는 지에 대한 내용을 담고 있다고 할 수 있다.

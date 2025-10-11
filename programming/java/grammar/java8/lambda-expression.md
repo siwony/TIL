@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "람다 표현식"
+categories: programming
+date: 2022-03-29
+tags: [java, grammar, java8]
+---
+
 # 람다 표현식
 : 간단히 메소드를 하나의 식으로 표현한 것이다.
 

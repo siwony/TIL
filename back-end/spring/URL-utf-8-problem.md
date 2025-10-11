@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "URL의 Character Set 이 UTF-8이 아니라서 생기는 문제"
+categories: back-end
+date: 2022-03-19
+tags: [spring]
+---
+
 # URL의 Character Set 이 UTF-8이 아니라서 생기는 문제
 ### 배경
 >[기자재 관리 시스템(Jub-Jub)](https://github.com/GSM-Web-Technology/Jup-Jup-Server) server에서 AWS s3에다가 파일을 Delete 기능을 구현하고 있었다.  

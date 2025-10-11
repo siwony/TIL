@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Kotlin의 변수"
+categories: programming
+date: 2022-04-29
+tags: [kotlin]
+---
+
 # Kotlin의 변수
 #### 이글의 예제 코드는 Main 함수에서 진행되었으며, Main함수를 생략했습니다.
 ### 특징

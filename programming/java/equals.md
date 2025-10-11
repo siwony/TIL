@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "equals"
+categories: programming
+date: 2022-09-25
+tags: [java]
+---
+
 # equals
 
 ### equals를 재정의 하지 않아도 되는 상황

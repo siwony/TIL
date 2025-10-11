@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "express-generator"
+categories: back-end
+date: 2022-03-19
+tags: [nodejs]
+---
+
 # express-generator
 : `Express-generator`라는 패키지를 통해서 프레임워크에 필요한 `pakage.json`과 기본 구조를 잡을 수 있는 패키지 이다.
 ### install 및 express 프로젝트 만들기

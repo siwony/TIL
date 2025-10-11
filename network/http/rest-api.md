@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "REST, API, REST API"
+categories: network
+date: 2022-03-17
+tags: [http]
+---
+
 # REST, API, REST API
 ### 목차
 - [REST](#REST-Representational-State-Transfer (표현-상태 전이))

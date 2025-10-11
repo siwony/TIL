@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Singleton Pattern"
+categories: programming
+date: 2022-03-29
+tags: [java, Design-pattern]
+---
+
 # Singleton Pattern
 : 어떠한 클래스(객체)가 유일하게 1개만 존재해야 할때 사용하는 패턴  
 즉, 어떤 클래스가 최초 한번만 메모리를 할당하고(Static) 그 메모리에 객체를 만들어 사용하는 디자인 패턴

@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Java install"
+categories: programming
+date: 2022-03-29
+tags: [java]
+---
+
 # Java install
 ### openJDK 설치
 > 필자는 open jdk 11버전을 선택했다.

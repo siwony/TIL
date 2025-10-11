@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "@MappedSuperclass"
+categories: back-end
+date: 2022-03-19
+tags: [spring, jpa]
+---
+
 # @MappedSuperclass
 <img width=450px src=./img/mapped-superclass.png>
 

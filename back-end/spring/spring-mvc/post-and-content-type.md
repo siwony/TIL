@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "HTTP POST 메서드와 Content-Type"
+categories: back-end
+date: 2022-03-19
+tags: [spring, spring-mvc]
+---
+
 # HTTP POST 메서드와 Content-Type
 Spring Boot를 사용해 API서버를 만들면 POST메서드를 통해 요청을 받을 때 body에 JSON형태로 통신한다는 전제로 개발을 하게 된다.  
 

@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Package"
+categories: programming
+date: 2022-04-05
+tags: [java, grammar, legacy]
+---
+
 # Package
 - 서로 연관됨 클래스 또는 인터페이스들을 묶어 놓은 묶음
 - 클래스들이 필요할 때만 사용될 수 있도록 함

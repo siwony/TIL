@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "식(expression)과 문(statement)"
+categories: programming
+date: 2022-09-24
+tags: [kotlin]
+---
+
 # 식(expression)과 문(statement)
 > Java에서 볼 수 없던 특징이라 정리하게 됨
 

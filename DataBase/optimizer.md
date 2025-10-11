@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Optimizer - 옵티마이저"
+categories: DataBase
+date: 2022-03-15
+tags: []
+---
+
 # Optimizer - 옵티마이저
 사용자가 질의한 SQL 문에 대해 최적의 실행방법을 결정하는 역할을 수행한다.
 

@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "@Autowired를 이용한 필드주입 보다 생성자 주입을 해야하는가?"
+categories: back-end
+date: 2022-03-19
+tags: [spring]
+---
+
 # @Autowired를 이용한 필드주입 보다 생성자 주입을 해야하는가?
 ### 요약
 - [**순환참조 오류의 방지**](#순환참조-오류의-방지)

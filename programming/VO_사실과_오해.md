@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "VO 사실과 오해"
+categories: programming
+date: 2024-02-18
+tags: []
+---
+
 # VO 사실과 오해
 > 2022.10.19(수) 사내에서 발표한 내용
 

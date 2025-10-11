@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "함수형 interface"
+categories: programming
+date: 2022-03-29
+tags: [java, grammar, java8]
+---
+
 # 함수형 interface
 - **추상 메서드가 1개만 있으면 모두 함수형 `interface`이다.**
 - 정적(`static`) 메서드, 디폴트(`default`) 메서드가 있을 수 있다.

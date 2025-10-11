@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "연결 리스트 - Linked List"
+categories: cs
+date: 2022-03-19
+tags: [data-structure, linear, list]
+---
+
 # 연결 리스트 - Linked List
 : 연결 리스트는 노드(node)들로 이어진 리스트를 말한다.  
 #### 연결리스트의 예 - 단일 연결 리스트

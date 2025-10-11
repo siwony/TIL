@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Proxy Pattern"
+categories: programming
+date: 2022-03-29
+tags: [java, Design-pattern]
+---
+
 # Proxy Pattern
 <img width=650 src="img/proxy-simple.png">
 

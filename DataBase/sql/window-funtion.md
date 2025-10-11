@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Window Function"
+categories: DataBase
+date: 2022-03-02
+tags: [sql]
+---
+
 # Window Function
 : 행과 행 간의 관계를 정의하기 위해 제공되는 함수다.
 

@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Keyword"
+categories: programming
+date: 2022-04-29
+tags: [kotlin]
+---
+
 # Keyword
 ## 1. Hard Keywords
 식별자로 사용할 수 없는 키워드를 의미한다.

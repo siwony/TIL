@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "고아 객체(ORPAN)"
+categories: back-end
+date: 2022-03-19
+tags: [spring, jpa]
+---
+
 # 고아 객체(ORPAN)
 : 부모 엔티티와 자식관계가 끊어진 엔티티
 - 고아 객체 제거: 부모 엔티티와 자식관계가 끊어진 엔티티를 제거한다.

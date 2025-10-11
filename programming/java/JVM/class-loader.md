@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Class Loader System - 클래스 로더 시스템"
+categories: programming
+date: 2022-03-29
+tags: [java, JVM]
+---
+
 # Class Loader System - 클래스 로더 시스템
 > 로딩 &rarr; 링크 &rarr; 초기화
 

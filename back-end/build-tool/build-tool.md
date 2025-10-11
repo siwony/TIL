@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Build Tool"
+categories: back-end
+date: 2022-03-19
+tags: [build-tool]
+---
+
 # Build Tool
 : 빌드 도구는 빌드 자동화를 시켜주는 실행가능한 프로그램만들어 주는 프로그램을 말한다.
 

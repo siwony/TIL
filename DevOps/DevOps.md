@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "DevOps(Development + Operations)"
+categories: DevOps
+date: 2021-02-06
+tags: []
+---
+
 # DevOps(Development + Operations)
 : SW 개발자와 정보기술 전문가 간의 소통, 협업 및 통합을 강조하는 개발 환경이나 문화, 방식 및 도구의 조합
 > **개발자** 는 계속해서 새로운것을 도입하고 싶어하지만, **Ops** 들은 안정성을 최우선으로 여긴다.  

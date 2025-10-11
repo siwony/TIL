@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "너비 우선 탐색 - Breadth-First Search"
+categories: Algorithm
+date: 2022-03-17
+tags: [graph-search]
+---
+
 # 너비 우선 탐색 - Breadth-First Search
 **루트 노드(혹은 다른 임의의 노드)에서 시작해서 인접한 노드를 먼저 탐색하는 방법이다.**
 

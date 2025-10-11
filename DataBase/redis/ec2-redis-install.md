@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "AWS EC2 + Amazon linux2 환경에 redis설치하기"
+categories: DataBase
+date: 2022-08-01
+tags: [redis]
+---
+
 # AWS EC2 + Amazon linux2 환경에 redis설치하기
 ### 1. 사전과정
 yum을 update하고 gcc와 make를 설치해야 한다.

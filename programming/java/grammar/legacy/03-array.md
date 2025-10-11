@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Array"
+categories: programming
+date: 2022-04-05
+tags: [java, grammar, legacy]
+---
+
 # Array
 ### 배열 선언
 ```java

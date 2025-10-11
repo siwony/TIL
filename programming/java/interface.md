@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Interface"
+categories: programming
+date: 2022-03-29
+tags: [java]
+---
+
 # Interface
 : Java Programing 언어에서 **`class`들이 구현해야 하는 동작을 지정하는데 사용하는 추상 자료형**이다.
 - `interface`라는 키워드를 사용하여 선언한다.

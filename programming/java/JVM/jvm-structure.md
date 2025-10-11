@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "JVM 구조"
+categories: programming
+date: 2022-03-29
+tags: [java, JVM]
+---
+
 # JVM 구조
 <img width="600px" src="img/jvm-structore.png">
 

@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "엘비스 연산자 - Elvis Operation"
+categories: programming
+date: 2022-05-13
+tags: [kotlin]
+---
+
 # 엘비스 연산자 - Elvis Operation
 - 엘비스 연산자는 `?:`로 표현된다.
 - 왼쪽 객체가 non-null이면 그 객체의 값으 리턴되고, null이면 ?:의 오른쪽 값을 리턴한다.

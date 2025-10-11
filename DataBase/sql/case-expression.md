@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "CASE 표현"
+categories: DataBase
+date: 2022-03-02
+tags: [sql]
+---
+
 # CASE 표현
 IF-THEN-ELSE 논리와 유사한 방식으로 표현식을 작성하여 SQL의 비교 연산 기능을 보완하는 역할을 한다.
 - CASE 표현은 함수의 성질을 가지고 있어, 다른 함수처럼 중첩해서 사용할 수 있다.

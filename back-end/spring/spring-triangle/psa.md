@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "PSA - Portable Service Abstraction"
+categories: back-end
+date: 2022-06-05
+tags: [spring, spring-triangle]
+---
+
 # PSA - Portable Service Abstraction
 PSA는 `서비스 지향 아키텍처 - SOA`에서 적용되는 설계원칙인 `서비스 추상화 - Service Abstraction`에 휴대용 이라는 뜻을 가진 Portable이 붙어진 용어이다. 
 

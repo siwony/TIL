@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Optional"
+categories: programming
+date: 2022-03-29
+tags: [java, api, java8]
+---
+
 # Optional
 ### 등장 배경
 #### null에 대한 문제점

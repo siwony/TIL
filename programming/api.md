@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "API"
+categories: programming
+date: 2022-03-17
+tags: []
+---
+
 # API 
 > API(Application Programing Interface)
 

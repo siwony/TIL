@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "더 나은 URI API를 설계 하는 방법과 HTTP method"
+categories: network
+date: 2022-03-17
+tags: [http]
+---
+
 # 더 나은 URI API를 설계 하는 방법과 HTTP method
 **좋은 API설계는 리소스를 식별해야 한다.**
 

@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Entity"
+categories: back-end
+date: 2022-03-19
+tags: [spring, jpa]
+---
+
 # Entity
 : DB에서 영속적으로 저장된 데이터를 자바 객체로 매핑하여 '인스턴스의 형태' 로 존재하는 데이터  
 >Entity 클래스는 실제 DataBase의 테이블과 1 : 1로 매핑 되는 클래스로, DB의 테이블내에 존재하는 컬럼을 속성(필드)으로 가져야 한다.

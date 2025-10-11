@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Gradle"
+categories: back-end
+date: 2022-03-19
+tags: [build-tool, gradle]
+---
+
 # Gradle
 > Java 진영에서 사용하는 [Build Tool](../build-tool.md)이다.
 

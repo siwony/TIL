@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "DNS"
+categories: network
+date: 2022-03-17
+tags: []
+---
+
 # DNS
 > Domain Name System
 

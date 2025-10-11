@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Java Beans"
+categories: programming
+date: 2022-03-29
+tags: [java]
+---
+
 # Java Beans
 > EJB(Enterprise Java Beans)와 전혀 다르다.
 

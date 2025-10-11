@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "QueryDSL"
+categories: back-end
+date: 2022-03-19
+tags: [spring, jpa]
+---
+
 # QueryDSL
 - ``SQL, JPQL``을 **코드로 작성할 수 있도록** 도와주는 빌더 API
 - JPA Criteria에 비해서 편리하고 실용적

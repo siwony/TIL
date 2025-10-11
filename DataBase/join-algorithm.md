@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "조인 알고리즘"
+categories: DataBase
+date: 2022-03-17
+tags: []
+---
+
 # 조인 알고리즘
 - Nested Roop Join - 중첩 반복 조인
 - Sort Merge Join - 정렬 병합 조인

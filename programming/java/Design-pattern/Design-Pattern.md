@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "디자인 패턴"
+categories: programming
+date: 2022-03-29
+tags: [java, Design-pattern]
+---
+
 # 디자인 패턴
 : 자주 사용하는 설계 패턴을 정형화하여 이를 유형별로 가장 최적의 방법으로 개발을 할 수 있도록 정해둔 설계
 > 알고리즘과 유사하지만 명확하게 정답이 있는것은 아니며 프로젝트 상황에 맞게 적용가능하다.

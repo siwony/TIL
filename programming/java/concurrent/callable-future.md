@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Callable과 Future"
+categories: programming
+date: 2022-03-29
+tags: [java, concurrent]
+---
+
 # Callable과 Future
 `Callable`은 `Runnable`과 다르게 작업(task)의 결과를 받을 수 있다.  
 그리고 `ExecutorService`를 이용해 `Callable`의 작업물을 `Future`객체로 감싸서 받을 수 있다.

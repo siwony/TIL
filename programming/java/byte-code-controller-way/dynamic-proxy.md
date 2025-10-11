@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "다이나믹 프록시 - Dynamic Proxy"
+categories: programming
+date: 2022-03-29
+tags: [java, byte-code-controller-way]
+---
+
 # 다이나믹 프록시 - Dynamic Proxy
 런타임에 특정 인터페이스들을 구현하는 클래스 또는 인스턴스를 만드는 기술
 - [공식문서](https://docs.oracle.com/javase/8/docs/technotes/guides/reflection/proxy.html)

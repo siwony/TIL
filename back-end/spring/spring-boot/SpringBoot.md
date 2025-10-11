@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "SpringBoot"
+categories: back-end
+date: 2022-03-19
+tags: [spring, spring-boot]
+---
+
 # SpringBoot
 Spring Famework는 아래 세 가지의 특성을 이용해 결합도를 낮추는 방식으로 Application을 개발할 수 있다.
 - Dependency Injection

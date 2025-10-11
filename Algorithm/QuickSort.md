@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "퀵 정렬"
+categories: Algorithm
+date: 2021-06-23
+tags: []
+---
+
 # 퀵 정렬
 - **`분할 정복(Divide & Conquer)`** 에 기초한 알고리즘이다.
   > 작은 문제들로 나눠서 해결한 뒤, 해결된 작은 문제들로 큰 문제를 해결한다.

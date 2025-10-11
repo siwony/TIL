@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Enumeration 와 Iterator"
+categories: programming
+date: 2022-03-29
+tags: [java, api]
+---
+
 # Enumeration 와 Iterator
 > Enumeration 와 Iterator는 서로 동작하는 것이 비슷하다.  
 > 먼저 이 두 개를 알기 전에 `Fila-Fast` 방식에 대해 알아야 한다.

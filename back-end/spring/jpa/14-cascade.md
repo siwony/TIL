@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "CASCADE(영속성 전이)"
+categories: back-end
+date: 2022-03-19
+tags: [spring, jpa]
+---
+
 # CASCADE(영속성 전이)
 : 특정 `Entity`가 상태 변화를 연관된 `Entity`에 전파시키는 옵션이다.
 > 예: 부모 엔티티를 저장할 때 자식 엔티티도 함께 저장.

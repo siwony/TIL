@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Volatile - 메모리 가시성을 해결하는 방법"
+categories: programming
+date: 2022-03-29
+tags: [java, concurrent]
+---
+
 # Volatile - 메모리 가시성을 해결하는 방법
 `volatile` 키워드는 Java `"변수를 Main Memory에 저장하겠다"`라는 것을 명시하는 것이다.
 

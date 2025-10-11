@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Oracle 11g quick start with doker"
+categories: DataBase
+date: 2022-02-22
+tags: [oracle]
+---
+
 # Oracle 11g quick start with doker
 
 ### 1. oracle 11g 이미지 pull

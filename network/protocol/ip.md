@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "IP - Internet Protocol"
+categories: network
+date: 2022-03-17
+tags: [protocol]
+---
+
 # IP - Internet Protocol
 인터넷 통신을 하기 위한 최소한의 규칙이라고 할 수 있다.
 

@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Wrapper class"
+categories: programming
+date: 2022-03-29
+tags: [java]
+---
+
 # Wrapper class
 
 #### 왜 사용할까?

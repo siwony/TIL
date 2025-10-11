@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "URI?, URL?, URN?"
+categories: network
+date: 2022-03-17
+tags: []
+---
+
 # URI?, URL?, URN?
 <p align="center"><img width=600 src="img/uri-url-urn.png"></p>
 

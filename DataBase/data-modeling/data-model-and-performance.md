@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "데이터 모델과 성능"
+categories: DataBase
+date: 2022-02-03
+tags: [data-modeling]
+---
+
 # 데이터 모델과 성능
 ## 1. 정의
 : DB 성능을 고려하여 데이터 모델링을 수행하는 것

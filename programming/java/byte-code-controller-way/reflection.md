@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "리플렉션 - Reflection"
+categories: programming
+date: 2022-03-29
+tags: [java, byte-code-controller-way]
+---
+
 # 리플렉션 - Reflection
 
 #### Spring, Hibernate 그리고 Jackson라이브러리는 어떻게 작동할까?

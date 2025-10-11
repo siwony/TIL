@@ -1,3 +1,12 @@
+---
+layout: post
+author: "정시원"
+title: "Annotation"
+categories: programming
+date: 2022-03-29
+tags: [java, byte-code-controller-way]
+---
+
 # Annotation
 Annotation은 그자체로 주석이라는 의미를 가진다. 하지만 일반 주석이랑 다르다!
 - JDK5 버전부터 사용할 수 있다.
