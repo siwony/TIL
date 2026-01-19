@@ -1,6 +1,9 @@
 # Today I Learned
 
-오늘 새롭게 배운 혹은 삽질한 경험을 간단한 글들을 마크다운 문서로 정리 해 보자! `start - Dec 12 2020`  
+오늘 새롭게 배운 혹은 삽질한 경험을 간단한 글들을 마크다운 문서로 정리 해 보자! `2020-12-12 ~ 2024-02-18`  
+
+해당 repository 는 [my-blog](https://github.com/siwony/my-blog)로 이전되었습니다.
+[https://github.com/siwony/my-blog](https://blog.siwony.xyz/)를 이용해주세요
 
 ## GIT
 
